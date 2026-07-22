@@ -1,0 +1,33 @@
+{
+  "updated_at": "2026-07-22T10:05:00+08:00",
+  "news_date": "2026-07-21",
+  "doc_file": "news-2026-07-21.docx",
+  "finance": [
+    {
+      "title": "示例：A股三大指数集体收涨，沪指重返3600点",
+      "summary": "在权重板块带动下市场情绪回暖，成交额放大至万亿以上。",
+      "source": "示例来源·财经网",
+      "url": "https://example.com/finance-1"
+    },
+    {
+      "title": "示例：美联储官员释放年内降息信号",
+      "summary": "多位官员表态通胀回落趋势确立，市场预期9月启动降息。",
+      "source": "示例来源·路透",
+      "url": "https://example.com/finance-2"
+    }
+  ],
+  "tech": [
+    {
+      "title": "示例：某大厂发布新一代AI推理芯片",
+      "summary": "算力较上代提升3倍，主打低功耗数据中心场景。",
+      "source": "示例来源·科技媒体",
+      "url": "https://example.com/tech-1"
+    },
+    {
+      "title": "示例：开源大模型迭代，上下文窗口扩至百万token",
+      "summary": "在多项基准测试中接近头部闭源模型表现。",
+      "source": "示例来源·量子位",
+      "url": "https://example.com/tech-2"
+    }
+  ]
+}

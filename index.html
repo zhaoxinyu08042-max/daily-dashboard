@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日监控看板 · 净值 & 财经科技新闻</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #f5f6f8; color: #1a1d24;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 20px 64px; }
+  header.top { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
+  h1 { font-size: 22px; margin: 0; font-weight: 700; }
+  .subtle { color: #6b7280; font-size: 13px; }
+  .card { background: #fff; border: 1px solid #e6e8ec; border-radius: 12px; padding: 20px; margin-top: 20px; box-shadow: 0 1px 2px rgba(0,0,0,.03); }
+  .card h2 { font-size: 16px; margin: 0 0 4px; display: flex; align-items: center; gap: 8px; }
+  .card .meta { color: #6b7280; font-size: 12px; margin-bottom: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th, td { padding: 10px 12px; text-align: right; border-bottom: 1px solid #eef0f3; white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { color: #6b7280; font-weight: 600; font-size: 12px; background: #fafbfc; }
+  tbody tr:hover { background: #fafbfc; }
+  .pos { color: #12855a; }
+  .neg { color: #c0392b; }
+  .mono { font-variant-numeric: tabular-nums; }
+  .badge { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; font-weight: 600; }
+  .badge.ok { background: #e7f6ee; color: #12855a; }
+  .badge.warn { background: #fdeceb; color: #c0392b; }
+  .badge.info { background: #eef1f6; color: #4b5563; }
+  .alert-note { margin-top: 12px; font-size: 12.5px; color: #c0392b; background: #fdeceb; border-radius: 8px; padding: 8px 12px; }
+  .tabs { display: flex; gap: 6px; margin-bottom: 14px; }
+  .tab { border: 1px solid #e6e8ec; background: #fff; color: #4b5563; padding: 5px 14px; border-radius: 999px; font-size: 13px; cursor: pointer; }
+  .tab.active { background: #1a1d24; color: #fff; border-color: #1a1d24; }
+  .news-item { padding: 12px 0; border-bottom: 1px solid #eef0f3; }
+  .news-item:last-child { border-bottom: none; }
+  .news-item .n-title { font-size: 14.5px; font-weight: 600; }
+  .news-item .n-title a { color: #1a1d24; text-decoration: none; }
+  .news-item .n-title a:hover { text-decoration: underline; }
+  .news-item .n-sum { color: #4b5563; font-size: 13px; margin: 3px 0 4px; }
+  .news-item .n-src { color: #9aa1ab; font-size: 12px; }
+  .news-item .n-idx { color: #c3c8cf; font-weight: 700; margin-right: 6px; }
+  .hidden { display: none; }
+  .empty { color: #9aa1ab; font-size: 13px; padding: 12px 0; }
+  .dl { font-size: 12.5px; color: #2563eb; text-decoration: none; }
+  footer { margin-top: 28px; color: #9aa1ab; font-size: 12px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>每日监控看板</h1>
+    <span class="subtle" id="pageUpdated">加载中…</span>
+  </header>
+  <p class="subtle">中和三账户净值 · 财经科技每日热点 — 数据由定时任务每工作日自动更新</p>
+
+  <!-- 净值汇总 -->
+  <section class="card" id="navCard">
+    <h2>💹 三账户净值汇总 <span id="navStatus"></span></h2>
+    <div class="meta" id="navMeta">加载中…</div>
+    <div id="navBody"></div>
+  </section>
+
+  <!-- 新闻 -->
+  <section class="card" id="newsCard">
+    <h2>📰 财经科技每日热点</h2>
+    <div class="meta" id="newsMeta">加载中…</div>
+    <div class="tabs" id="newsTabs"></div>
+    <div id="newsFinance"></div>
+    <div id="newsTech" class="hidden"></div>
+  </section>
+
+  <footer id="footer"></footer>
+</div>
+
+<script>
+const bust = () => "?t=" + Date.now();
+const fmt = (n) => (n === null || n === undefined || isNaN(n)) ? "—" :
+  Number(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;" }[c]));
+const signClass = (n) => n > 0 ? "pos" : (n < 0 ? "neg" : "");
+const signStr = (n, suffix="") => (n > 0 ? "+" : "") + fmt(n) + suffix;
+
+async function loadJSON(path) {
+  const r = await fetch(path + bust(), { cache: "no-store" });
+  if (!r.ok) throw new Error(path + " " + r.status);
+  return r.json();
+}
+
+/* ---------- 净值 ---------- */
+function renderNav(d) {
+  const statusEl = document.getElementById("navStatus");
+  const metaEl = document.getElementById("navMeta");
+  const body = document.getElementById("navBody");
+  metaEl.textContent = "运行日期 " + (d.run_date || "—") + " · 更新于 " + (d.updated_at || "—");
+
+  if (d.status === "no_report") {
+    statusEl.innerHTML = '<span class="badge info">今日无新报告</span>';
+    body.innerHTML = '<div class="empty">' + esc(d.message || "当天没有新收到的估值报告（周末/假期/尚未送达）。") + '</div>';
+    return;
+  }
+  if (d.status === "failed") {
+    statusEl.innerHTML = '<span class="badge warn">获取失败</span>';
+    body.innerHTML = '<div class="empty">' + esc(d.message || "今日未能自动获取报告。") + '</div>';
+    return;
+  }
+  statusEl.innerHTML = '<span class="badge ok">已更新</span>';
+
+  const rows = (d.accounts || []).map(a => {
+    const cls = a.alert ? ' style="background:#fdf3f2"' : '';
+    return `<tr${cls}>
+      <td>${esc(a.account)}${a.alert ? ' <span class="badge warn">⚠️</span>' : ''}</td>
+      <td class="subtle">${esc(a.prev_date)}</td>
+      <td class="mono">${fmt(a.prev_nav)}</td>
+      <td class="mono">${fmt(a.curr_nav)}</td>
+      <td class="mono ${signClass(a.net_transfer)}">${signStr(a.net_transfer)}</td>
+      <td class="mono ${signClass(a.change_ex_transfer)}">${signStr(a.change_ex_transfer)}</td>
+      <td class="mono ${signClass(a.change_pct)}">${signStr(a.change_pct, "%")}</td>
+    </tr>`;
+  }).join("");
+
+  body.innerHTML = `<table>
+    <thead><tr>
+      <th>账户</th><th>上一次日期</th><th>上一次净值</th><th>当日净值</th>
+      <th>资金净划转</th><th>剔除划转后变化</th><th>变化率</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+
+  const alerts = (d.accounts || []).filter(a => a.alert);
+  if (alerts.length) {
+    body.innerHTML += '<div class="alert-note">⚠️ 账户 ' +
+      alerts.map(a => esc(a.account)).join("、") +
+      ' 剔除划转后变化率绝对值超过 5%，建议人工核实持仓/交易异常。</div>';
+  }
+}
+
+/* ---------- 新闻 ---------- */
+function newsItemHTML(n, i) {
+  const title = n.url
+    ? `<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>`
+    : esc(n.title);
+  return `<div class="news-item">
+    <div class="n-title"><span class="n-idx">${i + 1}</span>${title}</div>
+    ${n.summary ? `<div class="n-sum">${esc(n.summary)}</div>` : ""}
+    <div class="n-src">${esc(n.source || "")}</div>
+  </div>`;
+}
+function renderNews(d) {
+  document.getElementById("newsMeta").innerHTML =
+    "新闻日期 " + (d.news_date || "—") + " · 更新于 " + (d.updated_at || "—") +
+    (d.doc_file ? ` · <span class="subtle">Word 文档：${esc(d.doc_file)}</span>` : "");
+
+  const finance = d.finance || [], tech = d.tech || [];
+  const fEl = document.getElementById("newsFinance"), tEl = document.getElementById("newsTech");
+  fEl.innerHTML = finance.length ? finance.map(newsItemHTML).join("") : '<div class="empty">暂无财经新闻</div>';
+  tEl.innerHTML = tech.length ? tech.map(newsItemHTML).join("") : '<div class="empty">暂无科技新闻</div>';
+
+  document.getElementById("newsTabs").innerHTML =
+    `<button class="tab active" data-t="finance">财经 · ${finance.length}</button>` +
+    `<button class="tab" data-t="tech">科技 · ${tech.length}</button>`;
+  document.querySelectorAll("#newsTabs .tab").forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll("#newsTabs .tab").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const t = btn.dataset.t;
+      fEl.classList.toggle("hidden", t !== "finance");
+      tEl.classList.toggle("hidden", t !== "tech");
+    };
+  });
+}
+
+/* ---------- init ---------- */
+(async function () {
+  let latest = "";
+  try { const nav = await loadJSON("nav.json"); renderNav(nav); latest = nav.updated_at || latest; }
+  catch (e) { document.getElementById("navMeta").innerHTML = '<span class="neg">净值数据未找到（nav.json）</span>'; }
+
+  try { const news = await loadJSON("news.json"); renderNews(news); if (news.updated_at > latest) latest = news.updated_at; }
+  catch (e) { document.getElementById("newsMeta").innerHTML = '<span class="neg">新闻数据未找到（news.json）</span>'; }
+
+  document.getElementById("pageUpdated").textContent = latest ? ("最近更新 " + latest) : "";
+  document.getElementById("footer").textContent = "本页每次打开自动读取最新数据 · " + new Date().toLocaleString("zh-CN");
+})();
+</script>
+</body>
+</html>
