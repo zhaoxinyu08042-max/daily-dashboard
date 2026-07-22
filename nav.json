@@ -1,38 +1,7 @@
 {
-  "updated_at": "2026-07-22T09:38:00+08:00",
-  "run_date": "2026-07-22",
-  "status": "ok",
-  "message": "",
-  "accounts": [
-    {
-      "account": "81099801",
-      "prev_date": "2026-07-21",
-      "prev_nav": 1258430.55,
-      "curr_nav": 1263980.12,
-      "net_transfer": 0,
-      "change_ex_transfer": 5549.57,
-      "change_pct": 0.44,
-      "alert": false
-    },
-    {
-      "account": "81099802",
-      "prev_date": "2026-07-21",
-      "prev_nav": 2043117.80,
-      "curr_nav": 2010330.40,
-      "net_transfer": -20000,
-      "change_ex_transfer": -12787.40,
-      "change_pct": -0.62,
-      "alert": false
-    },
-    {
-      "account": "81099803",
-      "prev_date": "2026-07-21",
-      "prev_nav": 876540.10,
-      "curr_nav": 933120.66,
-      "net_transfer": 0,
-      "change_ex_transfer": 56580.56,
-      "change_pct": 6.45,
-      "alert": true
-    }
-  ]
+  "updated_at": "",
+  "run_date": "",
+  "status": "no_report",
+  "message": "看板已就绪，等待净值任务首次运行（每工作日 09:38）后显示真实数据。",
+  "accounts": []
 }
