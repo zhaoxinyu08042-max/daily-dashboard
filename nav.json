@@ -1,7 +1,11 @@
 {
   "updated_at": "2026-07-22T09:38:00+08:00",
-  "run_date": "2026-07-22",
-  "status": "failed",
-  "message": "今日未能自动获取报告：运行时网易企业邮箱未登录，无法读取三封估值邮件；本地也无当日新文件。请在 Chrome 登录 kkeli@neufinc.com 后重跑净值任务，或手动导出当日 VAL_ 估值表处理。",
-  "accounts": []
+  "run_date": "2026-07-21",
+  "status": "ok",
+  "message": "数据日期 2026-07-21（07-22 收到报告）。三账户当日均无资金划转，变化率绝对值均低于 5%，无异常告警。",
+  "accounts": [
+    { "account": "81099801", "prev_date": "2026-07-20", "prev_nav": 550971.94, "curr_nav": 551294.60, "net_transfer": 0, "change_ex_transfer": 322.66, "change_pct": 0.06, "alert": false },
+    { "account": "81099802", "prev_date": "2026-07-20", "prev_nav": 987385.17, "curr_nav": 992620.69, "net_transfer": 0, "change_ex_transfer": 5235.52, "change_pct": 0.53, "alert": false },
+    { "account": "81099803", "prev_date": "2026-07-20", "prev_nav": 395744.29, "curr_nav": 383812.46, "net_transfer": 0, "change_ex_transfer": -11931.83, "change_pct": -3.02, "alert": false }
+  ]
 }
