@@ -686,50 +686,6 @@
     "change": -11931.83,
     "pct": -301.5
    }
-  ],
-  "81099805": [
-   {
-    "date": "2026-06-09",
-    "nav": 57240,
-    "transfer": 0,
-    "change": 0,
-    "pct": 0
-   },
-   {
-    "date": "2026-06-10",
-    "nav": 57240,
-    "transfer": 0,
-    "change": 0,
-    "pct": 0
-   },
-   {
-    "date": "2026-06-11",
-    "nav": 57240,
-    "transfer": 0,
-    "change": 0,
-    "pct": 0
-   },
-   {
-    "date": "2026-06-12",
-    "nav": 57240,
-    "transfer": 0,
-    "change": 0,
-    "pct": 0
-   },
-   {
-    "date": "2026-06-15",
-    "nav": 57240,
-    "transfer": 0,
-    "change": 0,
-    "pct": 0
-   },
-   {
-    "date": "2026-06-16",
-    "nav": 0,
-    "transfer": -57240,
-    "change": 0,
-    "pct": null
-   }
   ]
  }
 }
