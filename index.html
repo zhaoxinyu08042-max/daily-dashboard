@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>每日监控看板 · 净值 & 财经科技新闻</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
 <style>
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
@@ -45,7 +46,8 @@
   .news-item .n-idx { color: #c3c8cf; font-weight: 700; margin-right: 6px; }
   .hidden { display: none; }
   .empty { color: #9aa1ab; font-size: 13px; padding: 12px 0; }
-  .dl { font-size: 12.5px; color: #2563eb; text-decoration: none; }
+  .chart-box { position: relative; height: 320px; }
+  .note { color: #9aa1ab; font-size: 12px; margin-top: 10px; }
   footer { margin-top: 28px; color: #9aa1ab; font-size: 12px; text-align: center; }
 </style>
 </head>
@@ -62,6 +64,21 @@
     <h2>💹 三账户净值汇总 <span id="navStatus"></span></h2>
     <div class="meta" id="navMeta">加载中…</div>
     <div id="navBody"></div>
+  </section>
+
+  <!-- 净值曲线（近一月） -->
+  <section class="card" id="chartCard">
+    <h2>📈 净值走势（近一个月）</h2>
+    <div class="meta" id="chartMeta">加载中…</div>
+    <div class="chart-box"><canvas id="navChart"></canvas></div>
+    <div class="note" id="chartNote"></div>
+  </section>
+
+  <!-- 上周明细表格 -->
+  <section class="card" id="weekCard">
+    <h2>🗓️ 上周净值明细</h2>
+    <div class="meta" id="weekMeta">加载中…</div>
+    <div id="weekBody"></div>
   </section>
 
   <!-- 新闻 -->
@@ -90,7 +107,7 @@ async function loadJSON(path) {
   return r.json();
 }
 
-/* ---------- 净值 ---------- */
+/* ---------- 净值汇总 ---------- */
 function renderNav(d) {
   const statusEl = document.getElementById("navStatus");
   const metaEl = document.getElementById("navMeta");
@@ -99,16 +116,15 @@ function renderNav(d) {
 
   if (d.status === "no_report") {
     statusEl.innerHTML = '<span class="badge info">今日无新报告</span>';
-    body.innerHTML = '<div class="empty">' + esc(d.message || "当天没有新收到的估值报告（周末/假期/尚未送达）。") + '</div>';
+    body.innerHTML = '<div class="empty">' + esc(d.message || "当天没有新收到的估值报告。") + '</div>';
     return;
   }
   if (d.status === "failed") {
-    statusEl.innerHTML = '<span class="badge warn">获取失败</span>';
+    statusEl.innerHTML = '<span class="badge warn">未获取</span>';
     body.innerHTML = '<div class="empty">' + esc(d.message || "今日未能自动获取报告。") + '</div>';
     return;
   }
   statusEl.innerHTML = '<span class="badge ok">已更新</span>';
-
   const rows = (d.accounts || []).map(a => {
     const cls = a.alert ? ' style="background:#fdf3f2"' : '';
     return `<tr${cls}>
@@ -121,44 +137,95 @@ function renderNav(d) {
       <td class="mono ${signClass(a.change_pct)}">${signStr(a.change_pct, "%")}</td>
     </tr>`;
   }).join("");
-
-  body.innerHTML = `<table>
-    <thead><tr>
+  body.innerHTML = `<table><thead><tr>
       <th>账户</th><th>上一次日期</th><th>上一次净值</th><th>当日净值</th>
       <th>资金净划转</th><th>剔除划转后变化</th><th>变化率</th>
-    </tr></thead>
-    <tbody>${rows}</tbody>
-  </table>`;
+    </tr></thead><tbody>${rows}</tbody></table>`;
+  if (d.message) body.innerHTML += '<div class="note">' + esc(d.message) + '</div>';
+}
 
-  const alerts = (d.accounts || []).filter(a => a.alert);
-  if (alerts.length) {
-    body.innerHTML += '<div class="alert-note">⚠️ 账户 ' +
-      alerts.map(a => esc(a.account)).join("、") +
-      ' 剔除划转后变化率绝对值超过 5%，建议人工核实持仓/交易异常。</div>';
-  }
+/* ---------- 历史：曲线 + 上周表格 ---------- */
+const ACCT_COLORS = { "81099801":"#2563eb", "81099802":"#12855a", "81099803":"#c0392b", "81099805":"#b8860b" };
+
+function renderChart(h) {
+  const series = h.series || [];
+  document.getElementById("chartMeta").textContent =
+    "数据区间取最近约一个月 · 单位 USD · 更新于 " + (h.updated_at || "—");
+  if (!series.length) { document.getElementById("chartMeta").innerHTML = '<span class="neg">无历史数据</span>'; return; }
+
+  const lastDate = new Date(series[series.length - 1].date);
+  const cutoff = new Date(lastDate); cutoff.setDate(cutoff.getDate() - 31);
+  const win = series.filter(s => new Date(s.date) >= cutoff);
+  const labels = win.map(s => s.date.slice(5));
+
+  const accts = (h.accounts || []).filter(a => win.some(s => s[a] != null));
+  const datasets = accts.map(a => ({
+    label: a,
+    data: win.map(s => s[a]),
+    borderColor: ACCT_COLORS[a] || "#666",
+    backgroundColor: ACCT_COLORS[a] || "#666",
+    borderWidth: 2, pointRadius: 2, tension: 0.25, spanGaps: true
+  }));
+
+  new Chart(document.getElementById("navChart"), {
+    type: "line",
+    data: { labels, datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
+      plugins: { legend: { position: "top", labels: { boxWidth: 14, font: { size: 12 } } },
+        tooltip: { callbacks: { label: c => c.dataset.label + ": " + fmt(c.parsed.y) } } },
+      scales: {
+        y: { ticks: { callback: v => (v/1000).toFixed(0) + "k", font: { size: 11 } }, grid: { color: "#eef0f3" } },
+        x: { ticks: { font: { size: 11 }, maxRotation: 0, autoSkip: true, maxTicksLimit: 10 }, grid: { display: false } }
+      }
+    }
+  });
+  document.getElementById("chartNote").textContent =
+    "注：7-20 账户间存在内部划转（81099801 转入 40 万、81099803 转出 50 万），故当日净值出现台阶式变动，属资金划转而非盈亏。";
+}
+
+function renderWeek(h) {
+  const weekly = h.weekly || {};
+  const accts = (h.accounts || []).filter(a => (weekly[a] || []).length);
+  const meta = document.getElementById("weekMeta");
+  const body = document.getElementById("weekBody");
+  if (!accts.length) { meta.innerHTML = '<span class="neg">无上周数据</span>'; return; }
+
+  const dates = [...new Set(accts.flatMap(a => weekly[a].map(r => r.date)))].sort();
+  const idx = {}; accts.forEach(a => { idx[a] = {}; weekly[a].forEach(r => idx[a][r.date] = r); });
+  meta.textContent = "各账户最近约一周每日净值与剔除划转后变化率";
+
+  const head = "<th>日期</th>" + accts.map(a => `<th>${a} 净值</th><th>${a} 变化率</th>`).join("");
+  const rows = dates.map(dt => {
+    const cells = accts.map(a => {
+      const r = idx[a][dt];
+      if (!r) return '<td class="mono subtle">—</td><td class="mono subtle">—</td>';
+      const pct = r.pct;
+      return `<td class="mono">${fmt(r.nav)}</td>` +
+             `<td class="mono ${signClass(pct)}">${pct==null?"—":signStr(pct,"%")}</td>`;
+    }).join("");
+    return `<tr><td>${dt}</td>${cells}</tr>`;
+  }).join("");
+  body.innerHTML = `<table><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table>`;
 }
 
 /* ---------- 新闻 ---------- */
 function newsItemHTML(n, i) {
   const title = n.url
-    ? `<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>`
-    : esc(n.title);
+    ? `<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>` : esc(n.title);
   return `<div class="news-item">
     <div class="n-title"><span class="n-idx">${i + 1}</span>${title}</div>
     ${n.summary ? `<div class="n-sum">${esc(n.summary)}</div>` : ""}
-    <div class="n-src">${esc(n.source || "")}</div>
-  </div>`;
+    <div class="n-src">${esc(n.source || "")}</div></div>`;
 }
 function renderNews(d) {
   document.getElementById("newsMeta").innerHTML =
     "新闻日期 " + (d.news_date || "—") + " · 更新于 " + (d.updated_at || "—") +
     (d.doc_file ? ` · <span class="subtle">Word 文档：${esc(d.doc_file)}</span>` : "");
-
   const finance = d.finance || [], tech = d.tech || [];
   const fEl = document.getElementById("newsFinance"), tEl = document.getElementById("newsTech");
   fEl.innerHTML = finance.length ? finance.map(newsItemHTML).join("") : '<div class="empty">暂无财经新闻</div>';
   tEl.innerHTML = tech.length ? tech.map(newsItemHTML).join("") : '<div class="empty">暂无科技新闻</div>';
-
   document.getElementById("newsTabs").innerHTML =
     `<button class="tab active" data-t="finance">财经 · ${finance.length}</button>` +
     `<button class="tab" data-t="tech">科技 · ${tech.length}</button>`;
@@ -179,7 +246,13 @@ function renderNews(d) {
   try { const nav = await loadJSON("nav.json"); renderNav(nav); latest = nav.updated_at || latest; }
   catch (e) { document.getElementById("navMeta").innerHTML = '<span class="neg">净值数据未找到（nav.json）</span>'; }
 
-  try { const news = await loadJSON("news.json"); renderNews(news); if (news.updated_at > latest) latest = news.updated_at; }
+  try { const h = await loadJSON("history.json"); renderChart(h); renderWeek(h); }
+  catch (e) {
+    document.getElementById("chartMeta").innerHTML = '<span class="neg">历史数据未找到（history.json）</span>';
+    document.getElementById("weekMeta").innerHTML = '<span class="neg">历史数据未找到（history.json）</span>';
+  }
+
+  try { const news = await loadJSON("news.json"); renderNews(news); if ((news.updated_at||"") > latest) latest = news.updated_at; }
   catch (e) { document.getElementById("newsMeta").innerHTML = '<span class="neg">新闻数据未找到（news.json）</span>'; }
 
   document.getElementById("pageUpdated").textContent = latest ? ("最近更新 " + latest) : "";
