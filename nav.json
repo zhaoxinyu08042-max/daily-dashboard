@@ -1,7 +1,7 @@
 {
-  "updated_at": "",
-  "run_date": "",
-  "status": "no_report",
-  "message": "看板已就绪，等待净值任务首次运行（每工作日 09:38）后显示真实数据。",
+  "updated_at": "2026-07-22T09:38:00+08:00",
+  "run_date": "2026-07-22",
+  "status": "failed",
+  "message": "今日未能自动获取报告：运行时网易企业邮箱未登录，无法读取三封估值邮件；本地也无当日新文件。请在 Chrome 登录 kkeli@neufinc.com 后重跑净值任务，或手动导出当日 VAL_ 估值表处理。",
   "accounts": []
 }
