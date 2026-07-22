@@ -1,7 +1,243 @@
 {
-  "updated_at": "",
-  "news_date": "",
-  "doc_file": "",
-  "finance": [],
-  "tech": []
+  "updated_at": "2026-07-22T10:05:00+08:00",
+  "news_date": "2026-07-21",
+  "doc_file": "news-2026-07-21.docx",
+  "finance": [
+    {
+      "title": "A股“大奇迹日”：科创50飙涨10.73%，半导体掀涨停潮",
+      "summary": "三大指数集体大涨，沪指涨1.79%报3864点、创业板指涨7.05%，两市成交2.97万亿，逾3100股上涨。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/roll/2026-07-21/doc-iniiqefe8104004.shtml"
+    },
+    {
+      "title": "A股收评：三大指数集体飙涨，超3100只个股飘红",
+      "summary": "半导体产业链、CPO概念、贵金属集体爆发，东芯股份、兆易创新等二十余股涨停。",
+      "source": "中新网",
+      "url": "https://www.chinanews.com.cn/cj/2026/07-21/10663524.shtml"
+    },
+    {
+      "title": "政策、资金、基本面三重护航，多位券商首经看多后市",
+      "summary": "机构认为稳市场政策、增量资金与基本面共振，A股中枢有望上移。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-07-21/doc-iniiqefh4904026.shtml"
+    },
+    {
+      "title": "A股午评：三大指数集体收涨",
+      "summary": "早盘电力板块探底回升，科创板块领涨全市场。",
+      "source": "中新网",
+      "url": "https://www.chinanews.com.cn/cj/2026/07-21/10663429.shtml"
+    },
+    {
+      "title": "证监会主席吴清坐进营业部，直面散户座谈",
+      "summary": "与大中小各类投资者8名代表面对面，就促进资本市场稳定健康发展听意见。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/stock/y/2026-07-21/doc-iniiphzm2631681.shtml"
+    },
+    {
+      "title": "证监会：加强市场基础制度建设，增强市场内在稳定性",
+      "summary": "主动回应市场关切，一体推进防风险、强监管、促高质量发展。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/roll/2026-07-21/doc-iniiqkny9269600.shtml"
+    },
+    {
+      "title": "证监会两日连开座谈会，对上市公司、机构、学者提新期望",
+      "summary": "连续听取多方意见，围绕提升上市公司质量与投资者回报。",
+      "source": "21财经",
+      "url": "https://m.21jingji.com/article/20260721/herald/39febb629dd905e80de45d9b8866c6a1.html"
+    },
+    {
+      "title": "五大险资集体发声，坚定支持资本市场",
+      "summary": "人保、国寿、平安、太保、新华等万亿级机构表态积极回报投资者。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/stock/y/2026-07-21/doc-iniiphzm2631681.shtml"
+    },
+    {
+      "title": "国务院常务会议：部署“六张网”，审议知识产权“十五五”规划",
+      "summary": "听取服务业扩能提质督查汇报，研究优化社会保障体系。",
+      "source": "新浪财经·四大证券报头版",
+      "url": "https://finance.sina.com.cn/stock/y/2026-07-21/doc-iniiphzm2632288.shtml"
+    },
+    {
+      "title": "国投电力拟334亿元携手宁德时代，建牙根二级水电站",
+      "summary": "可替代燃煤燃气机组266.4万千瓦，年减碳451万吨，服务“双碳”。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/wm/2026-07-21/doc-iniinscy4974934.shtml"
+    },
+    {
+      "title": "四大证券报头版头条精华（7月21日）",
+      "summary": "汇总当日证券市场重要政策与公司动态。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/stock/y/2026-07-21/doc-iniiphzm2632288.shtml"
+    },
+    {
+      "title": "港交所回应：正考虑延长交易时间",
+      "summary": "市场关注交易时段调整对流动性的潜在影响。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/stock/y/2026-07-21/doc-iniiphzm2631681.shtml"
+    },
+    {
+      "title": "美股收涨：道指涨0.74%报52224，标普涨0.89%，纳指涨1.29%",
+      "summary": "三大指数结束三连跌，投资者聚焦财报、消化中东局势。",
+      "source": "TheStreet",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-21-2026"
+    },
+    {
+      "title": "芯片股领涨：美光大涨12%，Sandisk飙14%",
+      "summary": "存储主导的科技反弹推升纳指。",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/21/stock-market-today-july-21-micron-surges-12-as-semiconductor-strength-lifts-nasdaq/"
+    },
+    {
+      "title": "英伟达涨2%、英特尔涨8.6%",
+      "summary": "英伟达称最新芯片设计已交付客户；英特尔因裁员计划走高。",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-july-21-dow-sp-500-nasdaq-084631499.html"
+    },
+    {
+      "title": "3M二季度财报超预期，股价涨超7%",
+      "summary": "工业巨头业绩好于预期提振市场情绪。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+    },
+    {
+      "title": "通用汽车Q2营收利润双超预期，股价涨近5%",
+      "summary": "GM上下游业绩均超市场预期。",
+      "source": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/07/21/live-nasdaq-composite-markets-pivot-from-headlines-to-q2-earnings-chip-stock-momentum/"
+    },
+    {
+      "title": "财报前瞻：Alphabet、特斯拉本周盘后登场",
+      "summary": "市场聚焦谷歌云利润率与AI资本开支、特斯拉毛利与自动驾驶。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/19/earnings-playbook-alphabet-tesla-headline-this-weeks-big-reports.html"
+    },
+    {
+      "title": "IBM财报前瞻：预期EPS约3.02美元，同比增近8%",
+      "summary": "营收或增约5%至178.5亿美元。",
+      "source": "Seeking Alpha",
+      "url": "https://seekingalpha.com/news/4614869-earnings-week-ahead-gm-tsla-goog-intc-vz-amc-t-ibm-nok-lmt-and-more"
+    },
+    {
+      "title": "特斯拉二季度交付超预期，关注毛利与Cybercab",
+      "summary": "投资者关注AI与自动驾驶投入及自由现金流压力。",
+      "source": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/earnings-season-alphabet-tesla-gm-amd/"
+    },
+    {
+      "title": "本周财报季：GM、TSLA、GOOG、INTC、IBM密集披露",
+      "summary": "大型科技与工业股财报将主导本周市场走向。",
+      "source": "Moomoo",
+      "url": "https://www.moomoo.com/community/feed/what-to-expect-in-the-week-ahead-earnings-from-tesla-116946123817370"
+    },
+    {
+      "title": "特斯拉与Alphabet财报有望提振本周市场",
+      "summary": "分析预期两家营收利润同比双位数增长。",
+      "source": "FX Leaders",
+      "url": "https://www.fxleaders.com/news/2026/07/20/tesla-tsla-and-alphabet-googl-earnings-expected-to-lift-market-this-week/"
+    }
+  ],
+  "tech": [
+    {
+      "title": "2026世界人工智能大会（WAIC）今日闭幕",
+      "summary": "超1100家企业参展、3000余项成果、300余款新品全球或全国首发。",
+      "source": "网易/澎湃",
+      "url": "https://www.163.com/dy/article/L29KEK5V0514R9P4.html"
+    },
+    {
+      "title": "WAIC观察：“一键布局”AI主线正当时",
+      "summary": "华为、MiniMax、机器人等成焦点，AI从展示走向规则制定。",
+      "source": "新浪科技",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-07-21/doc-iniiqquv2460596.shtml"
+    },
+    {
+      "title": "36氪逛透WAIC：看懂2026全行业AI最真实走向",
+      "summary": "实地观察大模型、智能体与具身智能落地进展。",
+      "source": "新浪科技",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-07-21/doc-iniiqqva4942379.shtml"
+    },
+    {
+      "title": "华为发布昇腾950 SuperPoD，具备1024卡规模能力",
+      "summary": "创新架构面向大规模AI训练/推理，成WAIC硬件焦点。",
+      "source": "新浪科技",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-07-21/doc-iniiqquv2460596.shtml"
+    },
+    {
+      "title": "月之暗面Kimi K3以“开源+低价”策略冲击海外资本市场",
+      "summary": "2.8万亿参数级开源模型受外媒高度关注。",
+      "source": "网易·907编辑部",
+      "url": "https://www.163.com/dy/article/L2A9COCJ0514R9P4.html"
+    },
+    {
+      "title": "华为以22.7%份额登顶国内手机市场",
+      "summary": "领先第二名苹果3.9个百分点，为第五名小米的1.6倍。",
+      "source": "ZAKER/虎科技",
+      "url": "https://app.myzaker.com/article/6a5c3a9d8e9f096aa74f0e8b"
+    },
+    {
+      "title": "华为Mate 80系列累计出货已达775.97万台",
+      "summary": "截至第28周（7月6-12日），麒麟产能恢复、鸿蒙生态完善。",
+      "source": "网易",
+      "url": "https://www.163.com/dy/article/L29O4S8G0511CPVM.html"
+    },
+    {
+      "title": "Q2中国手机销量出炉：华为约23%稳居第一，小米出货大跌",
+      "summary": "国产品牌格局分化，高端与千元档双线发力。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/wm/2026-07-14/doc-inihunse1260276.shtml"
+    },
+    {
+      "title": "WAIC六大趋势：大模型、DeepSeek、月之暗面成关键词",
+      "summary": "开源与治理并行，中国AI生态加速演进。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.cn/stock/jdts/2026-07-18/detail-iniiewee3918135.d.html"
+    },
+    {
+      "title": "月之暗面暂停Kimi K3新订阅：需求超出服务容量",
+      "summary": "此前该模型登顶主流编程榜单数日。",
+      "source": "unrot.co",
+      "url": "https://unrot.co/blogs/top-10-ai-news-july-21-2026-openai-hits-pause"
+    },
+    {
+      "title": "白宫拟定AI国家安全审查框架",
+      "summary": "OpenAI、Anthropic、谷歌参与，前沿模型发布前最多30天审查；Meta未加入。",
+      "source": "Build Fast with AI",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026"
+    },
+    {
+      "title": "传OpenAI未发布模型推翻厄多斯单位距离猜想",
+      "summary": "若属实，将攻克几何学数十年未解难题。",
+      "source": "Build Fast with AI",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026"
+    },
+    {
+      "title": "Meta发布智能体模型Muse Spark 1.1",
+      "summary": "百万token上下文，可跨桌面/浏览器/移动端操作电脑并并行子智能体。",
+      "source": "Build Fast with AI",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026"
+    },
+    {
+      "title": "谷歌Frozen v2服务器芯片曝光，称效率为现有TPU的6-10倍",
+      "summary": "基于Gemini架构，官方尚未证实，量产前数据待验证。",
+      "source": "Build Fast with AI",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026"
+    },
+    {
+      "title": "AI News Today（7月21日）：16大重要故事汇总",
+      "summary": "覆盖OpenAI、Meta、谷歌、月之暗面等当日AI要闻。",
+      "source": "Build Fast with AI",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026"
+    },
+    {
+      "title": "Top 10 AI News（7月21日）：OpenAI按下暂停键",
+      "summary": "盘点当日十大AI动态与行业influence。",
+      "source": "unrot.co",
+      "url": "https://unrot.co/blogs/top-10-ai-news-july-21-2026-openai-hits-pause"
+    },
+    {
+      "title": "Meta AI最新进展：英伟达合作、新模型与10亿用户",
+      "summary": "Meta加速AI基础设施与模型迭代。",
+      "source": "AI Funding Tracker",
+      "url": "https://aifundingtracker.com/meta-ai-news/"
+    }
+  ]
 }
