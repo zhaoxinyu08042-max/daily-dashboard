@@ -239,5 +239,79 @@
       "source": "AI Funding Tracker",
       "url": "https://aifundingtracker.com/meta-ai-news/"
     }
+  ],
+  "mag7": [
+    {
+      "title": "苹果与英伟达争夺全球市值第一",
+      "summary": "盘中英伟达市值一度回落至约4.84万亿、苹果逼近4.88万亿，尾盘英伟达险守榜首。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/17/apple-nvidia-aapl-nvda-market-cap.html"
+    },
+    {
+      "title": "英伟达：AI进入“吉瓦级”时代，Vera Rubin NVL72量产爬坡",
+      "summary": "新一代机架已在CoreWeave、谷歌云、微软Azure、甲骨文云运行。",
+      "source": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news"
+    },
+    {
+      "title": "苹果2026年涨约23%，被视为“后英伟达”AI交易",
+      "summary": "市场奖励其更轻的AI资本开支策略。",
+      "source": "Invezz",
+      "url": "https://invezz.com/news/2026/07/20/apple-stock-has-wall-street-found-its-post-nvidia-ai-trade/"
+    },
+    {
+      "title": "苹果 vs 英伟达：谁是更好的买入标的",
+      "summary": "两巨头争夺“全球最大公司”，机构对比基本面与估值。",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/21/apple-and-nvidia-vie-for-the-position-as-the-world/"
+    },
+    {
+      "title": "特斯拉7/21涨2.53%，周三盘后公布二季度财报",
+      "summary": "分析师预期营收262.1亿美元（同比+16%），但股价较峰值已跌约22%。",
+      "source": "ts2.tech",
+      "url": "https://ts2.tech/en/alphabet-nasdaqgoogl-tesla-nasdaqtsla-intel-nasdaqintc-ready-for-6-trillion-test-ahead-of-big-tech-earnings/"
+    },
+    {
+      "title": "谷歌(Alphabet)7/21跌1.38%，周三盘后发布财报",
+      "summary": "市场关注AI巨额投入的实际回报，预期营收同比增约21%。",
+      "source": "Benzinga",
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/07/60569710/sp500-july-21-open-up-or-down-polymarket-iran-ceasefire-oil-earnings-ai"
+    },
+    {
+      "title": "Alphabet、特斯拉领衔本周大型科技股财报",
+      "summary": "大型科技股财报将定调市场情绪。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/19/earnings-playbook-alphabet-tesla-headline-this-weeks-big-reports.html"
+    },
+    {
+      "title": "纳指领涨，特斯拉与Alphabet财报在即",
+      "summary": "科技股走强推动纳指上行。",
+      "source": "Proactive Investors",
+      "url": "https://www.proactiveinvestors.com/companies/news/1095778/nasdaq-leads-wall-street-higher-with-tesla-alphabet-earnings-on-deck-1095778.html"
+    },
+    {
+      "title": "Meta发布智能体模型Muse Spark 1.1",
+      "summary": "百万token上下文，可跨桌面/浏览器/移动端操作电脑，并行子智能体。",
+      "source": "Build Fast with AI",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026"
+    },
+    {
+      "title": "微软、亚马逊、谷歌、Meta重金投入AI，英伟达成最大赢家",
+      "summary": "四巨头在模型、芯片、数据中心持续加码基础设施建设。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/17/apple-nvidia-aapl-nvda-market-cap.html"
+    },
+    {
+      "title": "SpaceX猎鹰9号发射24颗星链卫星（中止一天后成功）",
+      "summary": "从范登堡基地发射，B1082助推器完成第640次一级回收，为年内第85次发射。",
+      "source": "Space.com",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starlink-17-39-b1082-vsfb-ocisly"
+    },
+    {
+      "title": "SpaceX星舰原型试车后爆炸，下一代火箭计划受挫",
+      "summary": "南德州一枚全尺寸星舰在猛禽发动机试车后爆炸，星链星座已超1.08万颗。",
+      "source": "Spaceflight Now",
+      "url": "https://spaceflightnow.com/2026/07/21/live-coverage-spacex-tries-again-to-launch-starlink-mission-from-california-following-abort/"
+    }
   ]
 }

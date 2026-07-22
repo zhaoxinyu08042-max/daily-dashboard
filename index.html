@@ -86,8 +86,7 @@
     <h2>📰 财经科技每日热点</h2>
     <div class="meta" id="newsMeta">加载中…</div>
     <div class="tabs" id="newsTabs"></div>
-    <div id="newsFinance"></div>
-    <div id="newsTech" class="hidden"></div>
+    <div id="newsPanels"></div>
   </section>
 
   <footer id="footer"></footer>
@@ -218,24 +217,44 @@ function newsItemHTML(n, i) {
     ${n.summary ? `<div class="n-sum">${esc(n.summary)}</div>` : ""}
     <div class="n-src">${esc(n.source || "")}</div></div>`;
 }
+const NEWS_CATS = [
+  { key: "finance", label: "财经" },
+  { key: "tech", label: "科技" },
+  { key: "mag7", label: "七姐妹+SpaceX" }
+];
 function renderNews(d) {
   document.getElementById("newsMeta").innerHTML =
     "新闻日期 " + (d.news_date || "—") + " · 更新于 " + (d.updated_at || "—") +
     (d.doc_file ? ` · <span class="subtle">Word 文档：${esc(d.doc_file)}</span>` : "");
-  const finance = d.finance || [], tech = d.tech || [];
-  const fEl = document.getElementById("newsFinance"), tEl = document.getElementById("newsTech");
-  fEl.innerHTML = finance.length ? finance.map(newsItemHTML).join("") : '<div class="empty">暂无财经新闻</div>';
-  tEl.innerHTML = tech.length ? tech.map(newsItemHTML).join("") : '<div class="empty">暂无科技新闻</div>';
-  document.getElementById("newsTabs").innerHTML =
-    `<button class="tab active" data-t="finance">财经 · ${finance.length}</button>` +
-    `<button class="tab" data-t="tech">科技 · ${tech.length}</button>`;
-  document.querySelectorAll("#newsTabs .tab").forEach(btn => {
+
+  const cats = NEWS_CATS.filter(c => Array.isArray(d[c.key]));
+  const tabsEl = document.getElementById("newsTabs");
+  const panelsEl = document.getElementById("newsPanels");
+  tabsEl.innerHTML = "";
+  panelsEl.innerHTML = "";
+
+  cats.forEach((c, i) => {
+    const items = d[c.key] || [];
+    const btn = document.createElement("button");
+    btn.className = "tab" + (i === 0 ? " active" : "");
+    btn.textContent = `${c.label} · ${items.length}`;
+    btn.dataset.k = c.key;
+    tabsEl.appendChild(btn);
+
+    const panel = document.createElement("div");
+    panel.id = "panel-" + c.key;
+    if (i !== 0) panel.className = "hidden";
+    panel.innerHTML = items.length ? items.map(newsItemHTML).join("")
+      : `<div class="empty">暂无${c.label}新闻</div>`;
+    panelsEl.appendChild(panel);
+  });
+
+  tabsEl.querySelectorAll(".tab").forEach(btn => {
     btn.onclick = () => {
-      document.querySelectorAll("#newsTabs .tab").forEach(b => b.classList.remove("active"));
+      tabsEl.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
-      const t = btn.dataset.t;
-      fEl.classList.toggle("hidden", t !== "finance");
-      tEl.classList.toggle("hidden", t !== "tech");
+      cats.forEach(c =>
+        document.getElementById("panel-" + c.key).classList.toggle("hidden", c.key !== btn.dataset.k));
     };
   });
 }
