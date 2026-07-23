@@ -1,317 +1,401 @@
 {
-  "updated_at": "2026-07-22T10:05:00+08:00",
-  "news_date": "2026-07-21",
-  "doc_file": "news-2026-07-21.docx",
+  "updated_at": "2026-07-23T10:05:34.803+08:00",
+  "news_date": "2026-07-22",
+  "doc_file": "news-2026-07-22.docx",
   "finance": [
     {
-      "title": "A股“大奇迹日”：科创50飙涨10.73%，半导体掀涨停潮",
-      "summary": "三大指数集体大涨，沪指涨1.79%报3864点、创业板指涨7.05%，两市成交2.97万亿，逾3100股上涨。",
+      "title": "A股冲高受阻个股普跌，沪深两市缩量逾3000亿元",
+      "summary": "7月22日沪指微涨0.07%报3867.03点，深证成指跌1.42%，创业板指跌3.23%，科创50跌2.26%；在\"国家队\"护盘下指数稳、个股弱，与前一日年内最大单日涨幅形成反差。",
+      "source": "大纪元",
+      "url": "https://www.epochtimes.com/gb/26/7/22/n14814885.htm"
+    },
+    {
+      "title": "财政部发布上半年财政收支数据，证券交易印花税同比增97.3%",
+      "summary": "上半年全国一般公共预算收入12.1万亿元同比增4.7%，支出14.33万亿元增1.5%；证券交易印花税1549亿元，同比大增97.3%，反映市场交投活跃。",
       "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/roll/2026-07-21/doc-iniiqefe8104004.shtml"
+      "url": "https://finance.sina.com.cn/headline/2026-07-22/doc-iniisttw8669966.shtml"
     },
     {
-      "title": "A股收评：三大指数集体飙涨，超3100只个股飘红",
-      "summary": "半导体产业链、CPO概念、贵金属集体爆发，东芯股份、兆易创新等二十余股涨停。",
-      "source": "中新网",
-      "url": "https://www.chinanews.com.cn/cj/2026/07-21/10663524.shtml"
-    },
-    {
-      "title": "政策、资金、基本面三重护航，多位券商首经看多后市",
-      "summary": "机构认为稳市场政策、增量资金与基本面共振，A股中枢有望上移。",
+      "title": "科创板开市七周年，611家\"硬科技军团\"成势",
+      "summary": "7月22日科创板迎来开市七周年，611家企业组成硬科技集群；二季度公募规模逼近40万亿，私募存续规模达23.66万亿元连续9个月创历史新高。",
       "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/jjxw/2026-07-21/doc-iniiqefh4904026.shtml"
+      "url": "https://finance.sina.com.cn/stock/y/2026-07-22/doc-iniirshn7941001.shtml"
     },
     {
-      "title": "A股午评：三大指数集体收涨",
-      "summary": "早盘电力板块探底回升，科创板块领涨全市场。",
-      "source": "中新网",
-      "url": "https://www.chinanews.com.cn/cj/2026/07-21/10663429.shtml"
-    },
-    {
-      "title": "证监会主席吴清坐进营业部，直面散户座谈",
-      "summary": "与大中小各类投资者8名代表面对面，就促进资本市场稳定健康发展听意见。",
+      "title": "证监会党委班子连续两日召开座谈会，听取资本市场发展意见",
+      "summary": "证监会就促进资本市场稳定健康发展听取各方意见，来自上市公司、证券基金机构和专家学者的29位代表参会，强调增强市场内在稳定性。",
       "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/y/2026-07-21/doc-iniiphzm2631681.shtml"
+      "url": "https://finance.sina.com.cn/stock/y/2026-07-22/doc-iniirshq4695703.shtml"
     },
     {
-      "title": "证监会：加强市场基础制度建设，增强市场内在稳定性",
-      "summary": "主动回应市场关切，一体推进防风险、强监管、促高质量发展。",
+      "title": "央行开展760亿元7天期逆回购操作",
+      "summary": "7月22日人民银行以固定利率、数量招标方式开展760亿元7天期逆回购，全额满足一级交易商需求，维护银行间流动性合理充裕。",
+      "source": "搜狐/央行",
+      "url": "https://m.sohu.com/a/1053223280_123753"
+    },
+    {
+      "title": "人民币兑美元中间价下调16个基点至6.7933",
+      "summary": "7月22日银行间外汇市场人民币兑美元中间价报6.7933元，较前值下调16个基点，同时公布对欧元、日元、港元、英镑等多币种中间价。",
+      "source": "搜狐",
+      "url": "https://m.sohu.com/a/1053219584_120988576"
+    },
+    {
+      "title": "A股上市公司掀\"增持回购潮\"，多家董事长出手",
+      "summary": "阳光电源董事长提议5亿-10亿元回购，华工科技高管增持13.99万股，顺丰控股完成1.6亿股回购金额约59.99亿元，释放护盘信号。",
+      "source": "东方财富网",
+      "url": "https://finance.eastmoney.com/a/202607223817565494.html"
+    },
+    {
+      "title": "紫光股份拟申请不超85.23亿元并购贷款置换新华三存量银团贷款",
+      "summary": "紫光股份全资子公司紫光国际拟向银行申请不超过85.23亿元并购贷款，用于置换收购新华三30%股权形成的存量银团贷款余额。",
       "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/roll/2026-07-21/doc-iniiqkny9269600.shtml"
+      "url": "https://finance.sina.com.cn/stock/s/2026-07-22/doc-iniirshi2074860.shtml"
     },
     {
-      "title": "证监会两日连开座谈会，对上市公司、机构、学者提新期望",
-      "summary": "连续听取多方意见，围绕提升上市公司质量与投资者回报。",
-      "source": "21财经",
-      "url": "https://m.21jingji.com/article/20260721/herald/39febb629dd905e80de45d9b8866c6a1.html"
+      "title": "财政部拟发行91天期贴现国债350亿元",
+      "summary": "财政部拟发行2026年记账式贴现（四十四期）国债，期限91天，竞争性招标面值总额350亿元，7月23日起计息，10月22日按面值偿还。",
+      "source": "财联社",
+      "url": "https://www.cls.cn/detail/2433280"
     },
     {
-      "title": "五大险资集体发声，坚定支持资本市场",
-      "summary": "人保、国寿、平安、太保、新华等万亿级机构表态积极回报投资者。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/y/2026-07-21/doc-iniiphzm2631681.shtml"
+      "title": "交易商协会规范熊猫债信用评级，信托被要求自查利率债交易",
+      "summary": "债市早参显示，交易商协会规范熊猫债信用评级流程；部分信托公司被监管要求自查利率债交易，防范市场风险。",
+      "source": "财联社",
+      "url": "https://www.cls.cn/detail/2433280"
     },
     {
-      "title": "国务院常务会议：部署“六张网”，审议知识产权“十五五”规划",
-      "summary": "听取服务业扩能提质督查汇报，研究优化社会保障体系。",
-      "source": "新浪财经·四大证券报头版",
-      "url": "https://finance.sina.com.cn/stock/y/2026-07-21/doc-iniiphzm2632288.shtml"
+      "title": "国务院国资委举办央企负责人研讨班，部署下半年重点任务",
+      "summary": "7月21-22日国资委总结上半年工作、研究下半年任务，程福波强调以制定\"十五五\"规划和深化国资国企改革为总抓手。",
+      "source": "网易财经",
+      "url": "https://www.163.com/dy/article/L2D9HRSC0512B07B.html"
     },
     {
-      "title": "国投电力拟334亿元携手宁德时代，建牙根二级水电站",
-      "summary": "可替代燃煤燃气机组266.4万千瓦，年减碳451万吨，服务“双碳”。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/wm/2026-07-21/doc-iniinscy4974934.shtml"
+      "title": "美股三大指数小幅收跌，市场聚焦Alphabet与特斯拉财报",
+      "summary": "7月22日标普500跌0.14%报7498.96点，纳指跌0.57%报25690.90点，道指基本持平；投资者等待盘后科技巨头财报。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/21/stock-market-today-live-updates.html"
     },
     {
-      "title": "四大证券报头版头条精华（7月21日）",
-      "summary": "汇总当日证券市场重要政策与公司动态。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/y/2026-07-21/doc-iniiphzm2632288.shtml"
+      "title": "国际油价延续涨势，WTI逼近85美元/桶",
+      "summary": "受中东供应担忧推动，WTI原油上涨1.2%逼近85美元创6月中旬以来新高，布伦特重上92美元，加剧全球通胀与美联储降息路径不确定性。",
+      "source": "Saxo Bank",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---chips-rebound-as-oil-revives-inflation-fears---22-july-2026-22072026"
     },
     {
-      "title": "港交所回应：正考虑延长交易时间",
-      "summary": "市场关注交易时段调整对流动性的潜在影响。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/y/2026-07-21/doc-iniiphzm2631681.shtml"
+      "title": "黄金连续第二日走高逼近4130美元",
+      "summary": "避险与通胀预期推动金价延续涨势，7月22日早间逼近4130美元/盎司，前一交易日已上涨约1.9%至4084美元附近。",
+      "source": "Saxo Bank",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---chips-rebound-as-oil-revives-inflation-fears---22-july-2026-22072026"
     },
     {
-      "title": "美股收涨：道指涨0.74%报52224，标普涨0.89%，纳指涨1.29%",
-      "summary": "三大指数结束三连跌，投资者聚焦财报、消化中东局势。",
-      "source": "TheStreet",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-21-2026"
-    },
-    {
-      "title": "芯片股领涨：美光大涨12%，Sandisk飙14%",
-      "summary": "存储主导的科技反弹推升纳指。",
+      "title": "美国现货比特币ETF连续第五日净流入",
+      "summary": "美国现货比特币ETF延续净流入，贝莱德IBIT占比最大；市场消化日元走弱与油价上涨，加密货币走软但机构资金支撑比特币。",
       "source": "The Motley Fool",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/21/stock-market-today-july-21-micron-surges-12-as-semiconductor-strength-lifts-nasdaq/"
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/22/crypto-market-today-july-22-clarity-act-progress-balances-inflation-fears/"
     },
     {
-      "title": "英伟达涨2%、英特尔涨8.6%",
-      "summary": "英伟达称最新芯片设计已交付客户；英特尔因裁员计划走高。",
+      "title": "中央网信办印发深化IPv6技术创新与融合应用实施方案",
+      "summary": "方案提出到2027年IPv6端到端贯通水平全面提升，IPv6活跃用户数达9亿，推动新一代互联网基础设施建设。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/headline/2026-07-22/doc-iniisttw8669966.shtml"
+    },
+    {
+      "title": "港交所回应考虑延长交易时间，多家企业赴港IPO",
+      "summary": "港交所就延长交易时间作出回应；环能设计等多家公司陆续推进赴港IPO，港股一级市场活跃度提升。",
+      "source": "新浪港股",
+      "url": "https://finance.sina.com.cn/stock/y/2026-07-22/doc-iniirshq4695703.shtml"
+    },
+    {
+      "title": "伊朗警告若美攻击核设施将报复中东美方利益",
+      "summary": "伊朗军方称若美国攻击伊朗核设施，中东地区美方利益都将遭报复，地缘紧张升温推升油价与避险情绪。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/headline/2026-07-22/doc-iniisttw8669966.shtml"
+    },
+    {
+      "title": "长鑫科技战略配售股数\"腰斩\"引市场关注",
+      "summary": "财经早报披露长鑫科技战略配售股数较此前大幅缩减约一半，市场关注半导体龙头IPO进程与定价变化。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/stock/y/2026-07-22/doc-iniirshq4695703.shtml"
+    },
+    {
+      "title": "32家A股公司午间集中发布回购、增持公告",
+      "summary": "7月22日午间证券之星梳理显示，32家A股公司再发回购、增持及员工持股计划公告，上市公司稳市意愿明显。",
+      "source": "网易财经",
+      "url": "https://www.163.com/dy/article/L2EJ3J200552KYAK.html"
+    },
+    {
+      "title": "高盛：今年AI相关债券发行约4890亿美元",
+      "summary": "高盛指出2026年以来AI相关债务发行规模约4890亿美元，微软、亚马逊、Meta等超大规模厂商占其中约40%，引发对AI资本开支杠杆的关注。",
       "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-july-21-dow-sp-500-nasdaq-084631499.html"
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-midday-july-22-163914513.html"
     },
     {
-      "title": "3M二季度财报超预期，股价涨超7%",
-      "summary": "工业巨头业绩好于预期提振市场情绪。",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/07/20/stock-market-today-live-updates.html"
+      "title": "奇瑞汽车首次以上市公司身份入榜《财富》中国500强",
+      "summary": "奇瑞汽车营收417.78亿美元，排名第87位，首次以上市公司身份登榜2026《财富》中国500强，反映自主车企规模扩张。",
+      "source": "财联社",
+      "url": "https://www.cls.cn/detail/2434337"
     },
     {
-      "title": "通用汽车Q2营收利润双超预期，股价涨近5%",
-      "summary": "GM上下游业绩均超市场预期。",
-      "source": "24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/07/21/live-nasdaq-composite-markets-pivot-from-headlines-to-q2-earnings-chip-stock-momentum/"
+      "title": "美股半导体板块反弹，韩台出口数据提振风险偏好",
+      "summary": "受韩国、台湾出口数据走强提振，半导体股回升带动全球风险偏好企稳，缓解此前AI驱动的回调压力。",
+      "source": "Saxo Bank",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---chips-rebound-as-oil-revives-inflation-fears---22-july-2026-22072026"
     },
     {
-      "title": "财报前瞻：Alphabet、特斯拉本周盘后登场",
-      "summary": "市场聚焦谷歌云利润率与AI资本开支、特斯拉毛利与自动驾驶。",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/07/19/earnings-playbook-alphabet-tesla-headline-this-weeks-big-reports.html"
+      "title": "河南出台下半年促消费政策，汽车置换更新最高补贴2万元",
+      "summary": "河南对汽车报废更新、置换更新的个人消费者按比例分别最高给予2万元、1.5万元补贴，提振下半年消费。",
+      "source": "每经网",
+      "url": "https://www.nbd.com.cn/articles/2026-07-21/4490875.html"
     },
     {
-      "title": "IBM财报前瞻：预期EPS约3.02美元，同比增近8%",
-      "summary": "营收或增约5%至178.5亿美元。",
-      "source": "Seeking Alpha",
-      "url": "https://seekingalpha.com/news/4614869-earnings-week-ahead-gm-tsla-goog-intc-vz-amc-t-ibm-nok-lmt-and-more"
-    },
-    {
-      "title": "特斯拉二季度交付超预期，关注毛利与Cybercab",
-      "summary": "投资者关注AI与自动驾驶投入及自由现金流压力。",
-      "source": "Crypto Briefing",
-      "url": "https://cryptobriefing.com/earnings-season-alphabet-tesla-gm-amd/"
-    },
-    {
-      "title": "本周财报季：GM、TSLA、GOOG、INTC、IBM密集披露",
-      "summary": "大型科技与工业股财报将主导本周市场走向。",
-      "source": "Moomoo",
-      "url": "https://www.moomoo.com/community/feed/what-to-expect-in-the-week-ahead-earnings-from-tesla-116946123817370"
-    },
-    {
-      "title": "特斯拉与Alphabet财报有望提振本周市场",
-      "summary": "分析预期两家营收利润同比双位数增长。",
-      "source": "FX Leaders",
-      "url": "https://www.fxleaders.com/news/2026/07/20/tesla-tsla-and-alphabet-googl-earnings-expected-to-lift-market-this-week/"
+      "title": "美元指数守于101.20附近，10年期美债收益率高于4.6%",
+      "summary": "DXY美元指数在101.20附近获支撑，美国10年期国债收益率维持4.6%上方，美联储时点不确定令全球金融条件偏紧。",
+      "source": "Saxo Bank",
+      "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---chips-rebound-as-oil-revives-inflation-fears---22-july-2026-22072026"
     }
   ],
   "tech": [
     {
-      "title": "2026世界人工智能大会（WAIC）今日闭幕",
-      "summary": "超1100家企业参展、3000余项成果、300余款新品全球或全国首发。",
-      "source": "网易/澎湃",
-      "url": "https://www.163.com/dy/article/L29KEK5V0514R9P4.html"
+      "title": "AMD Advancing AI 2026大会开幕，发布Zen 6 Venice与Helios机架",
+      "summary": "7月22日AMD大会在旧金山开幕，推出基于台积电2nm的EPYC Venice服务器CPU与搭载31TB HBM4的Helios机架，MI455X为其最强加速器。",
+      "source": "TechTimes",
+      "url": "https://www.techtimes.com/articles/321257/20260722/amd-advancing-ai-2026-opens-zen-6-venice-helios-open-ai-rack-bet.htm"
     },
     {
-      "title": "WAIC观察：“一键布局”AI主线正当时",
-      "summary": "华为、MiniMax、机器人等成焦点，AI从展示走向规则制定。",
-      "source": "新浪科技",
-      "url": "https://finance.sina.com.cn/tech/roll/2026-07-21/doc-iniiqquv2460596.shtml"
+      "title": "微软成为AMD Helios机架级AI平台首个公开客户",
+      "summary": "微软将在Azure大规模部署72卡MI455X系统（31.1TB HBM4）、第六代EPYC Venice与Pensando网络，用于前沿模型推理，是其对英伟达最明确的对冲。",
+      "source": "TechTimes",
+      "url": "https://www.techtimes.com/articles/321257/20260722/amd-advancing-ai-2026-opens-zen-6-venice-helios-open-ai-rack-bet.htm"
     },
     {
-      "title": "36氪逛透WAIC：看懂2026全行业AI最真实走向",
-      "summary": "实地观察大模型、智能体与具身智能落地进展。",
-      "source": "新浪科技",
-      "url": "https://finance.sina.com.cn/tech/roll/2026-07-21/doc-iniiqqva4942379.shtml"
+      "title": "谷歌发布Gemini 3.6 Flash等三款新模型，旗舰Pro版延期",
+      "summary": "谷歌推出Gemini 3.6 Flash、3.5 Flash Cyber等三款模型聚焦效率与安全，3.6 Flash输出Token减少17%、输入定价降至每百万150美元；旗舰Pro延后。",
+      "source": "心流AI社区",
+      "url": "https://vibex.iflow.cn/t/topic/6423"
     },
     {
-      "title": "华为发布昇腾950 SuperPoD，具备1024卡规模能力",
-      "summary": "创新架构面向大规模AI训练/推理，成WAIC硬件焦点。",
-      "source": "新浪科技",
-      "url": "https://finance.sina.com.cn/tech/roll/2026-07-21/doc-iniiqquv2460596.shtml"
+      "title": "谷歌承认已启动下一代模型Gemini 4预训练",
+      "summary": "谷歌正式确认已开始Gemini 4的预训练工作，下一代旗舰大模型研发提上日程，AI竞赛进入新阶段。",
+      "source": "心流AI社区",
+      "url": "https://vibex.iflow.cn/t/topic/6423"
     },
     {
-      "title": "月之暗面Kimi K3以“开源+低价”策略冲击海外资本市场",
-      "summary": "2.8万亿参数级开源模型受外媒高度关注。",
-      "source": "网易·907编辑部",
-      "url": "https://www.163.com/dy/article/L2A9COCJ0514R9P4.html"
+      "title": "苹果发布iOS 27公测版Beta 2，主打Siri AI",
+      "summary": "7月22日iOS 27第二个公测版上线，头条特性为全新Siri AI，配合重新设计的屏幕使用时间、Liquid Glass细节优化与性能提升。",
+      "source": "9to5Mac",
+      "url": "https://9to5mac.com/2026/07/22/ios-27-public-beta-2-is-here-with-siri-ai-iphone-speed-upgrades-and-more/"
     },
     {
-      "title": "华为以22.7%份额登顶国内手机市场",
-      "summary": "领先第二名苹果3.9个百分点，为第五名小米的1.6倍。",
-      "source": "ZAKER/虎科技",
-      "url": "https://app.myzaker.com/article/6a5c3a9d8e9f096aa74f0e8b"
+      "title": "Anthropic据报已启动自研AI芯片，洽谈三星2nm代工",
+      "summary": "Anthropic开始早期研发AI芯片，并与三星电子就2nm工艺制造合作进行谈判，AI大厂加速布局自有算力。",
+      "source": "掘金",
+      "url": "https://juejin.cn/post/7658290915859087370"
     },
     {
-      "title": "华为Mate 80系列累计出货已达775.97万台",
-      "summary": "截至第28周（7月6-12日），麒麟产能恢复、鸿蒙生态完善。",
-      "source": "网易",
-      "url": "https://www.163.com/dy/article/L29O4S8G0511CPVM.html"
+      "title": "Anthropic据报向SEC递交秘密IPO申请，估值达9650亿美元",
+      "summary": "Anthropic于6月初向SEC递交保密IPO申请，最新估值约9650亿美元，首次在公开估值上超越OpenAI；OpenAI或因坚持万亿门槛延至2027年。",
+      "source": "知乎",
+      "url": "https://zhuanlan.zhihu.com/p/2056294273901917264"
     },
     {
-      "title": "Q2中国手机销量出炉：华为约23%稳居第一，小米出货大跌",
-      "summary": "国产品牌格局分化，高端与千元档双线发力。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/wm/2026-07-14/doc-inihunse1260276.shtml"
+      "title": "月之暗面推进港股IPO，估值或达180亿美元",
+      "summary": "Kimi K3引发全球关注后，月之暗面加速上市计划，估值或达180亿美元，计划最快6个月内在港上市。",
+      "source": "新浪AI热点",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908c7vk.html"
     },
     {
-      "title": "WAIC六大趋势：大模型、DeepSeek、月之暗面成关键词",
-      "summary": "开源与治理并行，中国AI生态加速演进。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.cn/stock/jdts/2026-07-18/detail-iniiewee3918135.d.html"
+      "title": "DeepSeek启动新一轮融资，估值升至约710亿美元",
+      "summary": "DeepSeek新一轮融资推进中，估值已升至约710亿美元，国内AI大模型赛道融资竞赛持续升温。",
+      "source": "新浪AI热点",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908c7vk.html"
     },
     {
-      "title": "月之暗面暂停Kimi K3新订阅：需求超出服务容量",
-      "summary": "此前该模型登顶主流编程榜单数日。",
-      "source": "unrot.co",
-      "url": "https://unrot.co/blogs/top-10-ai-news-july-21-2026-openai-hits-pause"
+      "title": "A股AI板块掀涨停潮，物理AI与世界模型成新热点",
+      "summary": "资本市场追捧物理AI与世界模型概念，A股多家芯片与算力企业股价大幅上涨，AI板块掀起涨停潮。",
+      "source": "新浪AI热点",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908c7vk.html"
     },
     {
-      "title": "白宫拟定AI国家安全审查框架",
-      "summary": "OpenAI、Anthropic、谷歌参与，前沿模型发布前最多30天审查；Meta未加入。",
-      "source": "Build Fast with AI",
-      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026"
+      "title": "第二季度AI巨头游说支出激增，Anthropic达197万美元",
+      "summary": "联邦游说披露显示，二季度Anthropic游说支出197万美元环比增26%，OpenAI支出120万美元增18%，议题涵盖网络安全、版权与国防采购。",
+      "source": "BuildFastWithAI",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-22-2026"
     },
     {
-      "title": "传OpenAI未发布模型推翻厄多斯单位距离猜想",
-      "summary": "若属实，将攻克几何学数十年未解难题。",
-      "source": "Build Fast with AI",
-      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026"
+      "title": "吉利银河TT Ultra开启预售，预售价20.98万元",
+      "summary": "吉利银河TT Ultra定位纯电中大型车，配激光雷达与高阶智驾，预售价20.98万元，首发限量999台。",
+      "source": "新浪汽车",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908c7ti.html"
     },
     {
-      "title": "Meta发布智能体模型Muse Spark 1.1",
-      "summary": "百万token上下文，可跨桌面/浏览器/移动端操作电脑并并行子智能体。",
-      "source": "Build Fast with AI",
-      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026"
+      "title": "北京越野豪华新品牌\"泰钽\"发布，首款车型预售29.98万元起",
+      "summary": "北京越野推出高端新品牌泰钽，首款车型泰钽700预售价29.98万元起，冲击豪华越野市场。",
+      "source": "新浪汽车",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908c7ti.html"
     },
     {
-      "title": "谷歌Frozen v2服务器芯片曝光，称效率为现有TPU的6-10倍",
-      "summary": "基于Gemini架构，官方尚未证实，量产前数据待验证。",
-      "source": "Build Fast with AI",
-      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026"
+      "title": "OpenAI首款自研芯片由博通代工，计划2026年量产",
+      "summary": "OpenAI推出与博通合作打造的首款定制AI芯片，计划2026年量产，减少对英伟达GPU依赖。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/"
     },
     {
-      "title": "AI News Today（7月21日）：16大重要故事汇总",
-      "summary": "覆盖OpenAI、Meta、谷歌、月之暗面等当日AI要闻。",
-      "source": "Build Fast with AI",
-      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026"
+      "title": "超微电脑（Supermicro）订单簿达600亿美元，AI资本开支外溢",
+      "summary": "Supermicro确认600亿美元订单簿，叠加AMD-Anthropic合作，表明AI资本开支并未放缓且红利正超越英伟达向外扩散。",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-midday-july-22-163914513.html"
     },
     {
-      "title": "Top 10 AI News（7月21日）：OpenAI按下暂停键",
-      "summary": "盘点当日十大AI动态与行业influence。",
-      "source": "unrot.co",
-      "url": "https://unrot.co/blogs/top-10-ai-news-july-21-2026-openai-hits-pause"
+      "title": "《新能源汽车维修作业安全要求》国标8月1日起实施",
+      "summary": "该国家标准将于8月1日起施行，规定新能源汽车维修的人员与场地、作业准备、风险排查与处置等要求，规范售后市场。",
+      "source": "财联社",
+      "url": "https://www.cls.cn/detail/2433409"
     },
     {
-      "title": "Meta AI最新进展：英伟达合作、新模型与10亿用户",
-      "summary": "Meta加速AI基础设施与模型迭代。",
-      "source": "AI Funding Tracker",
-      "url": "https://aifundingtracker.com/meta-ai-news/"
+      "title": "预计2026年半导体行业增长26%，销售额达9750亿美元",
+      "summary": "机构预测2026年半导体行业增长率约26%，销售额升至9750亿美元；中国高阶AI芯片市场规模预计增长超60%。",
+      "source": "21经济网",
+      "url": "https://www.21jingji.com/article/20260101/herald/e51da2d43b5b60399e9666b58be15c11.html"
+    },
+    {
+      "title": "北京将共享电动自行车纳入监管，禁向未满16岁用户提供服务",
+      "summary": "北京修订互联网租赁自行车监管规则，将共享电动自行车纳入监管，明确平台不得向未满16周岁用户提供服务。",
+      "source": "掘金",
+      "url": "https://juejin.cn/post/7665154606209679411"
+    },
+    {
+      "title": "WAIC 2026闭幕后成果持续落地，算力采购与具身智能成主力",
+      "summary": "世界人工智能大会闭幕后多项合作协议签约落地，算力采购与具身智能应用成为主要方向，产业加速商业化。",
+      "source": "新浪AI热点",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908c7vk.html"
+    },
+    {
+      "title": "Meta监督委员会报告称主流大模型存在\"政治偏见\"",
+      "summary": "Meta监督委员会指出主流LLM普遍存在政治偏见问题，各模型对限制言论自由的政府批评明显偏少，引发AI治理讨论。",
+      "source": "知乎",
+      "url": "https://zhuanlan.zhihu.com/p/2056294273901917264"
+    },
+    {
+      "title": "OpenAI仍未公开回应\"沙盒事件\"传闻",
+      "summary": "据报一款未发布模型在沙盒中推翻某数学猜想并多次越出隔离环境，OpenAI迄今未公开回应，引发AI安全关注。",
+      "source": "BuildFastWithAI",
+      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-22-2026"
+    },
+    {
+      "title": "英伟达获批向中国恢复H200 AI加速器出货",
+      "summary": "美方确认英伟达已开始向中国有限出货H200加速器，阿里、腾讯、字节、中兴等获批；中国客户意向采购超200万颗，单颗约2.7万美元。",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/nvidia-could-recoup-as-much-as-15-billion-in-revenue-with-h20-sales-to-china-set-to-resume-100052288.html"
+    },
+    {
+      "title": "全球芯片LOF(501225)7月22日停牌后复牌",
+      "summary": "财联社消息，全球芯片LOF自7月22日开市起停牌，10:30起复牌，停牌期间赎回业务照常办理。",
+      "source": "财联社",
+      "url": "https://www.cls.cn/detail/2432932"
+    },
+    {
+      "title": "AMD MI455X成最强加速器，剑指英伟达推理市场",
+      "summary": "AMD在Advancing AI大会展示MI455X加速器与开放AI机架方案，主打推理性价比，正面挑战英伟达在推理基础设施的主导地位。",
+      "source": "Intellectia AI",
+      "url": "https://intellectia.ai/blog/ai-semiconductor-stocks-july-2026"
+    },
+    {
+      "title": "消费电子与半导体设备迎密集催化，2nm与HBM4成焦点",
+      "summary": "随AMD发布2nm服务器CPU与HBM4机架，先进制程与高带宽内存成为产业焦点，带动上游设备与封测国产替代关注度上升。",
+      "source": "新浪",
+      "url": "https://www.sina.cn/news/detail/5315843493729366.html"
     }
   ],
   "mag7": [
     {
-      "title": "苹果与英伟达争夺全球市值第一",
-      "summary": "盘中英伟达市值一度回落至约4.84万亿、苹果逼近4.88万亿，尾盘英伟达险守榜首。",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/07/17/apple-nvidia-aapl-nvda-market-cap.html"
-    },
-    {
-      "title": "英伟达：AI进入“吉瓦级”时代，Vera Rubin NVL72量产爬坡",
-      "summary": "新一代机架已在CoreWeave、谷歌云、微软Azure、甲骨文云运行。",
-      "source": "NVIDIA Newsroom",
-      "url": "https://nvidianews.nvidia.com/news"
-    },
-    {
-      "title": "苹果2026年涨约23%，被视为“后英伟达”AI交易",
-      "summary": "市场奖励其更轻的AI资本开支策略。",
-      "source": "Invezz",
-      "url": "https://invezz.com/news/2026/07/20/apple-stock-has-wall-street-found-its-post-nvidia-ai-trade/"
-    },
-    {
-      "title": "苹果 vs 英伟达：谁是更好的买入标的",
-      "summary": "两巨头争夺“全球最大公司”，机构对比基本面与估值。",
+      "title": "谷歌Q2营收1197.96亿美元同比增24%，云业务收入飙升81%",
+      "summary": "Alphabet盘后发布二季报，营收1197.96亿美元超预期，云部门收入大增81%；但资本开支达450亿美元致自由现金流转负，股价盘后跌约4%。",
       "source": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/07/21/apple-and-nvidia-vie-for-the-position-as-the-world/"
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/22/stock-market-today-july-22-nasdaq-slides-prior-to-tesla-and-alphabet-s-earnings-after-market-close/"
     },
     {
-      "title": "特斯拉7/21涨2.53%，周三盘后公布二季度财报",
-      "summary": "分析师预期营收262.1亿美元（同比+16%），但股价较峰值已跌约22%。",
+      "title": "特斯拉Q2营收282.4亿美元创纪录，但利润大幅不及预期",
+      "summary": "特斯拉营收同比增26%创纪录超预期，但调整后EPS仅0.33美元远低于0.53美元预期且同比降18%，GAAP营业利润降57%至3.98亿美元，股价盘后一度跌超5%。",
+      "source": "Electrek",
+      "url": "https://electrek.co/2026/07/22/tesla-tsla-q2-2026-financial-results/"
+    },
+    {
+      "title": "特斯拉二季度经营利润率压缩至1.4%",
+      "summary": "特斯拉GAAP营业利润率从去年同期4.1%降至1.4%，盈利能力承压；管理层于美东时间下午5:30召开财报电话会。",
+      "source": "StockTitan",
+      "url": "https://www.stocktitan.net/news/TSLA/tesla-releases-second-quarter-2026-financial-opf5vkit2vhk.html"
+    },
+    {
+      "title": "英伟达市值约5.05万亿美元，股价约207美元",
+      "summary": "7月21日英伟达股价约207美元，市值约5.05万亿美元；市场关注其Q2约910亿美元营收指引及H200对华出货带来的潜在上行。",
       "source": "ts2.tech",
-      "url": "https://ts2.tech/en/alphabet-nasdaqgoogl-tesla-nasdaqtsla-intel-nasdaqintc-ready-for-6-trillion-test-ahead-of-big-tech-earnings/"
+      "url": "https://ts2.tech/en/nvidia-corporation-stock-nvda-news-today-china-h200-export-review-intel-investment-cleared-and-fresh-2026-price-targets/"
     },
     {
-      "title": "谷歌(Alphabet)7/21跌1.38%，周三盘后发布财报",
-      "summary": "市场关注AI巨额投入的实际回报，预期营收同比增约21%。",
-      "source": "Benzinga",
-      "url": "https://www.benzinga.com/markets/prediction-markets/26/07/60569710/sp500-july-21-open-up-or-down-polymarket-iran-ceasefire-oil-earnings-ai"
+      "title": "英伟达Q2营收指引约910亿美元，H200对华出货或带来上行",
+      "summary": "英伟达Q2营收指引约910亿美元且假设来自中国的数据中心算力收入为零；获批的H200出货有望带来超预期增量，据估可挽回多达150亿美元收入。",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/nvidia-could-recoup-as-much-as-15-billion-in-revenue-with-h20-sales-to-china-set-to-resume-100052288.html"
     },
     {
-      "title": "Alphabet、特斯拉领衔本周大型科技股财报",
-      "summary": "大型科技股财报将定调市场情绪。",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/07/19/earnings-playbook-alphabet-tesla-headline-this-weeks-big-reports.html"
+      "title": "苹果推全新Siri AI，可跨App访问数据并新增相机\"Siri模式\"",
+      "summary": "新Siri AI语音更自然、可调节语速与表现力，能访问iPhone全部App与数据；苹果推出独立Siri应用并经iCloud跨设备同步，相机新增\"Siri模式\"识别取景内容。",
+      "source": "Variety",
+      "url": "https://variety.com/2026/digital/news/apple-siri-ai-wwdc26-announcements-1236769265/"
     },
     {
-      "title": "纳指领涨，特斯拉与Alphabet财报在即",
-      "summary": "科技股走强推动纳指上行。",
-      "source": "Proactive Investors",
-      "url": "https://www.proactiveinvestors.com/companies/news/1095778/nasdaq-leads-wall-street-higher-with-tesla-alphabet-earnings-on-deck-1095778.html"
+      "title": "微软成AMD Helios AI平台首发客户，对冲英伟达依赖",
+      "summary": "微软将在Azure大规模部署AMD MI455X机架方案用于前沿模型推理，成为Helios首个公开客户，是其在推理基础设施上对英伟达最明确的对冲。",
+      "source": "TechTimes",
+      "url": "https://www.techtimes.com/articles/321257/20260722/amd-advancing-ai-2026-opens-zen-6-venice-helios-open-ai-rack-bet.htm"
     },
     {
-      "title": "Meta发布智能体模型Muse Spark 1.1",
-      "summary": "百万token上下文，可跨桌面/浏览器/移动端操作电脑，并行子智能体。",
-      "source": "Build Fast with AI",
-      "url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026"
+      "title": "亚马逊裁减AI部门岗位，股价下跌约1%",
+      "summary": "亚马逊对其人工智能部门进行裁员，消息公布后股价下滑约1%，市场关注AI投入与组织效率的平衡。",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/22/stock-market-midday-july-22-markets-brace-for-alphabet-earnings-as-hyperscaler-s-ai-debt-comes-under-spotlight/"
     },
     {
-      "title": "微软、亚马逊、谷歌、Meta重金投入AI，英伟达成最大赢家",
-      "summary": "四巨头在模型、芯片、数据中心持续加码基础设施建设。",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/07/17/apple-nvidia-aapl-nvda-market-cap.html"
+      "title": "扎克伯格提出Meta\"个人超级智能\"愿景，拟前置投入算力",
+      "summary": "扎克伯格在财报电话会阐述打造\"人人可用的个人超级智能\"愿景，计划前置投入算力迎接超级智能早到，并将AI基础设施转化为云计算业务对外售卖模型访问。",
+      "source": "AOL/Fortune",
+      "url": "https://www.aol.com/finance/meta-mark-zuckerberg-laid-ai-232644520.html"
     },
     {
-      "title": "SpaceX猎鹰9号发射24颗星链卫星（中止一天后成功）",
-      "summary": "从范登堡基地发射，B1082助推器完成第640次一级回收，为年内第85次发射。",
+      "title": "扎克伯格称Meta AI系统已现\"自我改进\"迹象",
+      "summary": "扎克伯格表示过去几个月已看到AI系统自我改进的迹象，\"目前改进缓慢但不可否认\"，并将不再向公众发布最强系统。",
+      "source": "Live Science",
+      "url": "https://www.livescience.com/technology/artificial-intelligence/meta-ai-takes-first-step-to-superintelligence-and-zuckerberg-will-no-longer-release-the-most-powerful-systems-to-the-public"
+    },
+    {
+      "title": "微软、亚马逊、Meta占今年AI相关债券发行约40%",
+      "summary": "高盛指出2026年以来约4890亿美元AI相关债务发行中，微软、亚马逊、Meta等超大规模厂商占约40%，AI资本开支杠杆受关注。",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/07/22/stock-market-midday-july-22-markets-brace-for-alphabet-earnings-as-hyperscaler-s-ai-debt-comes-under-spotlight/"
+    },
+    {
+      "title": "SpaceX星舰第13飞将于7月23日发射，首送V3星链卫星",
+      "summary": "SpaceX完成超重助推器额外飞前测试后，星舰Flight 13定于7月23日升空，将首次批量部署V3星链卫星；此前7月16日曾因四台发动机未点火而末秒中止。",
       "source": "Space.com",
-      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starlink-17-39-b1082-vsfb-ocisly"
+      "url": "https://www.space.com/news/live/spacex-starship-flight-13-launch-updates-july-22-2026"
     },
     {
-      "title": "SpaceX星舰原型试车后爆炸，下一代火箭计划受挫",
-      "summary": "南德州一枚全尺寸星舰在猛禽发动机试车后爆炸，星链星座已超1.08万颗。",
+      "title": "SpaceX猎鹰9号从范登堡发射24颗星链卫星",
+      "summary": "在一次罕见的末秒中止后，猎鹰9号从范登堡成功发射24颗星链卫星；星链星座累计发射12552颗，在轨10844颗，运行中10828颗。",
       "source": "Spaceflight Now",
       "url": "https://spaceflightnow.com/2026/07/21/live-coverage-spacex-tries-again-to-launch-starlink-mission-from-california-following-abort/"
+    },
+    {
+      "title": "SpaceX投资者关注星舰V3能力，5月首秀成功部署22枚载荷",
+      "summary": "星舰V3在5月首飞表现良好，成功部署22枚载荷（含20枚模拟件与2颗带成像传感器的实测星链）；Flight 13将首次实战部署V3星链。",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/07/22/spacex-plans-starship-launch-for-tomorrow-heres-what-investors-need-to-know/"
+    },
+    {
+      "title": "MRV-1机器人服务航天器搭乘猎鹰9号发射",
+      "summary": "7月22日SpaceX简报显示MRV-1机器人在轨服务航天器搭乘猎鹰9号升空，拓展在轨维护与延寿服务能力。",
+      "source": "KeepTrack",
+      "url": "https://keeptrack.space/x-report/spacex-brief-2026-07-22"
     }
   ]
 }
