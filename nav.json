@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23T09:10:00+08:00",
+  "updated_at": "2026-07-23T09:07:35+08:00",
   "run_date": "2026-07-23",
   "status": "failed",
   "message": "网易企业邮箱未登录，且本地无当日邮件包/估值附件，未能自动获取今日报告。请手动导出3封Daily valuation report邮件zip包发来处理，或在浏览器中登录 kkeli@neufinc.com 后重试。",
