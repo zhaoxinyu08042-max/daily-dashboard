@@ -1,35 +1,11 @@
 {
- "updated_at": "2026-07-23T11:19:44+0800",
- "run_date": "2026-07-22",
- "status": "ok",
- "message": "展示最新交易日 2026-07-22 净值（券商 T+1 送达，07-23 报告尚未到达）。",
- "accounts": [
-  {
-   "account": "81099801",
-   "prev_date": "2026-07-21",
-   "prev_nav": 551294.6,
-   "curr_nav": 555899.24,
-   "net_transfer": 0,
-   "change_ex_transfer": 4604.64,
-   "change_pct": 0.835
-  },
-  {
-   "account": "81099802",
-   "prev_date": "2026-07-21",
-   "prev_nav": 992620.69,
-   "curr_nav": 995425.46,
-   "net_transfer": 0,
-   "change_ex_transfer": 2804.77,
-   "change_pct": 0.283
-  },
-  {
-   "account": "81099803",
-   "prev_date": "2026-07-21",
-   "prev_nav": 383812.46,
-   "curr_nav": 375918.85,
-   "net_transfer": 0,
-   "change_ex_transfer": -7893.61,
-   "change_pct": -2.057
-  }
- ]
+  "updated_at": "2026-07-24T09:35:00+08:00",
+  "run_date": "2026-07-24",
+  "status": "ok",
+  "message": "",
+  "accounts": [
+    { "account": "81099801", "prev_date": "2026-07-22", "prev_nav": 555899.24, "curr_nav": 561541.12, "net_transfer": 0.0, "change_ex_transfer": 5641.88, "change_pct": 1.0149, "alert": false },
+    { "account": "81099802", "prev_date": "2026-07-22", "prev_nav": 995425.46, "curr_nav": 994553.34, "net_transfer": 0.0, "change_ex_transfer": -872.12, "change_pct": -0.0876, "alert": false },
+    { "account": "81099803", "prev_date": "2026-07-22", "prev_nav": 375918.85, "curr_nav": 393374.92, "net_transfer": 0.0, "change_ex_transfer": 17456.07, "change_pct": 4.6436, "alert": false }
+  ]
 }
