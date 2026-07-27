@@ -1,11 +1,7 @@
 {
-  "updated_at": "2026-07-24T09:35:00+08:00",
-  "run_date": "2026-07-24",
-  "status": "ok",
-  "message": "",
-  "accounts": [
-    { "account": "81099801", "prev_date": "2026-07-22", "prev_nav": 555899.24, "curr_nav": 561541.12, "net_transfer": 0.0, "change_ex_transfer": 5641.88, "change_pct": 1.0149, "alert": false },
-    { "account": "81099802", "prev_date": "2026-07-22", "prev_nav": 995425.46, "curr_nav": 994553.34, "net_transfer": 0.0, "change_ex_transfer": -872.12, "change_pct": -0.0876, "alert": false },
-    { "account": "81099803", "prev_date": "2026-07-22", "prev_nav": 375918.85, "curr_nav": 393374.92, "net_transfer": 0.0, "change_ex_transfer": 17456.07, "change_pct": 4.6436, "alert": false }
-  ]
+  "updated_at": "2026-07-27T10:05:00+08:00",
+  "run_date": "2026-07-27",
+  "status": "failed",
+  "message": "检测到3封新报告(2026-07-24, 账户81099801/802/803)，但网易企业邮箱会话在抓取附件前登出、需重新登录，自动运行无法输入凭据，故未能下载xlsx计算净值。请手动登录导出或将当日邮件zip包发来处理。",
+  "accounts": []
 }
