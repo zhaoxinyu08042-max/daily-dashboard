@@ -1,7 +1,11 @@
 {
-  "updated_at": "2026-07-28T10:15:00+08:00",
+  "updated_at": "2026-07-28T10:40:00+08:00",
   "run_date": "2026-07-28",
-  "status": "failed",
-  "message": "今日未能自动获取报告：网易企业邮箱浏览器会话不可用（页面反复跳回空白新标签页，登录态缺失），且本地未收到当日邮件包或估值附件。请手动导出当日 Daily valuation report 邮件zip包发来处理，或重新登录邮箱后重试。",
-  "accounts": []
+  "status": "ok",
+  "message": "",
+  "accounts": [
+    { "account":"81099801", "prev_date":"2026-07-24", "prev_nav":571662.85, "curr_nav":565624.01, "net_transfer":0, "change_ex_transfer":-6038.84, "change_pct":-1.0564, "alert":false },
+    { "account":"81099802", "prev_date":"2026-07-24", "prev_nav":994723.39, "curr_nav":997180.85, "net_transfer":0, "change_ex_transfer":2457.46, "change_pct":0.247, "alert":false },
+    { "account":"81099803", "prev_date":"2026-07-24", "prev_nav":387463.53, "curr_nav":405191.51, "net_transfer":0, "change_ex_transfer":17727.98, "change_pct":4.5754, "alert":false }
+  ]
 }
