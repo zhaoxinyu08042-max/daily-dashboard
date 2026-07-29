@@ -1,11 +1,7 @@
 {
-  "updated_at": "2026-07-28T10:40:00+08:00",
-  "run_date": "2026-07-28",
-  "status": "ok",
-  "message": "",
-  "accounts": [
-    { "account":"81099801", "prev_date":"2026-07-24", "prev_nav":571662.85, "curr_nav":565624.01, "net_transfer":0, "change_ex_transfer":-6038.84, "change_pct":-1.0564, "alert":false },
-    { "account":"81099802", "prev_date":"2026-07-24", "prev_nav":994723.39, "curr_nav":997180.85, "net_transfer":0, "change_ex_transfer":2457.46, "change_pct":0.247, "alert":false },
-    { "account":"81099803", "prev_date":"2026-07-24", "prev_nav":387463.53, "curr_nav":405191.51, "net_transfer":0, "change_ex_transfer":17727.98, "change_pct":4.5754, "alert":false }
-  ]
+  "updated_at": "2026-07-29T10:20:00+08:00",
+  "run_date": "2026-07-29",
+  "status": "failed",
+  "message": "网易企业邮箱登录态在抓取过程中失效(FA_INVALID_SESSION)：初始可读取收件箱并成功下载81099801的2026-07-28附件，但随即被登出，81099802/81099803未能下载，本地也无当日邮件包/附件回退。检测到2026-07-28为新的报告日(本地表最新为07-27)，但无法自动完成下载与计算。请重新登录企业邮箱后重跑，或手动导出当日3封Daily valuation report邮件(zip)发来处理。",
+  "accounts": []
 }
