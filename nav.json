@@ -1,7 +1,11 @@
 {
-  "updated_at": "2026-07-30T10:20:00+08:00",
+  "updated_at": "2026-07-30T10:30:00+08:00",
   "run_date": "2026-07-30",
-  "status": "failed",
-  "message": "未能自动获取当日报告：网易企业邮箱未登录（页面跳转至登录页），且今日未收到手动上传的邮件zip包/附件。本地表最新数据为 2026-07-28。请在浏览器登录 kkeli@neufinc.com 后重试，或手动导出邮件zip包发来处理。",
-  "accounts": []
+  "status": "ok",
+  "message": "",
+  "accounts": [
+    { "account":"81099801", "prev_date":"2026-07-28", "prev_nav":556730.33, "curr_nav":555584.73, "net_transfer":0.0, "change_ex_transfer":-1145.6, "change_pct":-0.2058, "alert":false },
+    { "account":"81099802", "prev_date":"2026-07-28", "prev_nav":996728.2, "curr_nav":996831.21, "net_transfer":0.0, "change_ex_transfer":103.01, "change_pct":0.0103, "alert":false },
+    { "account":"81099803", "prev_date":"2026-07-28", "prev_nav":362261.77, "curr_nav":349315.97, "net_transfer":0.0, "change_ex_transfer":-12945.8, "change_pct":-3.5736, "alert":false }
+  ]
 }
