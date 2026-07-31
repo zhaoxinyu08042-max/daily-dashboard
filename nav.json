@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-07-30T10:30:00+08:00",
-  "run_date": "2026-07-30",
+  "updated_at": "2026-07-31T10:15:00+08:00",
+  "run_date": "2026-07-31",
   "status": "ok",
   "message": "",
   "accounts": [
-    { "account":"81099801", "prev_date":"2026-07-28", "prev_nav":556730.33, "curr_nav":555584.73, "net_transfer":0.0, "change_ex_transfer":-1145.6, "change_pct":-0.2058, "alert":false },
-    { "account":"81099802", "prev_date":"2026-07-28", "prev_nav":996728.2, "curr_nav":996831.21, "net_transfer":0.0, "change_ex_transfer":103.01, "change_pct":0.0103, "alert":false },
-    { "account":"81099803", "prev_date":"2026-07-28", "prev_nav":362261.77, "curr_nav":349315.97, "net_transfer":0.0, "change_ex_transfer":-12945.8, "change_pct":-3.5736, "alert":false }
+    {"account":"81099801","prev_date":"2026-07-29","prev_nav":555584.73,"curr_nav":554452.16,"net_transfer":0.0,"change_ex_transfer":-1132.57,"change_pct":-0.2039,"alert":false},
+    {"account":"81099802","prev_date":"2026-07-29","prev_nav":996831.21,"curr_nav":997921.47,"net_transfer":0.0,"change_ex_transfer":1090.26,"change_pct":0.1094,"alert":false},
+    {"account":"81099803","prev_date":"2026-07-29","prev_nav":349315.97,"curr_nav":290972.68,"net_transfer":0.0,"change_ex_transfer":-58343.29,"change_pct":-16.7022,"alert":true}
   ]
 }
