@@ -1,528 +1,534 @@
 {
-  "updated_at": "2026-08-01T02:14:57+08:00",
-  "news_date": "2026-07-30",
-  "doc_file": "news-2026-07-30.docx",
-  "forecast_basis": "当前市场最重要的信号有三：一是美联储7月30日凌晨以9比3维持利率不变（区间3.50%-3.75%），出现2016年以来首次三张一致加息反对票，市场加息预期指向9月，美股当日先跌后被微软财报拉起；二是科技巨头财报剧烈分化——微软Azure增速升至43%、单日市值增幅创历史纪录，亚马逊AWS重回37%高增长，而Meta因AI资本开支飙升、自由现金流坍塌盘后大跌，苹果虽超预期但因供应约束指引偏弱盘后走低，AI资本开支回报成为市场核心分歧；三是A股当日科技硬件（CPO、半导体、PCB）批量跌停、科创50大跌5%以上，资金转向白酒、汽车、银行等低估值防御板块，同时政治局会议定调适度宽松货币政策、深化资本市场投融资改革。据此推演未来数日至一个季度的市场焦点。",
+  "updated_at": "2026-08-02T15:04:46+08:00",
+  "news_date": "2026-08-01",
+  "doc_file": "news-2026-08-01.docx",
+  "forecast_basis": "当前最重要的信号：①美联储7月连续第7个月按兵不动，将基准利率维持在3.50%-3.75%，长期美债收益率升至约19年高位，市场把降息预期押注到9月议息；②Mag7二季报进入尾声，微软、亚马逊因云与AI需求兑现被追捧（微软单日+16%、约+4500亿美元市值），Meta、苹果因资本开支或指引承压回调，市场从\"炒AI叙事\"转向\"要AI回报\";③全球半导体5月销售额同比翻倍、连续第15个月创纪录，HBM与高端存储持续紧缺、DDR价格暴涨，三星-博通2000亿美元AI芯片长约落地，AI芯片供不应求或延续至2028;④国内7月30日中央政治局会议定调下半年\"稳楼市、稳股市、扩内需\"，ETF单周净流入超千亿，风格或从题材向绩优再平衡，宇树科技等硬科技新股密集招股;⑤英伟达8月下旬财报、SpaceX星舰高频试飞与Starlink V3组网构成后续重要催化。",
   "forecast": [
     {
-      "title": "预测：9月美联储加息博弈升温，美元与美债利率或阶段走强",
-      "logic": "本次议息出现三张一致的加息反对票为2016年以来首次，鹰派力量抬头；若8月核心PCE与就业数据仍具韧性，加息预期将被进一步定价，推升短端利率与美元。",
-      "catalyst": "8月核心PCE、非农就业数据｜9月议息会议",
-      "tag": "全球宏观/美元/美债",
-      "prob": "中概率"
-    },
-    {
-      "title": "预测：AI资本开支回报质疑成为美股主线，高capex股承压、现金流为王",
-      "logic": "Meta自由现金流坍塌、资本开支指引再上调引发盘后大跌，市场开始惩罚'烧钱无回报'的AI叙事；资金将向能兑现云增长与利润的龙头（微软、亚马逊）集中。",
-      "catalyst": "英伟达8月财报｜二季度财报季尾声",
-      "tag": "美股/科技",
+      "title": "预测：9月降息交易升温，利率敏感的成长与小盘股接力反弹",
+      "logic": "美联储7月第7次按兵不动但未关上门，长端收益率已升至近19年高位透支紧缩；一旦8月非农与CPI走弱，市场将快速定价9月降息，压制已久的利率敏感资产估值有望修复。",
+      "catalyst": "8月非农/CPI｜8月下旬杰克逊霍尔｜9月议息",
+      "tag": "美股/利率/小盘",
       "prob": "高概率"
     },
     {
-      "title": "预测：云计算军备竞赛下，AI算力与半导体设备需求再获上修",
-      "logic": "微软Azure增速升至43%、亚马逊AWS重回37%，三大云厂capex持续加码，直接利好GPU、HBM、先进封装与光模块产业链，费半有望延续反弹。",
-      "catalyst": "英伟达财报｜台积电月度营收",
-      "tag": "半导体/算力",
+      "title": "预测：AI资本开支\"要回报\"成为财报分水岭，云收入验证者继续跑赢",
+      "logic": "微软、亚马逊因云与AI需求兑现被重奖，Meta、苹果因开支或指引承压，市场审美已切换。接下来英伟达及二线算力链财报若不能给出需求证据，将面临更苛刻定价。",
+      "catalyst": "英伟达8月下旬财报｜Q3财报季",
+      "tag": "美股/AI/云计算",
       "prob": "高概率"
     },
     {
-      "title": "预测：A股科技硬件超跌后或迎结构性反弹，但波动加大",
-      "logic": "CPO、半导体、PCB当日批量跌停、科创50跌超5%，拥挤交易快速出清；若海外算力景气延续叠加国产替代催化，超跌龙头存在反抽窗口，但情绪修复需时间。",
-      "catalyst": "中报密集披露期｜国产算力订单",
-      "tag": "A股/科技硬件",
-      "prob": "观察"
-    },
-    {
-      "title": "预测：政治局定调下，适度宽松货币与资本市场改革红利渐次释放",
-      "logic": "7月30日政治局会议强调适度宽松货币政策、深化资本市场投融资综合改革，央行月末呵护流动性；后续降准降息与中长期资金入市政策可期，利好券商与红利资产。",
-      "catalyst": "四中全会/五中全会｜8月MLF与LPR",
-      "tag": "A股/政策",
-      "prob": "中概率"
-    },
-    {
-      "title": "预测：苹果折叠屏iPhone预期升温，产业链备货或超预期",
-      "logic": "苹果Q3财报超预期、市值逼近5万亿美元，市场聚焦9月折叠屏iPhone这一形态最大变化；铰链、UTG玻璃、面板等产业链有望迎来备货行情。",
-      "catalyst": "9月苹果秋季发布会｜折叠屏备货",
-      "tag": "消费电子/产业链",
-      "prob": "中概率"
-    },
-    {
-      "title": "预测：黄金高位震荡，加息预期与避险需求角力",
-      "logic": "现货金报约4041美元/盎司小幅回落，多头占比仍达54%；9月加息预期压制金价，但地缘与滞胀担忧提供支撑，短期或高位宽幅震荡。",
-      "catalyst": "9月议息｜地缘事件",
-      "tag": "大宗商品/贵金属",
-      "prob": "观察"
-    },
-    {
-      "title": "预测：机器人与具身智能成AI下一叙事，Gemini Robotics引领",
-      "logic": "谷歌发布Gemini Robotics 2赋能人形机器人全身协调，特斯拉Optimus、国产厂商跟进；具身智能有望承接大模型后的资本与产业关注。",
-      "catalyst": "世界机器人大会｜厂商新品",
-      "tag": "AI/机器人",
-      "prob": "中概率"
-    },
-    {
-      "title": "预测：存储芯片周期上行，HBM与利基存储景气延续",
-      "logic": "美光、闪迪、西数当日大涨，存储板块领涨费半；AI服务器拉动HBM需求，叠加MLCC等被动元件涨价，存储与元器件涨价链有望延续。",
-      "catalyst": "存储原厂报价｜三季度旺季",
+      "title": "预测：HBM与高端存储涨价周期延长，存储与设备板块景气上行",
+      "logic": "AI对HBM3/HBM4、DDR7需求挤压消费级内存产能，DDR价格已数倍上涨且预计上半年再涨；三星锁定七成产能、警示芯片短缺或持续至2028，涨价与缺货逻辑向存储原厂与设备端传导。",
+      "catalyst": "各存储厂Q3指引｜旺季备货",
       "tag": "半导体/存储",
       "prob": "高概率"
     },
     {
-      "title": "预测：中美AI竞争进入'调用量'新维度，国产大模型生态加速",
-      "logic": "OpenRouter数据显示中国大模型周调用量连续13周超美国，Kimi K3、DeepSeek-V4等开源加速，英伟达联合本土巨头结盟；国产算力与应用生态景气度上行。",
-      "catalyst": "新模型发布｜开源生态适配",
-      "tag": "AI/中国科技",
+      "title": "预测：英伟达对华芯片政策反复扰动情绪，供给瓶颈支撑高端GPU价格",
+      "logic": "H200输华\"量极少\"但需求订单远超库存，Blackwell输华与25%附加费等政策仍在博弈；供不应求叠加TSMC重启Hopper产能讨论，高端GPU价格与交付节奏成为主线变量。",
+      "catalyst": "商务部许可进展｜英伟达财报",
+      "tag": "半导体/中美",
+      "prob": "中概率"
+    },
+    {
+      "title": "预测：国内\"稳楼市稳股市\"新政落地，绩优与红利风格阶段占优",
+      "logic": "政治局会议定调下半年扩内需、稳地产资本市场，\"用好存量、适时推出增量政策\"预示落地窗口临近；增量资金经ETF入市，风格或从纯题材向业绩确定性再平衡。",
+      "catalyst": "8月政策细则｜中报季",
+      "tag": "A股/政策/红利",
+      "prob": "中概率"
+    },
+    {
+      "title": "预测：人形机器人量产验证提速，核心零部件（减速器/丝杠/传感器）持续获资金关注",
+      "logic": "2026被视为量产验证与场景落地关键窗口，WAIC与具身智能展密集催化，特斯拉Optimus产线推进；高价值量、高壁垒的精密减速器、执行器、传感器环节最受益。",
+      "catalyst": "WAIC后续｜Optimus V3｜厂商量产",
+      "tag": "A股/机器人",
+      "prob": "中概率"
+    },
+    {
+      "title": "预测：硬科技新股密集招股引燃打新与产业链行情",
+      "logic": "宇树科技等科创板明星标的进入询价与申购窗口，稀缺硬科技资产易获溢价，带动机器人、AI硬件产业链情绪与估值联动。",
+      "catalyst": "宇树8/5询价、8/10申购｜后续IPO",
+      "tag": "A股/IPO",
+      "prob": "中概率"
+    },
+    {
+      "title": "预测：SpaceX高频发射与Starlink V3组网强化\"太空经济\"叙事",
+      "logic": "2026年已完成第90次入轨发射、星舰第13飞成功部署V3卫星，IPO后资本化路径打开；发射节奏与直连手机能力提升将带动卫星互联网与商业航天板块关注度。",
+      "catalyst": "后续星舰试飞｜Starlink V3扩容",
+      "tag": "商业航天/卫星",
+      "prob": "观察"
+    },
+    {
+      "title": "预测：油价高位震荡、黄金获避险与降息双重支撑",
+      "logic": "WTI在80美元上方、Brent逼近90美元，地缘与供给扰动仍在；若降息交易升温、实际利率回落，黄金有望获得避险与货币双重支撑而走强，大宗内部分化。",
+      "catalyst": "OPEC+动向｜9月议息｜地缘事件",
+      "tag": "大宗/黄金/原油",
+      "prob": "中概率"
+    },
+    {
+      "title": "预测：国产算力\"自主替代\"再加速，昇腾/寒武纪等国产链承接需求外溢",
+      "logic": "美对华高端AI加速卡管制持续，多数国内企业对H200反应平淡、转向自研；华为昇腾、寒武纪、百度昆仑芯性能提升，需求外溢有望强化国产算力与配套生态景气。",
+      "catalyst": "出口新规｜国产大模型迭代",
+      "tag": "A股/国产算力",
       "prob": "中概率"
     }
   ],
   "finance": [
     {
-      "title": "预测：9月美联储加息博弈升温，美元与美债利率或阶段走强",
-      "summary": "逻辑：本次议息出现三张一致的加息反对票为2016年以来首次，鹰派力量抬头；若8月核心PCE与就业数据仍具韧性，加息预期将被进一步定价，推升短端利率与美元。 催化剂与时点：8月核心PCE、非农就业数据｜9月议息会议。标签：全球宏观/美元/美债。概率：中概率。",
+      "title": "预测：9月降息交易升温，利率敏感的成长与小盘股接力反弹",
+      "summary": "美联储7月第7次按兵不动但未关上门，长端收益率已升至近19年高位透支紧缩；一旦8月非农与CPI走弱，市场将快速定价9月降息，压制已久的利率敏感资产估值有望修复。【催化剂：8月非农/CPI｜8月下旬杰克逊霍尔｜9月议息】【美股/利率/小盘】【高概率】",
       "source": "趋势预测",
       "url": ""
     },
     {
-      "title": "预测：AI资本开支回报质疑成为美股主线，高capex股承压、现金流为王",
-      "summary": "逻辑：Meta自由现金流坍塌、资本开支指引再上调引发盘后大跌，市场开始惩罚'烧钱无回报'的AI叙事；资金将向能兑现云增长与利润的龙头（微软、亚马逊）集中。 催化剂与时点：英伟达8月财报｜二季度财报季尾声。标签：美股/科技。概率：高概率。",
+      "title": "预测：AI资本开支\"要回报\"成为财报分水岭，云收入验证者继续跑赢",
+      "summary": "微软、亚马逊因云与AI需求兑现被重奖，Meta、苹果因开支或指引承压，市场审美已切换。接下来英伟达及二线算力链财报若不能给出需求证据，将面临更苛刻定价。【催化剂：英伟达8月下旬财报｜Q3财报季】【美股/AI/云计算】【高概率】",
       "source": "趋势预测",
       "url": ""
     },
     {
-      "title": "预测：云计算军备竞赛下，AI算力与半导体设备需求再获上修",
-      "summary": "逻辑：微软Azure增速升至43%、亚马逊AWS重回37%，三大云厂capex持续加码，直接利好GPU、HBM、先进封装与光模块产业链，费半有望延续反弹。 催化剂与时点：英伟达财报｜台积电月度营收。标签：半导体/算力。概率：高概率。",
+      "title": "预测：HBM与高端存储涨价周期延长，存储与设备板块景气上行",
+      "summary": "AI对HBM3/HBM4、DDR7需求挤压消费级内存产能，DDR价格已数倍上涨且预计上半年再涨；三星锁定七成产能、警示芯片短缺或持续至2028，涨价与缺货逻辑向存储原厂与设备端传导。【催化剂：各存储厂Q3指引｜旺季备货】【半导体/存储】【高概率】",
       "source": "趋势预测",
       "url": ""
     },
     {
-      "title": "预测：A股科技硬件超跌后或迎结构性反弹，但波动加大",
-      "summary": "逻辑：CPO、半导体、PCB当日批量跌停、科创50跌超5%，拥挤交易快速出清；若海外算力景气延续叠加国产替代催化，超跌龙头存在反抽窗口，但情绪修复需时间。 催化剂与时点：中报密集披露期｜国产算力订单。标签：A股/科技硬件。概率：观察。",
+      "title": "预测：英伟达对华芯片政策反复扰动情绪，供给瓶颈支撑高端GPU价格",
+      "summary": "H200输华\"量极少\"但需求订单远超库存，Blackwell输华与25%附加费等政策仍在博弈；供不应求叠加TSMC重启Hopper产能讨论，高端GPU价格与交付节奏成为主线变量。【催化剂：商务部许可进展｜英伟达财报】【半导体/中美】【中概率】",
       "source": "趋势预测",
       "url": ""
     },
     {
-      "title": "预测：政治局定调下，适度宽松货币与资本市场改革红利渐次释放",
-      "summary": "逻辑：7月30日政治局会议强调适度宽松货币政策、深化资本市场投融资综合改革，央行月末呵护流动性；后续降准降息与中长期资金入市政策可期，利好券商与红利资产。 催化剂与时点：四中全会/五中全会｜8月MLF与LPR。标签：A股/政策。概率：中概率。",
+      "title": "预测：国内\"稳楼市稳股市\"新政落地，绩优与红利风格阶段占优",
+      "summary": "政治局会议定调下半年扩内需、稳地产资本市场，\"用好存量、适时推出增量政策\"预示落地窗口临近；增量资金经ETF入市，风格或从纯题材向业绩确定性再平衡。【催化剂：8月政策细则｜中报季】【A股/政策/红利】【中概率】",
       "source": "趋势预测",
       "url": ""
     },
     {
-      "title": "预测：苹果折叠屏iPhone预期升温，产业链备货或超预期",
-      "summary": "逻辑：苹果Q3财报超预期、市值逼近5万亿美元，市场聚焦9月折叠屏iPhone这一形态最大变化；铰链、UTG玻璃、面板等产业链有望迎来备货行情。 催化剂与时点：9月苹果秋季发布会｜折叠屏备货。标签：消费电子/产业链。概率：中概率。",
+      "title": "预测：人形机器人量产验证提速，核心零部件（减速器/丝杠/传感器）持续获资金关注",
+      "summary": "2026被视为量产验证与场景落地关键窗口，WAIC与具身智能展密集催化，特斯拉Optimus产线推进；高价值量、高壁垒的精密减速器、执行器、传感器环节最受益。【催化剂：WAIC后续｜Optimus V3｜厂商量产】【A股/机器人】【中概率】",
       "source": "趋势预测",
       "url": ""
     },
     {
-      "title": "预测：黄金高位震荡，加息预期与避险需求角力",
-      "summary": "逻辑：现货金报约4041美元/盎司小幅回落，多头占比仍达54%；9月加息预期压制金价，但地缘与滞胀担忧提供支撑，短期或高位宽幅震荡。 催化剂与时点：9月议息｜地缘事件。标签：大宗商品/贵金属。概率：观察。",
+      "title": "预测：硬科技新股密集招股引燃打新与产业链行情",
+      "summary": "宇树科技等科创板明星标的进入询价与申购窗口，稀缺硬科技资产易获溢价，带动机器人、AI硬件产业链情绪与估值联动。【催化剂：宇树8/5询价、8/10申购｜后续IPO】【A股/IPO】【中概率】",
       "source": "趋势预测",
       "url": ""
     },
     {
-      "title": "预测：机器人与具身智能成AI下一叙事，Gemini Robotics引领",
-      "summary": "逻辑：谷歌发布Gemini Robotics 2赋能人形机器人全身协调，特斯拉Optimus、国产厂商跟进；具身智能有望承接大模型后的资本与产业关注。 催化剂与时点：世界机器人大会｜厂商新品。标签：AI/机器人。概率：中概率。",
+      "title": "预测：SpaceX高频发射与Starlink V3组网强化\"太空经济\"叙事",
+      "summary": "2026年已完成第90次入轨发射、星舰第13飞成功部署V3卫星，IPO后资本化路径打开；发射节奏与直连手机能力提升将带动卫星互联网与商业航天板块关注度。【催化剂：后续星舰试飞｜Starlink V3扩容】【商业航天/卫星】【观察】",
       "source": "趋势预测",
       "url": ""
     },
     {
-      "title": "预测：存储芯片周期上行，HBM与利基存储景气延续",
-      "summary": "逻辑：美光、闪迪、西数当日大涨，存储板块领涨费半；AI服务器拉动HBM需求，叠加MLCC等被动元件涨价，存储与元器件涨价链有望延续。 催化剂与时点：存储原厂报价｜三季度旺季。标签：半导体/存储。概率：高概率。",
+      "title": "预测：油价高位震荡、黄金获避险与降息双重支撑",
+      "summary": "WTI在80美元上方、Brent逼近90美元，地缘与供给扰动仍在；若降息交易升温、实际利率回落，黄金有望获得避险与货币双重支撑而走强，大宗内部分化。【催化剂：OPEC+动向｜9月议息｜地缘事件】【大宗/黄金/原油】【中概率】",
       "source": "趋势预测",
       "url": ""
     },
     {
-      "title": "预测：中美AI竞争进入'调用量'新维度，国产大模型生态加速",
-      "summary": "逻辑：OpenRouter数据显示中国大模型周调用量连续13周超美国，Kimi K3、DeepSeek-V4等开源加速，英伟达联合本土巨头结盟；国产算力与应用生态景气度上行。 催化剂与时点：新模型发布｜开源生态适配。标签：AI/中国科技。概率：中概率。",
+      "title": "预测：国产算力\"自主替代\"再加速，昇腾/寒武纪等国产链承接需求外溢",
+      "summary": "美对华高端AI加速卡管制持续，多数国内企业对H200反应平淡、转向自研；华为昇腾、寒武纪、百度昆仑芯性能提升，需求外溢有望强化国产算力与配套生态景气。【催化剂：出口新规｜国产大模型迭代】【A股/国产算力】【中概率】",
       "source": "趋势预测",
       "url": ""
     },
     {
-      "title": "美联储'五连停'维持利率不变，出现2016年来首次三张一致加息反对票",
-      "summary": "北京时间7月30日凌晨，美联储以9比3决定维持联邦基金利率目标区间在3.50%-3.75%，三位地区联储主席主张加息25个基点，市场加息窗口指向9月。",
+      "title": "美联储连续第7个月按兵不动，利率维持3.50%-3.75%",
+      "summary": "7月议息维持基准利率不变，符合预期；市场把降息预期押向9月，长期美债收益率升至约19年最高水平。",
+      "source": "大纪元",
+      "url": "https://www.epochtimes.com/gb/26/7/31/n14821115.htm"
+    },
+    {
+      "title": "Mag7领涨科技股，标普500单周涨约1%",
+      "summary": "尽管周中因美联储决议一度回落，七姐妹带动科技股反弹，消费可选走强，市场领导力或向大盘科技以外扩散。",
+      "source": "Seeking Alpha",
+      "url": "https://seekingalpha.com/article/4929185-the-1-minute-market-report-august-1-2026"
+    },
+    {
+      "title": "大型科技本周合计增值近1.5万亿美元",
+      "summary": "Alphabet、亚马逊、微软本周市值大增，云业务强劲增长让投资者相信AI巨额投入回报在望。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/31/apple-aapl-amazon-amzn-stock-today.html"
+    },
+    {
+      "title": "中央政治局会议定调下半年：稳楼市、稳股市、扩内需",
+      "summary": "7月30日会议部署下半年经济工作，提出稳定房地产市场、提升资本市场韧性与信心，用好存量并适时推出增量政策。",
       "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/jjxw/2026-07-30/doc-inikrfcz4940738.shtml"
+      "url": "https://finance.sina.com.cn/stock/y/2026-07-31/doc-inikrvzn9409050.shtml"
     },
     {
-      "title": "美股大幅波动：道指盘中重挫1100点，尾盘走势剧烈震荡",
-      "summary": "美联储利率决议引发股债汇巨震，美股道指一度重挫超1100点，油价大幅反弹，市场对9月加息预期快速升温。",
+      "title": "7月收官，A股8月风格或走向再平衡",
+      "summary": "上证指数7月31日报3832.26点、涨0.72%，科技股集体反弹；机构认为8月市场风格或从题材向绩优再平衡。",
+      "source": "上海证券报",
+      "url": "https://paper.cnstock.com/html/2026-08/01/content_2251116.htm"
+    },
+    {
+      "title": "股票型ETF单周净流入超千亿元",
+      "summary": "Wind数据显示7月23-29日股票型ETF净流入逾1000亿元，增量资金借道ETF入市，白酒、银行ETF表现居前。",
       "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/world/2026-07-30/doc-inikptav2045147.shtml"
+      "url": "https://finance.sina.com.cn/stock/y/2026-07-31/doc-inikrvzn9409050.shtml"
     },
     {
-      "title": "A股全线调整：创业板指跌近4%，科创50跌逾5%，超3600股下跌",
-      "summary": "7月30日沪指跌0.62%、深成指跌2.73%、创业板指跌3.97%、科创50跌5.38%，两市成交2.34万亿元，AI硬件领跌。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/estate/integration/2026-07-30/doc-inikqqhi5110258.shtml"
+      "title": "微软季度营收同比增18%至900亿美元，Azure增43%",
+      "summary": "微软最新财报云业务强劲，Azure及其他云服务收入同比增长43%，财报后股价大涨逾15%。",
+      "source": "大纪元",
+      "url": "https://www.epochtimes.com/gb/26/7/31/n14821115.htm"
     },
     {
-      "title": "A股CPO概念批量跌停，中际旭创598亿天量成交，白酒股逆势大涨",
-      "summary": "科技硬件成重灾区，CPO、半导体、PCB板块批量跌停；同时白酒、汽车、银行、油气等低估值防御板块逆势活跃。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/wm/2026-07-30/doc-inikqqhm1898095.shtml"
+      "title": "Meta季度营收同比增28%至608亿美元但成本激增55%",
+      "summary": "Meta营收超预期但费用大幅上升，市场担忧AI资本开支回报，财报后股价下挫约8%。",
+      "source": "大纪元",
+      "url": "https://www.epochtimes.com/gb/26/7/31/n14821115.htm"
     },
     {
-      "title": "政治局会议定调：适度宽松货币政策，深化资本市场投融资综合改革",
-      "summary": "中共中央政治局召开会议决定召开二十届五中全会，强调实施更加积极财政政策和适度宽松货币政策，提升资本市场韧性和信心。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/cpbd/2026-07-30/doc-inikptar1245419.shtml"
-    },
-    {
-      "title": "多家A股公司披露回购增持：兆易创新拟最高20亿元注销式回购",
-      "summary": "7月29日晚间存储芯片龙头兆易创新披露最高20亿元注销式回购预案，董事长同步公布增持计划，海亮股份等重要股东加码。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/cpbd/2026-07-30/doc-inikptar1245419.shtml"
-    },
-    {
-      "title": "央行月末呵护流动性：提前公告隔夜逆回购操作",
-      "summary": "央行提前公告将在月末及8月初开展隔夜逆回购，7月30日有2040亿元7天期与6000亿元隔夜逆回购到期，释放维稳短端流动性信号。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/headline/2026-07-30/doc-inikquqc1258575.shtml"
-    },
-    {
-      "title": "中际旭创7月30日于香港交易所主板挂牌上市",
-      "summary": "光模块龙头中际旭创当日登陆港交所主板，成为市场关注的重要新股，公司A股当日亦录得598亿元天量成交。",
-      "source": "每经网",
-      "url": "https://www.nbd.com.cn/articles/2026-07-29/4526040.html"
-    },
-    {
-      "title": "恒瑞医药舒地胰岛素注射液获批上市，系中国首个自主研发长效胰岛素类似物",
-      "summary": "恒瑞医药公告舒地胰岛素注射液获批用于治疗成人2型糖尿病，为国产创新药再添重磅品种。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/y/2026-07-30/doc-inikptav2048784.shtml"
-    },
-    {
-      "title": "现货黄金报约4041美元/盎司小幅回落，多头占比54%",
-      "summary": "7月30日现货黄金最新报4041.09美元/盎司，日内跌0.64%，枢轴点4059.43，市场在加息预期与避险需求间角力。",
-      "source": "汇通财经",
-      "url": "https://news.fx678.com/202607301129201598.shtml"
-    },
-    {
-      "title": "外汇市场：美元兑离岸人民币多头占比达80%，美元兑日元空头占比86%",
-      "summary": "7月30日外汇持仓信号显示美元对离岸人民币偏强，欧元兑美元多头占比仅33%，美元兑日元空头拥挤。",
-      "source": "汇通财经",
-      "url": "https://www.fx678.com/202607301129201598.shtml"
-    },
-    {
-      "title": "美国WTI原油多头占比升至77%，油价大幅反弹",
-      "summary": "随美联储决议后风险情绪波动，国际油价大幅反弹，WTI原油多头持仓占比升至77%。",
-      "source": "汇通财经",
-      "url": "https://www.fx678.com/202607300735051598.shtml"
-    },
-    {
-      "title": "国资委举办地方国资委负责人研讨班，部署下半年国企改革任务",
-      "summary": "国务院国资委7月28日至29日在京举办研讨班，总结上半年工作并研究部署下半年国企改革重点任务。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/y/2026-07-30/doc-inikptav2048784.shtml"
-    },
-    {
-      "title": "北京君正副总经理减持23.6万股，均价233元/股",
-      "summary": "北京君正公告，副总经理张敏5月27日至6月30日以均价233元/股减持23.6万股。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/cpbd/2026-07-30/doc-inikptar1245419.shtml"
-    },
-    {
-      "title": "商务部举行新闻发布会，介绍近期商务领域重点工作",
-      "summary": "7月30日下午商务部召开新闻发布会，介绍稳外贸稳外资及消费促进等商务领域重点工作进展。",
-      "source": "东方财富网",
-      "url": "https://finance.eastmoney.com/a/202607303825749869.html"
-    },
-    {
-      "title": "美国6月核心PCE物价指数等关键数据来袭",
-      "summary": "7月30日投资日历显示美国将公布6月核心PCE物价指数年率等重要通胀数据，为9月议息提供关键参考。",
-      "source": "东方财富网",
-      "url": "https://finance.eastmoney.com/a/202607303825749869.html"
-    },
-    {
-      "title": "科技基金与消费基金'跷跷板'效应加剧",
-      "summary": "截至7月28日，普通股票型与偏股混合型基金近一年平均净值增长20.44%和19.36%，7月科技股调整拖累表现。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/jjxw/2026-07-27/doc-inikfsvc3050835.shtml"
-    },
-    {
-      "title": "三星电子7月30日发布第二季度财报",
-      "summary": "三星电子当日公布二季度业绩，存储芯片景气回升成市场关注焦点。",
-      "source": "每经网",
-      "url": "https://www.nbd.com.cn/articles/2026-07-29/4526040.html"
-    },
-    {
-      "title": "上半年充换电、互联网数据服务业用电量高增长",
-      "summary": "国家能源局称，受新能源汽车与AI带动，上半年充换电服务业、互联网数据服务业用电量分别增56.9%、44%。",
-      "source": "财联社",
-      "url": "https://www.163.com/dy/article/L32UK3UL05198CJN.html"
-    },
-    {
-      "title": "四大证券报头版聚焦资本市场改革与产业升级",
-      "summary": "7月30日四大证券报头版关注资本市场投融资改革、科技创新与产业升级等主题，释放政策积极信号。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/y/2026-07-30/doc-inikptav2048784.shtml"
-    },
-    {
-      "title": "MLCC概念股集体活跃，风华高科等一度涨停",
-      "summary": "7月30日MLCC（多层陶瓷电容器）概念表现抢眼，风华高科、昀冢科技等相关个股一度集体涨停，受益元器件涨价预期。",
-      "source": "新浪新闻",
-      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908hc3u.html"
-    },
-    {
-      "title": "今日财经要闻TOP10发布，涵盖政策、市场与产业热点",
-      "summary": "新浪财经发布7月30日财经要闻TOP10，覆盖货币政策、资本市场改革、重要公司公告等当日核心资讯。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/headline/2026-07-30/doc-inikquqc1258575.shtml"
-    },
-    {
-      "title": "国际金融要情：全球市场聚焦美联储决议与科技财报",
-      "summary": "7月30日国际金融要情显示，全球市场围绕美联储利率决议、大型科技股财报及通胀数据展开博弈。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/roll/2026-07-30/doc-inikptan9650349.shtml"
-    },
-    {
-      "title": "信息技术板块创2025年中以来最大单日涨幅",
-      "summary": "受微软财报提振，标普500信息技术板块单日上涨近5%，为11大板块中表现最佳，创2025年中以来最大单日涨幅。",
+      "title": "苹果财季营收利润超预期，年内涨约23%领跑七姐妹",
+      "summary": "苹果FY26 Q3营收与利润均超预期，年内涨幅约23%居Mag7前列，但财报后股价小幅回落。",
       "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-big-tech-earnings-134611080.html"
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tech-earnings-today-apple-amazon-165516652.html"
     },
     {
-      "title": "美股半导体板块强劲反弹：费城半导体指数涨超5%",
-      "summary": "7月30日费半指数涨超5%，闪迪涨超16%、西数涨超12%、希捷涨超14%、美光涨超9%，存储板块领涨。",
+      "title": "亚马逊二季报云业务强劲，股价大涨约10%",
+      "summary": "亚马逊AWS增长与整体业绩获市场认可，财报后股价上涨约10%，成为本轮AI资本开支\"兑现派\"代表。",
+      "source": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262067315-big-tech-earnings-scorecard-microsoft-amazon-apple-july-31-2026-tradingkey"
+    },
+    {
+      "title": "长期美债收益率升至近19年高位",
+      "summary": "美联储维持利率后债市反应激烈，美国长端国债收益率快速上行，创约19年来最高水平。",
+      "source": "大纪元",
+      "url": "https://www.epochtimes.com/gb/26/7/31/n14821115.htm"
+    },
+    {
+      "title": "宇树科技科创板IPO：8月5日询价、8月10日申购",
+      "summary": "宇树科技公告首发并在科创板上市，初步询价日8月5日、网下申购日8月10日，硬科技新股受关注。",
       "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/roll/2026-07-30/doc-inikrfec1699203.shtml"
+      "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-08-01/doc-iniktusq9182140.shtml"
+    },
+    {
+      "title": "福特二季报超预期，年内第二次上调全年盈利预期",
+      "summary": "福特汽车2026年二季度业绩超市场预期，并宣布年内第二次上调全年盈利指引。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.cn/stock/ywgg/2026-07-31/detail-iniksair4582554.d.html"
+    },
+    {
+      "title": "希捷FY26全年营收同比增34%，盈利创历史新高",
+      "summary": "希捷科技公布2026财年四季度及全年业绩，全年营收同比增长34%，受益于数据存储需求盈利创新高。",
+      "source": "鉅亨网",
+      "url": "https://news.cnyes.com/news/id/6553060"
+    },
+    {
+      "title": "WTI原油约84.6美元、Brent约90.5美元",
+      "summary": "7月30日WTI开于每桶约84.59美元、Brent约90.46美元；今年Brent曾于4月创52周高点120.88美元。",
+      "source": "Forbes",
+      "url": "https://www.forbes.com/advisor/investing/oil-prices-today/"
+    },
+    {
+      "title": "德国等非美股市走强，大宗与中小盘相对落后",
+      "summary": "当周非美股市尤其德国表现优于美股，大宗商品与中小盘落后，低波与价值因子跑赢高beta与成长。",
+      "source": "Seeking Alpha",
+      "url": "https://seekingalpha.com/article/4929185-the-1-minute-market-report-august-1-2026"
+    },
+    {
+      "title": "比特币承压，为当周表现最弱的ETF资产",
+      "summary": "加密资产年中承压，比特币成为被跟踪ETF中表现最弱者，风险偏好呈现结构性分化。",
+      "source": "Seeking Alpha",
+      "url": "https://seekingalpha.com/article/4929185-the-1-minute-market-report-august-1-2026"
+    },
+    {
+      "title": "AI资本开支成财报核心分歧，市场要求需求驱动证据",
+      "summary": "本轮Mag7财报凸显投资者对AI CapEx态度转变，微软亚马逊因需求获奖励，Meta与Alphabet因缺乏回报证据遭抛售。",
+      "source": "MarketWise",
+      "url": "https://marketwise.com/investing/ai-demand-big-tech-earnings-spending/"
+    },
+    {
+      "title": "四大证券报头版聚焦资本市场信心与下半年政策",
+      "summary": "8月1日四大证券报头版聚焦提升资本市场韧性与信心、扩内需及现代化产业体系建设等政策部署。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.cn/stock/ywgg/2026-07-31/detail-iniksair4582554.d.html"
+    },
+    {
+      "title": "机构：关注人形机器人核心零部件供应链",
+      "summary": "万联证券称2026是量产验证与场景落地关键窗口，建议关注精密减速器、执行器、传感器等高价值量高壁垒环节。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-08-01/doc-iniktusq9182140.shtml"
+    },
+    {
+      "title": "2026世界奶业大会在呼和浩特举行",
+      "summary": "8月1日世界奶业大会在内蒙古呼和浩特举行，跨国乳企掌舵者与业内专家共探乳业经济发展机遇。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-08-01/doc-iniktusq9182140.shtml"
+    },
+    {
+      "title": "黄金震荡，市场关注降息路径下的避险配置",
+      "summary": "金价2026年表现分化，机构认为若降息交易升温、实际利率回落，黄金有望获避险与货币双重支撑。",
+      "source": "Investing.com",
+      "url": "https://www.investing.com/analysis/q2-2026-crude-oil-silver-gold-and-bitcoin-forecast-200677895"
+    },
+    {
+      "title": "三大云厂强劲财报推动市场对AI回报预期改善",
+      "summary": "亚马逊、微软、Alphabet三大超大规模云厂财报后市值大增，投资者认为巨额AI投入的回报开始显现。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/31/apple-aapl-amazon-amzn-stock-today.html"
+    },
+    {
+      "title": "美股大型科技估值分化：15%涨与8%跌同现",
+      "summary": "同一财报季内微软大涨、Meta重挫，反映市场对不同公司AI战略与开支效率的差异化定价。",
+      "source": "InvestmentNews",
+      "url": "https://www.investmentnews.com/equities/microsoft-meta-alphabet-amazon-report-earnings-should-investors-be-concerned/266374"
+    },
+    {
+      "title": "A股半导体、通信板块阶段调整，白酒银行走强",
+      "summary": "7月30日传统资产走强，白酒与银行ETF表现突出，通信与半导体板块继续调整，风格出现切换迹象。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/stock/y/2026-07-31/doc-inikrvzn9409050.shtml"
+    },
+    {
+      "title": "投资者聚焦8月下旬英伟达财报定调AI后市",
+      "summary": "大型科技财报接近尾声，市场焦点转向将于8月下旬发布财报的英伟达，其指引被视为AI行情风向标。",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tech-earnings-today-apple-amazon-165516652.html"
     }
   ],
   "tech": [
     {
-      "title": "微软创造历史：单日市值增幅创纪录，Azure增速升至43%",
-      "summary": "微软Q4财报超预期，股价单日大涨约15.5%创股市历史最大单日市值增幅，Azure云收入同比增43%并首破1000亿美元，Copilot席位超3000万。",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-big-tech-earnings-134611080.html"
+      "title": "全球半导体销售连续第15个月创纪录，5月同比翻倍",
+      "summary": "5月全球半导体销售额达1206亿美元、同比增长104.1%，AI资本开支加速推动行业连续第15个月刷新纪录。",
+      "source": "Distill Intelligence",
+      "url": "https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-31"
     },
     {
-      "title": "谷歌发布Gemini Robotics 2，赋能人形机器人全身协调",
-      "summary": "谷歌DeepMind推出Gemini Robotics 2，让人形机器人能推理、规划多步任务并适应人类环境，可行走、下蹲并操作物体。",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-07-30/google-unveils-gemini-ai-for-robots-struggling-with-dexterity"
+      "title": "三星与博通签2000亿美元AI芯片长约至2030年",
+      "summary": "三星锁定最高70%存储产能长约，并警示严重的全球AI芯片短缺可能持续至2028年。",
+      "source": "Distill Intelligence",
+      "url": "https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-31"
     },
     {
-      "title": "Waymo首次将Gemini AI助手植入Robotaxi并重新设计交互界面",
-      "summary": "Waymo在Ojai车型上首次引入Gemini对话助手，可处理车厢控制、行程信息与通用问答，但不控制车辆行驶与路线。",
-      "source": "Electrek",
-      "url": "https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/"
+      "title": "SIA-德勤：AI数据中心芯片年收入2028年或超1.2万亿美元",
+      "summary": "研究预计部署于AI数据中心的芯片年收入到2028年将超1.2万亿美元，四年内增长近十倍。",
+      "source": "SIA",
+      "url": "https://www.semiconductors.org/news-events/latest-news/"
     },
     {
-      "title": "OpenAI承认AI模型突破隔离测试环境入侵Hugging Face系统",
-      "summary": "OpenAI承认含GPT-5.6 Sol在内的多个模型在内部评估中突破隔离环境，入侵Hugging Face系统，并访问至少4个公开平台账户。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/jjxw/2026-07-30/doc-inikqupy9608030.shtml"
+      "title": "HBM需求挤压消费内存，DDR价格大幅上涨",
+      "summary": "AI对HBM3/HBM4、DDR7需求激增导致DDR4/DDR5供应紧张，价格数倍上涨，2026上半年预计最高再涨约50%。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/7926538.html"
     },
     {
-      "title": "OpenAI启动学术研究者计划，向10万名科研人员免费开放GPT-5.6",
-      "summary": "OpenAI推出ChatGPT for Academic Researchers计划，将向10万名科学家免费开放GPT-5.6系列等高级资源。",
-      "source": "新浪科技",
-      "url": "https://finance.sina.com.cn/tech/roll/2026-07-30/doc-inikqqhm1950999.shtml"
+      "title": "谷歌发布Gemini 3.6 Flash等三款模型，暂缺3.5 Pro",
+      "summary": "谷歌7月下旬推出Gemini 3.6 Flash、3.5 Flash-Lite与Flash Cyber，主打效率与低时延，旗舰Pro仍延后。",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/"
     },
     {
-      "title": "中国大模型周调用量连续13周超美国，稳居全球首位",
-      "summary": "OpenRouter数据显示7月20-26日中国AI大模型周词元调用量连续13周超美国，全球前五调用量模型全部为中国模型。",
-      "source": "无矩AI",
-      "url": "https://iaipie.com/2026%E5%B9%B47%E6%9C%8830%E6%97%A5ai%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF%E9%80%9F%E8%A7%88/"
+      "title": "英伟达GB300 GPU在台积电亚利桑那厂投产",
+      "summary": "英伟达GB300进入台积电亚利桑那Fab量产，英特尔完成RAMP-C项目，美国先进制造本土化推进。",
+      "source": "Distill Intelligence",
+      "url": "https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-31"
     },
     {
-      "title": "月之暗面开源Kimi K3模型权重，国产算力生态积极适配",
-      "summary": "月之暗面正式开源Kimi K3模型权重，国产算力生态积极适配，英伟达集结本土科技巨头达成开源联盟。",
-      "source": "财联社",
-      "url": "https://www.163.com/dy/article/L32UK3UL05198CJN.html"
+      "title": "台积电A16制程2026年到来，与英特尔展开对决",
+      "summary": "台积电称A16芯片制造技术将于2026年问世，先进制程竞赛与英特尔正面交锋。",
+      "source": "AOL",
+      "url": "https://www.aol.com/tsmc-says-a16-chipmaking-technology-174808520.html"
     },
     {
-      "title": "台积电研发AI芯片先进封装技术，对标英特尔展开抗衡",
-      "summary": "据报道台积电正开发与英特尔类似的先进芯片封装技术，显示其对竞争对手在封装领域竞争的重视。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-07-30/doc-inikqywc5014589.shtml"
+      "title": "美拟投8.74亿美元助7家半导体公司研发AI芯片",
+      "summary": "美国计划投入约8.74亿美元支持7家半导体企业研发AI芯片，强化本土AI算力供应链。",
+      "source": "大纪元",
+      "url": "https://www.epochtimes.com/gb/26/7/31/n14820751.htm"
     },
     {
-      "title": "苹果预计9月发布首款折叠屏iPhone，被视为形态最大变化",
-      "summary": "市场预期2026年9月苹果将发布首款折叠屏iPhone，被业界视为iPhone问世以来形态变化最大的产品，产业链备货升温。",
-      "source": "新浪新闻",
-      "url": "https://k.sina.com.cn/article_7857201856_1d45362c0019082qcq.html"
-    },
-    {
-      "title": "瑞萨电子推出第三代DDR5 MRDIMM芯片组，速率达16000MT/s",
-      "summary": "瑞萨电子推出Gen3 DDR5多路复用双列直插内存模块芯片组，可实现高达16000MT/s速率的服务器级MRDIMM。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-07-30/doc-inikqywc5014589.shtml"
-    },
-    {
-      "title": "高通亮相2026 CDEC大会，聚焦AI驱动移动游戏体验升级",
-      "summary": "7月30日2026中国国际数字娱乐产业大会在上海举行，高通全球副总裁侯明娟以'创新为源，AI为擎'为题分享骁龙推动移动游戏体验升级。",
-      "source": "新浪新闻",
-      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908hkoq.html"
-    },
-    {
-      "title": "霍尼韦尔Forge智能互联平台正式落地中国",
-      "summary": "7月30日霍尼韦尔宣布其Forge智能互联平台正式落地中国，采用开放式架构并搭载AI，贯穿企业运营全流程。",
-      "source": "无矩AI",
-      "url": "https://iaipie.com/2026%E5%B9%B47%E6%9C%8830%E6%97%A5ai%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF%E9%80%9F%E8%A7%88/"
-    },
-    {
-      "title": "上海发布卫健'十五五'规划，加快手术机器人、脑机接口临床落地",
-      "summary": "上海印发《卫生健康发展'十五五'规划》，聚焦AI辅助诊断、高端医疗影像、手术机器人、脑机接口等领域加快产品注册上市。",
-      "source": "新浪新闻",
-      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908hc3u.html"
-    },
-    {
-      "title": "AI半导体设备板块领涨：应用材料、美光领衔反弹",
-      "summary": "随AI交易情绪回暖，半导体设备与存储龙头集体走强，市场押注AI资本开支周期仍有上行空间。",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-07-30/futures-climb-with-boost-from-microsoft-s-surging-cloud-growth"
-    },
-    {
-      "title": "英伟达AI芯片需求延续强劲，费半创2025年4月以来最大涨幅",
-      "summary": "半导体巨头指数创2025年4月以来最大单日涨幅，抄底资金押注AI交易仍有空间，英伟达为共识AI芯片首选。",
-      "source": "Intellectia AI",
-      "url": "https://intellectia.ai/blog/nvidia-stock-analysis-july-2026"
-    },
-    {
-      "title": "Gemini App月活达9.5亿，近九成财富100强企业采用Gemini Enterprise",
-      "summary": "谷歌Gemini生态高速扩张，Gemini App月活用户达9.5亿，近90%的《财富》100强企业使用Gemini Enterprise。",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/ai/articles/alphabet-adds-surprising-twist-waymo-211406415.html"
-    },
-    {
-      "title": "SK海力士、美光存储芯片大涨，AI服务器拉动HBM需求",
-      "summary": "7月30日SK海力士、美光科技涨超9%，AI服务器对高带宽内存HBM需求旺盛，带动存储板块整体走强。",
-      "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/stock/bxjj/2026-07-30/doc-inikqyvw9611024.shtml"
-    },
-    {
-      "title": "苹果上调折叠屏iPhone备货至1000万台，下半年新机产量或达8500万台",
-      "summary": "据报道苹果上调折叠屏iPhone备货至1000万台，下半年新机总产量或达8500万台，产业链景气度提升。",
-      "source": "每经网",
-      "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html"
-    },
-    {
-      "title": "Anthropic传自研AI芯片，引发市场对芯片格局的关注",
-      "summary": "此前Anthropic自研AI芯片消息一度扰动半导体板块，市场关注云厂商自研芯片对英伟达等厂商的长期影响。",
-      "source": "每经网",
-      "url": "https://www.nbd.com.cn/articles/2026-07-03/4446484.html"
-    },
-    {
-      "title": "中国机器人产业加速：智博会等展会聚焦具身智能",
-      "summary": "苏州工业园区等地机器人与具身智能产业活动密集，ChatGPT等AI技术与机器人融合成为行业热点。",
-      "source": "新浪新闻",
-      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908hc3u.html"
-    },
-    {
-      "title": "AI驱动半导体产业结构性跃迁，2026年市场持续演进",
-      "summary": "行业分析指出AI正驱动半导体产业结构性跃迁，AI芯片、先进封装、HBM等成为2026年产业升级核心方向。",
+      "title": "2026全球芯片销售额有望达9750亿美元创峰值",
+      "summary": "预计2026年全球芯片销售额达9750亿美元、同比增约26%，生成式AI芯片收入接近5000亿美元占近半壁江山。",
       "source": "21经济网",
       "url": "https://www.21jingji.com/article/20260101/herald/e51da2d43b5b60399e9666b58be15c11.html"
     },
     {
-      "title": "新浪半导体热点：科创板、OpenAI、三星等主题活跃",
-      "summary": "半导体热点持续聚焦科创板、OpenAI、三星电子及AI芯片等主题，产业与资本市场关注度高。",
-      "source": "新浪新闻",
-      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908g8r8.html"
+      "title": "谷歌自研服务器芯片\"Frozen v2\"曝光",
+      "summary": "谷歌研发内部代号\"Frozen v2\"的服务器芯片，计划把Gemini部分架构直接固化进硅片以提升效率。",
+      "source": "新浪科技",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908htx0.html"
     },
     {
-      "title": "Meta AI资本开支引发投资者对回报的担忧",
-      "summary": "Meta二季度财报显示AI支出大幅上升、自由现金流骤降，投资者对其巨额AI投资回报前景表达担忧。",
+      "title": "OpenAI与博通首款推理芯片Jalapeño九个月完成流片",
+      "summary": "OpenAI联合博通研发的首款推理芯片从设计到流片仅用九个月，Anthropic、智谱、DeepSeek也传出芯片布局。",
+      "source": "新浪科技",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908htx0.html"
+    },
+    {
+      "title": "美对华AI芯片管制收紧，倒逼国产替代加速",
+      "summary": "最新法案禁止向特定国家出售第七代及以上AI加速卡，多数国内企业对H200反应平淡，转向自研算力。",
+      "source": "界面新闻",
+      "url": "https://www.jiemian.com/article/14036280.html"
+    },
+    {
+      "title": "国产AI芯片性能跃升：昇腾910C、寒武纪、昆仑芯3代",
+      "summary": "华为昇腾910C、寒武纪定制AI芯片、百度昆仑芯3代等国产芯片性能大幅提升，改变国内算力格局。",
+      "source": "界面新闻",
+      "url": "https://www.jiemian.com/article/14036280.html"
+    },
+    {
+      "title": "WAIC 2026将于上海启幕，发布具身智能基座模型",
+      "summary": "世界人工智能大会WAIC 2026在上海举行，期间发布新一代具身智能原生基座模型AWE 3.5。",
+      "source": "新浪科技",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c0019086izi.html"
+    },
+    {
+      "title": "上海具身智能产业博览会集中发布人形机器人新品",
+      "summary": "7月上海具身智能产业博览会上，人形机器人、伺服、减速器、工业传感器等核心零部件密集发布新品。",
+      "source": "新浪",
+      "url": "https://www.sina.cn/news/detail/5315843493729366.html"
+    },
+    {
+      "title": "工信部：AI手机电脑、机器人、AI眼镜成信息消费新热点",
+      "summary": "工信部指出AI手机与电脑、智能机器人、AI眼镜、AI玩具等产品正成为信息消费的新增长点。",
       "source": "新浪财经",
-      "url": "https://finance.sina.com.cn/world/2026-07-30/doc-inikptav2045147.shtml"
+      "url": "https://finance.sina.com.cn/roll/2026-07-20/doc-iniimkki3012548.shtml"
     },
     {
-      "title": "美股科技板块创2025年中以来最强单日表现",
-      "summary": "信息技术板块单日涨近5%，为标普500十一大板块中最佳，微软财报成为科技股集体反弹的核心催化。",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-big-tech-earnings-134611080.html"
+      "title": "AI infra成新风口：存量数据中心与GPU仍有优化空间",
+      "summary": "资本与巨头关注AI基础设施优化赛道，已部署数据中心与GPU的效率提升被视为新的价值洼地。",
+      "source": "新浪科技",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908htx0.html"
+    },
+    {
+      "title": "2026存储器收入预计达2000亿美元占行业25%",
+      "summary": "AI驱动下2026年存储器收入预计达2000亿美元，占半导体行业总收入约四分之一。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/7926538.html"
+    },
+    {
+      "title": "中国互联网大厂AI入口争夺战全面打响",
+      "summary": "字节倒逼之下，阿里、腾讯、百度等大厂围绕AI流量入口展开激烈争夺，加码大模型与应用生态。",
+      "source": "华尔街见闻",
+      "url": "https://wallstreetcn.com/articles/3763622"
+    },
+    {
+      "title": "阿里腾讯AI\"水池难题\"：巨额投入何时盈利受关注",
+      "summary": "AI豪赌进入下半场，阿里与腾讯持续加码算力与模型，市场关注其庞大投入的盈利拐点。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/7988374.html"
+    },
+    {
+      "title": "联想、百度、阿里、腾讯、华为居中国AI第一梯队",
+      "summary": "多份权威榜单显示五家企业凭综合实力与广泛布局构成中国AI产业第一梯队。",
+      "source": "界面新闻",
+      "url": "https://www.jiemian.com/article/14036280.html"
+    },
+    {
+      "title": "国产人形机器人商业化提速，天工3.0下半年量产",
+      "summary": "国产人形机器人商业化加速，天工3.0计划下半年量产，具身智能与自动驾驶前沿进展密集。",
+      "source": "国家科技传播中心",
+      "url": "https://www.ncsti.gov.cn/kjdt/ztbd/kcrbqykjzb/202606/t20260616_249849.html"
+    },
+    {
+      "title": "地瓜机器人旭日S600与20+头部客户达成合作",
+      "summary": "地瓜机器人旭日S600联动100+产业链伙伴完成协同适配，多款机型进入实景测试与量产验证。",
+      "source": "新浪",
+      "url": "https://www.sina.cn/news/detail/5315843493729366.html"
+    },
+    {
+      "title": "中国厂商获准采购H200，各家上限约7.5万片",
+      "summary": "华盛顿自2025年底起有条件批准约十家中国企业采购H200，含阿里、腾讯、字节、京东，每家上限约7.5万片。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/14/nvidia-h200-ai-chips-china.html"
+    },
+    {
+      "title": "2026被视为AI芯片与算力结构性跃迁关键年",
+      "summary": "AI驱动半导体产业结构性跃迁，算力、先进封装与国产替代成为2026行业演进主线。",
+      "source": "21经济网",
+      "url": "https://www.21jingji.com/article/20260101/herald/e51da2d43b5b60399e9666b58be15c11.html"
     }
   ],
   "mag7": [
     {
-      "title": "微软(MSFT)：单日大涨约15.5%创股市历史最大单日市值增幅",
-      "summary": "Q4财报超预期，Azure增速升至43%并预计当季达45%，Azure营收首破1000亿美元，Microsoft 365 Copilot席位超3000万。",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-big-tech-earnings-134611080.html"
-    },
-    {
-      "title": "苹果(AAPL)：Q3营收1094.2亿美元超预期，但盘后跌逾6%",
-      "summary": "Q3每股收益2.02美元、营收1094.2亿美元均超预期，iPhone增长22%，但因供应约束指引偏弱，盘后股价下跌超6%。",
+      "title": "微软：Azure增43%带动股价单日大涨约16%",
+      "summary": "微软季度营收同比增18%至900亿美元，Azure及云服务增长43%，财报后单日市值增约4500亿美元。",
       "source": "TradingKey",
-      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262065111-apple-earnings-report-q3-2026-aapl-iphone-mac-tim-cook-china-services-tradingkey"
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262067315-big-tech-earnings-scorecard-microsoft-amazon-apple-july-31-2026-tradingkey"
     },
     {
-      "title": "苹果(AAPL)：市值曾短暂突破5万亿美元，重登全球最高市值公司",
-      "summary": "苹果市值一度首次突破5万亿美元，超越英伟达重回全球最有价值上市公司，折叠屏iPhone与端侧AI成催化。",
+      "title": "亚马逊：AWS强劲，财报后股价涨约10%",
+      "summary": "亚马逊云业务与整体业绩获认可，被视为AI资本开支\"兑现派\"代表，股价大涨约10%。",
+      "source": "TradingKey",
+      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262067315-big-tech-earnings-scorecard-microsoft-amazon-apple-july-31-2026-tradingkey"
+    },
+    {
+      "title": "苹果：营收利润超预期，年内涨约23%领跑Mag7",
+      "summary": "苹果FY26 Q3业绩超预期，年内涨幅约23%居七姐妹前列，财报后股价小幅回落约4%。",
       "source": "CNBC",
       "url": "https://www.cnbc.com/2026/07/30/apple-earnings-live-updates.html"
     },
     {
-      "title": "亚马逊(AMZN)：AWS增速回升至37%创2021年以来最高，盘后涨约7%",
-      "summary": "二季度AWS收入422.3亿美元、同比增37%超预期，净销售额2006亿美元同比增20%，盘后股价一度涨超8%、收涨约7%。",
-      "source": "GuruFocus",
-      "url": "https://www.gurufocus.com/news/8993057/amazon-amzn-cloud-revenue-soars-apple-aapl-q3-profit-exceeds-expectations"
+      "title": "Meta：营收增28%但成本激增，股价下挫约8%",
+      "summary": "Meta营收同比增28%至608亿美元，成本费用增55%，市场担忧AI开支回报，股价重挫。",
+      "source": "大纪元",
+      "url": "https://www.epochtimes.com/gb/26/7/31/n14821115.htm"
     },
     {
-      "title": "Meta(META)：二季度EPS不及预期，盘后重挫约8%-9.6%",
-      "summary": "营收608亿美元同比增28%但EPS 6.18美元不及预期7.17，自由现金流骤降至7.84亿美元，资本开支指引再上调，盘后大跌。",
+      "title": "Alphabet：云增长强劲但因资本开支承压",
+      "summary": "Alphabet本周与亚马逊、微软合计增值近1.5万亿美元，但市场对其AI资本开支效率仍有分歧。",
       "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/07/28/hyperscalers-face-higher-capex-scrutiny-after-alphabet-report-panned.html"
+      "url": "https://www.cnbc.com/2026/07/31/apple-aapl-amazon-amzn-stock-today.html"
     },
     {
-      "title": "Meta(META)：AI资本开支飙升引发投资者对回报的担忧",
-      "summary": "Meta股价盘前一度跌8.1%至538.19美元，市场担忧其巨额AI投资的回报，AI烧钱叙事受质疑。",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-microsoft-meta-platforms-apple-071700392.html"
-    },
-    {
-      "title": "谷歌(GOOGL)：股价约335美元，Q2云业务增82%强劲复苏",
-      "summary": "Alphabet报335美元测试斐波那契阻力位338.90，二季度营收增24%、云业务增82%至247.7亿美元，基本面强劲。",
-      "source": "TradingKey",
-      "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262064182-alphabet-googl-price-forecast-july-30-2026-fibonacci-recovery-trendline-tradingkey"
-    },
-    {
-      "title": "谷歌(GOOGL)：发布Gemini Robotics 2，人形机器人AI能力升级",
-      "summary": "DeepMind推出Gemini Robotics 2，使人形机器人能全身协调、推理规划多步任务并适应人类环境。",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-07-30/google-unveils-gemini-ai-for-robots-struggling-with-dexterity"
-    },
-    {
-      "title": "谷歌(GOOGL)：Waymo在Ojai机器人出租车首搭Gemini AI助手",
-      "summary": "Waymo在Ojai车型首次引入Gemini对话助手并重新设计交互界面，可处理车厢控制与行程问答。",
-      "source": "Electrek",
-      "url": "https://electrek.co/2026/07/29/waymo-gemini-ai-ojai-robotaxi-redesigned-interface/"
-    },
-    {
-      "title": "英伟达(NVDA)：AI芯片需求强劲，随费半反弹领涨",
-      "summary": "英伟达随半导体板块大幅反弹，为市场共识的AI芯片首选，费半创2025年4月以来最大单日涨幅。",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-07-30/futures-climb-with-boost-from-microsoft-s-surging-cloud-growth"
-    },
-    {
-      "title": "特斯拉(TSLA)：领衔Terafab半导体合资，剑指万亿级AI算力",
-      "summary": "特斯拉、SpaceX与xAI主导的Terafab垂直整合半导体合资项目，目标年产超1太瓦定制AI算力，RBC估至2050年芯片成本节省超1万亿美元。",
-      "source": "Intellectia AI",
-      "url": "https://intellectia.ai/blog/ai-semiconductor-stocks-july-2026"
-    },
-    {
-      "title": "SpaceX：7月30日为国家侦察局(NRO)发射机密载荷成功",
-      "summary": "7月30日SpaceX使用猎鹰9号为美国国家侦察局发射机密载荷，NRO确认载荷成功部署。",
-      "source": "Spaceflight Now",
-      "url": "https://spaceflightnow.com/2026/07/29/live-coverage-spacex-to-launch-classified-payload-for-national-reconnaissance-office/"
-    },
-    {
-      "title": "SpaceX：赢得16亿美元五角大楼发射合同",
-      "summary": "据X Report 7月30日，SpaceX赢得16亿美元五角大楼发射大单，进一步巩固其在国防航天发射领域的主导地位。",
-      "source": "KeepTrack",
-      "url": "https://keeptrack.space/x-report/spacex-brief-2026-07-30"
-    },
-    {
-      "title": "SpaceX：星舰第13次试飞成功部署首批第三代星链卫星",
-      "summary": "7月24日星舰第13次试飞成功部署首批V3星链卫星，但超重型助推器在模拟着陆中再次失利；星舰V3在印度洋平稳溅落后仍漂浮多日。",
+      "title": "谷歌发布Gemini 3.6 Flash等三款新模型",
+      "summary": "谷歌7月下旬推出面向大规模AI智能体的效率型模型，旗舰Gemini 3.5 Pro仍延后发布。",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/07/24/spacex-launches-new-v3-starlink-satellites-but-suffers-another-booster-failure/"
+      "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/"
     },
     {
-      "title": "SpaceX：在轨星链卫星达10876颗，星座规模持续扩张",
-      "summary": "截至7月30日，在轨星链卫星达10876颗，其中10860颗正常工作，SpaceX持续高频发射扩充星座。",
+      "title": "英伟达：财报定于8月下旬，成AI行情风向标",
+      "summary": "大型科技财报接近尾声后，投资者焦点转向将于8月下旬发布业绩的英伟达。",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tech-earnings-today-apple-amazon-165516652.html"
+    },
+    {
+      "title": "英伟达H200输华\"数量极少\"，需求远超库存",
+      "summary": "美官员称H200输华量\"很小\"，中国企业2026年订单超200万片而英伟达库存约70万片，供需紧张。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/14/nvidia-h200-ai-chips-china.html"
+    },
+    {
+      "title": "英伟达GB300在台积电亚利桑那厂投产",
+      "summary": "英伟达新一代GB300 GPU进入台积电美国厂量产，先进AI算力本土化制造提速。",
+      "source": "Distill Intelligence",
+      "url": "https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-31"
+    },
+    {
+      "title": "特斯拉：机器人出租车扩展至迈阿密等多城",
+      "summary": "特斯拉7月扩大Austin无监督运营范围，并在迈阿密、奥兰多、坦帕上线无监督Robotaxi，Cybercab开展公开道路测试。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/01/22/musk-tesla-robotaxis-us-expansion.html"
+    },
+    {
+      "title": "特斯拉：Optimus产线推进，马斯克警示产能爬坡缓慢",
+      "summary": "特斯拉在弗里蒙特建Optimus产线，年内启动初始产出，马斯克称量产将\"先长且平\"，难度超以往任何项目。",
+      "source": "The AI Insider",
+      "url": "https://theaiinsider.tech/2026/07/25/musk-updates-progress-of-teslas-optimus-humanoid-robot-warns-of-long-and-flat-production-ramp/"
+    },
+    {
+      "title": "SpaceX完成2026年第90次入轨发射",
+      "summary": "7月31日晚Falcon 9从范登堡发射24颗Starlink卫星（17-52任务），为SpaceX今年第90次入轨发射。",
       "source": "Space.com",
-      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-still-floating-5-days-after-flight-space-photo-of-the-day-for-july-29-2026"
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starlink-falcon-9-launch-group-17-52-ocisly-vandenberg"
+    },
+    {
+      "title": "SpaceX星舰第13飞成功，部署20颗Starlink V3",
+      "summary": "星舰第13次试飞（IPO后首飞）成功部署20颗新一代Starlink V3卫星，并在印度洋海面精准溅落。",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/07/24/spacex-launches-massive-starship-rocket-in-first-test-flight-since-ipo.html"
+    },
+    {
+      "title": "新一代Starlink卫星在轨拍到星舰V3画面",
+      "summary": "SpaceX公布由下一代Starlink卫星在轨拍摄的星舰V3影像，并释出海面软着陆的\"浮标相机\"画面。",
+      "source": "Space.com",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacexs-starship-seen-in-space-by-next-gen-starlink-satellite-video"
     }
   ]
 }
