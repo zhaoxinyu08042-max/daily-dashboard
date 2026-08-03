@@ -82,6 +82,16 @@
   .hlabel .nm { font-size: 10px; color: #4b5563; writing-mode: vertical-rl; text-orientation: mixed;
     height: 96px; margin: 3px auto 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
   .hcol:hover .hbar-solid { filter: brightness(1.12); }
+  .hold-wrap { position: relative; }
+  .hold-tip { position: absolute; z-index: 30; pointer-events: none; display: none;
+    background: #1a1d24; color: #fff; border-radius: 8px; padding: 8px 11px;
+    font-size: 12px; line-height: 1.55; box-shadow: 0 6px 18px rgba(0,0,0,.20); max-width: 250px; }
+  .hold-tip .t-name { font-weight: 600; margin-bottom: 2px; }
+  .hold-tip .t-sub { color: #aab0ba; font-size: 11px; }
+  .hold-tip .t-qtyrow { margin: 5px 0 3px; }
+  .hold-tip .t-qty { font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .hold-tip .t-row { color: #cfd3db; }
+  .hold-tip .t-pos { color: #34d399; } .hold-tip .t-neg { color: #f87171; }
 </style>
 </head>
 <body>
@@ -262,7 +272,8 @@ function buildHoldPanel(list, meta) {
       `\n市值 ${fmt(p.mv)} ${p.ccy||""} · return ${p.ret==null?"—":p.ret.toFixed(2)+"%"}`;
     const retTxt = p.ret == null ? "—" : (p.ret > 0 ? "+" : "") + p.ret.toFixed(2) + "%";
     const retCls = p.ret == null ? "subtle" : (p.ret >= 0 ? "pos" : "neg");
-    return `<div class="hcol" title="${esc(tip)}">
+    const dataJ = esc(JSON.stringify({name:p.name,code:p.code,side:p.side,qty:p.qty,prev:p.prev,isnew:p.isnew,mv:p.mv,ccy:p.ccy,ret:p.ret}));
+    return `<div class="hcol" data-j="${dataJ}">
       <div class="hbar-area" style="height:${CHART_H}px">
         <div class="hbar-base" style="top:${baseY}px"></div>
         <div class="hbar-solid ${cls}" style="${solidStyle}"></div>
@@ -276,7 +287,34 @@ function buildHoldPanel(list, meta) {
     </div>`;
   }).join("");
   const sub = meta ? `<div class="note" style="margin:0 0 8px">报告日期 ${esc(meta.curr_date||"—")} · 对比 ${esc(meta.prev_date||"—")} · 共 ${list.length} 只</div>` : "";
-  return sub + `<div class="hold-scroll"><div class="hold-inner">${cols}</div></div>`;
+  return sub + `<div class="hold-wrap"><div class="hold-tip"></div><div class="hold-scroll"><div class="hold-inner">${cols}</div></div></div>`;
+}
+function attachTip(panel) {
+  const wrap = panel.querySelector(".hold-wrap");
+  if (!wrap) return;
+  const tip = wrap.querySelector(".hold-tip");
+  wrap.addEventListener("mousemove", (e) => {
+    const col = e.target.closest(".hcol");
+    if (!col) { tip.style.display = "none"; return; }
+    const d = JSON.parse(col.dataset.j);
+    const chg = (d.qty || 0) - (d.prev || 0);
+    const chgTxt = d.isnew ? "新开仓" : (chg > 0 ? "+" + fmtInt(chg) : fmtInt(chg));
+    const retc = d.ret == null ? "" : (d.ret >= 0 ? "t-pos" : "t-neg");
+    const retTxt = d.ret == null ? "—" : (d.ret > 0 ? "+" : "") + d.ret.toFixed(2) + "%";
+    tip.innerHTML =
+      `<div class="t-name">${esc(d.name)}</div>` +
+      `<div class="t-sub">${esc(d.code)} · ${d.side === "LONG" ? "多头 Long" : "空头 Short"}</div>` +
+      `<div class="t-qtyrow"><span class="t-row">当日持仓数量 </span><span class="t-qty">${fmtInt(d.qty)}</span></div>` +
+      `<div class="t-row">前一日 ${d.isnew ? "无(新开仓)" : fmtInt(d.prev)} · 变化 ${chgTxt}</div>` +
+      `<div class="t-row">市值 ${fmt(d.mv)} ${esc(d.ccy || "")} · 当日 return <span class="${retc}">${retTxt}</span></div>`;
+    tip.style.display = "block";
+    const wr = wrap.getBoundingClientRect();
+    let x = e.clientX - wr.left + 14, y = e.clientY - wr.top + 14;
+    if (x + tip.offsetWidth > wr.width) x = e.clientX - wr.left - tip.offsetWidth - 14;
+    if (x < 0) x = 4;
+    tip.style.left = x + "px"; tip.style.top = y + "px";
+  });
+  wrap.addEventListener("mouseleave", () => { tip.style.display = "none"; });
 }
 function renderHoldings(h) {
   const P = h.positions || {}, M = h.posmeta || {};
@@ -298,6 +336,7 @@ function renderHoldings(h) {
     if (i !== 0) panel.className = "hidden";
     panel.innerHTML = buildHoldPanel(P[a], M[a]);
     panelsEl.appendChild(panel);
+    attachTip(panel);
   });
   tabsEl.querySelectorAll(".tab").forEach(btn => {
     btn.onclick = () => {
