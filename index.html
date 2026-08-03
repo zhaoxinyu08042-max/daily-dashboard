@@ -8,11 +8,8 @@
 <style>
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
-  body {
-    margin: 0; background: #f5f6f8; color: #1a1d24;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-    line-height: 1.5;
-  }
+  body { margin: 0; background: #f5f6f8; color: #1a1d24;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.5; }
   .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 20px 64px; }
   header.top { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
   h1 { font-size: 22px; margin: 0; font-weight: 700; }
@@ -25,14 +22,12 @@
   th:first-child, td:first-child { text-align: left; }
   thead th { color: #6b7280; font-weight: 600; font-size: 12px; background: #fafbfc; }
   tbody tr:hover { background: #fafbfc; }
-  .pos { color: #12855a; }
-  .neg { color: #c0392b; }
+  .pos { color: #12855a; } .neg { color: #c0392b; }
   .mono { font-variant-numeric: tabular-nums; }
   .badge { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; font-weight: 600; }
   .badge.ok { background: #e7f6ee; color: #12855a; }
   .badge.warn { background: #fdeceb; color: #c0392b; }
   .badge.info { background: #eef1f6; color: #4b5563; }
-  .alert-note { margin-top: 12px; font-size: 12.5px; color: #c0392b; background: #fdeceb; border-radius: 8px; padding: 8px 12px; }
   .tabs { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
   .tab { border: 1px solid #e6e8ec; background: #fff; color: #4b5563; padding: 5px 14px; border-radius: 999px; font-size: 13px; cursor: pointer; }
   .tab.active { background: #1a1d24; color: #fff; border-color: #1a1d24; }
@@ -49,49 +44,40 @@
   .chart-box { position: relative; height: 320px; }
   .note { color: #9aa1ab; font-size: 12px; margin-top: 10px; }
   footer { margin-top: 28px; color: #9aa1ab; font-size: 12px; text-align: center; }
-
-  /* ---- 风险指标 ---- */
-  .ratio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
-  .ratio-card { border: 1px solid #e6e8ec; border-radius: 10px; padding: 14px 16px; background: #fafbfc; }
-  .ratio-card .acct { font-weight: 700; font-size: 14px; margin-bottom: 8px; }
-  .ratio-row { display: flex; justify-content: space-between; align-items: baseline; padding: 4px 0; }
-  .ratio-row .lbl { color: #6b7280; font-size: 12px; }
-  .ratio-row .win { color: #9aa1ab; font-size: 11px; margin-left: 4px; }
-  .ratio-row .val { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 14px; }
-  .ratio-sep { border-top: 1px dashed #e6e8ec; margin: 6px 0; }
-
-  /* ---- 持仓上下柱状图 ---- */
+  .tbl-scroll { overflow-x: auto; }
+  .alerts { margin-top: 14px; display: flex; flex-direction: column; gap: 8px; }
+  .alert-box { border-radius: 8px; padding: 9px 12px; font-size: 13px; line-height: 1.55; border-left: 3px solid; }
+  .alert-box.up { background: #eef8f2; border-color: #12855a; color: #14532d; }
+  .alert-box.down { background: #fdeceb; border-color: #c0392b; color: #7a271a; }
+  .alert-box .a-acct { font-weight: 700; }
+  .alerts-hd { font-size: 12px; color: #6b7280; margin-top: 14px; }
   .hold-legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; color: #4b5563; margin-bottom: 10px; align-items: center; }
   .lg-item { display: flex; align-items: center; gap: 6px; }
   .lg-swatch { width: 16px; height: 12px; border-radius: 2px; display: inline-block; }
-  .lg-long { background: #12855a; }
-  .lg-short { background: #c0392b; }
+  .lg-long { background: #12855a; } .lg-short { background: #c0392b; }
   .lg-dash { width: 16px; height: 12px; border: 1.5px dashed #555; border-radius: 2px; background: transparent; display: inline-block; }
-  .hold-scroll { overflow-x: auto; overflow-y: hidden; padding-bottom: 6px; }
-  .hold-inner { display: flex; align-items: stretch; gap: 4px; min-width: min-content; }
-  .hcol { flex: 0 0 auto; width: 52px; display: flex; flex-direction: column; align-items: center; }
-  .hbar-area { position: relative; width: 100%; }
-  .hbar-base { position: absolute; left: 0; right: 0; border-top: 1px solid #c3c8cf; }
-  .hbar-solid { position: absolute; left: 50%; transform: translateX(-50%); width: 30px; border-radius: 2px; }
-  .hbar-solid.long { background: #12855a; }
-  .hbar-solid.short { background: #c0392b; }
-  .hbar-dash { position: absolute; left: 50%; transform: translateX(-50%); width: 18px; border: 1.5px dashed rgba(20,20,20,.75); border-radius: 2px; background: transparent; z-index: 2; }
-  .hlabel { margin-top: 6px; text-align: center; width: 100%; }
-  .hlabel .ret { font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
-  .hlabel .code { font-size: 10px; color: #6b7280; font-variant-numeric: tabular-nums; }
-  .hlabel .nm { font-size: 10px; color: #4b5563; writing-mode: vertical-rl; text-orientation: mixed;
-    height: 96px; margin: 3px auto 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-  .hcol:hover .hbar-solid { filter: brightness(1.12); }
   .hold-wrap { position: relative; }
-  .hold-tip { position: absolute; z-index: 30; pointer-events: none; display: none;
-    background: #1a1d24; color: #fff; border-radius: 8px; padding: 8px 11px;
-    font-size: 12px; line-height: 1.55; box-shadow: 0 6px 18px rgba(0,0,0,.20); max-width: 250px; }
+  .hold-tip { position: absolute; z-index: 30; pointer-events: none; display: none; background: #1a1d24; color: #fff;
+    border-radius: 8px; padding: 8px 11px; font-size: 12px; line-height: 1.55; box-shadow: 0 6px 18px rgba(0,0,0,.20); max-width: 250px; }
   .hold-tip .t-name { font-weight: 600; margin-bottom: 2px; }
   .hold-tip .t-sub { color: #aab0ba; font-size: 11px; }
   .hold-tip .t-qtyrow { margin: 5px 0 3px; }
   .hold-tip .t-qty { font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums; }
   .hold-tip .t-row { color: #cfd3db; }
   .hold-tip .t-pos { color: #34d399; } .hold-tip .t-neg { color: #f87171; }
+  .hold-scroll { overflow-x: auto; overflow-y: hidden; padding-bottom: 6px; }
+  .hold-inner { display: flex; align-items: stretch; gap: 4px; min-width: min-content; }
+  .hcol { flex: 0 0 auto; width: 52px; display: flex; flex-direction: column; align-items: center; }
+  .hbar-area { position: relative; width: 100%; }
+  .hbar-base { position: absolute; left: 0; right: 0; border-top: 1px solid #c3c8cf; }
+  .hbar-solid { position: absolute; left: 50%; transform: translateX(-50%); width: 30px; border-radius: 2px; }
+  .hbar-solid.long { background: #12855a; } .hbar-solid.short { background: #c0392b; }
+  .hbar-dash { position: absolute; left: 50%; transform: translateX(-50%); width: 18px; border: 1.5px dashed rgba(20,20,20,.75); border-radius: 2px; background: transparent; z-index: 2; }
+  .hlabel { margin-top: 6px; text-align: center; width: 100%; }
+  .hlabel .ret { font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .hlabel .code { font-size: 10px; color: #6b7280; font-variant-numeric: tabular-nums; }
+  .hlabel .nm { font-size: 10px; color: #4b5563; writing-mode: vertical-rl; text-orientation: mixed; height: 96px; margin: 3px auto 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .hcol:hover .hbar-solid { filter: brightness(1.12); }
 </style>
 </head>
 <body>
@@ -100,23 +86,21 @@
     <h1>每日监控看板</h1>
     <span class="subtle" id="pageUpdated">加载中…</span>
   </header>
-  <p class="subtle">中和三账户净值 · 持仓 · 风险指标 · 财经科技每日热点 — 数据由定时任务每工作日自动更新</p>
+  <p class="subtle">中和账户净值 · 总报表 · 持仓 · 801总策略 · 财经科技热点 — 定时任务每工作日自动更新</p>
 
-  <!-- 净值汇总 -->
   <section class="card" id="navCard">
-    <h2>💹 三账户净值汇总 <span id="navStatus"></span></h2>
+    <h2>💹 账户净值汇总 <span id="navStatus"></span></h2>
     <div class="meta" id="navMeta">加载中…</div>
     <div id="navBody"></div>
   </section>
 
-  <!-- 风险指标 夏普/卡玛 -->
-  <section class="card" id="ratioCard">
-    <h2>📐 风险调整收益（夏普 / 卡玛）</h2>
-    <div class="meta" id="ratioMeta">加载中…</div>
-    <div id="ratioBody"></div>
+  <section class="card" id="summaryCard">
+    <h2>📋 总报表（自数据起点至今 · 含夏普/卡玛）</h2>
+    <div class="meta" id="summaryMeta">加载中…</div>
+    <div class="tbl-scroll" id="summaryBody"></div>
+    <div id="alertsBox"></div>
   </section>
 
-  <!-- 持仓上下柱状图 -->
   <section class="card" id="holdCard">
     <h2>📊 持仓明细（多空柱状图）</h2>
     <div class="meta" id="holdMeta">加载中…</div>
@@ -125,27 +109,31 @@
       <span class="lg-item"><span class="lg-swatch lg-long"></span>多头 Long（向上）</span>
       <span class="lg-item"><span class="lg-swatch lg-short"></span>空头 Short（向下）</span>
       <span class="lg-item"><span class="lg-dash"></span>虚线＝前一交易日持仓数量</span>
-      <span class="lg-item subtle">柱高 ∝ 持仓数量；柱下为代码 / 当日 return / 名称</span>
+      <span class="lg-item subtle">柱高 ∝ 持仓数量；悬停看当日数量</span>
     </div>
     <div id="holdPanels"></div>
   </section>
 
-  <!-- 净值曲线（近一月） -->
+  <section class="card" id="stratCard">
+    <h2>🧬 801 总策略净值变化（801 海外腿 + 星汇星河一号 在岸腿）</h2>
+    <div class="meta" id="stratMeta">加载中…</div>
+    <div class="chart-box"><canvas id="stratChart"></canvas></div>
+    <div class="tbl-scroll" id="stratBody" style="margin-top:14px"></div>
+  </section>
+
   <section class="card" id="chartCard">
-    <h2>📈 净值走势（近一个月）</h2>
+    <h2>📈 各账户净值走势（近一个月）</h2>
     <div class="meta" id="chartMeta">加载中…</div>
     <div class="chart-box"><canvas id="navChart"></canvas></div>
     <div class="note" id="chartNote"></div>
   </section>
 
-  <!-- 上周明细表格 -->
   <section class="card" id="weekCard">
     <h2>🗓️ 上周净值明细</h2>
     <div class="meta" id="weekMeta">加载中…</div>
-    <div id="weekBody"></div>
+    <div class="tbl-scroll" id="weekBody"></div>
   </section>
 
-  <!-- 新闻 -->
   <section class="card" id="newsCard">
     <h2>📰 财经科技每日热点</h2>
     <div class="meta" id="newsMeta">加载中…</div>
@@ -158,332 +146,190 @@
 
 <script>
 const bust = () => "?t=" + Date.now();
-const fmt = (n) => (n === null || n === undefined || isNaN(n)) ? "—" :
-  Number(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const fmtInt = (n) => (n === null || n === undefined || isNaN(n)) ? "—" :
-  Number(n).toLocaleString("en-US");
+const fmt = (n) => (n === null || n === undefined || isNaN(n)) ? "—" : Number(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const fmt0 = (n) => (n === null || n === undefined || isNaN(n)) ? "—" : Number(n).toLocaleString("en-US", { maximumFractionDigits: 0 });
+const fmtInt = (n) => (n === null || n === undefined || isNaN(n)) ? "—" : Number(n).toLocaleString("en-US");
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;" }[c]));
 const signClass = (n) => n > 0 ? "pos" : (n < 0 ? "neg" : "");
 const signStr = (n, suffix="") => (n > 0 ? "+" : "") + fmt(n) + suffix;
+const signStr0 = (n, suffix="") => (n > 0 ? "+" : "") + fmt0(n) + suffix;
+async function loadJSON(path) { const r = await fetch(path + bust(), { cache: "no-store" }); if (!r.ok) throw new Error(path + " " + r.status); return r.json(); }
 
-async function loadJSON(path) {
-  const r = await fetch(path + bust(), { cache: "no-store" });
-  if (!r.ok) throw new Error(path + " " + r.status);
-  return r.json();
-}
-
-/* ---------- 净值汇总 ---------- */
 function renderNav(d) {
-  const statusEl = document.getElementById("navStatus");
-  const metaEl = document.getElementById("navMeta");
-  const body = document.getElementById("navBody");
+  const statusEl = document.getElementById("navStatus"), metaEl = document.getElementById("navMeta"), body = document.getElementById("navBody");
   metaEl.textContent = "运行日期 " + (d.run_date || "—") + " · 更新于 " + (d.updated_at || "—");
-
-  if (d.status === "no_report") {
-    statusEl.innerHTML = '<span class="badge info">今日无新报告</span>';
-    body.innerHTML = '<div class="empty">' + esc(d.message || "当天没有新收到的估值报告。") + '</div>';
-    return;
-  }
-  if (d.status === "failed") {
-    statusEl.innerHTML = '<span class="badge warn">未获取</span>';
-    body.innerHTML = '<div class="empty">' + esc(d.message || "今日未能自动获取报告。") + '</div>';
-    return;
-  }
+  if (d.status === "no_report") { statusEl.innerHTML = '<span class="badge info">今日无新报告</span>'; body.innerHTML = '<div class="empty">' + esc(d.message || "当天没有新收到的估值报告。") + '</div>'; return; }
+  if (d.status === "failed") { statusEl.innerHTML = '<span class="badge warn">未获取</span>'; body.innerHTML = '<div class="empty">' + esc(d.message || "今日未能自动获取报告。") + '</div>'; return; }
   statusEl.innerHTML = '<span class="badge ok">已更新</span>';
-  const rows = (d.accounts || []).map(a => {
-    const cls = a.alert ? ' style="background:#fdf3f2"' : '';
-    return `<tr${cls}>
-      <td>${esc(a.account)}${a.alert ? ' <span class="badge warn">⚠️</span>' : ''}</td>
-      <td class="subtle">${esc(a.prev_date)}</td>
-      <td class="mono">${fmt(a.prev_nav)}</td>
-      <td class="mono">${fmt(a.curr_nav)}</td>
+  const rows = (d.accounts || []).map(a => { const cls = a.alert ? ' style="background:#fdf3f2"' : '';
+    return `<tr${cls}><td>${esc(a.account)}${a.alert ? ' <span class="badge warn">⚠️</span>' : ''}</td><td class="subtle">${esc(a.prev_date)}</td>
+      <td class="mono">${fmt(a.prev_nav)}</td><td class="mono">${fmt(a.curr_nav)}</td>
       <td class="mono ${signClass(a.net_transfer)}">${signStr(a.net_transfer)}</td>
       <td class="mono ${signClass(a.change_ex_transfer)}">${signStr(a.change_ex_transfer)}</td>
-      <td class="mono ${signClass(a.change_pct)}">${signStr(a.change_pct, "%")}</td>
-    </tr>`;
-  }).join("");
-  body.innerHTML = `<table><thead><tr>
-      <th>账户</th><th>上一次日期</th><th>上一次净值</th><th>当日净值</th>
-      <th>资金净划转</th><th>剔除划转后变化</th><th>变化率</th>
-    </tr></thead><tbody>${rows}</tbody></table>`;
+      <td class="mono ${signClass(a.change_pct)}">${signStr(a.change_pct, "%")}</td></tr>`; }).join("");
+  body.innerHTML = `<div class="tbl-scroll"><table><thead><tr><th>账户</th><th>上一次日期</th><th>上一次净值</th><th>当日净值</th><th>资金净划转</th><th>剔除划转后变化</th><th>变化率</th></tr></thead><tbody>${rows}</tbody></table></div>`;
   if (d.message) body.innerHTML += '<div class="note">' + esc(d.message) + '</div>';
 }
 
-/* ---------- 风险指标：夏普 / 卡玛 ---------- */
-function ratioVal(v) {
-  if (v === null || v === undefined || isNaN(v)) return '<span class="val subtle">—</span>';
-  const c = v >= 0 ? "pos" : "neg";
-  return `<span class="val ${c}">${(v>0?"+":"")+Number(v).toFixed(2)}</span>`;
-}
-function renderRatios(h) {
-  const R = h.ratios || {};
-  const meta = document.getElementById("ratioMeta");
-  const body = document.getElementById("ratioBody");
-  const accts = Object.keys(R);
-  if (!accts.length) { meta.innerHTML = '<span class="neg">无夏普/卡玛数据</span>'; return; }
-  meta.textContent = "年化、rf=0 · 收益率取自剔除划转后的日变化率 · 周度＝过去7自然日，月度＝过去1自然月";
-  const cards = accts.map(a => {
-    const w = (R[a]||{}).weekly || {}, m = (R[a]||{}).monthly || {};
-    return `<div class="ratio-card">
-      <div class="acct">${esc(a)}</div>
-      <div class="ratio-row"><span class="lbl">夏普 <span class="win">周</span></span>${ratioVal(w.sharpe)}</div>
-      <div class="ratio-row"><span class="lbl">卡玛 <span class="win">周</span></span>${ratioVal(w.calmar)}</div>
-      <div class="ratio-sep"></div>
-      <div class="ratio-row"><span class="lbl">夏普 <span class="win">月</span></span>${ratioVal(m.sharpe)}</div>
-      <div class="ratio-row"><span class="lbl">卡玛 <span class="win">月</span></span>${ratioVal(m.calmar)}</div>
-      <div class="ratio-row" style="margin-top:6px"><span class="win">月区间 ${esc(m.range||"—")}</span></div>
-    </div>`;
-  }).join("");
-  body.innerHTML = `<div class="ratio-grid">${cards}</div>`;
+function renderSummary(h) {
+  const S = h.summary || [], meta = document.getElementById("summaryMeta"), body = document.getElementById("summaryBody");
+  if (!S.length) { meta.innerHTML = '<span class="neg">无总报表数据</span>'; }
+  else {
+    meta.textContent = "口径：剔除资金划转 · rf=0 · 年化收益=(期末/期初)^(252/n)−1 · 夏普=日收益均值/标准差×√252 · 卡玛=年化收益/|最大回撤|";
+    const rows = S.map(r => `<tr><td>${esc(r.account)}</td><td class="subtle">${esc(r.range)}</td><td class="mono">${r.ndays}</td>
+      <td class="mono">${fmt0(r.start_nav)}</td><td class="mono">${fmt0(r.cur_nav)}</td>
+      <td class="mono ${signClass(r.cum_ret)}">${signStr(r.cum_ret,"%")}</td>
+      <td class="mono ${signClass(r.cum_amt)}">${signStr0(r.cum_amt)}</td>
+      <td class="mono ${signClass(r.ann_ret)}">${signStr(r.ann_ret,"%")}</td>
+      <td class="mono">${fmt(r.vol)}%</td><td class="mono neg">${fmt(r.mdd)}%</td>
+      <td class="mono ${signClass(r.sharpe)}">${r.sharpe==null?"—":(r.sharpe>0?"+":"")+r.sharpe.toFixed(2)}</td>
+      <td class="mono ${signClass(r.calmar)}">${r.calmar==null?"—":(r.calmar>0?"+":"")+r.calmar.toFixed(2)}</td></tr>`).join("");
+    body.innerHTML = `<table><thead><tr><th>账户</th><th>区间</th><th>交易日</th><th>起始净值</th><th>当前净值</th><th>累计收益率</th><th>累计收益额</th><th>年化收益</th><th>年化波动</th><th>最大回撤</th><th>夏普</th><th>卡玛</th></tr></thead><tbody>${rows}</tbody></table>`;
+  }
+  const A = h.alerts || {}, box = document.getElementById("alertsBox");
+  if (A.items && A.items.length) {
+    const items = A.items.map(it => `<div class="alert-box ${it.gain?'up':'down'}"><span class="a-acct">${it.gain?'▲':'▼'} ${esc(it.account)}</span> ${esc(it.text)}</div>`).join("");
+    box.innerHTML = `<div class="alerts-hd">⚠️ 当日单账户净值变动超过 ±$${fmtInt(A.threshold||10000)} 的说明（运行日 ${esc(A.date||"—")}）</div><div class="alerts">${items}</div>`;
+  } else { box.innerHTML = `<div class="alerts-hd">当日没有单账户净值变动超过 ±$${fmtInt((A.threshold)||10000)} 的情况。</div>`; }
 }
 
-/* ---------- 持仓：多空上下柱状图 ---------- */
-const CHART_H = 220;          // 柱区高度(px)
+function renderStrategy(h) {
+  const st = h.strategy801 || {}, s = st.series || [];
+  const meta = document.getElementById("stratMeta"), body = document.getElementById("stratBody");
+  if (!s.length) { meta.innerHTML = '<span class="neg">无 801 总策略数据</span>'; return; }
+  meta.textContent = (st.note || "801 海外腿 + 星汇星河一号 在岸腿，两腿 USD 变化额相加") + " · 更新于 " + (h.updated_at || "—");
+  const labels = s.map(r => r.date.slice(5));
+  new Chart(document.getElementById("stratChart"), { data: { labels, datasets: [
+      { type:"line", label:"合计累计变化(USD)", data: s.map(r=>r.cum), borderColor:"#7c3aed", backgroundColor:"#7c3aed", borderWidth:2, pointRadius:1.5, tension:0.2, yAxisID:"y", order:0 },
+      { type:"bar", label:"合计当日变化(USD)", data: s.map(r=>r.comb), backgroundColor: s.map(r=> (r.comb>=0? "rgba(18,133,90,.45)":"rgba(192,57,43,.45)")), borderWidth:0, yAxisID:"y", order:1 } ]},
+    options: { responsive:true, maintainAspectRatio:false, interaction:{mode:"index",intersect:false},
+      plugins:{ legend:{position:"top",labels:{boxWidth:14,font:{size:12}}}, tooltip:{callbacks:{label:c=>c.dataset.label+": "+signStr0(c.parsed.y)}}},
+      scales:{ y:{ ticks:{callback:v=>(v/1000).toFixed(0)+"k",font:{size:11}}, grid:{color:"#eef0f3"}}, x:{ ticks:{font:{size:11},maxRotation:0,autoSkip:true,maxTicksLimit:10}, grid:{display:false}} } } });
+  const rec = s.slice(-8).reverse();
+  const rows = rec.map(r => `<tr><td>${esc(r.date)}</td><td class="mono ${signClass(r.a801)}">${signStr0(r.a801)}</td>
+    <td class="mono ${signClass(r.xh)}">${signStr0(r.xh)}</td><td class="mono ${signClass(r.comb)}">${signStr0(r.comb)}</td>
+    <td class="mono ${signClass(r.cum)}">${signStr0(r.cum)}</td></tr>`).join("");
+  body.innerHTML = `<table><thead><tr><th>日期</th><th>801当日变化</th><th>星汇腿当日变化</th><th>合计当日变化</th><th>合计累计</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+const CHART_H = 220;
 function buildHoldPanel(list, meta) {
   if (!list || !list.length) return '<div class="empty">该账户暂无持仓数据</div>';
-  const hasLong = list.some(p => p.side === "LONG");
-  const hasShort = list.some(p => p.side === "SHORT");
-  // 基线位置(距顶部比例)
-  let baseFrac = 0.5;
-  if (hasLong && !hasShort) baseFrac = 0.92;
-  else if (hasShort && !hasLong) baseFrac = 0.08;
-  const baseY = CHART_H * baseFrac;
-  const upSpace = baseY - 6, downSpace = CHART_H - baseY - 6;
+  const hasLong = list.some(p => p.side === "LONG"), hasShort = list.some(p => p.side === "SHORT");
+  let bf = 0.5; if (hasLong && !hasShort) bf = 0.92; else if (hasShort && !hasLong) bf = 0.08;
+  const baseY = CHART_H * bf, upSpace = baseY - 6, downSpace = CHART_H - baseY - 6;
   const maxq = Math.max(1, ...list.map(p => Math.max(p.qty || 0, p.prev || 0)));
-
   const cols = list.map(p => {
-    const up = p.side === "LONG";
-    const space = up ? upSpace : downSpace;
+    const up = p.side === "LONG", space = up ? upSpace : downSpace;
     const hSolid = Math.max(2, (p.qty / maxq) * space);
     const hDash = (!p.isnew && p.prev > 0) ? Math.max(2, (p.prev / maxq) * space) : 0;
     const cls = up ? "long" : "short";
-    // solid bar
-    const solidStyle = up
-      ? `bottom:${CHART_H - baseY}px;height:${hSolid}px;`
-      : `top:${baseY}px;height:${hSolid}px;`;
-    const dashStyle = up
-      ? `bottom:${CHART_H - baseY}px;height:${hDash}px;`
-      : `top:${baseY}px;height:${hDash}px;`;
+    const solidStyle = up ? `bottom:${CHART_H - baseY}px;height:${hSolid}px;` : `top:${baseY}px;height:${hSolid}px;`;
+    const dashStyle = up ? `bottom:${CHART_H - baseY}px;height:${hDash}px;` : `top:${baseY}px;height:${hDash}px;`;
     const dashDiv = hDash ? `<div class="hbar-dash" style="${dashStyle}"></div>` : "";
-    const chg = (p.qty || 0) - (p.prev || 0);
-    const chgTxt = p.isnew ? "新开仓" : (chg > 0 ? "+" + fmtInt(chg) : fmtInt(chg));
-    const tip = `${p.name} (${p.code})\n${p.side} 数量 ${fmtInt(p.qty)}` +
-      `\n前一日 ${p.isnew ? "无(新开仓)" : fmtInt(p.prev)} · 变化 ${chgTxt}` +
-      `\n市值 ${fmt(p.mv)} ${p.ccy||""} · return ${p.ret==null?"—":p.ret.toFixed(2)+"%"}`;
     const retTxt = p.ret == null ? "—" : (p.ret > 0 ? "+" : "") + p.ret.toFixed(2) + "%";
     const retCls = p.ret == null ? "subtle" : (p.ret >= 0 ? "pos" : "neg");
     const dataJ = esc(JSON.stringify({name:p.name,code:p.code,side:p.side,qty:p.qty,prev:p.prev,isnew:p.isnew,mv:p.mv,ccy:p.ccy,ret:p.ret}));
-    return `<div class="hcol" data-j="${dataJ}">
-      <div class="hbar-area" style="height:${CHART_H}px">
-        <div class="hbar-base" style="top:${baseY}px"></div>
-        <div class="hbar-solid ${cls}" style="${solidStyle}"></div>
-        ${dashDiv}
-      </div>
-      <div class="hlabel">
-        <div class="ret ${retCls}">${retTxt}</div>
-        <div class="code">${esc(p.code)}</div>
-        <div class="nm">${esc(p.name)}</div>
-      </div>
-    </div>`;
+    return `<div class="hcol" data-j="${dataJ}"><div class="hbar-area" style="height:${CHART_H}px">
+        <div class="hbar-base" style="top:${baseY}px"></div><div class="hbar-solid ${cls}" style="${solidStyle}"></div>${dashDiv}</div>
+      <div class="hlabel"><div class="ret ${retCls}">${retTxt}</div><div class="code">${esc(p.code)}</div><div class="nm">${esc(p.name)}</div></div></div>`;
   }).join("");
   const sub = meta ? `<div class="note" style="margin:0 0 8px">报告日期 ${esc(meta.curr_date||"—")} · 对比 ${esc(meta.prev_date||"—")} · 共 ${list.length} 只</div>` : "";
   return sub + `<div class="hold-wrap"><div class="hold-tip"></div><div class="hold-scroll"><div class="hold-inner">${cols}</div></div></div>`;
 }
 function attachTip(panel) {
-  const wrap = panel.querySelector(".hold-wrap");
-  if (!wrap) return;
+  const wrap = panel.querySelector(".hold-wrap"); if (!wrap) return;
   const tip = wrap.querySelector(".hold-tip");
   wrap.addEventListener("mousemove", (e) => {
-    const col = e.target.closest(".hcol");
-    if (!col) { tip.style.display = "none"; return; }
+    const col = e.target.closest(".hcol"); if (!col) { tip.style.display = "none"; return; }
     const d = JSON.parse(col.dataset.j);
-    const chg = (d.qty || 0) - (d.prev || 0);
-    const chgTxt = d.isnew ? "新开仓" : (chg > 0 ? "+" + fmtInt(chg) : fmtInt(chg));
+    const chg = (d.qty || 0) - (d.prev || 0); const chgTxt = d.isnew ? "新开仓" : (chg > 0 ? "+" + fmtInt(chg) : fmtInt(chg));
     const retc = d.ret == null ? "" : (d.ret >= 0 ? "t-pos" : "t-neg");
     const retTxt = d.ret == null ? "—" : (d.ret > 0 ? "+" : "") + d.ret.toFixed(2) + "%";
-    tip.innerHTML =
-      `<div class="t-name">${esc(d.name)}</div>` +
-      `<div class="t-sub">${esc(d.code)} · ${d.side === "LONG" ? "多头 Long" : "空头 Short"}</div>` +
+    tip.innerHTML = `<div class="t-name">${esc(d.name)}</div><div class="t-sub">${esc(d.code)} · ${d.side === "LONG" ? "多头 Long" : "空头 Short"}</div>` +
       `<div class="t-qtyrow"><span class="t-row">当日持仓数量 </span><span class="t-qty">${fmtInt(d.qty)}</span></div>` +
       `<div class="t-row">前一日 ${d.isnew ? "无(新开仓)" : fmtInt(d.prev)} · 变化 ${chgTxt}</div>` +
       `<div class="t-row">市值 ${fmt(d.mv)} ${esc(d.ccy || "")} · 当日 return <span class="${retc}">${retTxt}</span></div>`;
-    tip.style.display = "block";
-    const wr = wrap.getBoundingClientRect();
+    tip.style.display = "block"; const wr = wrap.getBoundingClientRect();
     let x = e.clientX - wr.left + 14, y = e.clientY - wr.top + 14;
-    if (x + tip.offsetWidth > wr.width) x = e.clientX - wr.left - tip.offsetWidth - 14;
-    if (x < 0) x = 4;
+    if (x + tip.offsetWidth > wr.width) x = e.clientX - wr.left - tip.offsetWidth - 14; if (x < 0) x = 4;
     tip.style.left = x + "px"; tip.style.top = y + "px";
   });
   wrap.addEventListener("mouseleave", () => { tip.style.display = "none"; });
 }
 function renderHoldings(h) {
   const P = h.positions || {}, M = h.posmeta || {};
-  const meta = document.getElementById("holdMeta");
-  const tabsEl = document.getElementById("holdTabs");
-  const panelsEl = document.getElementById("holdPanels");
+  const meta = document.getElementById("holdMeta"), tabsEl = document.getElementById("holdTabs"), panelsEl = document.getElementById("holdPanels");
   const accts = Object.keys(P).filter(a => (P[a]||[]).length);
   if (!accts.length) { meta.innerHTML = '<span class="neg">无持仓数据</span>'; return; }
   meta.textContent = "各账户当日持仓 · 多头向上、空头向下、柱高 ∝ 持仓数量 · 虚线为前一交易日数量";
   tabsEl.innerHTML = ""; panelsEl.innerHTML = "";
   accts.forEach((a, i) => {
-    const btn = document.createElement("button");
-    btn.className = "tab" + (i === 0 ? " active" : "");
-    btn.textContent = `${a} · ${P[a].length}`;
-    btn.dataset.k = a;
-    tabsEl.appendChild(btn);
-    const panel = document.createElement("div");
-    panel.id = "hpanel-" + a;
-    if (i !== 0) panel.className = "hidden";
-    panel.innerHTML = buildHoldPanel(P[a], M[a]);
-    panelsEl.appendChild(panel);
-    attachTip(panel);
+    const btn = document.createElement("button"); btn.className = "tab" + (i === 0 ? " active" : ""); btn.textContent = `${a} · ${P[a].length}`; btn.dataset.k = a; tabsEl.appendChild(btn);
+    const panel = document.createElement("div"); panel.id = "hpanel-" + a; if (i !== 0) panel.className = "hidden";
+    panel.innerHTML = buildHoldPanel(P[a], M[a]); panelsEl.appendChild(panel); attachTip(panel);
   });
-  tabsEl.querySelectorAll(".tab").forEach(btn => {
-    btn.onclick = () => {
-      tabsEl.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      accts.forEach(a =>
-        document.getElementById("hpanel-" + a).classList.toggle("hidden", a !== btn.dataset.k));
-    };
-  });
+  tabsEl.querySelectorAll(".tab").forEach(btn => { btn.onclick = () => {
+    tabsEl.querySelectorAll(".tab").forEach(b => b.classList.remove("active")); btn.classList.add("active");
+    accts.forEach(a => document.getElementById("hpanel-" + a).classList.toggle("hidden", a !== btn.dataset.k)); }; });
 }
 
-/* ---------- 历史：曲线 + 上周表格 ---------- */
 const ACCT_COLORS = { "81099801":"#2563eb", "81099802":"#12855a", "81099803":"#c0392b", "81099805":"#b8860b" };
-
 function renderChart(h) {
   const series = h.series || [];
-  document.getElementById("chartMeta").textContent =
-    "数据区间取最近约一个月 · 单位 USD · 更新于 " + (h.updated_at || "—");
+  document.getElementById("chartMeta").textContent = "数据区间取最近约一个月 · 单位 USD · 更新于 " + (h.updated_at || "—");
   if (!series.length) { document.getElementById("chartMeta").innerHTML = '<span class="neg">无历史数据</span>'; return; }
-
-  const lastDate = new Date(series[series.length - 1].date);
-  const cutoff = new Date(lastDate); cutoff.setDate(cutoff.getDate() - 31);
-  const win = series.filter(s => new Date(s.date) >= cutoff);
-  const labels = win.map(s => s.date.slice(5));
-
+  const lastDate = new Date(series[series.length - 1].date); const cutoff = new Date(lastDate); cutoff.setDate(cutoff.getDate() - 31);
+  const win = series.filter(s => new Date(s.date) >= cutoff); const labels = win.map(s => s.date.slice(5));
   const accts = (h.accounts || []).filter(a => win.some(s => s[a] != null));
-  const datasets = accts.map(a => ({
-    label: a,
-    data: win.map(s => s[a]),
-    borderColor: ACCT_COLORS[a] || "#666",
-    backgroundColor: ACCT_COLORS[a] || "#666",
-    borderWidth: 2, pointRadius: 2, tension: 0.25, spanGaps: true
-  }));
-
-  new Chart(document.getElementById("navChart"), {
-    type: "line",
-    data: { labels, datasets },
-    options: {
-      responsive: true, maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
-      plugins: { legend: { position: "top", labels: { boxWidth: 14, font: { size: 12 } } },
-        tooltip: { callbacks: { label: c => c.dataset.label + ": " + fmt(c.parsed.y) } } },
-      scales: {
-        y: { ticks: { callback: v => (v/1000).toFixed(0) + "k", font: { size: 11 } }, grid: { color: "#eef0f3" } },
-        x: { ticks: { font: { size: 11 }, maxRotation: 0, autoSkip: true, maxTicksLimit: 10 }, grid: { display: false } }
-      }
-    }
-  });
-  document.getElementById("chartNote").textContent =
-    "注：7-20 账户间存在内部划转（81099801 转入 40 万、81099803 转出 50 万），故当日净值出现台阶式变动，属资金划转而非盈亏。";
+  const datasets = accts.map(a => ({ label: a, data: win.map(s => s[a]), borderColor: ACCT_COLORS[a] || "#666", backgroundColor: ACCT_COLORS[a] || "#666", borderWidth: 2, pointRadius: 2, tension: 0.25, spanGaps: true }));
+  new Chart(document.getElementById("navChart"), { type: "line", data: { labels, datasets },
+    options: { responsive: true, maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
+      plugins: { legend: { position: "top", labels: { boxWidth: 14, font: { size: 12 } } }, tooltip: { callbacks: { label: c => c.dataset.label + ": " + fmt(c.parsed.y) } } },
+      scales: { y: { ticks: { callback: v => (v/1000).toFixed(0) + "k", font: { size: 11 } }, grid: { color: "#eef0f3" } }, x: { ticks: { font: { size: 11 }, maxRotation: 0, autoSkip: true, maxTicksLimit: 10 }, grid: { display: false } } } } });
+  document.getElementById("chartNote").textContent = "注：账户间历史上存在内部划转，个别台阶式变动属资金划转而非盈亏；801 的对冲多头腿见上方『801 总策略』。";
 }
-
 function renderWeek(h) {
-  const weekly = h.weekly || {};
-  const accts = (h.accounts || []).filter(a => (weekly[a] || []).length);
-  const meta = document.getElementById("weekMeta");
-  const body = document.getElementById("weekBody");
+  const weekly = h.weekly || {}; const accts = (h.accounts || []).filter(a => (weekly[a] || []).length);
+  const meta = document.getElementById("weekMeta"), body = document.getElementById("weekBody");
   if (!accts.length) { meta.innerHTML = '<span class="neg">无上周数据</span>'; return; }
-
   const dates = [...new Set(accts.flatMap(a => weekly[a].map(r => r.date)))].sort();
   const idx = {}; accts.forEach(a => { idx[a] = {}; weekly[a].forEach(r => idx[a][r.date] = r); });
   meta.textContent = "各账户最近约一周每日净值与剔除划转后变化率";
-
   const head = "<th>日期</th>" + accts.map(a => `<th>${a} 净值</th><th>${a} 变化率</th>`).join("");
-  const rows = dates.map(dt => {
-    const cells = accts.map(a => {
-      const r = idx[a][dt];
+  const rows = dates.map(dt => { const cells = accts.map(a => { const r = idx[a][dt];
       if (!r) return '<td class="mono subtle">—</td><td class="mono subtle">—</td>';
-      const pct = r.pct;
-      return `<td class="mono">${fmt(r.nav)}</td>` +
-             `<td class="mono ${signClass(pct)}">${pct==null?"—":signStr(pct,"%")}</td>`;
-    }).join("");
-    return `<tr><td>${dt}</td>${cells}</tr>`;
-  }).join("");
+      const pct = r.pct; return `<td class="mono">${fmt(r.nav)}</td><td class="mono ${signClass(pct)}">${pct==null?"—":signStr(pct,"%")}</td>`; }).join("");
+    return `<tr><td>${dt}</td>${cells}</tr>`; }).join("");
   body.innerHTML = `<table><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table>`;
 }
 
-/* ---------- 新闻 ---------- */
 function newsItemHTML(n, i) {
-  const title = n.url
-    ? `<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>` : esc(n.title);
-  return `<div class="news-item">
-    <div class="n-title"><span class="n-idx">${i + 1}</span>${title}</div>
-    ${n.summary ? `<div class="n-sum">${esc(n.summary)}</div>` : ""}
-    <div class="n-src">${esc(n.source || "")}</div></div>`;
+  const title = n.url ? `<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>` : esc(n.title);
+  return `<div class="news-item"><div class="n-title"><span class="n-idx">${i + 1}</span>${title}</div>${n.summary ? `<div class="n-sum">${esc(n.summary)}</div>` : ""}<div class="n-src">${esc(n.source || "")}</div></div>`;
 }
-const NEWS_CATS = [
-  { key: "finance", label: "财经" },
-  { key: "tech", label: "科技" },
-  { key: "mag7", label: "七姐妹+SpaceX" }
-];
+const NEWS_CATS = [ { key: "finance", label: "财经" }, { key: "tech", label: "科技" }, { key: "mag7", label: "七姐妹+SpaceX" } ];
 function renderNews(d) {
-  document.getElementById("newsMeta").innerHTML =
-    "新闻日期 " + (d.news_date || "—") + " · 更新于 " + (d.updated_at || "—") +
-    (d.doc_file ? ` · <span class="subtle">Word 文档：${esc(d.doc_file)}</span>` : "");
-
+  document.getElementById("newsMeta").innerHTML = "新闻日期 " + (d.news_date || "—") + " · 更新于 " + (d.updated_at || "—") + (d.doc_file ? ` · <span class="subtle">Word 文档：${esc(d.doc_file)}</span>` : "");
   const cats = NEWS_CATS.filter(c => Array.isArray(d[c.key]));
-  const tabsEl = document.getElementById("newsTabs");
-  const panelsEl = document.getElementById("newsPanels");
-  tabsEl.innerHTML = "";
-  panelsEl.innerHTML = "";
-
-  cats.forEach((c, i) => {
-    const items = d[c.key] || [];
-    const btn = document.createElement("button");
-    btn.className = "tab" + (i === 0 ? " active" : "");
-    btn.textContent = `${c.label} · ${items.length}`;
-    btn.dataset.k = c.key;
-    tabsEl.appendChild(btn);
-
-    const panel = document.createElement("div");
-    panel.id = "panel-" + c.key;
-    if (i !== 0) panel.className = "hidden";
-    panel.innerHTML = items.length ? items.map(newsItemHTML).join("")
-      : `<div class="empty">暂无${c.label}新闻</div>`;
-    panelsEl.appendChild(panel);
-  });
-
-  tabsEl.querySelectorAll(".tab").forEach(btn => {
-    btn.onclick = () => {
-      tabsEl.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      cats.forEach(c =>
-        document.getElementById("panel-" + c.key).classList.toggle("hidden", c.key !== btn.dataset.k));
-    };
-  });
+  const tabsEl = document.getElementById("newsTabs"), panelsEl = document.getElementById("newsPanels"); tabsEl.innerHTML = ""; panelsEl.innerHTML = "";
+  cats.forEach((c, i) => { const items = d[c.key] || [];
+    const btn = document.createElement("button"); btn.className = "tab" + (i === 0 ? " active" : ""); btn.textContent = `${c.label} · ${items.length}`; btn.dataset.k = c.key; tabsEl.appendChild(btn);
+    const panel = document.createElement("div"); panel.id = "panel-" + c.key; if (i !== 0) panel.className = "hidden";
+    panel.innerHTML = items.length ? items.map(newsItemHTML).join("") : `<div class="empty">暂无${c.label}新闻</div>`; panelsEl.appendChild(panel); });
+  tabsEl.querySelectorAll(".tab").forEach(btn => { btn.onclick = () => {
+    tabsEl.querySelectorAll(".tab").forEach(b => b.classList.remove("active")); btn.classList.add("active");
+    cats.forEach(c => document.getElementById("panel-" + c.key).classList.toggle("hidden", c.key !== btn.dataset.k)); }; });
 }
 
-/* ---------- init ---------- */
 (async function () {
   let latest = "";
   try { const nav = await loadJSON("nav.json"); renderNav(nav); latest = nav.updated_at || latest; }
   catch (e) { document.getElementById("navMeta").innerHTML = '<span class="neg">净值数据未找到（nav.json）</span>'; }
-
-  try {
-    const h = await loadJSON("history.json");
-    renderChart(h); renderWeek(h); renderRatios(h); renderHoldings(h);
-  }
-  catch (e) {
-    document.getElementById("chartMeta").innerHTML = '<span class="neg">历史数据未找到（history.json）</span>';
-    document.getElementById("weekMeta").innerHTML = '<span class="neg">历史数据未找到（history.json）</span>';
-    document.getElementById("ratioMeta").innerHTML = '<span class="neg">历史数据未找到（history.json）</span>';
-    document.getElementById("holdMeta").innerHTML = '<span class="neg">历史数据未找到（history.json）</span>';
-  }
-
+  try { const h = await loadJSON("history.json"); renderSummary(h); renderStrategy(h); renderHoldings(h); renderChart(h); renderWeek(h); }
+  catch (e) { ["summaryMeta","stratMeta","holdMeta","chartMeta","weekMeta"].forEach(id => document.getElementById(id).innerHTML = '<span class="neg">历史数据未找到（history.json）</span>'); }
   try { const news = await loadJSON("news.json"); renderNews(news); if ((news.updated_at||"") > latest) latest = news.updated_at; }
   catch (e) { document.getElementById("newsMeta").innerHTML = '<span class="neg">新闻数据未找到（news.json）</span>'; }
-
   document.getElementById("pageUpdated").textContent = latest ? ("最近更新 " + latest) : "";
   document.getElementById("footer").textContent = "本页每次打开自动读取最新数据 · " + new Date().toLocaleString("zh-CN");
 })();
