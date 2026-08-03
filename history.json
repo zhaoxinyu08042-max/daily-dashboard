@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-03T10:11:21+0800",
+ "updated_at": "2026-08-03T15:24:35+0800",
  "accounts": [
   "81099801",
   "81099802",
@@ -823,7 +823,7 @@
     "isnew": true,
     "mv": 118944,
     "ccy": "CNY",
-    "ret": 1.71
+    "ret": -0.11
    },
    {
     "name": "Shenzhen Techwinsemi Technology Co.,Ltd.",
@@ -834,7 +834,7 @@
     "isnew": true,
     "mv": 270130,
     "ccy": "CNY",
-    "ret": 3.89
+    "ret": 1.61
    },
    {
     "name": "San Yang Ma (Chongqing) Logistics Co.,Ltd.",
@@ -845,7 +845,7 @@
     "isnew": true,
     "mv": 276952,
     "ccy": "CNY",
-    "ret": 3.99
+    "ret": -0.19
    },
    {
     "name": "Nanjing Xinlian Electronics Co., Ltd",
@@ -856,7 +856,7 @@
     "isnew": true,
     "mv": 81972,
     "ccy": "CNY",
-    "ret": 1.18
+    "ret": -0.36
    },
    {
     "name": "Beingmate Co.,Ltd",
@@ -867,7 +867,7 @@
     "isnew": false,
     "mv": 80845,
     "ccy": "CNY",
-    "ret": 1.16
+    "ret": -0.23
    },
    {
     "name": "Hangzhou Star Shuaier Electric Appliance Co.,Ltd.",
@@ -878,7 +878,7 @@
     "isnew": false,
     "mv": 276888,
     "ccy": "CNY",
-    "ret": 3.99
+    "ret": 0.21
    },
    {
     "name": "Eve Energy Co., Ltd.",
@@ -889,7 +889,7 @@
     "isnew": true,
     "mv": 244170,
     "ccy": "CNY",
-    "ret": 3.52
+    "ret": -0.07
    },
    {
     "name": "Wangsu Science & Technology Co.,Ltd.",
@@ -900,7 +900,7 @@
     "isnew": true,
     "mv": 126270,
     "ccy": "CNY",
-    "ret": 1.82
+    "ret": 0.48
    },
    {
     "name": "Walvax Biotechnology Co.,Ltd.",
@@ -911,7 +911,7 @@
     "isnew": true,
     "mv": 131824,
     "ccy": "CNY",
-    "ret": 1.9
+    "ret": -0.12
    },
    {
     "name": "Shenzhen Yinghe Technology Co.,Ltd",
@@ -922,7 +922,7 @@
     "isnew": true,
     "mv": 232176,
     "ccy": "CNY",
-    "ret": 3.34
+    "ret": -0.34
    },
    {
     "name": "Nanjing Aolian Ae&Ea Co.,Ltd",
@@ -933,7 +933,7 @@
     "isnew": true,
     "mv": 175212,
     "ccy": "CNY",
-    "ret": 2.52
+    "ret": -0.16
    },
    {
     "name": "Dark Horse Technology Group Co. Ltd",
@@ -944,7 +944,7 @@
     "isnew": false,
     "mv": 244568,
     "ccy": "CNY",
-    "ret": 3.52
+    "ret": -0.53
    },
    {
     "name": "Zhejiang Wecome Pharmaceutical Company Limited",
@@ -955,7 +955,7 @@
     "isnew": true,
     "mv": 276450,
     "ccy": "CNY",
-    "ret": 3.98
+    "ret": 0.22
    },
    {
     "name": "Fujian Wanchen Food Group Co.,Ltd.",
@@ -966,7 +966,7 @@
     "isnew": true,
     "mv": 152950,
     "ccy": "CNY",
-    "ret": 2.2
+    "ret": -0.63
    },
    {
     "name": "Shanghai Urban Architecture Design Co.,Ltd.",
@@ -977,7 +977,7 @@
     "isnew": true,
     "mv": 283730,
     "ccy": "CNY",
-    "ret": 4.09
+    "ret": -2.12
    },
    {
     "name": "Qingdao Hi-Tech Moulds&Plastics Technology Co., Ltd.",
@@ -988,7 +988,7 @@
     "isnew": true,
     "mv": 278511,
     "ccy": "CNY",
-    "ret": 4.01
+    "ret": 0.17
    },
    {
     "name": "Caina Technology Co., Ltd.",
@@ -999,7 +999,7 @@
     "isnew": true,
     "mv": 278070,
     "ccy": "CNY",
-    "ret": 4.0
+    "ret": 0.14
    },
    {
     "name": "Wuhan Tianyuan Group Co., Ltd.",
@@ -1010,7 +1010,7 @@
     "isnew": true,
     "mv": 277969,
     "ccy": "CNY",
-    "ret": 4.0
+    "ret": -0.35
    },
    {
     "name": "Shenzhen Lions King Hi-Tech Co., Ltd",
@@ -1021,7 +1021,7 @@
     "isnew": true,
     "mv": 281994,
     "ccy": "CNY",
-    "ret": 4.06
+    "ret": 0.06
    },
    {
     "name": "Zhejiang Top Cloud-Agri Technology Co., Ltd.",
@@ -1032,7 +1032,7 @@
     "isnew": true,
     "mv": 106704,
     "ccy": "CNY",
-    "ret": 1.54
+    "ret": -0.32
    },
    {
     "name": "Lanzhou Greatwall Electrical Co.Ltd",
@@ -1043,7 +1043,7 @@
     "isnew": true,
     "mv": 111520,
     "ccy": "CNY",
-    "ret": 1.61
+    "ret": -0.7
    },
    {
     "name": "Dawei Technology (Guangdong) Group Co., Ltd.",
@@ -1054,7 +1054,7 @@
     "isnew": true,
     "mv": 277488,
     "ccy": "CNY",
-    "ret": 4.0
+    "ret": -0.17
    },
    {
     "name": "Ningbo Boway Alloy Material Company Limited",
@@ -1065,7 +1065,7 @@
     "isnew": true,
     "mv": 276888,
     "ccy": "CNY",
-    "ret": 3.99
+    "ret": -0.27
    },
    {
     "name": "Shida Shinghwa Advanced Material Group Co.,Ltd.",
@@ -1076,7 +1076,7 @@
     "isnew": true,
     "mv": 274469,
     "ccy": "CNY",
-    "ret": 3.95
+    "ret": 0.12
    },
    {
     "name": "Shanghai Emperor of Cleaning Hi-Tech Co., Ltd",
@@ -1087,7 +1087,7 @@
     "isnew": true,
     "mv": 149982,
     "ccy": "CNY",
-    "ret": 2.16
+    "ret": -0.07
    },
    {
     "name": "Huada Automotive Technology Corp.,Ltd",
@@ -1098,7 +1098,7 @@
     "isnew": true,
     "mv": 277796,
     "ccy": "CNY",
-    "ret": 4.0
+    "ret": 0.03
    },
    {
     "name": "Anhui Gourgen Traffic Construction Co.,Ltd.",
@@ -1109,7 +1109,7 @@
     "isnew": true,
     "mv": 178860,
     "ccy": "CNY",
-    "ret": 2.58
+    "ret": -0.08
    },
    {
     "name": "Guangdong Marubi Biotechnology Co., Ltd",
@@ -1120,7 +1120,7 @@
     "isnew": true,
     "mv": 203557,
     "ccy": "CNY",
-    "ret": 2.93
+    "ret": 1.13
    },
    {
     "name": "Wuxi Chipown Micro-Electronics Limited",
@@ -1131,7 +1131,7 @@
     "isnew": false,
     "mv": 306964.44,
     "ccy": "CNY",
-    "ret": 4.42
+    "ret": -4.5
    },
    {
     "name": "Shanghai New Vision Microelectronics Co., Ltd.",
@@ -1142,7 +1142,7 @@
     "isnew": false,
     "mv": 296694,
     "ccy": "CNY",
-    "ret": 4.27
+    "ret": -4.03
    },
    {
     "name": "Zhuhai CosMX Battery Co., Ltd.",
@@ -1153,7 +1153,7 @@
     "isnew": true,
     "mv": 131850,
     "ccy": "CNY",
-    "ret": 1.9
+    "ret": 0.24
    },
    {
     "name": "SUPCON Technology Co.,Ltd.",
@@ -1164,7 +1164,7 @@
     "isnew": true,
     "mv": 260736,
     "ccy": "CNY",
-    "ret": 3.76
+    "ret": 0.81
    }
   ],
   "81099802": [
@@ -1177,7 +1177,7 @@
     "isnew": false,
     "mv": 224130,
     "ccy": "CNY",
-    "ret": 0.68
+    "ret": 10.2
    },
    {
     "name": "Zte Corporation",
@@ -1188,7 +1188,7 @@
     "isnew": false,
     "mv": 740439,
     "ccy": "CNY",
-    "ret": 2.25
+    "ret": 10.73
    },
    {
     "name": "INNER MONGOLIA XINGYE SILVER＆TIN MINING CO.,LTD",
@@ -1199,7 +1199,7 @@
     "isnew": false,
     "mv": 333900,
     "ccy": "CNY",
-    "ret": 1.01
+    "ret": 4.69
    },
    {
     "name": "Goldwind Science & Technology Co., Ltd.",
@@ -1210,7 +1210,7 @@
     "isnew": false,
     "mv": 180222,
     "ccy": "CNY",
-    "ret": 0.55
+    "ret": 29.12
    },
    {
     "name": "Talkweb Information System Co.,Ltd.",
@@ -1221,7 +1221,7 @@
     "isnew": false,
     "mv": 361101.18,
     "ccy": "CNY",
-    "ret": 1.1
+    "ret": 24.03
    },
    {
     "name": "Yunnan Lincang Xinyuan Germanium Industry Co.,Ltd",
@@ -1232,7 +1232,7 @@
     "isnew": false,
     "mv": 1506375,
     "ccy": "CNY",
-    "ret": 4.58
+    "ret": 5.59
    },
    {
     "name": "Lingyi Itech (Guangdong) Company",
@@ -1243,7 +1243,7 @@
     "isnew": false,
     "mv": 303800,
     "ccy": "CNY",
-    "ret": 0.92
+    "ret": -0.31
    },
    {
     "name": "Zhejiang Youpon Integrated Ceiling Co.,Ltd.",
@@ -1254,7 +1254,7 @@
     "isnew": false,
     "mv": 79770,
     "ccy": "CNY",
-    "ret": 0.24
+    "ret": 3.77
    },
    {
     "name": "Toread Holdings Group Co., Ltd.",
@@ -1265,7 +1265,7 @@
     "isnew": false,
     "mv": 230250,
     "ccy": "CNY",
-    "ret": 0.7
+    "ret": 17.02
    },
    {
     "name": "BlueFocus Intelligent Communications Group Co., Ltd.",
@@ -1276,7 +1276,7 @@
     "isnew": false,
     "mv": 299915,
     "ccy": "CNY",
-    "ret": 0.91
+    "ret": -9.48
    },
    {
     "name": "Shenzhen Sunway Communication Co., Ltd",
@@ -1287,7 +1287,7 @@
     "isnew": false,
     "mv": 1948974.36,
     "ccy": "CNY",
-    "ret": 5.92
+    "ret": 40.31
    },
    {
     "name": "Xingyun Technology Co.,Ltd",
@@ -1298,7 +1298,7 @@
     "isnew": false,
     "mv": 1785600,
     "ccy": "CNY",
-    "ret": 5.43
+    "ret": 4.9
    },
    {
     "name": "Beijing Enlight Media Co., Ltd.",
@@ -1309,7 +1309,7 @@
     "isnew": false,
     "mv": 113335,
     "ccy": "CNY",
-    "ret": 0.34
+    "ret": 12.02
    },
    {
     "name": "Hebei Changshan Biochemical Pharmaceutical Co., Ltd.",
@@ -1320,7 +1320,7 @@
     "isnew": false,
     "mv": 69888,
     "ccy": "CNY",
-    "ret": 0.21
+    "ret": 42.18
    },
    {
     "name": "Shenzhen Ysstech Info-Tech Co.,Ltd",
@@ -1331,7 +1331,7 @@
     "isnew": false,
     "mv": 613676,
     "ccy": "CNY",
-    "ret": 1.87
+    "ret": 3.8
    },
    {
     "name": "Canmax Technologies Co., Ltd.",
@@ -1342,7 +1342,7 @@
     "isnew": false,
     "mv": 433840,
     "ccy": "CNY",
-    "ret": 1.32
+    "ret": 39.72
    },
    {
     "name": "Kunlun Tech Co., Ltd.",
@@ -1353,7 +1353,7 @@
     "isnew": true,
     "mv": 133920,
     "ccy": "CNY",
-    "ret": 0.41
+    "ret": -4.68
    },
    {
     "name": "Allwinner Technology Co.,Ltd.",
@@ -1364,7 +1364,7 @@
     "isnew": false,
     "mv": 73788,
     "ccy": "CNY",
-    "ret": 0.22
+    "ret": 16.19
    },
    {
     "name": "Eoptolink Technology Inc.,Ltd.",
@@ -1375,7 +1375,7 @@
     "isnew": false,
     "mv": 198005,
     "ccy": "CNY",
-    "ret": 0.6
+    "ret": 11.02
    },
    {
     "name": "Chongqing Polycomp International Corporation",
@@ -1386,7 +1386,7 @@
     "isnew": false,
     "mv": 115164,
     "ccy": "CNY",
-    "ret": 0.35
+    "ret": 1.85
    },
    {
     "name": "Zhejiang Juhua Co.,Ltd",
@@ -1397,7 +1397,7 @@
     "isnew": false,
     "mv": 138320,
     "ccy": "CNY",
-    "ret": 0.42
+    "ret": 1.95
    },
    {
     "name": "Shenzhen Heungkong Holding Co.,Ltd",
@@ -1408,7 +1408,7 @@
     "isnew": false,
     "mv": 27666,
     "ccy": "CNY",
-    "ret": 0.08
+    "ret": -21.01
    },
    {
     "name": "Guangdong Hec Technology Holding Co., Ltd",
@@ -1419,7 +1419,7 @@
     "isnew": false,
     "mv": 2050428,
     "ccy": "CNY",
-    "ret": 6.23
+    "ret": 5.6
    },
    {
     "name": "Foxconn Industrial Internet Co.,Ltd.",
@@ -1441,7 +1441,7 @@
     "isnew": false,
     "mv": 185107,
     "ccy": "CNY",
-    "ret": 0.56
+    "ret": 21.37
    },
    {
     "name": "Gigadevice Semiconductor Inc.",
@@ -1452,7 +1452,7 @@
     "isnew": false,
     "mv": 189300,
     "ccy": "CNY",
-    "ret": 0.58
+    "ret": 37.1
    },
    {
     "name": "Guangdong Anda Automation Solutions Co.,Ltd.",
@@ -1463,7 +1463,7 @@
     "isnew": false,
     "mv": 58043.48,
     "ccy": "CNY",
-    "ret": 0.18
+    "ret": 10.08
    },
    {
     "name": "Orbbec Inc.",
@@ -1474,7 +1474,7 @@
     "isnew": false,
     "mv": 9386,
     "ccy": "CNY",
-    "ret": 0.03
+    "ret": 30.06
    },
    {
     "name": "Biwin Storage Technology Co., Ltd.",
@@ -1485,7 +1485,7 @@
     "isnew": false,
     "mv": 1107351,
     "ccy": "CNY",
-    "ret": 3.37
+    "ret": -3.21
    },
    {
     "name": "Hangzhou Kelin Electric Co.Ltd.",
@@ -1496,7 +1496,7 @@
     "isnew": false,
     "mv": 165305.53,
     "ccy": "CNY",
-    "ret": 0.5
+    "ret": 6.64
    },
    {
     "name": "Semight Instruments Co., Ltd.",
@@ -1507,7 +1507,7 @@
     "isnew": false,
     "mv": 328000,
     "ccy": "CNY",
-    "ret": 1.0
+    "ret": 17.48
    },
    {
     "name": "Semiconductor Manufacturing International Corporation",
@@ -1518,7 +1518,7 @@
     "isnew": false,
     "mv": 1165506,
     "ccy": "CNY",
-    "ret": 3.54
+    "ret": 22.42
    }
   ],
   "81099803": [
@@ -1531,7 +1531,7 @@
     "isnew": false,
     "mv": 177750,
     "ccy": "CNY",
-    "ret": 0.98
+    "ret": 29.44
    },
    {
     "name": "Zhuzhou Hongda Electronics Corp.,Ltd.",
@@ -1542,7 +1542,7 @@
     "isnew": false,
     "mv": 28530,
     "ccy": "CNY",
-    "ret": 1.23
+    "ret": 4.13
    },
    {
     "name": "Shaanxi Kanghui Pharmaceutical Co., Ltd.",
@@ -1553,7 +1553,7 @@
     "isnew": false,
     "mv": 1319892,
     "ccy": "CNY",
-    "ret": 7.25
+    "ret": -1.81
    },
    {
     "name": "Frontier Biotechnologies Inc.",
@@ -1564,7 +1564,7 @@
     "isnew": false,
     "mv": 2865630,
     "ccy": "CNY",
-    "ret": 15.75
+    "ret": -12.63
    },
    {
     "name": "Chengdu KSW Technologies Co.,Ltd.",
@@ -1575,7 +1575,7 @@
     "isnew": false,
     "mv": 1735506.32,
     "ccy": "CNY",
-    "ret": 74.79
+    "ret": -0.6
    }
   ]
  },
