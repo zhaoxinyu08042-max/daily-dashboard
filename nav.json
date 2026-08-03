@@ -1,7 +1,11 @@
 {
-  "updated_at": "2026-08-02T15:05:00+08:00",
-  "run_date": "2026-08-02",
-  "status": "no_report",
-  "message": "邮箱已登录并成功读取收件箱。三个监控账户(81099801/02/03)最新的Daily valuation report日期均为2026-07-30，该交易日已在本地表中，无新报告。今日为周日，07-31(周五)报告尚未送达(券商T+1)。",
-  "accounts": []
+  "updated_at": "2026-08-03T09:40:00+08:00",
+  "run_date": "2026-08-03",
+  "status": "ok",
+  "message": "",
+  "accounts": [
+    {"account":"81099801","prev_date":"2026-07-30","prev_nav":554452.16,"curr_nav":520110.06,"net_transfer":0.0,"change_ex_transfer":-34342.10,"change_pct":-6.19,"alert":true},
+    {"account":"81099802","prev_date":"2026-07-30","prev_nav":997921.47,"curr_nav":968268.06,"net_transfer":0.0,"change_ex_transfer":-29653.41,"change_pct":-2.97,"alert":false},
+    {"account":"81099803","prev_date":"2026-07-30","prev_nav":290972.68,"curr_nav":329976.90,"net_transfer":0.0,"change_ex_transfer":39004.22,"change_pct":13.40,"alert":true}
+  ]
 }
