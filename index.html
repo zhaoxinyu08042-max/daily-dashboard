@@ -276,7 +276,7 @@ function renderHoldings(h) {
     accts.forEach(a => document.getElementById("hpanel-" + a).classList.toggle("hidden", a !== btn.dataset.k)); }; });
 }
 
-const ACCT_COLORS = { "81099801":"#2563eb", "81099802":"#12855a", "81099803":"#c0392b", "81099805":"#b8860b" };
+const ACCT_COLORS = { "81099801":"#2563eb", "801总策略":"#7c3aed", "81099802":"#12855a", "81099803":"#c0392b", "81099805":"#b8860b" };
 function renderChart(h) {
   const series = h.series || [];
   document.getElementById("chartMeta").textContent = "数据区间取最近约一个月 · 单位 USD · 更新于 " + (h.updated_at || "—");
