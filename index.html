@@ -20,7 +20,7 @@
   table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
   th, td { padding: 10px 12px; text-align: right; border-bottom: 1px solid #eef0f3; white-space: nowrap; }
   th:first-child, td:first-child { text-align: left; }
-  thead th { color: #6b7280; font-weight: 600; font-size: 12px; background: #fafbfc; }
+  thead th { color: #6b7280; font-weight: 600; font-size: 12px; background: #fafbfc; position: sticky; top: 0; }
   tbody tr:hover { background: #fafbfc; }
   .pos { color: #12855a; } .neg { color: #c0392b; }
   .mono { font-variant-numeric: tabular-nums; }
@@ -45,12 +45,27 @@
   .note { color: #9aa1ab; font-size: 12px; margin-top: 10px; }
   footer { margin-top: 28px; color: #9aa1ab; font-size: 12px; text-align: center; }
   .tbl-scroll { overflow-x: auto; }
+  /* KPI band */
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin-top: 16px; }
+  .kpi { background: #fff; border: 1px solid #e6e8ec; border-radius: 12px; padding: 15px 18px; box-shadow: 0 1px 2px rgba(0,0,0,.03); }
+  .kpi.accent { border-left: 4px solid #7c3aed; }
+  .kpi .k-label { font-size: 12.5px; color: #6b7280; margin-bottom: 7px; display: flex; align-items: center; gap: 6px; }
+  .kpi .k-val { font-size: 25px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -.3px; }
+  .kpi .k-sub { font-size: 11.5px; color: #9aa1ab; margin-top: 5px; }
+  /* strategy row highlight */
+  .strat-row { background: #f5f3ff !important; }
+  .strat-row td:first-child { color: #6d28d9; font-weight: 700; }
+  .mini { font-size: 11px; color: #9aa1ab; font-weight: 400; }
+  .legend-chip { display:inline-flex; align-items:center; gap:5px; font-size:12px; color:#4b5563; }
+  .lc-line { width:16px; height:0; border-top: 2px dashed #7c3aed; }
+  /* alerts */
   .alerts { margin-top: 14px; display: flex; flex-direction: column; gap: 8px; }
   .alert-box { border-radius: 8px; padding: 9px 12px; font-size: 13px; line-height: 1.55; border-left: 3px solid; }
   .alert-box.up { background: #eef8f2; border-color: #12855a; color: #14532d; }
   .alert-box.down { background: #fdeceb; border-color: #c0392b; color: #7a271a; }
   .alert-box .a-acct { font-weight: 700; }
-  .alerts-hd { font-size: 12px; color: #6b7280; margin-top: 14px; }
+  .alerts-hd { font-size: 12px; color: #6b7280; margin-top: 16px; font-weight: 600; }
+  /* holdings */
   .hold-legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; color: #4b5563; margin-bottom: 10px; align-items: center; }
   .lg-item { display: flex; align-items: center; gap: 6px; }
   .lg-swatch { width: 16px; height: 12px; border-radius: 2px; display: inline-block; }
@@ -86,12 +101,15 @@
     <h1>每日监控看板</h1>
     <span class="subtle" id="pageUpdated">加载中…</span>
   </header>
-  <p class="subtle">中和账户净值 · 总报表 · 持仓 · 801总策略 · 财经科技热点 — 定时任务每工作日自动更新</p>
+  <p class="subtle">中和账户净值 · 801总策略 · 持仓 · 总报表 · 财经科技热点 — 定时任务每工作日自动更新</p>
+
+  <section class="kpis" id="kpis"></section>
 
   <section class="card" id="navCard">
     <h2>💹 账户净值汇总 <span id="navStatus"></span></h2>
     <div class="meta" id="navMeta">加载中…</div>
     <div id="navBody"></div>
+    <div class="note">紫色行为「801 总策略」＝ 801 海外腿 ＋ 星汇星河一号 在岸腿两腿合并；其「剔除划转后变化」以百分比同步显示。</div>
   </section>
 
   <section class="card" id="summaryCard">
@@ -99,6 +117,13 @@
     <div class="meta" id="summaryMeta">加载中…</div>
     <div class="tbl-scroll" id="summaryBody"></div>
     <div id="alertsBox"></div>
+  </section>
+
+  <section class="card" id="chartCard">
+    <h2>📈 净值走势（近一个月 · 含 801 总策略）</h2>
+    <div class="meta" id="chartMeta">加载中…</div>
+    <div class="chart-box"><canvas id="navChart"></canvas></div>
+    <div class="note" id="chartNote"></div>
   </section>
 
   <section class="card" id="holdCard">
@@ -114,22 +139,8 @@
     <div id="holdPanels"></div>
   </section>
 
-  <section class="card" id="stratCard">
-    <h2>🧬 801 总策略净值变化（801 海外腿 + 星汇星河一号 在岸腿）</h2>
-    <div class="meta" id="stratMeta">加载中…</div>
-    <div class="chart-box"><canvas id="stratChart"></canvas></div>
-    <div class="tbl-scroll" id="stratBody" style="margin-top:14px"></div>
-  </section>
-
-  <section class="card" id="chartCard">
-    <h2>📈 各账户净值走势（近一个月）</h2>
-    <div class="meta" id="chartMeta">加载中…</div>
-    <div class="chart-box"><canvas id="navChart"></canvas></div>
-    <div class="note" id="chartNote"></div>
-  </section>
-
   <section class="card" id="weekCard">
-    <h2>🗓️ 上周净值明细</h2>
+    <h2>🗓️ 上周净值明细（含 801 总策略）</h2>
     <div class="meta" id="weekMeta">加载中…</div>
     <div class="tbl-scroll" id="weekBody"></div>
   </section>
@@ -153,8 +164,25 @@ const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&
 const signClass = (n) => n > 0 ? "pos" : (n < 0 ? "neg" : "");
 const signStr = (n, suffix="") => (n > 0 ? "+" : "") + fmt(n) + suffix;
 const signStr0 = (n, suffix="") => (n > 0 ? "+" : "") + fmt0(n) + suffix;
+const pctStr = (v) => (v==null||isNaN(v)) ? "—" : ((v>0?"+":"")+Number(v).toFixed(2)+"%");
+const money = (n) => (n==null||isNaN(n)) ? "—" : ((n>=0?"+$":"−$")+fmt0(Math.abs(n)));
+const STRAT = "801总策略";
 async function loadJSON(path) { const r = await fetch(path + bust(), { cache: "no-store" }); if (!r.ok) throw new Error(path + " " + r.status); return r.json(); }
 
+/* ---------- 投资者 KPI ---------- */
+function renderKpis(h) {
+  const t = h.totals || {}, sd = (h.strategy801 || {}).daily || {};
+  const el = document.getElementById("kpis");
+  const card = (label, valHtml, sub, accent) => `<div class="kpi${accent?' accent':''}"><div class="k-label">${label}</div><div class="k-val">${valHtml}</div><div class="k-sub">${sub}</div></div>`;
+  const col = (n) => n>0?'pos':(n<0?'neg':'');
+  el.innerHTML =
+    card("合计在管净值 (AUM)", "$"+fmt0(t.nav), "81099801/02/03/05 当前净值合计", false) +
+    card("今日合计盈亏（剔除现金流）", `<span class="${col(t.today)}">${money(t.today)}</span>`, "各账户当日真实盈亏之和", false) +
+    card("801 总策略累计", `<span class="${col(sd.cum_pct)}">${pctStr(sd.cum_pct)}</span>`, `今日 ${pctStr(sd.pct)} · 自 2026-06-09 · 两腿合并`, true) +
+    card("年初至今合计盈亏", `<span class="${col(t.ytd)}">${money(t.ytd)}</span>`, "剔除出入金 · 含 803 大幅回撤", false);
+}
+
+/* ---------- nav.json 当日汇总（+801总策略行） ---------- */
 function renderNav(d) {
   const statusEl = document.getElementById("navStatus"), metaEl = document.getElementById("navMeta"), body = document.getElementById("navBody");
   metaEl.textContent = "运行日期 " + (d.run_date || "—") + " · 更新于 " + (d.updated_at || "—");
@@ -162,7 +190,7 @@ function renderNav(d) {
   if (d.status === "failed") { statusEl.innerHTML = '<span class="badge warn">未获取</span>'; body.innerHTML = '<div class="empty">' + esc(d.message || "今日未能自动获取报告。") + '</div>'; return; }
   statusEl.innerHTML = '<span class="badge ok">已更新</span>';
   const rows = (d.accounts || []).map(a => { const cls = a.alert ? ' style="background:#fdf3f2"' : '';
-    return `<tr${cls}><td>${esc(a.account)}${a.alert ? ' <span class="badge warn">⚠️</span>' : ''}</td><td class="subtle">${esc(a.prev_date)}</td>
+    return `<tr data-acct="${esc(a.account)}"${cls}><td>${esc(a.account)}${a.alert ? ' <span class="badge warn">⚠️</span>' : ''}</td><td class="subtle">${esc(a.prev_date)}</td>
       <td class="mono">${fmt(a.prev_nav)}</td><td class="mono">${fmt(a.curr_nav)}</td>
       <td class="mono ${signClass(a.net_transfer)}">${signStr(a.net_transfer)}</td>
       <td class="mono ${signClass(a.change_ex_transfer)}">${signStr(a.change_ex_transfer)}</td>
@@ -170,20 +198,35 @@ function renderNav(d) {
   body.innerHTML = `<div class="tbl-scroll"><table><thead><tr><th>账户</th><th>上一次日期</th><th>上一次净值</th><th>当日净值</th><th>资金净划转</th><th>剔除划转后变化</th><th>变化率</th></tr></thead><tbody>${rows}</tbody></table></div>`;
   if (d.message) body.innerHTML += '<div class="note">' + esc(d.message) + '</div>';
 }
+function injectNavStrategyRow(h) {
+  const sd = (h.strategy801 || {}).daily; if (!sd) return;
+  const tb = document.querySelector("#navBody tbody"); if (!tb) return;
+  const tr = document.createElement("tr"); tr.className = "strat-row";
+  tr.innerHTML = `<td>└ 801总策略 <span class="mini">海外+在岸两腿</span></td><td class="subtle">${esc(sd.prev_date||"—")}</td>
+    <td class="mono">${fmt(sd.prev_nav)}</td><td class="mono">${fmt(sd.curr_nav)}</td>
+    <td class="mono ${signClass(sd.transfer)}">${signStr(sd.transfer)}</td>
+    <td class="mono ${signClass(sd.change)}">${signStr0(sd.change)}</td>
+    <td class="mono ${signClass(sd.pct)}">${pctStr(sd.pct)}</td>`;
+  const rows = [...tb.querySelectorAll("tr")];
+  const r801 = rows.find(r => (r.dataset.acct||"").indexOf("81099801") >= 0);
+  if (r801) r801.after(tr); else tb.appendChild(tr);
+}
 
+/* ---------- 总报表 + 异动解释 ---------- */
 function renderSummary(h) {
   const S = h.summary || [], meta = document.getElementById("summaryMeta"), body = document.getElementById("summaryBody");
   if (!S.length) { meta.innerHTML = '<span class="neg">无总报表数据</span>'; }
   else {
     meta.textContent = "口径：剔除资金划转 · rf=0 · 年化收益=(期末/期初)^(252/n)−1 · 夏普=日收益均值/标准差×√252 · 卡玛=年化收益/|最大回撤|";
-    const rows = S.map(r => `<tr><td>${esc(r.account)}</td><td class="subtle">${esc(r.range)}</td><td class="mono">${r.ndays}</td>
+    const rows = S.map(r => { const strat = r.account === STRAT;
+      return `<tr class="${strat?'strat-row':''}"><td>${strat?'└ ':''}${esc(r.account)}</td><td class="subtle">${esc(r.range)}</td><td class="mono">${r.ndays}</td>
       <td class="mono">${fmt0(r.start_nav)}</td><td class="mono">${fmt0(r.cur_nav)}</td>
       <td class="mono ${signClass(r.cum_ret)}">${signStr(r.cum_ret,"%")}</td>
       <td class="mono ${signClass(r.cum_amt)}">${signStr0(r.cum_amt)}</td>
       <td class="mono ${signClass(r.ann_ret)}">${signStr(r.ann_ret,"%")}</td>
       <td class="mono">${fmt(r.vol)}%</td><td class="mono neg">${fmt(r.mdd)}%</td>
       <td class="mono ${signClass(r.sharpe)}">${r.sharpe==null?"—":(r.sharpe>0?"+":"")+r.sharpe.toFixed(2)}</td>
-      <td class="mono ${signClass(r.calmar)}">${r.calmar==null?"—":(r.calmar>0?"+":"")+r.calmar.toFixed(2)}</td></tr>`).join("");
+      <td class="mono ${signClass(r.calmar)}">${r.calmar==null?"—":(r.calmar>0?"+":"")+r.calmar.toFixed(2)}</td></tr>`; }).join("");
     body.innerHTML = `<table><thead><tr><th>账户</th><th>区间</th><th>交易日</th><th>起始净值</th><th>当前净值</th><th>累计收益率</th><th>累计收益额</th><th>年化收益</th><th>年化波动</th><th>最大回撤</th><th>夏普</th><th>卡玛</th></tr></thead><tbody>${rows}</tbody></table>`;
   }
   const A = h.alerts || {}, box = document.getElementById("alertsBox");
@@ -193,27 +236,7 @@ function renderSummary(h) {
   } else { box.innerHTML = `<div class="alerts-hd">当日没有单账户净值变动超过 ±$${fmtInt((A.threshold)||10000)} 的情况。</div>`; }
 }
 
-function renderStrategy(h) {
-  const st = h.strategy801 || {}, s = st.series || [];
-  const meta = document.getElementById("stratMeta"), body = document.getElementById("stratBody");
-  if (!s.length) { meta.innerHTML = '<span class="neg">无 801 总策略数据</span>'; return; }
-  meta.textContent = (st.note || "801 海外腿 + 星汇星河一号 在岸腿，两腿 USD 变化额相加") + " · 合计当日变化以百分比展示（÷前一日两腿合计净值）· 更新于 " + (h.updated_at || "—");
-  const pctStr = (v) => (v==null?"—":((v>0?"+":"")+v.toFixed(2)+"%"));
-  const labels = s.map(r => r.date.slice(5));
-  new Chart(document.getElementById("stratChart"), { data: { labels, datasets: [
-      { type:"line", label:"合计累计(%)", data: s.map(r=>r.cum_pct), borderColor:"#7c3aed", backgroundColor:"#7c3aed", borderWidth:2, pointRadius:1.5, tension:0.2, yAxisID:"y", order:0 },
-      { type:"bar", label:"合计当日变化(%)", data: s.map(r=>r.comb_pct), backgroundColor: s.map(r=> (r.comb_pct>=0? "rgba(18,133,90,.5)":"rgba(192,57,43,.5)")), borderWidth:0, yAxisID:"y", order:1 } ]},
-    options: { responsive:true, maintainAspectRatio:false, interaction:{mode:"index",intersect:false},
-      plugins:{ legend:{position:"top",labels:{boxWidth:14,font:{size:12}}}, tooltip:{callbacks:{label:c=>c.dataset.label+": "+((c.parsed.y>0?"+":"")+Number(c.parsed.y).toFixed(2)+"%")}}},
-      scales:{ y:{ ticks:{callback:v=>v.toFixed(1)+"%",font:{size:11}}, grid:{color:"#eef0f3"}}, x:{ ticks:{font:{size:11},maxRotation:0,autoSkip:true,maxTicksLimit:10}, grid:{display:false}} } } });
-  const rec = s.slice(-8).reverse();
-  const rows = rec.map(r => `<tr><td>${esc(r.date)}</td><td class="mono ${signClass(r.a801)}">${signStr0(r.a801)}</td>
-    <td class="mono ${signClass(r.xh)}">${signStr0(r.xh)}</td><td class="mono ${signClass(r.comb)}">${signStr0(r.comb)}</td>
-    <td class="mono ${signClass(r.comb_pct)}">${pctStr(r.comb_pct)}</td>
-    <td class="mono ${signClass(r.cum)}">${signStr0(r.cum)}</td></tr>`).join("");
-  body.innerHTML = `<table><thead><tr><th>日期</th><th>801当日(USD)</th><th>星汇腿(USD)</th><th>合计当日(USD)</th><th>合计当日(%)</th><th>合计累计(USD)</th></tr></thead><tbody>${rows}</tbody></table>`;
-}
-
+/* ---------- 持仓多空柱状图 ---------- */
 const CHART_H = 220;
 function buildHoldPanel(list, meta) {
   if (!list || !list.length) return '<div class="empty">该账户暂无持仓数据</div>';
@@ -276,29 +299,33 @@ function renderHoldings(h) {
     accts.forEach(a => document.getElementById("hpanel-" + a).classList.toggle("hidden", a !== btn.dataset.k)); }; });
 }
 
-const ACCT_COLORS = { "81099801":"#2563eb", "801总策略":"#7c3aed", "81099802":"#12855a", "81099803":"#c0392b", "81099805":"#b8860b" };
+/* ---------- 净值曲线（含 801总策略 虚线）+ 上周表 ---------- */
+const COLORS = { "81099801":"#2563eb", "801总策略":"#7c3aed", "81099802":"#12855a", "81099803":"#c0392b", "81099805":"#b8860b" };
 function renderChart(h) {
-  const series = h.series || [];
-  document.getElementById("chartMeta").textContent = "数据区间取最近约一个月 · 单位 USD · 更新于 " + (h.updated_at || "—");
+  const series = h.series || [], cols = h.cols || h.accounts || [];
+  document.getElementById("chartMeta").textContent = "最近约一个月 · 单位 USD · 紫色虚线为 801 总策略（两腿合并）· 更新于 " + (h.updated_at || "—");
   if (!series.length) { document.getElementById("chartMeta").innerHTML = '<span class="neg">无历史数据</span>'; return; }
   const lastDate = new Date(series[series.length - 1].date); const cutoff = new Date(lastDate); cutoff.setDate(cutoff.getDate() - 31);
   const win = series.filter(s => new Date(s.date) >= cutoff); const labels = win.map(s => s.date.slice(5));
-  const accts = (h.accounts || []).filter(a => win.some(s => s[a] != null));
-  const datasets = accts.map(a => ({ label: a, data: win.map(s => s[a]), borderColor: ACCT_COLORS[a] || "#666", backgroundColor: ACCT_COLORS[a] || "#666", borderWidth: 2, pointRadius: 2, tension: 0.25, spanGaps: true }));
+  const use = cols.filter(a => win.some(s => s[a] != null));
+  const datasets = use.map(a => { const strat = a === STRAT;
+    return { label: a, data: win.map(s => s[a]), borderColor: COLORS[a] || "#666", backgroundColor: COLORS[a] || "#666",
+      borderWidth: strat ? 2.6 : 2, pointRadius: strat ? 0 : 2, borderDash: strat ? [7,4] : [], tension: 0.25, spanGaps: true }; });
   new Chart(document.getElementById("navChart"), { type: "line", data: { labels, datasets },
     options: { responsive: true, maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
       plugins: { legend: { position: "top", labels: { boxWidth: 14, font: { size: 12 } } }, tooltip: { callbacks: { label: c => c.dataset.label + ": " + fmt(c.parsed.y) } } },
       scales: { y: { ticks: { callback: v => (v/1000).toFixed(0) + "k", font: { size: 11 } }, grid: { color: "#eef0f3" } }, x: { ticks: { font: { size: 11 }, maxRotation: 0, autoSkip: true, maxTicksLimit: 10 }, grid: { display: false } } } } });
-  document.getElementById("chartNote").textContent = "注：账户间历史上存在内部划转，个别台阶式变动属资金划转而非盈亏；801 的对冲多头腿见上方『801 总策略』。";
+  document.getElementById("chartNote").textContent = "801 总策略（紫色虚线）= 81099801 海外腿 ＋ 星汇星河一号 在岸腿的合并净值：当 801 空头承压时，在岸多头腿通常反向对冲，故合并曲线更平稳。";
 }
 function renderWeek(h) {
-  const weekly = h.weekly || {}; const accts = (h.accounts || []).filter(a => (weekly[a] || []).length);
+  const weekly = h.weekly || {}; const order = h.cols || h.accounts || [];
+  const accts = order.filter(a => (weekly[a] || []).length);
   const meta = document.getElementById("weekMeta"), body = document.getElementById("weekBody");
   if (!accts.length) { meta.innerHTML = '<span class="neg">无上周数据</span>'; return; }
   const dates = [...new Set(accts.flatMap(a => weekly[a].map(r => r.date)))].sort();
   const idx = {}; accts.forEach(a => { idx[a] = {}; weekly[a].forEach(r => idx[a][r.date] = r); });
-  meta.textContent = "各账户最近约一周每日净值与剔除划转后变化率";
-  const head = "<th>日期</th>" + accts.map(a => `<th>${a} 净值</th><th>${a} 变化率</th>`).join("");
+  meta.textContent = "各账户最近约一周每日净值与剔除划转后变化率；801总策略列为两腿合并净值与合并变化率";
+  const head = "<th>日期</th>" + accts.map(a => `<th${a===STRAT?' style="color:#6d28d9"':''}>${a} 净值</th><th${a===STRAT?' style="color:#6d28d9"':''}>${a} 变化率</th>`).join("");
   const rows = dates.map(dt => { const cells = accts.map(a => { const r = idx[a][dt];
       if (!r) return '<td class="mono subtle">—</td><td class="mono subtle">—</td>';
       const pct = r.pct; return `<td class="mono">${fmt(r.nav)}</td><td class="mono ${signClass(pct)}">${pct==null?"—":signStr(pct,"%")}</td>`; }).join("");
@@ -306,6 +333,7 @@ function renderWeek(h) {
   body.innerHTML = `<table><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table>`;
 }
 
+/* ---------- 新闻 ---------- */
 function newsItemHTML(n, i) {
   const title = n.url ? `<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>` : esc(n.title);
   return `<div class="news-item"><div class="n-title"><span class="n-idx">${i + 1}</span>${title}</div>${n.summary ? `<div class="n-sum">${esc(n.summary)}</div>` : ""}<div class="n-src">${esc(n.source || "")}</div></div>`;
@@ -326,10 +354,12 @@ function renderNews(d) {
 
 (async function () {
   let latest = "";
-  try { const nav = await loadJSON("nav.json"); renderNav(nav); latest = nav.updated_at || latest; }
+  let navRendered = false;
+  try { const nav = await loadJSON("nav.json"); renderNav(nav); navRendered = true; latest = nav.updated_at || latest; }
   catch (e) { document.getElementById("navMeta").innerHTML = '<span class="neg">净值数据未找到（nav.json）</span>'; }
-  try { const h = await loadJSON("history.json"); renderSummary(h); renderStrategy(h); renderHoldings(h); renderChart(h); renderWeek(h); }
-  catch (e) { ["summaryMeta","stratMeta","holdMeta","chartMeta","weekMeta"].forEach(id => document.getElementById(id).innerHTML = '<span class="neg">历史数据未找到（history.json）</span>'); }
+  try { const h = await loadJSON("history.json");
+    renderKpis(h); renderSummary(h); renderChart(h); renderHoldings(h); renderWeek(h); injectNavStrategyRow(h); }
+  catch (e) { ["summaryMeta","chartMeta","holdMeta","weekMeta"].forEach(id => { const el=document.getElementById(id); if(el) el.innerHTML = '<span class="neg">历史数据未找到（history.json）</span>'; }); }
   try { const news = await loadJSON("news.json"); renderNews(news); if ((news.updated_at||"") > latest) latest = news.updated_at; }
   catch (e) { document.getElementById("newsMeta").innerHTML = '<span class="neg">新闻数据未找到（news.json）</span>'; }
   document.getElementById("pageUpdated").textContent = latest ? ("最近更新 " + latest) : "";
