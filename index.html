@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>每日监控看板 · 净值 & 财经科技新闻</title>
+<title>每日监控看板 · 中和净值</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
 <style>
   :root { color-scheme: light; }
@@ -31,14 +31,6 @@
   .tabs { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
   .tab { border: 1px solid #e6e8ec; background: #fff; color: #4b5563; padding: 5px 14px; border-radius: 999px; font-size: 13px; cursor: pointer; }
   .tab.active { background: #1a1d24; color: #fff; border-color: #1a1d24; }
-  .news-item { padding: 12px 0; border-bottom: 1px solid #eef0f3; }
-  .news-item:last-child { border-bottom: none; }
-  .news-item .n-title { font-size: 14.5px; font-weight: 600; }
-  .news-item .n-title a { color: #1a1d24; text-decoration: none; }
-  .news-item .n-title a:hover { text-decoration: underline; }
-  .news-item .n-sum { color: #4b5563; font-size: 13px; margin: 3px 0 4px; }
-  .news-item .n-src { color: #9aa1ab; font-size: 12px; }
-  .news-item .n-idx { color: #c3c8cf; font-weight: 700; margin-right: 6px; }
   .hidden { display: none; }
   .empty { color: #9aa1ab; font-size: 13px; padding: 12px 0; }
   .chart-box { position: relative; height: 320px; }
@@ -145,12 +137,6 @@
     <div class="tbl-scroll" id="weekBody"></div>
   </section>
 
-  <section class="card" id="newsCard">
-    <h2>📰 财经科技每日热点</h2>
-    <div class="meta" id="newsMeta">加载中…</div>
-    <div class="tabs" id="newsTabs"></div>
-    <div id="newsPanels"></div>
-  </section>
 
   <footer id="footer"></footer>
 </div>
@@ -333,25 +319,6 @@ function renderWeek(h) {
   body.innerHTML = `<table><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table>`;
 }
 
-/* ---------- 新闻 ---------- */
-function newsItemHTML(n, i) {
-  const title = n.url ? `<a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>` : esc(n.title);
-  return `<div class="news-item"><div class="n-title"><span class="n-idx">${i + 1}</span>${title}</div>${n.summary ? `<div class="n-sum">${esc(n.summary)}</div>` : ""}<div class="n-src">${esc(n.source || "")}</div></div>`;
-}
-const NEWS_CATS = [ { key: "finance", label: "财经" }, { key: "tech", label: "科技" }, { key: "mag7", label: "七姐妹+SpaceX" } ];
-function renderNews(d) {
-  document.getElementById("newsMeta").innerHTML = "新闻日期 " + (d.news_date || "—") + " · 更新于 " + (d.updated_at || "—") + (d.doc_file ? ` · <span class="subtle">Word 文档：${esc(d.doc_file)}</span>` : "");
-  const cats = NEWS_CATS.filter(c => Array.isArray(d[c.key]));
-  const tabsEl = document.getElementById("newsTabs"), panelsEl = document.getElementById("newsPanels"); tabsEl.innerHTML = ""; panelsEl.innerHTML = "";
-  cats.forEach((c, i) => { const items = d[c.key] || [];
-    const btn = document.createElement("button"); btn.className = "tab" + (i === 0 ? " active" : ""); btn.textContent = `${c.label} · ${items.length}`; btn.dataset.k = c.key; tabsEl.appendChild(btn);
-    const panel = document.createElement("div"); panel.id = "panel-" + c.key; if (i !== 0) panel.className = "hidden";
-    panel.innerHTML = items.length ? items.map(newsItemHTML).join("") : `<div class="empty">暂无${c.label}新闻</div>`; panelsEl.appendChild(panel); });
-  tabsEl.querySelectorAll(".tab").forEach(btn => { btn.onclick = () => {
-    tabsEl.querySelectorAll(".tab").forEach(b => b.classList.remove("active")); btn.classList.add("active");
-    cats.forEach(c => document.getElementById("panel-" + c.key).classList.toggle("hidden", c.key !== btn.dataset.k)); }; });
-}
-
 (async function () {
   let latest = "";
   let navRendered = false;
@@ -360,8 +327,6 @@ function renderNews(d) {
   try { const h = await loadJSON("history.json");
     renderKpis(h); renderSummary(h); renderChart(h); renderHoldings(h); renderWeek(h); injectNavStrategyRow(h); }
   catch (e) { ["summaryMeta","chartMeta","holdMeta","weekMeta"].forEach(id => { const el=document.getElementById(id); if(el) el.innerHTML = '<span class="neg">历史数据未找到（history.json）</span>'; }); }
-  try { const news = await loadJSON("news.json"); renderNews(news); if ((news.updated_at||"") > latest) latest = news.updated_at; }
-  catch (e) { document.getElementById("newsMeta").innerHTML = '<span class="neg">新闻数据未找到（news.json）</span>'; }
   document.getElementById("pageUpdated").textContent = latest ? ("最近更新 " + latest) : "";
   document.getElementById("footer").textContent = "本页每次打开自动读取最新数据 · " + new Date().toLocaleString("zh-CN");
 })();
