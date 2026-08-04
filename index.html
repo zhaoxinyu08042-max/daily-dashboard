@@ -119,15 +119,9 @@
   </section>
 
   <section class="card" id="holdCard">
-    <h2>📊 持仓明细（多空柱状图）</h2>
+    <h2>📊 持仓明细</h2>
     <div class="meta" id="holdMeta">加载中…</div>
     <div class="tabs" id="holdTabs"></div>
-    <div class="hold-legend">
-      <span class="lg-item"><span class="lg-swatch lg-long"></span>多头 Long（向上）</span>
-      <span class="lg-item"><span class="lg-swatch lg-short"></span>空头 Short（向下）</span>
-      <span class="lg-item"><span class="lg-dash"></span>虚线＝前一交易日持仓数量</span>
-      <span class="lg-item subtle">柱高 ∝ 持仓数量；悬停看当日数量</span>
-    </div>
     <div id="holdPanels"></div>
   </section>
 
@@ -222,63 +216,34 @@ function renderSummary(h) {
   } else { box.innerHTML = `<div class="alerts-hd">当日没有单账户净值变动超过 ±$${fmtInt((A.threshold)||10000)} 的情况。</div>`; }
 }
 
-/* ---------- 持仓多空柱状图 ---------- */
-const CHART_H = 220;
+/* ---------- 持仓明细表格 ---------- */
 function buildHoldPanel(list, meta) {
   if (!list || !list.length) return '<div class="empty">该账户暂无持仓数据</div>';
-  const hasLong = list.some(p => p.side === "LONG"), hasShort = list.some(p => p.side === "SHORT");
-  let bf = 0.5; if (hasLong && !hasShort) bf = 0.92; else if (hasShort && !hasLong) bf = 0.08;
-  const baseY = CHART_H * bf, upSpace = baseY - 6, downSpace = CHART_H - baseY - 6;
-  const maxq = Math.max(1, ...list.map(p => Math.max(p.qty || 0, p.prev || 0)));
-  const cols = list.map(p => {
-    const up = p.side === "LONG", space = up ? upSpace : downSpace;
-    const hSolid = Math.max(2, (p.qty / maxq) * space);
-    const hDash = (!p.isnew && p.prev > 0) ? Math.max(2, (p.prev / maxq) * space) : 0;
-    const cls = up ? "long" : "short";
-    const solidStyle = up ? `bottom:${CHART_H - baseY}px;height:${hSolid}px;` : `top:${baseY}px;height:${hSolid}px;`;
-    const dashStyle = up ? `bottom:${CHART_H - baseY}px;height:${hDash}px;` : `top:${baseY}px;height:${hDash}px;`;
-    const dashDiv = hDash ? `<div class="hbar-dash" style="${dashStyle}"></div>` : "";
-    const retTxt = p.ret == null ? "—" : (p.ret > 0 ? "+" : "") + p.ret.toFixed(2) + "%";
-    const retCls = p.ret == null ? "subtle" : (p.ret >= 0 ? "pos" : "neg");
-    const dataJ = esc(JSON.stringify({name:p.name,code:p.code,side:p.side,qty:p.qty,prev:p.prev,isnew:p.isnew,mv:p.mv,ccy:p.ccy,ret:p.ret}));
-    return `<div class="hcol" data-j="${dataJ}"><div class="hbar-area" style="height:${CHART_H}px">
-        <div class="hbar-base" style="top:${baseY}px"></div><div class="hbar-solid ${cls}" style="${solidStyle}"></div>${dashDiv}</div>
-      <div class="hlabel"><div class="ret ${retCls}">${retTxt}</div><div class="code">${esc(p.code)}</div><div class="nm">${esc(p.name)}</div></div></div>`;
-  }).join("");
   const sub = meta ? `<div class="note" style="margin:0 0 8px">报告日期 ${esc(meta.curr_date||"—")} · 对比 ${esc(meta.prev_date||"—")} · 共 ${list.length} 只</div>` : "";
-  return sub + `<div class="hold-wrap"><div class="hold-tip"></div><div class="hold-scroll"><div class="hold-inner">${cols}</div></div></div>`;
+  const pct = (v) => v==null||isNaN(v) ? "—" : (v>0?"+":"") + Number(v).toFixed(2) + "%";
+  const rows = list.map(p => {
+    const sideTxt = p.side === "LONG" ? '<span class="pos">多头</span>' : '<span class="neg">空头</span>';
+    const newTag = p.isnew ? ' <span class="badge info">新开</span>' : '';
+    return `<tr><td>${esc(p.name)} <span class="subtle">${esc(p.code)}</span>${newTag}</td>
+      <td class="mono">${fmtInt(p.qty)}</td>
+      <td>${sideTxt}</td>
+      <td class="mono ${signClass(p.ret)}">${pct(p.ret)}</td>
+      <td class="mono ${signClass(p.tret)}">${pct(p.tret)}</td></tr>`;
+  }).join("");
+  return sub + `<div class="tbl-scroll"><table><thead><tr><th>股票</th><th>持仓数量</th><th>方向</th><th>当日收益率</th><th>持仓至今总收益率</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 }
-function attachTip(panel) {
-  const wrap = panel.querySelector(".hold-wrap"); if (!wrap) return;
-  const tip = wrap.querySelector(".hold-tip");
-  wrap.addEventListener("mousemove", (e) => {
-    const col = e.target.closest(".hcol"); if (!col) { tip.style.display = "none"; return; }
-    const d = JSON.parse(col.dataset.j);
-    const chg = (d.qty || 0) - (d.prev || 0); const chgTxt = d.isnew ? "新开仓" : (chg > 0 ? "+" + fmtInt(chg) : fmtInt(chg));
-    const retc = d.ret == null ? "" : (d.ret >= 0 ? "t-pos" : "t-neg");
-    const retTxt = d.ret == null ? "—" : (d.ret > 0 ? "+" : "") + d.ret.toFixed(2) + "%";
-    tip.innerHTML = `<div class="t-name">${esc(d.name)}</div><div class="t-sub">${esc(d.code)} · ${d.side === "LONG" ? "多头 Long" : "空头 Short"}</div>` +
-      `<div class="t-qtyrow"><span class="t-row">当日持仓数量 </span><span class="t-qty">${fmtInt(d.qty)}</span></div>` +
-      `<div class="t-row">前一日 ${d.isnew ? "无(新开仓)" : fmtInt(d.prev)} · 变化 ${chgTxt}</div>` +
-      `<div class="t-row">市值 ${fmt(d.mv)} ${esc(d.ccy || "")} · 当日 return <span class="${retc}">${retTxt}</span></div>`;
-    tip.style.display = "block"; const wr = wrap.getBoundingClientRect();
-    let x = e.clientX - wr.left + 14, y = e.clientY - wr.top + 14;
-    if (x + tip.offsetWidth > wr.width) x = e.clientX - wr.left - tip.offsetWidth - 14; if (x < 0) x = 4;
-    tip.style.left = x + "px"; tip.style.top = y + "px";
-  });
-  wrap.addEventListener("mouseleave", () => { tip.style.display = "none"; });
-}
+
 function renderHoldings(h) {
   const P = h.positions || {}, M = h.posmeta || {};
   const meta = document.getElementById("holdMeta"), tabsEl = document.getElementById("holdTabs"), panelsEl = document.getElementById("holdPanels");
   const accts = Object.keys(P).filter(a => (P[a]||[]).length);
   if (!accts.length) { meta.innerHTML = '<span class="neg">无持仓数据</span>'; return; }
-  meta.textContent = "各账户当日持仓 · 多头向上、空头向下、柱高 ∝ 持仓数量 · 虚线为前一交易日数量";
+  meta.textContent = "各账户当日持仓 · 当日收益率＝相对上一交易日收盘；持仓至今总收益率＝相对建仓价（多头为正向、空头反向）";
   tabsEl.innerHTML = ""; panelsEl.innerHTML = "";
   accts.forEach((a, i) => {
     const btn = document.createElement("button"); btn.className = "tab" + (i === 0 ? " active" : ""); btn.textContent = `${a} · ${P[a].length}`; btn.dataset.k = a; tabsEl.appendChild(btn);
     const panel = document.createElement("div"); panel.id = "hpanel-" + a; if (i !== 0) panel.className = "hidden";
-    panel.innerHTML = buildHoldPanel(P[a], M[a]); panelsEl.appendChild(panel); attachTip(panel);
+    panel.innerHTML = buildHoldPanel(P[a], M[a]); panelsEl.appendChild(panel);
   });
   tabsEl.querySelectorAll(".tab").forEach(btn => { btn.onclick = () => {
     tabsEl.querySelectorAll(".tab").forEach(b => b.classList.remove("active")); btn.classList.add("active");
