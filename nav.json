@@ -1,38 +1,38 @@
 {
-  "updated_at": "2026-08-03T20:49:58+08:00",
-  "run_date": "2026-08-03",
-  "status": "ok",
-  "message": "",
-  "accounts": [
-    {
-      "account": "81099801",
-      "prev_date": "2026-07-30",
-      "prev_nav": 554452.16,
-      "curr_nav": 520110.06,
-      "net_transfer": 0.0,
-      "change_ex_transfer": -34342.1,
-      "change_pct": -6.19,
-      "alert": true
-    },
-    {
-      "account": "81099802",
-      "prev_date": "2026-07-30",
-      "prev_nav": 997921.47,
-      "curr_nav": 968268.06,
-      "net_transfer": -30548.85,
-      "change_ex_transfer": 895.44,
-      "change_pct": 0.09,
-      "alert": false
-    },
-    {
-      "account": "81099803",
-      "prev_date": "2026-07-30",
-      "prev_nav": 290972.68,
-      "curr_nav": 329976.9,
-      "net_transfer": 0.0,
-      "change_ex_transfer": 39004.22,
-      "change_pct": 13.4,
-      "alert": true
-    }
-  ]
+ "updated_at": "2026-08-04T09:50:47+08:00",
+ "run_date": "2026-08-04",
+ "status": "ok",
+ "message": "2026-08-03报告已更新；三账户变化率均在阈值内；801总策略当日-309 USD",
+ "accounts": [
+  {
+   "account": "81099801",
+   "prev_date": "2026-07-31",
+   "prev_nav": 520110.06,
+   "curr_nav": 521541.0,
+   "net_transfer": 0,
+   "change_ex_transfer": 1430.94,
+   "change_pct": 0.2751,
+   "alert": false
+  },
+  {
+   "account": "81099802",
+   "prev_date": "2026-07-31",
+   "prev_nav": 968268.06,
+   "curr_nav": 968764.85,
+   "net_transfer": 0,
+   "change_ex_transfer": 496.79,
+   "change_pct": 0.0513,
+   "alert": false
+  },
+  {
+   "account": "81099803",
+   "prev_date": "2026-07-31",
+   "prev_nav": 329976.9,
+   "curr_nav": 327364.59,
+   "net_transfer": 0,
+   "change_ex_transfer": -2612.31,
+   "change_pct": -0.7917,
+   "alert": false
+  }
+ ]
 }
