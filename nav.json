@@ -1,38 +1,38 @@
 {
- "updated_at": "2026-08-04T09:50:47+08:00",
- "run_date": "2026-08-04",
+ "updated_at": "2026-08-05T09:53:03+08:00",
+ "run_date": "2026-08-05",
  "status": "ok",
- "message": "2026-08-03报告已更新；三账户变化率均在阈值内；801总策略当日-309 USD",
+ "message": "2026-08-04 报告：三账户均无资金划转。81099803 变化率 +8.78% 超5%阈值，请人工核实。801总策略(含星汇宸宇一号SAVU15)当日 +3,301 USD。",
  "accounts": [
   {
    "account": "81099801",
-   "prev_date": "2026-07-31",
-   "prev_nav": 520110.06,
-   "curr_nav": 521541.0,
+   "prev_date": "2026-08-03",
+   "prev_nav": 521541.0,
+   "curr_nav": 511414.34,
    "net_transfer": 0,
-   "change_ex_transfer": 1430.94,
-   "change_pct": 0.2751,
+   "change_ex_transfer": -10126.66,
+   "change_pct": -1.9417,
    "alert": false
   },
   {
    "account": "81099802",
-   "prev_date": "2026-07-31",
-   "prev_nav": 968268.06,
-   "curr_nav": 968764.85,
+   "prev_date": "2026-08-03",
+   "prev_nav": 968764.85,
+   "curr_nav": 972333.81,
    "net_transfer": 0,
-   "change_ex_transfer": 496.79,
-   "change_pct": 0.0513,
+   "change_ex_transfer": 3568.96,
+   "change_pct": 0.3684,
    "alert": false
   },
   {
    "account": "81099803",
-   "prev_date": "2026-07-31",
-   "prev_nav": 329976.9,
-   "curr_nav": 327364.59,
+   "prev_date": "2026-08-03",
+   "prev_nav": 327364.59,
+   "curr_nav": 356114.73,
    "net_transfer": 0,
-   "change_ex_transfer": -2612.31,
-   "change_pct": -0.7917,
-   "alert": false
+   "change_ex_transfer": 28750.14,
+   "change_pct": 8.7823,
+   "alert": true
   }
  ]
 }
