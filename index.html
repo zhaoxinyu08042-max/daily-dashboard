@@ -100,17 +100,17 @@
   <section class="kpis" id="kpis"></section>
 
   <section class="card" id="navCard">
-    <h2>💹 账户净值汇总 <span id="navStatus"></span></h2>
+    <h2>💹 账户当日净值 <span id="navStatus"></span></h2>
     <div class="meta" id="navMeta">加载中…</div>
     <div id="navBody"></div>
     <div class="note">紫色行为「801 总策略」＝ 801 海外腿 ＋ 星汇星河一号 在岸腿两腿合并；其「剔除划转后变化」以百分比同步显示。</div>
+    <div id="alertsBox"></div>
   </section>
 
   <section class="card" id="summaryCard">
     <h2>📋 总报表（自数据起点至今 · 含夏普/卡玛）</h2>
     <div class="meta" id="summaryMeta">加载中…</div>
     <div class="tbl-scroll" id="summaryBody"></div>
-    <div id="alertsBox"></div>
   </section>
 
   <section class="card" id="holdCard">
@@ -237,17 +237,16 @@ function renderHoldings(h) {
   const rows = [
     ["今日持仓只数", a => fmtInt(stat[a].cnt)],
     ["新开仓只数", a => fmtInt(stat[a].newcnt)],
-    ["新持仓占比(只数)", a => stat[a].ratio == null ? dash : (stat[a].ratio * 100).toFixed(1) + "%"],
     ["多头市值 (CNY)", a => money(stat[a].lng)],
     ["空头市值 (CNY)", a => money(stat[a].sht)],
+    ["星汇星河一号市值 (CNY)", a => (a === "81099801" && xhMv != null) ? fmtInt(Math.round(xhMv)) : dash],
     ["今日总市值 (CNY)", a => fmtInt(Math.round(stat[a].total))],
     ["前一日总市值 (CNY)", a => stat[a].prev == null ? dash : fmtInt(Math.round(stat[a].prev))],
-    ["星汇星河一号市值 (CNY)", a => (a === "81099801" && xhMv != null) ? fmtInt(Math.round(xhMv)) : dash],
   ];
   const head = '<th>指标</th>' + accts.map(a => `<th>${a}</th>`).join("");
   const tb = rows.map(([label, f]) => `<tr><td>${label}</td>${accts.map(a => `<td class="mono">${f(a)}</td>`).join("")}</tr>`).join("");
   body.innerHTML = `<table class="vtable"><thead><tr>${head}</tr></thead><tbody>${tb}</tbody></table>`;
-  meta.textContent = "各账户持仓敞口汇总（市值为结算币 CNY）· 今日总市值＝多头＋空头 · 新持仓占比＝新开仓只数÷今日持仓只数 · 801 额外列示在岸腿星汇星河一号资产净值 · 前一日总市值自次日起显示";
+  meta.textContent = "各账户持仓敞口汇总（市值为结算币 CNY）· 今日总市值＝多头＋空头 · 801 额外列示在岸腿星汇星河一号资产净值 · 前一日总市值自次日起显示";
 }
 
 /* ---------- 净值曲线（含 801总策略 虚线）+ 上周表 ---------- */
