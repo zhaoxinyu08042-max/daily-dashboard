@@ -85,6 +85,8 @@
   .hlabel .code { font-size: 10px; color: #6b7280; font-variant-numeric: tabular-nums; }
   .hlabel .nm { font-size: 10px; color: #4b5563; writing-mode: vertical-rl; text-orientation: mixed; height: 96px; margin: 3px auto 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
   .hcol:hover .hbar-solid { filter: brightness(1.12); }
+  .vtable td:first-child, .vtable th:first-child { color: #4b5563; font-weight: 600; }
+  .strat-col { background: #f5f3ff; }
 </style>
 </head>
 <body>
@@ -112,10 +114,9 @@
   </section>
 
   <section class="card" id="holdCard">
-    <h2>📊 持仓明细</h2>
+    <h2>📊 持仓敞口汇总（801 / 802 / 803）</h2>
     <div class="meta" id="holdMeta">加载中…</div>
-    <div class="tabs" id="holdTabs"></div>
-    <div id="holdPanels"></div>
+    <div id="holdBody"></div>
   </section>
 
   <section class="card" id="weekCard">
@@ -191,16 +192,22 @@ function renderSummary(h) {
   if (!S.length) { meta.innerHTML = '<span class="neg">无总报表数据</span>'; }
   else {
     meta.textContent = "口径：剔除资金划转 · rf=0 · 年化收益=(期末/期初)^(252/n)−1 · 夏普=日收益均值/标准差×√252 · 卡玛=年化收益/|最大回撤|";
-    const rows = S.map(r => { const strat = r.account === STRAT;
-      return `<tr class="${strat?'strat-row':''}"><td>${strat?'└ ':''}${esc(r.account)}</td><td class="subtle">${esc(r.range)}</td><td class="mono">${r.ndays}</td>
-      <td class="mono">${fmt0(r.start_nav)}</td><td class="mono">${fmt0(r.cur_nav)}</td>
-      <td class="mono ${signClass(r.cum_ret)}">${signStr(r.cum_ret,"%")}</td>
-      <td class="mono ${signClass(r.cum_amt)}">${signStr0(r.cum_amt)}</td>
-      <td class="mono ${signClass(r.ann_ret)}">${signStr(r.ann_ret,"%")}</td>
-      <td class="mono">${fmt(r.vol)}%</td><td class="mono neg">${fmt(r.mdd)}%</td>
-      <td class="mono ${signClass(r.sharpe)}">${r.sharpe==null?"—":(r.sharpe>0?"+":"")+r.sharpe.toFixed(2)}</td>
-      <td class="mono ${signClass(r.calmar)}">${r.calmar==null?"—":(r.calmar>0?"+":"")+r.calmar.toFixed(2)}</td></tr>`; }).join("");
-    body.innerHTML = `<table><thead><tr><th>账户</th><th>区间</th><th>交易日</th><th>起始净值</th><th>当前净值</th><th>累计收益率</th><th>累计收益额</th><th>年化收益</th><th>年化波动</th><th>最大回撤</th><th>夏普</th><th>卡玛</th></tr></thead><tbody>${rows}</tbody></table>`;
+    const isStrat = r => r.account === STRAT;
+    const head = '<th>指标</th>' + S.map(r => `<th${isStrat(r)?' style="color:#6d28d9"':''}>${isStrat(r)?'801总策略':esc(r.account)}</th>`).join("");
+    const metrics = [
+      ["区间", r => `<span class="subtle">${esc(r.range)}</span>`],
+      ["起始净值", r => fmt0(r.start_nav)],
+      ["当前净值", r => fmt0(r.cur_nav)],
+      ["累计收益率", r => `<span class="${signClass(r.cum_ret)}">${signStr(r.cum_ret,"%")}</span>`],
+      ["累计收益额", r => `<span class="${signClass(r.cum_amt)}">${signStr0(r.cum_amt)}</span>`],
+      ["年化收益", r => `<span class="${signClass(r.ann_ret)}">${signStr(r.ann_ret,"%")}</span>`],
+      ["年化波动", r => `${fmt(r.vol)}%`],
+      ["最大回撤", r => `<span class="neg">${fmt(r.mdd)}%</span>`],
+      ["夏普", r => `<span class="${signClass(r.sharpe)}">${r.sharpe==null?"—":(r.sharpe>0?"+":"")+r.sharpe.toFixed(2)}</span>`],
+      ["卡玛", r => `<span class="${signClass(r.calmar)}">${r.calmar==null?"—":(r.calmar>0?"+":"")+r.calmar.toFixed(2)}</span>`],
+    ];
+    const rows = metrics.map(([label, f]) => `<tr><td>${label}</td>${S.map(r => `<td class="mono${isStrat(r)?' strat-col':''}">${f(r)}</td>`).join("")}</tr>`).join("");
+    body.innerHTML = `<table class="vtable"><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table>`;
   }
   const A = h.alerts || {}, box = document.getElementById("alertsBox");
   if (A.items && A.items.length) {
@@ -209,42 +216,38 @@ function renderSummary(h) {
   } else { box.innerHTML = `<div class="alerts-hd">当日没有单账户净值变动超过 ±$${fmtInt((A.threshold)||10000)} 的情况。</div>`; }
 }
 
-/* ---------- 持仓明细表格 ---------- */
-function buildHoldPanel(list, meta) {
-  if (!list || !list.length) return '<div class="empty">该账户暂无持仓数据</div>';
-  const sub = meta ? `<div class="note" style="margin:0 0 8px">报告日期 ${esc(meta.curr_date||"—")} · 对比 ${esc(meta.prev_date||"—")} · 共 ${list.length} 只</div>` : "";
-  const pct = (v) => v==null||isNaN(v) ? "—" : (v>0?"+":"") + Number(v).toFixed(2) + "%";
-  const price = (v) => v==null||isNaN(v) ? "—" : Number(v).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  const rows = list.map(p => {
-    const sideTxt = p.side === "LONG" ? '<span class="pos">多头</span>' : '<span class="neg">空头</span>';
-    const newTag = p.isnew ? ' <span class="badge info">新开</span>' : '';
-    return `<tr><td>${esc(p.name)} <span class="subtle">${esc(p.code)}</span>${newTag}</td>
-      <td class="mono">${fmtInt(p.qty)}</td>
-      <td>${sideTxt}</td>
-      <td class="mono">${price(p.open)}</td>
-      <td class="mono">${price(p.close)}</td>
-      <td class="mono">${fmtInt(p.mv)}${p.ccy ? ` <span class="subtle">${esc(p.ccy)}</span>` : ""}</td>
-      <td class="mono ${signClass(p.ret)}">${pct(p.ret)}</td>
-      <td class="mono ${signClass(p.tret)}">${pct(p.tret)}</td></tr>`;
-  }).join("");
-  return sub + `<div class="tbl-scroll"><table><thead><tr><th>股票</th><th>持仓数量</th><th>方向</th><th>开盘价</th><th>收盘价</th><th>市值</th><th>当日收益率</th><th>持仓至今总收益率</th></tr></thead><tbody>${rows}</tbody></table></div>`;
-}
-
+/* ---------- 持仓敞口汇总（各账户一列，转置表） ---------- */
 function renderHoldings(h) {
-  const P = h.positions || {}, M = h.posmeta || {};
-  const meta = document.getElementById("holdMeta"), tabsEl = document.getElementById("holdTabs"), panelsEl = document.getElementById("holdPanels");
-  const accts = Object.keys(P).filter(a => (P[a]||[]).length);
-  if (!accts.length) { meta.innerHTML = '<span class="neg">无持仓数据</span>'; return; }
-  meta.textContent = "各账户当日持仓 · 当日收益率＝相对上一交易日收盘；持仓至今总收益率＝相对建仓价（多头为正向、空头反向）";
-  tabsEl.innerHTML = ""; panelsEl.innerHTML = "";
-  accts.forEach((a, i) => {
-    const btn = document.createElement("button"); btn.className = "tab" + (i === 0 ? " active" : ""); btn.textContent = `${a} · ${P[a].length}`; btn.dataset.k = a; tabsEl.appendChild(btn);
-    const panel = document.createElement("div"); panel.id = "hpanel-" + a; if (i !== 0) panel.className = "hidden";
-    panel.innerHTML = buildHoldPanel(P[a], M[a]); panelsEl.appendChild(panel);
+  const accts = ["81099801", "81099802", "81099803"];
+  const P = h.positions || {}, E = h.exposure || {};
+  const xhMv = (h.strategy801 || {}).xh_mv_cny;
+  const meta = document.getElementById("holdMeta"), body = document.getElementById("holdBody");
+  if (!accts.some(a => (P[a] || []).length)) { meta.innerHTML = '<span class="neg">无持仓数据</span>'; return; }
+  const stat = {};
+  accts.forEach(a => {
+    const lst = P[a] || [];
+    const cnt = lst.length, newcnt = lst.filter(p => p.isnew).length;
+    const lng = lst.filter(p => p.side === "LONG").reduce((s, p) => s + (p.mv || 0), 0);
+    const sht = lst.filter(p => p.side === "SHORT").reduce((s, p) => s + (p.mv || 0), 0);
+    const prev = (E[a] || {}).prev;
+    stat[a] = { cnt, newcnt, ratio: cnt ? newcnt / cnt : null, lng, sht, total: lng + sht, prev: prev ? prev.total : null };
   });
-  tabsEl.querySelectorAll(".tab").forEach(btn => { btn.onclick = () => {
-    tabsEl.querySelectorAll(".tab").forEach(b => b.classList.remove("active")); btn.classList.add("active");
-    accts.forEach(a => document.getElementById("hpanel-" + a).classList.toggle("hidden", a !== btn.dataset.k)); }; });
+  const dash = '<span class="subtle">—</span>';
+  const money = (v) => (v == null || isNaN(v) || v === 0) ? dash : fmtInt(Math.round(v));
+  const rows = [
+    ["今日持仓只数", a => fmtInt(stat[a].cnt)],
+    ["新开仓只数", a => fmtInt(stat[a].newcnt)],
+    ["新持仓占比(只数)", a => stat[a].ratio == null ? dash : (stat[a].ratio * 100).toFixed(1) + "%"],
+    ["多头市值 (CNY)", a => money(stat[a].lng)],
+    ["空头市值 (CNY)", a => money(stat[a].sht)],
+    ["今日总市值 (CNY)", a => fmtInt(Math.round(stat[a].total))],
+    ["前一日总市值 (CNY)", a => stat[a].prev == null ? dash : fmtInt(Math.round(stat[a].prev))],
+    ["星汇星河一号市值 (CNY)", a => (a === "81099801" && xhMv != null) ? fmtInt(Math.round(xhMv)) : dash],
+  ];
+  const head = '<th>指标</th>' + accts.map(a => `<th>${a}</th>`).join("");
+  const tb = rows.map(([label, f]) => `<tr><td>${label}</td>${accts.map(a => `<td class="mono">${f(a)}</td>`).join("")}</tr>`).join("");
+  body.innerHTML = `<table class="vtable"><thead><tr>${head}</tr></thead><tbody>${tb}</tbody></table>`;
+  meta.textContent = "各账户持仓敞口汇总（市值为结算币 CNY）· 今日总市值＝多头＋空头 · 新持仓占比＝新开仓只数÷今日持仓只数 · 801 额外列示在岸腿星汇星河一号资产净值 · 前一日总市值自次日起显示";
 }
 
 /* ---------- 净值曲线（含 801总策略 虚线）+ 上周表 ---------- */
