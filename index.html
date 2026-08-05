@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>每日监控看板 · 中和净值</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
 <style>
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
@@ -111,13 +110,6 @@
     <div id="alertsBox"></div>
   </section>
 
-  <section class="card" id="chartCard">
-    <h2>📈 净值走势（近一个月 · 含 801 总策略）</h2>
-    <div class="meta" id="chartMeta">加载中…</div>
-    <div class="chart-box"><canvas id="navChart"></canvas></div>
-    <div class="note" id="chartNote"></div>
-  </section>
-
   <section class="card" id="holdCard">
     <h2>📊 持仓明细</h2>
     <div class="meta" id="holdMeta">加载中…</div>
@@ -126,7 +118,7 @@
   </section>
 
   <section class="card" id="weekCard">
-    <h2>🗓️ 上周净值明细（含 801 总策略）</h2>
+    <h2>🗓️ 近一月净值明细（含 801 总策略）</h2>
     <div class="meta" id="weekMeta">加载中…</div>
     <div class="tbl-scroll" id="weekBody"></div>
   </section>
@@ -225,12 +217,15 @@ function buildHoldPanel(list, meta) {
     const sideTxt = p.side === "LONG" ? '<span class="pos">多头</span>' : '<span class="neg">空头</span>';
     const newTag = p.isnew ? ' <span class="badge info">新开</span>' : '';
     return `<tr><td>${esc(p.name)} <span class="subtle">${esc(p.code)}</span>${newTag}</td>
-      <td class="mono">${fmtInt(p.qty)}</td>
       <td>${sideTxt}</td>
+      <td class="mono">${fmtInt(p.qty)}</td>
+      <td class="mono">${fmt(p.open)}</td>
+      <td class="mono">${fmt(p.close)}</td>
+      <td class="mono">${fmt0(p.mv)}${p.ccy?' <span class="subtle">'+esc(p.ccy)+'</span>':''}</td>
       <td class="mono ${signClass(p.ret)}">${pct(p.ret)}</td>
       <td class="mono ${signClass(p.tret)}">${pct(p.tret)}</td></tr>`;
   }).join("");
-  return sub + `<div class="tbl-scroll"><table><thead><tr><th>股票</th><th>持仓数量</th><th>方向</th><th>当日收益率</th><th>持仓至今总收益率</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  return sub + `<div class="tbl-scroll"><table><thead><tr><th>股票</th><th>方向</th><th>持仓数量</th><th>开盘价</th><th>收盘价</th><th>市值</th><th>当日收益率</th><th>持仓至今总收益率</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 }
 
 function renderHoldings(h) {
@@ -252,30 +247,14 @@ function renderHoldings(h) {
 
 /* ---------- 净值曲线（含 801总策略 虚线）+ 上周表 ---------- */
 const COLORS = { "81099801":"#2563eb", "801总策略":"#7c3aed", "81099802":"#12855a", "81099803":"#c0392b", "81099805":"#b8860b" };
-function renderChart(h) {
-  const series = h.series || [], cols = h.cols || h.accounts || [];
-  document.getElementById("chartMeta").textContent = "最近约一个月 · 单位 USD · 紫色虚线为 801 总策略（两腿合并）· 更新于 " + (h.updated_at || "—");
-  if (!series.length) { document.getElementById("chartMeta").innerHTML = '<span class="neg">无历史数据</span>'; return; }
-  const lastDate = new Date(series[series.length - 1].date); const cutoff = new Date(lastDate); cutoff.setDate(cutoff.getDate() - 31);
-  const win = series.filter(s => new Date(s.date) >= cutoff); const labels = win.map(s => s.date.slice(5));
-  const use = cols.filter(a => win.some(s => s[a] != null));
-  const datasets = use.map(a => { const strat = a === STRAT;
-    return { label: a, data: win.map(s => s[a]), borderColor: COLORS[a] || "#666", backgroundColor: COLORS[a] || "#666",
-      borderWidth: strat ? 2.6 : 2, pointRadius: strat ? 0 : 2, borderDash: strat ? [7,4] : [], tension: 0.25, spanGaps: true }; });
-  new Chart(document.getElementById("navChart"), { type: "line", data: { labels, datasets },
-    options: { responsive: true, maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
-      plugins: { legend: { position: "top", labels: { boxWidth: 14, font: { size: 12 } } }, tooltip: { callbacks: { label: c => c.dataset.label + ": " + fmt(c.parsed.y) } } },
-      scales: { y: { ticks: { callback: v => (v/1000).toFixed(0) + "k", font: { size: 11 } }, grid: { color: "#eef0f3" } }, x: { ticks: { font: { size: 11 }, maxRotation: 0, autoSkip: true, maxTicksLimit: 10 }, grid: { display: false } } } } });
-  document.getElementById("chartNote").textContent = "801 总策略（紫色虚线）= 81099801 海外腿 ＋ 星汇星河一号 在岸腿的合并净值：当 801 空头承压时，在岸多头腿通常反向对冲，故合并曲线更平稳。";
-}
 function renderWeek(h) {
-  const weekly = h.weekly || {}; const order = h.cols || h.accounts || [];
-  const accts = order.filter(a => (weekly[a] || []).length);
+  const monthly = h.monthly || h.weekly || {}; const order = h.cols || h.accounts || [];
+  const accts = order.filter(a => (monthly[a] || []).length);
   const meta = document.getElementById("weekMeta"), body = document.getElementById("weekBody");
-  if (!accts.length) { meta.innerHTML = '<span class="neg">无上周数据</span>'; return; }
-  const dates = [...new Set(accts.flatMap(a => weekly[a].map(r => r.date)))].sort();
-  const idx = {}; accts.forEach(a => { idx[a] = {}; weekly[a].forEach(r => idx[a][r.date] = r); });
-  meta.textContent = "各账户最近约一周每日净值与剔除划转后变化率；801总策略列为两腿合并净值与合并变化率";
+  if (!accts.length) { meta.innerHTML = '<span class="neg">无月度数据</span>'; return; }
+  const dates = [...new Set(accts.flatMap(a => monthly[a].map(r => r.date)))].sort().reverse();
+  const idx = {}; accts.forEach(a => { idx[a] = {}; monthly[a].forEach(r => idx[a][r.date] = r); });
+  meta.textContent = "各账户最近约一个月每日净值与剔除划转后变化率（最新在上）；801总策略列为两腿合并净值与合并变化率";
   const head = "<th>日期</th>" + accts.map(a => `<th${a===STRAT?' style="color:#6d28d9"':''}>${a} 净值</th><th${a===STRAT?' style="color:#6d28d9"':''}>${a} 变化率</th>`).join("");
   const rows = dates.map(dt => { const cells = accts.map(a => { const r = idx[a][dt];
       if (!r) return '<td class="mono subtle">—</td><td class="mono subtle">—</td>';
@@ -290,8 +269,8 @@ function renderWeek(h) {
   try { const nav = await loadJSON("nav.json"); renderNav(nav); navRendered = true; latest = nav.updated_at || latest; }
   catch (e) { document.getElementById("navMeta").innerHTML = '<span class="neg">净值数据未找到（nav.json）</span>'; }
   try { const h = await loadJSON("history.json");
-    renderKpis(h); renderSummary(h); renderChart(h); renderHoldings(h); renderWeek(h); injectNavStrategyRow(h); }
-  catch (e) { ["summaryMeta","chartMeta","holdMeta","weekMeta"].forEach(id => { const el=document.getElementById(id); if(el) el.innerHTML = '<span class="neg">历史数据未找到（history.json）</span>'; }); }
+    renderKpis(h); renderSummary(h); renderHoldings(h); renderWeek(h); injectNavStrategyRow(h); }
+  catch (e) { ["summaryMeta","holdMeta","weekMeta"].forEach(id => { const el=document.getElementById(id); if(el) el.innerHTML = '<span class="neg">历史数据未找到（history.json）</span>'; }); }
   document.getElementById("pageUpdated").textContent = latest ? ("最近更新 " + latest) : "";
   document.getElementById("footer").textContent = "本页每次打开自动读取最新数据 · " + new Date().toLocaleString("zh-CN");
 })();
