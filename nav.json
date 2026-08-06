@@ -1,7 +1,38 @@
 {
-  "updated_at": "2026-08-06T09:56:05+08:00",
+  "updated_at": "2026-08-06T10:32:26+08:00",
   "run_date": "2026-08-06",
-  "status": "failed",
-  "message": "网易企业邮箱未登录（kkeli@neufinc.com 会话已过期，打开邮箱跳转到登录页），且工作区未上传当日估值邮件包，无法获取 08-05/08-06 估值报告。请先登录网易企业邮箱后重跑，或手动导出邮件zip。",
-  "accounts": []
+  "status": "ok",
+  "message": "报告日 2026-08-05；801 当日收到子账户划入 905,996.83 USD（Cash Collateral Delivery），已剔除；803 剔除划转后 +9.60% 已超 5% 阈值，需人工核实（无划转，纯持仓盈亏）。801总策略当日 +10,381 USD。",
+  "accounts": [
+    {
+      "account": "81099801",
+      "prev_date": "2026-08-04",
+      "prev_nav": 511414.34,
+      "curr_nav": 1421581.16,
+      "net_transfer": 905996.83,
+      "change_ex_transfer": 4169.99,
+      "change_pct": 0.2942,
+      "alert": false
+    },
+    {
+      "account": "81099802",
+      "prev_date": "2026-08-04",
+      "prev_nav": 972333.81,
+      "curr_nav": 974427.22,
+      "net_transfer": 0.0,
+      "change_ex_transfer": 2093.41,
+      "change_pct": 0.2153,
+      "alert": false
+    },
+    {
+      "account": "81099803",
+      "prev_date": "2026-08-04",
+      "prev_nav": 356114.73,
+      "curr_nav": 390308.32,
+      "net_transfer": 0.0,
+      "change_ex_transfer": 34193.59,
+      "change_pct": 9.6018,
+      "alert": true
+    }
+  ]
 }
