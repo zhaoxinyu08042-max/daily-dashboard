@@ -22,7 +22,7 @@
   th:first-child, td:first-child { text-align: left; }
   thead th { color: #6b7280; font-weight: 600; font-size: 12px; background: #fafbfc; position: sticky; top: 0; }
   tbody tr:hover { background: #fafbfc; }
-  .pos { color: #12855a; } .neg { color: #c0392b; }
+  .pos { color: #c0392b; } .neg { color: #12855a; }
   .mono { font-variant-numeric: tabular-nums; }
   .badge { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; font-weight: 600; }
   .badge.ok { background: #e7f6ee; color: #12855a; }
@@ -53,8 +53,8 @@
   /* alerts */
   .alerts { margin-top: 14px; display: flex; flex-direction: column; gap: 8px; }
   .alert-box { border-radius: 8px; padding: 9px 12px; font-size: 13px; line-height: 1.55; border-left: 3px solid; }
-  .alert-box.up { background: #eef8f2; border-color: #12855a; color: #14532d; }
-  .alert-box.down { background: #fdeceb; border-color: #c0392b; color: #7a271a; }
+  .alert-box.up { background: #fdeceb; border-color: #c0392b; color: #7a271a; }
+  .alert-box.down { background: #eef8f2; border-color: #12855a; color: #14532d; }
   .alert-box .a-acct { font-weight: 700; }
   .alerts-hd { font-size: 12px; color: #6b7280; margin-top: 16px; font-weight: 600; }
   /* holdings */
@@ -100,10 +100,10 @@
   <section class="kpis" id="kpis"></section>
 
   <section class="card" id="navCard">
-    <h2>💹 账户当日净值 <span id="navStatus"></span></h2>
+    <h2>💹 账户当日净值 · 持仓敞口 <span id="navStatus"></span></h2>
     <div class="meta" id="navMeta">加载中…</div>
     <div id="navBody"></div>
-    <div class="note">紫色行为「801 总策略」＝ 801 海外腿 ＋ 星汇星河一号 在岸腿两腿合并；其「剔除划转后变化」以百分比同步显示。</div>
+    <div class="note">「801 总策略」列＝ 801 海外腿 ＋ 星汇星河一号 在岸腿两腿合并。801 的「多头市值」已并入在岸腿星汇星河一号资产净值（按中和任务最新逻辑抓取），不再单列；「今日总市值」相应含在岸腿，「前一日总市值」为券商持仓口径（不含在岸腿）。上涨为红、下跌为绿。</div>
     <div id="alertsBox"></div>
   </section>
 
@@ -111,12 +111,6 @@
     <h2>📋 总报表（自数据起点至今 · 含夏普/卡玛）</h2>
     <div class="meta" id="summaryMeta">加载中…</div>
     <div class="tbl-scroll" id="summaryBody"></div>
-  </section>
-
-  <section class="card" id="holdCard">
-    <h2>📊 持仓敞口汇总（801 / 802 / 803）</h2>
-    <div class="meta" id="holdMeta">加载中…</div>
-    <div id="holdBody"></div>
   </section>
 
   <section class="card" id="weekCard">
@@ -156,34 +150,48 @@ function renderKpis(h) {
     card("年初至今合计盈亏", `<span class="${col(t.ytd)}">${money(t.ytd)}</span>`, "剔除出入金 · 含 803 大幅回撤", false);
 }
 
-/* ---------- nav.json 当日汇总（+801总策略行） ---------- */
-function renderNav(d) {
+/* ---------- 当日净值 + 持仓敞口 合并·转置表（列：801 / 801总策略 / 802 / 803） ---------- */
+function renderNavCombined(nav, h) {
   const statusEl = document.getElementById("navStatus"), metaEl = document.getElementById("navMeta"), body = document.getElementById("navBody");
-  metaEl.textContent = "运行日期 " + (d.run_date || "—") + " · 更新于 " + (d.updated_at || "—");
-  if (d.status === "no_report") { statusEl.innerHTML = '<span class="badge info">今日无新报告</span>'; body.innerHTML = '<div class="empty">' + esc(d.message || "当天没有新收到的估值报告。") + '</div>'; return; }
-  if (d.status === "failed") { statusEl.innerHTML = '<span class="badge warn">未获取</span>'; body.innerHTML = '<div class="empty">' + esc(d.message || "今日未能自动获取报告。") + '</div>'; return; }
+  metaEl.textContent = "运行日期 " + (nav.run_date || "—") + " · 更新于 " + (nav.updated_at || "—");
+  if (nav.status === "no_report") { statusEl.innerHTML = '<span class="badge info">今日无新报告</span>'; body.innerHTML = '<div class="empty">' + esc(nav.message || "当天没有新收到的估值报告。") + '</div>'; return; }
+  if (nav.status === "failed") { statusEl.innerHTML = '<span class="badge warn">未获取</span>'; body.innerHTML = '<div class="empty">' + esc(nav.message || "今日未能自动获取报告。") + '</div>'; return; }
   statusEl.innerHTML = '<span class="badge ok">已更新</span>';
-  const rows = (d.accounts || []).map(a => { const cls = a.alert ? ' style="background:#fdf3f2"' : '';
-    return `<tr data-acct="${esc(a.account)}"${cls}><td>${esc(a.account)}${a.alert ? ' <span class="badge warn">⚠️</span>' : ''}</td><td class="subtle">${esc(a.prev_date)}</td>
-      <td class="mono">${fmt(a.prev_nav)}</td><td class="mono">${fmt(a.curr_nav)}</td>
-      <td class="mono ${signClass(a.net_transfer)}">${signStr(a.net_transfer)}</td>
-      <td class="mono ${signClass(a.change_ex_transfer)}">${signStr(a.change_ex_transfer)}</td>
-      <td class="mono ${signClass(a.change_pct)}">${signStr(a.change_pct, "%")}</td></tr>`; }).join("");
-  body.innerHTML = `<div class="tbl-scroll"><table><thead><tr><th>账户</th><th>上一次日期</th><th>上一次净值</th><th>当日净值</th><th>资金净划转</th><th>剔除划转后变化</th><th>变化率</th></tr></thead><tbody>${rows}</tbody></table></div>`;
-  if (d.message) body.innerHTML += '<div class="note">' + esc(d.message) + '</div>';
-}
-function injectNavStrategyRow(h) {
-  const sd = (h.strategy801 || {}).daily; if (!sd) return;
-  const tb = document.querySelector("#navBody tbody"); if (!tb) return;
-  const tr = document.createElement("tr"); tr.className = "strat-row";
-  tr.innerHTML = `<td>└ 801总策略 <span class="mini">海外+在岸两腿</span></td><td class="subtle">${esc(sd.prev_date||"—")}</td>
-    <td class="mono">${fmt(sd.prev_nav)}</td><td class="mono">${fmt(sd.curr_nav)}</td>
-    <td class="mono ${signClass(sd.transfer)}">${signStr(sd.transfer)}</td>
-    <td class="mono ${signClass(sd.change)}">${signStr0(sd.change)}</td>
-    <td class="mono ${signClass(sd.pct)}">${pctStr(sd.pct)}</td>`;
-  const rows = [...tb.querySelectorAll("tr")];
-  const r801 = rows.find(r => (r.dataset.acct||"").indexOf("81099801") >= 0);
-  if (r801) r801.after(tr); else tb.appendChild(tr);
+
+  const navBy = {}; (nav.accounts || []).forEach(a => navBy[a.account] = a);
+  const E = (h && h.exposure) || {};
+  const sd = ((h && h.strategy801) || {}).daily || {};
+  const xhMv = ((h && h.strategy801) || {}).xh_mv_cny;
+  const ex = k => (E[k] || {}).today || {};
+  const exPrev = k => (E[k] || {}).prev || {};
+  const long801 = ((ex("81099801").long) || 0) + (xhMv || 0);
+  const total801 = long801 + ((ex("81099801").short) || 0);
+
+  const cols = [
+    { key: "81099801", strat: false },
+    { key: STRAT, strat: true },
+    { key: "81099802", strat: false },
+    { key: "81099803", strat: false },
+  ].filter(c => c.strat ? (sd && sd.curr_nav != null) : navBy[c.key]);
+
+  const dash = '<span class="subtle">—</span>';
+  const mv = v => (v == null || isNaN(v) || v === 0) ? dash : fmtInt(Math.round(v));
+
+  const rows = [
+    ["当日净值", c => `<span class="mono">${fmt(c.strat ? sd.curr_nav : navBy[c.key].curr_nav)}</span>`],
+    ["剔除划转后变化", c => { const v = c.strat ? sd.change : navBy[c.key].change_ex_transfer; return `<span class="mono ${signClass(v)}">${signStr0(v)}</span>`; }],
+    ["变化率", c => { const v = c.strat ? sd.pct : navBy[c.key].change_pct; return `<span class="mono ${signClass(v)}">${pctStr(v)}</span>`; }],
+    ["今日持仓只数", c => c.strat ? dash : `<span class="mono">${fmtInt(ex(c.key).cnt)}</span>`],
+    ["新开仓只数", c => c.strat ? dash : `<span class="mono">${fmtInt(ex(c.key).newcnt)}</span>`],
+    ["多头市值 (CNY)", c => { if (c.strat) return dash; const v = c.key === "81099801" ? long801 : ex(c.key).long; return `<span class="mono">${mv(v)}</span>`; }],
+    ["空头市值 (CNY)", c => c.strat ? dash : `<span class="mono">${mv(ex(c.key).short)}</span>`],
+    ["今日总市值 (CNY)", c => { if (c.strat) return dash; const v = c.key === "81099801" ? total801 : ex(c.key).total; return `<span class="mono">${mv(v)}</span>`; }],
+    ["前一日总市值 (CNY)", c => c.strat ? dash : `<span class="mono">${mv(exPrev(c.key).total)}</span>`],
+  ];
+  const head = "<th>指标</th>" + cols.map(c => `<th${c.strat ? ' style="color:#6d28d9"' : ''}>${c.strat ? '801总策略' : esc(c.key)}</th>`).join("");
+  const tb = rows.map(([label, f]) => `<tr><td>${label}</td>${cols.map(c => `<td${c.strat ? ' class="strat-col"' : ''}>${f(c)}</td>`).join("")}</tr>`).join("");
+  body.innerHTML = `<div class="tbl-scroll"><table class="vtable"><thead><tr>${head}</tr></thead><tbody>${tb}</tbody></table></div>`;
+  if (nav.message) body.innerHTML += '<div class="note">' + esc(nav.message) + '</div>';
 }
 
 /* ---------- 总报表 + 异动解释 ---------- */
@@ -214,39 +222,6 @@ function renderSummary(h) {
     const items = A.items.map(it => `<div class="alert-box ${it.gain?'up':'down'}"><span class="a-acct">${it.gain?'▲':'▼'} ${esc(it.account)}</span> ${esc(it.text)}</div>`).join("");
     box.innerHTML = `<div class="alerts-hd">⚠️ 当日单账户净值变动超过 ±$${fmtInt(A.threshold||10000)} 的说明（运行日 ${esc(A.date||"—")}）</div><div class="alerts">${items}</div>`;
   } else { box.innerHTML = `<div class="alerts-hd">当日没有单账户净值变动超过 ±$${fmtInt((A.threshold)||10000)} 的情况。</div>`; }
-}
-
-/* ---------- 持仓敞口汇总（各账户一列，转置表） ---------- */
-function renderHoldings(h) {
-  const accts = ["81099801", "81099802", "81099803"];
-  const P = h.positions || {}, E = h.exposure || {};
-  const xhMv = (h.strategy801 || {}).xh_mv_cny;
-  const meta = document.getElementById("holdMeta"), body = document.getElementById("holdBody");
-  if (!accts.some(a => (P[a] || []).length)) { meta.innerHTML = '<span class="neg">无持仓数据</span>'; return; }
-  const stat = {};
-  accts.forEach(a => {
-    const lst = P[a] || [];
-    const cnt = lst.length, newcnt = lst.filter(p => p.isnew).length;
-    const lng = lst.filter(p => p.side === "LONG").reduce((s, p) => s + (p.mv || 0), 0);
-    const sht = lst.filter(p => p.side === "SHORT").reduce((s, p) => s + (p.mv || 0), 0);
-    const prev = (E[a] || {}).prev;
-    stat[a] = { cnt, newcnt, ratio: cnt ? newcnt / cnt : null, lng, sht, total: lng + sht, prev: prev ? prev.total : null };
-  });
-  const dash = '<span class="subtle">—</span>';
-  const money = (v) => (v == null || isNaN(v) || v === 0) ? dash : fmtInt(Math.round(v));
-  const rows = [
-    ["今日持仓只数", a => fmtInt(stat[a].cnt)],
-    ["新开仓只数", a => fmtInt(stat[a].newcnt)],
-    ["多头市值 (CNY)", a => money(stat[a].lng)],
-    ["空头市值 (CNY)", a => money(stat[a].sht)],
-    ["星汇星河一号市值 (CNY)", a => (a === "81099801" && xhMv != null) ? fmtInt(Math.round(xhMv)) : dash],
-    ["今日总市值 (CNY)", a => fmtInt(Math.round(stat[a].total))],
-    ["前一日总市值 (CNY)", a => stat[a].prev == null ? dash : fmtInt(Math.round(stat[a].prev))],
-  ];
-  const head = '<th>指标</th>' + accts.map(a => `<th>${a}</th>`).join("");
-  const tb = rows.map(([label, f]) => `<tr><td>${label}</td>${accts.map(a => `<td class="mono">${f(a)}</td>`).join("")}</tr>`).join("");
-  body.innerHTML = `<table class="vtable"><thead><tr>${head}</tr></thead><tbody>${tb}</tbody></table>`;
-  meta.textContent = "各账户持仓敞口汇总（市值为结算币 CNY）· 今日总市值＝多头＋空头 · 801 额外列示在岸腿星汇星河一号资产净值 · 前一日总市值自次日起显示";
 }
 
 /* ---------- 净值曲线（含 801总策略 虚线）+ 上周表 ---------- */
@@ -285,12 +260,13 @@ function renderWeek(h) {
 
 (async function () {
   let latest = "";
-  let navRendered = false;
-  try { const nav = await loadJSON("nav.json"); renderNav(nav); navRendered = true; latest = nav.updated_at || latest; }
+  let nav = null, h = null;
+  try { nav = await loadJSON("nav.json"); latest = nav.updated_at || latest; }
   catch (e) { document.getElementById("navMeta").innerHTML = '<span class="neg">净值数据未找到（nav.json）</span>'; }
-  try { const h = await loadJSON("history.json");
-    renderKpis(h); renderSummary(h); renderHoldings(h); renderWeek(h); injectNavStrategyRow(h); }
-  catch (e) { ["summaryMeta","holdMeta","weekMeta"].forEach(id => { const el=document.getElementById(id); if(el) el.innerHTML = '<span class="neg">历史数据未找到（history.json）</span>'; }); }
+  try { h = await loadJSON("history.json"); }
+  catch (e) { ["summaryMeta","weekMeta"].forEach(id => { const el=document.getElementById(id); if(el) el.innerHTML = '<span class="neg">历史数据未找到（history.json）</span>'; }); }
+  if (nav) renderNavCombined(nav, h || {});
+  if (h) { renderKpis(h); renderSummary(h); renderWeek(h); }
   document.getElementById("pageUpdated").textContent = latest ? ("最近更新 " + latest) : "";
   document.getElementById("footer").textContent = "本页每次打开自动读取最新数据 · " + new Date().toLocaleString("zh-CN");
 })();
