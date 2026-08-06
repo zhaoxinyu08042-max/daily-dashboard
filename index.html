@@ -92,7 +92,7 @@
 <body>
 <div class="wrap">
   <header class="top">
-    <h1>每日监控看板</h1>
+    <h1>每日监控看板 <span class="badge info" id="buildTag" style="font-size:11px;vertical-align:middle">build —</span></h1>
     <span class="subtle" id="pageUpdated">加载中…</span>
   </header>
   <p class="subtle">中和账户净值 · 801总策略 · 持仓 · 总报表 · 财经科技热点 — 定时任务每工作日自动更新</p>
@@ -135,7 +135,15 @@ const signStr0 = (n, suffix="") => (n > 0 ? "+" : "") + fmt0(n) + suffix;
 const pctStr = (v) => (v==null||isNaN(v)) ? "—" : ((v>0?"+":"")+Number(v).toFixed(2)+"%");
 const money = (n) => (n==null||isNaN(n)) ? "—" : ((n>=0?"+$":"−$")+fmt0(Math.abs(n)));
 const STRAT = "801总策略";
+const BUILD = "2026-08-07c";  // 合并转置表·红涨绿跌·星汇=中金所多头初始合约价值
 async function loadJSON(path) { const r = await fetch(path + bust(), { cache: "no-store" }); if (!r.ok) throw new Error(path + " " + r.status); return r.json(); }
+
+/* 清理可能残留的 Service Worker / 缓存（旧版本可能注册过，导致页面一直显示旧内容） */
+(function cleanupCaches(){
+  try { if ("serviceWorker" in navigator) navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister())); } catch(e){}
+  try { if (window.caches && caches.keys) caches.keys().then(ks => ks.forEach(k => caches.delete(k))); } catch(e){}
+  var bt = document.getElementById("buildTag"); if (bt) bt.textContent = "build " + BUILD;
+})();
 
 /* ---------- 投资者 KPI ---------- */
 function renderKpis(h) {
