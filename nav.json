@@ -1,38 +1,38 @@
 {
-  "updated_at": "2026-08-06T10:32:26+08:00",
-  "run_date": "2026-08-06",
-  "status": "ok",
-  "message": "报告日 2026-08-05；801 当日收到子账户划入 905,996.83 USD（Cash Collateral Delivery），已剔除；803 剔除划转后 +9.60% 已超 5% 阈值，需人工核实（无划转，纯持仓盈亏）。801总策略当日 +10,381 USD。",
-  "accounts": [
-    {
-      "account": "81099801",
-      "prev_date": "2026-08-04",
-      "prev_nav": 511414.34,
-      "curr_nav": 1421581.16,
-      "net_transfer": 905996.83,
-      "change_ex_transfer": 4169.99,
-      "change_pct": 0.2942,
-      "alert": false
-    },
-    {
-      "account": "81099802",
-      "prev_date": "2026-08-04",
-      "prev_nav": 972333.81,
-      "curr_nav": 974427.22,
-      "net_transfer": 0.0,
-      "change_ex_transfer": 2093.41,
-      "change_pct": 0.2153,
-      "alert": false
-    },
-    {
-      "account": "81099803",
-      "prev_date": "2026-08-04",
-      "prev_nav": 356114.73,
-      "curr_nav": 390308.32,
-      "net_transfer": 0.0,
-      "change_ex_transfer": 34193.59,
-      "change_pct": 9.6018,
-      "alert": true
-    }
-  ]
+ "updated_at": "2026-08-07T16:52:26.516030+08:00",
+ "run_date": "2026-08-07",
+ "status": "ok",
+ "message": "报告日 2026-08-06；三账户均无资金划转；803 +4.62% 偏高但未超5%阈值。",
+ "accounts": [
+  {
+   "account": "81099801",
+   "prev_date": "2026-08-05",
+   "prev_nav": 1421581.16,
+   "curr_nav": 1426860.62,
+   "net_transfer": 0.0,
+   "change_ex_transfer": 5279.46,
+   "change_pct": 0.3714,
+   "alert": false
+  },
+  {
+   "account": "81099802",
+   "prev_date": "2026-08-05",
+   "prev_nav": 974427.22,
+   "curr_nav": 976181.01,
+   "net_transfer": 0.0,
+   "change_ex_transfer": 1753.79,
+   "change_pct": 0.18,
+   "alert": false
+  },
+  {
+   "account": "81099803",
+   "prev_date": "2026-08-05",
+   "prev_nav": 390308.32,
+   "curr_nav": 408344.89,
+   "net_transfer": 0.0,
+   "change_ex_transfer": 18036.57,
+   "change_pct": 4.621,
+   "alert": false
+  }
+ ]
 }
