@@ -135,7 +135,7 @@ const signStr0 = (n, suffix="") => (n > 0 ? "+" : "") + fmt0(n) + suffix;
 const pctStr = (v) => (v==null||isNaN(v)) ? "—" : ((v>0?"+":"")+Number(v).toFixed(2)+"%");
 const money = (n) => (n==null||isNaN(n)) ? "—" : ((n>=0?"+$":"−$")+fmt0(Math.abs(n)));
 const STRAT = "801总策略";
-const BUILD = "2026-08-07c";  // 合并转置表·红涨绿跌·星汇=中金所多头初始合约价值
+const BUILD = "2026-08-07d";  // 合并转置表·红涨绿跌·星汇=中金所多头初始合约价值
 async function loadJSON(path) { const r = await fetch(path + bust(), { cache: "no-store" }); if (!r.ok) throw new Error(path + " " + r.status); return r.json(); }
 
 /* 清理可能残留的 Service Worker / 缓存（旧版本可能注册过，导致页面一直显示旧内容） */
@@ -155,7 +155,7 @@ function renderKpis(h) {
     card("合计在管净值 (AUM)", "$"+fmt0(t.nav), "81099801/02/03/05 当前净值合计", false) +
     card("今日合计盈亏（剔除现金流）", `<span class="${col(t.today)}">${money(t.today)}</span>`, "各账户当日真实盈亏之和", false) +
     card("801 总策略累计", `<span class="${col(sd.cum_pct)}">${pctStr(sd.cum_pct)}</span>`, `今日 ${pctStr(sd.pct)} · 自 2026-06-09 · 两腿合并`, true) +
-    card("年初至今合计盈亏", `<span class="${col(t.ytd)}">${money(t.ytd)}</span>`, "剔除出入金 · 含 803 大幅回撤", false);
+    card("年初至今合计盈亏", `<span class="${col(t.ytd)}">${money(t.ytd)}</span>`, "剔除出入金 · 801按801总策略口径 · 含 803 大幅回撤", false);
 }
 
 /* ---------- 当日净值 + 持仓敞口 合并·转置表（列：801 / 801总策略 / 802 / 803） ---------- */
@@ -186,8 +186,8 @@ function renderNavCombined(nav, h) {
   const mv = v => (v == null || isNaN(v) || v === 0) ? dash : fmtInt(Math.round(v));
 
   const rows = [
-    ["当日净值", c => `<span class="mono">${fmt(c.strat ? sd.curr_nav : navBy[c.key].curr_nav)}</span>`],
-    ["剔除划转后变化", c => { const v = c.strat ? sd.change : navBy[c.key].change_ex_transfer; return `<span class="mono ${signClass(v)}">${signStr0(v)}</span>`; }],
+    ["当日净值 (USD)", c => `<span class="mono">${fmt(c.strat ? sd.curr_nav : navBy[c.key].curr_nav)}</span>`],
+    ["剔除划转后变化 (USD)", c => { const v = c.strat ? sd.change : navBy[c.key].change_ex_transfer; return `<span class="mono ${signClass(v)}">${signStr0(v)}</span>`; }],
     ["变化率", c => { const v = c.strat ? sd.pct : navBy[c.key].change_pct; return `<span class="mono ${signClass(v)}">${pctStr(v)}</span>`; }],
     ["今日持仓只数", c => c.strat ? dash : `<span class="mono">${fmtInt(ex(c.key).cnt)}</span>`],
     ["新开仓只数", c => c.strat ? dash : `<span class="mono">${fmtInt(ex(c.key).newcnt)}</span>`],
