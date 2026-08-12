@@ -1,38 +1,11 @@
 {
- "updated_at": "2026-08-11T11:30:00+08:00",
- "run_date": "2026-08-11",
- "status": "ok",
- "message": "2026-08-10 估值报告已更新；无资金划转。81099802 净值已按还原口径加回月底 Adjustment 累计 91,138.50 USD。",
- "accounts": [
-  {
-   "account": "81099801",
-   "prev_date": "2026-08-07",
-   "prev_nav": 1424197.51,
-   "curr_nav": 1429374.83,
-   "net_transfer": 0,
-   "change_ex_transfer": 5177.32,
-   "change_pct": 0.3635,
-   "alert": false
-  },
-  {
-   "account": "81099802",
-   "prev_date": "2026-08-07",
-   "prev_nav": 1081711.49,
-   "curr_nav": 1086315.45,
-   "net_transfer": 0,
-   "change_ex_transfer": 4603.96,
-   "change_pct": 0.4256,
-   "alert": false
-  },
-  {
-   "account": "81099803",
-   "prev_date": "2026-08-07",
-   "prev_nav": 461673.06,
-   "curr_nav": 461134.39,
-   "net_transfer": 0,
-   "change_ex_transfer": -538.67,
-   "change_pct": -0.1167,
-   "alert": false
-  }
- ]
+  "updated_at": "2026-08-12T10:05:00+08:00",
+  "run_date": "2026-08-12",
+  "status": "ok",
+  "message": "2026-08-11 估值报告已入表；三账户当日无资金划转。",
+  "accounts": [
+    {"account":"81099801","prev_date":"2026-08-10","prev_nav":1429374.83,"curr_nav":1452293.04,"net_transfer":0,"change_ex_transfer":22918.21,"change_pct":1.6034,"alert":false},
+    {"account":"81099802","prev_date":"2026-08-10","prev_nav":995176.95,"curr_nav":1001706.39,"net_transfer":0,"change_ex_transfer":6529.44,"change_pct":0.6561,"alert":false},
+    {"account":"81099803","prev_date":"2026-08-10","prev_nav":461134.39,"curr_nav":470153.67,"net_transfer":0,"change_ex_transfer":9019.28,"change_pct":1.9559,"alert":false}
+  ]
 }
