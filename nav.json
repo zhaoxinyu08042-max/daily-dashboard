@@ -1,11 +1,7 @@
 {
-  "updated_at": "2026-08-12T10:05:00+08:00",
-  "run_date": "2026-08-12",
-  "status": "ok",
-  "message": "2026-08-11 估值报告已入表；三账户当日无资金划转。",
-  "accounts": [
-    {"account":"81099801","prev_date":"2026-08-10","prev_nav":1429374.83,"curr_nav":1452293.04,"net_transfer":0,"change_ex_transfer":22918.21,"change_pct":1.6034,"alert":false},
-    {"account":"81099802","prev_date":"2026-08-10","prev_nav":995176.95,"curr_nav":1001706.39,"net_transfer":0,"change_ex_transfer":6529.44,"change_pct":0.6561,"alert":false},
-    {"account":"81099803","prev_date":"2026-08-10","prev_nav":461134.39,"curr_nav":470153.67,"net_transfer":0,"change_ex_transfer":9019.28,"change_pct":1.9559,"alert":false}
-  ]
+ "updated_at": "2026-08-13T10:51:41+08:00",
+ "run_date": "2026-08-13",
+ "status": "failed",
+ "message": "网易企业邮箱(kkeli@neufinc.com)登录态已失效，页面跳转至登录页，无法读取 Daily valuation report，三账户净值本次未更新（本地最新仍为 2026-08-11）。请登录网易企业邮箱后重跑。星汇星河一号(SAVU15) 08-12 已正常更新：单位净值 1.0390，资产净值 10,389,746.77 CNY，中金所多头初始合约价值 10,843,200 CNY。",
+ "accounts": []
 }
