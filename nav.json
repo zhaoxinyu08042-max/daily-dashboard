@@ -1,38 +1,11 @@
 {
- "updated_at": "2026-08-18T10:40:00+08:00",
- "run_date": "2026-08-17",
- "status": "ok",
- "message": "2026-08-17 报告已入库；三账户当日均无资金划转。81099803 +5.61% 超阈值，系5只全多头持仓约2.1倍杠杆下的行情放大，非数据异常。",
- "accounts": [
-  {
-   "account": "81099801",
-   "prev_date": "2026-08-14",
-   "prev_nav": 1273958.08,
-   "curr_nav": 1270668.06,
-   "net_transfer": 0.0,
-   "change_ex_transfer": -3290.02,
-   "change_pct": -0.2583,
-   "alert": false
-  },
-  {
-   "account": "81099802",
-   "prev_date": "2026-08-14",
-   "prev_nav": 1171542.48,
-   "curr_nav": 1171607.53,
-   "net_transfer": 0.0,
-   "change_ex_transfer": 65.05,
-   "change_pct": 0.0056,
-   "alert": false
-  },
-  {
-   "account": "81099803",
-   "prev_date": "2026-08-14",
-   "prev_nav": 484164.94,
-   "curr_nav": 511337.35,
-   "net_transfer": 0.0,
-   "change_ex_transfer": 27172.41,
-   "change_pct": 5.6122,
-   "alert": true
-  }
- ]
+  "updated_at": "2026-08-18T11:20:00+08:00",
+  "run_date": "2026-08-17",
+  "status": "ok",
+  "message": "2026-08-17 估值报告（2026-08-18 收到）。三账户当日均无资金划转。81099803 变化率 +5.61% 超阈值，已标记人工核实。",
+  "accounts": [
+    {"account":"81099801","prev_date":"2026-08-14","prev_nav":1273958.08,"curr_nav":1270668.06,"net_transfer":0.0,"change_ex_transfer":-3290.02,"change_pct":-0.2583,"alert":false},
+    {"account":"81099802","prev_date":"2026-08-14","prev_nav":1171542.48,"curr_nav":1171607.53,"net_transfer":0.0,"change_ex_transfer":65.05,"change_pct":0.0056,"alert":false},
+    {"account":"81099803","prev_date":"2026-08-14","prev_nav":484164.94,"curr_nav":511337.35,"net_transfer":0.0,"change_ex_transfer":27172.41,"change_pct":5.6122,"alert":true}
+  ]
 }
