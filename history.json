@@ -2573,13 +2573,14 @@
    "ndays": 96,
    "start_nav": 565000,
    "cur_nav": 1270668.06,
-   "cum_ret": 1329835.19,
+   "principal": 1329835.19,
    "cum_amt": -59167.13,
-   "ann_ret": -4.45,
-   "vol": -11.26,
-   "mdd": 18.92,
-   "sharpe": -21.52,
-   "calmar": -2.5
+   "cum_ret": -4.45,
+   "ann_ret": -11.26,
+   "vol": 18.92,
+   "mdd": -21.52,
+   "sharpe": -2.5,
+   "calmar": -0.52
   },
   {
    "account": "801总策略",
@@ -2587,13 +2588,14 @@
    "ndays": 96,
    "start_nav": 565000,
    "cur_nav": 2826693.38,
-   "cum_ret": 2813568.01,
+   "principal": 2813568.01,
    "cum_amt": 13125.4,
-   "ann_ret": 0.47,
-   "vol": 1.23,
-   "mdd": 14.67,
-   "sharpe": -13.49,
-   "calmar": -1.34
+   "cum_ret": 0.47,
+   "ann_ret": 1.23,
+   "vol": 14.67,
+   "mdd": -13.49,
+   "sharpe": -1.34,
+   "calmar": 0.09
   },
   {
    "account": "81099802",
@@ -2601,13 +2603,14 @@
    "ndays": 96,
    "start_nav": 565000,
    "cur_nav": 1262746.03,
-   "cum_ret": 1022240,
+   "principal": 1022240,
    "cum_amt": 240506.03,
-   "ann_ret": 23.53,
-   "vol": 74.13,
-   "mdd": 5.15,
-   "sharpe": -0.4,
-   "calmar": 14.38
+   "cum_ret": 23.53,
+   "ann_ret": 74.13,
+   "vol": 5.15,
+   "mdd": -0.4,
+   "sharpe": 14.38,
+   "calmar": 186.99
   },
   {
    "account": "81099803",
@@ -2615,13 +2618,14 @@
    "ndays": 93,
    "start_nav": 300000,
    "cur_nav": 511337.35,
-   "cum_ret": 1050619.64,
+   "principal": 1050619.64,
    "cum_amt": -539282.29,
-   "ann_ret": -51.33,
-   "vol": -85.79,
-   "mdd": 134.77,
-   "sharpe": -72.3,
-   "calmar": 0.5
+   "cum_ret": -51.33,
+   "ann_ret": -85.79,
+   "vol": 134.77,
+   "mdd": -72.3,
+   "sharpe": 0.5,
+   "calmar": -1.19
   }
  ],
  "pnl": {
