@@ -1,7 +1,11 @@
 {
-  "updated_at": "2026-08-19T10:15:00+08:00",
-  "run_date": "2026-08-19",
-  "status": "failed",
-  "message": "网易企业邮箱登录态已失效（页面跳转至登录页），无法抓取当日 Daily valuation report；本地也无当日邮件包。请先登录 kkeli@neufinc.com 邮箱后重跑。本地最新数据仍为 2026-08-17。",
-  "accounts": []
+  "updated_at": "2026-08-19T11:05:00+08:00",
+  "run_date": "2026-08-18",
+  "status": "ok",
+  "message": "2026-08-18 估值报告（2026-08-19 收到）。三账户当日 Cashflow 均无 Funds transfer / Cash Collateral Delivery / Adjustments-Return，保证金余额亦无变动，净划转为 0。三账户变化率均在 ±5% 阈值内。USD/CNY=6.74687。801总策略当日 -5,342 USD（801 -4,667 + 星汇腿 -674）。",
+  "accounts": [
+    {"account":"81099801","prev_date":"2026-08-17","prev_nav":1270668.06,"curr_nav":1266000.60,"net_transfer":0.0,"change_ex_transfer":-4667.46,"change_pct":-0.3673,"alert":false},
+    {"account":"81099802","prev_date":"2026-08-17","prev_nav":1171607.53,"curr_nav":1170260.30,"net_transfer":0.0,"change_ex_transfer":-1347.23,"change_pct":-0.1067,"alert":false},
+    {"account":"81099803","prev_date":"2026-08-17","prev_nav":511337.35,"curr_nav":495556.34,"net_transfer":0.0,"change_ex_transfer":-15781.01,"change_pct":-3.0862,"alert":false}
+  ]
 }
