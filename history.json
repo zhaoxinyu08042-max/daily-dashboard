@@ -2664,7 +2664,7 @@
     "comb": 0,
     "cum": 0,
     "comb_pct": null,
-    "cum_pct": null,
+    "cum_pct": 0.0,
     "nav": 565000
    },
    {
@@ -2673,8 +2673,8 @@
     "xh": 0,
     "comb": 0.37,
     "cum": 0.37,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.0,
+    "cum_pct": 0.0,
     "nav": 565000.37
    },
    {
@@ -2683,8 +2683,8 @@
     "xh": 0,
     "comb": -185.05,
     "cum": -184.68,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.033,
+    "cum_pct": -0.033,
     "nav": 564815.32
    },
    {
@@ -2693,8 +2693,8 @@
     "xh": 0,
     "comb": 252.04,
     "cum": 67.36,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.045,
+    "cum_pct": 0.012,
     "nav": 265067.36
    },
    {
@@ -2703,8 +2703,8 @@
     "xh": 0,
     "comb": 549.13,
     "cum": 616.49,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.207,
+    "cum_pct": 0.219,
     "nav": 265616.49
    },
    {
@@ -2713,8 +2713,8 @@
     "xh": 0,
     "comb": -2402.92,
     "cum": -1786.43,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.905,
+    "cum_pct": -0.688,
     "nav": 263213.57
    },
    {
@@ -2723,8 +2723,8 @@
     "xh": 0,
     "comb": 1104.4,
     "cum": -682.03,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.42,
+    "cum_pct": -0.271,
     "nav": 264317.97
    },
    {
@@ -2733,8 +2733,8 @@
     "xh": 0,
     "comb": -952.13,
     "cum": -1634.16,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.36,
+    "cum_pct": -0.63,
     "nav": 263365.84
    },
    {
@@ -2743,8 +2743,8 @@
     "xh": 0,
     "comb": 324.11,
     "cum": -1310.05,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.123,
+    "cum_pct": -0.508,
     "nav": 263689.95
    },
    {
@@ -2753,8 +2753,8 @@
     "xh": 0,
     "comb": -811.14,
     "cum": -2121.19,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.308,
+    "cum_pct": -0.814,
     "nav": 262878.81
    },
    {
@@ -2763,8 +2763,8 @@
     "xh": 0,
     "comb": 94.77,
     "cum": -2026.42,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.036,
+    "cum_pct": -0.778,
     "nav": 262973.58
    },
    {
@@ -2773,8 +2773,8 @@
     "xh": 0,
     "comb": 722.56,
     "cum": -1303.86,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.275,
+    "cum_pct": -0.505,
     "nav": 263696.14
    },
    {
@@ -2783,8 +2783,8 @@
     "xh": 0,
     "comb": 516.86,
     "cum": -787,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.196,
+    "cum_pct": -0.31,
     "nav": 264213
    },
    {
@@ -2793,8 +2793,8 @@
     "xh": 0,
     "comb": 470.21,
     "cum": -316.79,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.178,
+    "cum_pct": -0.133,
     "nav": 264683.21
    },
    {
@@ -2803,8 +2803,8 @@
     "xh": 0,
     "comb": 214.37,
     "cum": -102.42,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.081,
+    "cum_pct": -0.052,
     "nav": 264897.58
    },
    {
@@ -2813,8 +2813,8 @@
     "xh": 0,
     "comb": 2565.62,
     "cum": 2463.2,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.969,
+    "cum_pct": 0.916,
     "nav": 117463.2
    },
    {
@@ -2823,8 +2823,8 @@
     "xh": 0,
     "comb": 2053.83,
     "cum": 4517.03,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 1.748,
+    "cum_pct": 2.68,
     "nav": 119517.03
    },
    {
@@ -2833,8 +2833,8 @@
     "xh": 0,
     "comb": 1884.84,
     "cum": 6401.87,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 1.577,
+    "cum_pct": 4.3,
     "nav": 121401.87
    },
    {
@@ -2843,8 +2843,8 @@
     "xh": 0,
     "comb": 515.53,
     "cum": 6917.4,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.425,
+    "cum_pct": 4.743,
     "nav": 121917.4
    },
    {
@@ -2853,8 +2853,8 @@
     "xh": 0,
     "comb": 176.74,
     "cum": 7094.14,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.145,
+    "cum_pct": 4.894,
     "nav": 122094.14
    },
    {
@@ -2863,8 +2863,8 @@
     "xh": 0,
     "comb": 231.81,
     "cum": 7325.95,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.19,
+    "cum_pct": 5.094,
     "nav": 122325.95
    },
    {
@@ -2873,8 +2873,8 @@
     "xh": 0,
     "comb": -3758.48,
     "cum": 3567.47,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -3.073,
+    "cum_pct": 1.865,
     "nav": 118567.47
    },
    {
@@ -2883,8 +2883,8 @@
     "xh": 0,
     "comb": 10.61,
     "cum": 3578.08,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.009,
+    "cum_pct": 1.874,
     "nav": 118578.08
    },
    {
@@ -2893,8 +2893,8 @@
     "xh": 0,
     "comb": -4.64,
     "cum": 3573.44,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.004,
+    "cum_pct": 1.87,
     "nav": 118573.44
    },
    {
@@ -2903,8 +2903,8 @@
     "xh": 0,
     "comb": -689.53,
     "cum": 2883.91,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.582,
+    "cum_pct": 1.277,
     "nav": 117883.91
    },
    {
@@ -2913,8 +2913,8 @@
     "xh": 0,
     "comb": -8929.86,
     "cum": -6045.95,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -7.575,
+    "cum_pct": -6.395,
     "nav": 477303.05
    },
    {
@@ -2923,8 +2923,8 @@
     "xh": 0,
     "comb": -7974.17,
     "cum": -14020.12,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -1.671,
+    "cum_pct": -7.958,
     "nav": 469328.88
    },
    {
@@ -2933,8 +2933,8 @@
     "xh": 0,
     "comb": -4189.81,
     "cum": -18209.93,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.893,
+    "cum_pct": -8.78,
     "nav": 465139.07
    },
    {
@@ -2943,8 +2943,8 @@
     "xh": 0,
     "comb": -50.11,
     "cum": -18260.04,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.011,
+    "cum_pct": -8.79,
     "nav": 465088.96
    },
    {
@@ -2953,8 +2953,8 @@
     "xh": 0,
     "comb": -16.53,
     "cum": -18276.57,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.004,
+    "cum_pct": -8.793,
     "nav": 465072.43
    },
    {
@@ -2963,8 +2963,8 @@
     "xh": 0,
     "comb": -201.64,
     "cum": -18478.21,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.043,
+    "cum_pct": -8.833,
     "nav": 464870.79
    },
    {
@@ -2973,8 +2973,8 @@
     "xh": 0,
     "comb": 2.41,
     "cum": -18475.8,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.001,
+    "cum_pct": -8.832,
     "nav": 464873.2
    },
    {
@@ -2983,8 +2983,8 @@
     "xh": 0,
     "comb": -0.19,
     "cum": -18475.99,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.0,
+    "cum_pct": -8.832,
     "nav": 464873.01
    },
    {
@@ -2993,8 +2993,8 @@
     "xh": 0,
     "comb": 0.05,
     "cum": -18475.94,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.0,
+    "cum_pct": -8.832,
     "nav": 464873.06
    },
    {
@@ -3003,8 +3003,8 @@
     "xh": 0,
     "comb": 0.39,
     "cum": -18475.55,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.0,
+    "cum_pct": -8.832,
     "nav": 464873.45
    },
    {
@@ -3013,8 +3013,8 @@
     "xh": 0,
     "comb": -0.37,
     "cum": -18475.92,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.0,
+    "cum_pct": -8.832,
     "nav": 464873.08
    },
    {
@@ -3023,8 +3023,8 @@
     "xh": 0,
     "comb": -0.91,
     "cum": -18476.83,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.0,
+    "cum_pct": -8.832,
     "nav": 464872.17
    },
    {
@@ -3033,8 +3033,8 @@
     "xh": 0,
     "comb": -1.39,
     "cum": -18478.22,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.0,
+    "cum_pct": -8.833,
     "nav": 464870.78
    },
    {
@@ -3043,8 +3043,8 @@
     "xh": 0,
     "comb": 0.17,
     "cum": -18478.05,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.0,
+    "cum_pct": -8.833,
     "nav": 364870.95
    },
    {
@@ -3053,8 +3053,8 @@
     "xh": 0,
     "comb": -0.37,
     "cum": -18478.42,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.0,
+    "cum_pct": -8.833,
     "nav": 364870.58
    },
    {
@@ -3063,8 +3063,8 @@
     "xh": 0,
     "comb": -0.26,
     "cum": -18478.68,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.0,
+    "cum_pct": -8.833,
     "nav": 364870.32
    },
    {
@@ -3073,8 +3073,8 @@
     "xh": 0,
     "comb": -811.04,
     "cum": -19289.72,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.222,
+    "cum_pct": -9.035,
     "nav": 364059.28
    },
    {
@@ -3083,8 +3083,8 @@
     "xh": 0,
     "comb": -0.9,
     "cum": -19290.62,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.0,
+    "cum_pct": -9.036,
     "nav": 364058.38
    },
    {
@@ -3093,8 +3093,8 @@
     "xh": 0,
     "comb": -0.94,
     "cum": -19291.56,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.0,
+    "cum_pct": -9.036,
     "nav": 154546.8
    },
    {
@@ -3103,8 +3103,8 @@
     "xh": 0,
     "comb": -14.23,
     "cum": -19305.79,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": -0.009,
+    "cum_pct": -9.044,
     "nav": 154532.57
    },
    {
@@ -3113,8 +3113,8 @@
     "xh": 0,
     "comb": 0,
     "cum": -19305.79,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.0,
+    "cum_pct": -9.044,
     "nav": 154532.57
    },
    {
@@ -3123,8 +3123,8 @@
     "xh": 0,
     "comb": 0,
     "cum": -19305.79,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.0,
+    "cum_pct": -9.044,
     "nav": 154532.57
    },
    {
@@ -3133,8 +3133,8 @@
     "xh": 0,
     "comb": 0,
     "cum": -19305.79,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.0,
+    "cum_pct": -9.044,
     "nav": 154532.57
    },
    {
@@ -3143,8 +3143,8 @@
     "xh": 0,
     "comb": 0,
     "cum": -19305.79,
-    "comb_pct": null,
-    "cum_pct": null,
+    "comb_pct": 0.0,
+    "cum_pct": -9.044,
     "nav": 1636758.98
    },
    {
@@ -3154,7 +3154,7 @@
     "comb": 36.52,
     "cum": -19269.27,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.042,
     "nav": 1636795.5
    },
    {
@@ -3164,7 +3164,7 @@
     "comb": 36.52,
     "cum": -19232.74,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.04,
     "nav": 1636832.02
    },
    {
@@ -3174,7 +3174,7 @@
     "comb": 36.52,
     "cum": -19196.22,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.038,
     "nav": 1636868.55
    },
    {
@@ -3184,7 +3184,7 @@
     "comb": 109.56,
     "cum": -19086.66,
     "comb_pct": 0.007,
-    "cum_pct": null,
+    "cum_pct": -9.032,
     "nav": 1636978.11
    },
    {
@@ -3194,7 +3194,7 @@
     "comb": 36.52,
     "cum": -19050.14,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.03,
     "nav": 1637014.63
    },
    {
@@ -3204,7 +3204,7 @@
     "comb": 36.52,
     "cum": -19013.62,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.028,
     "nav": 1637051.15
    },
    {
@@ -3214,7 +3214,7 @@
     "comb": 36.52,
     "cum": -18977.1,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.026,
     "nav": 1637087.67
    },
    {
@@ -3224,7 +3224,7 @@
     "comb": 34.93,
     "cum": -18942.17,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.024,
     "nav": 1637122.6
    },
    {
@@ -3234,7 +3234,7 @@
     "comb": 36.54,
     "cum": -18905.63,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.022,
     "nav": 1637159.14
    },
    {
@@ -3244,7 +3244,7 @@
     "comb": 36.54,
     "cum": -18869.09,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.02,
     "nav": 1637195.68
    },
    {
@@ -3254,7 +3254,7 @@
     "comb": 36.54,
     "cum": -18832.55,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.018,
     "nav": 1637232.22
    },
    {
@@ -3264,7 +3264,7 @@
     "comb": 36.54,
     "cum": -18796.01,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.016,
     "nav": 1637268.76
    },
    {
@@ -3274,7 +3274,7 @@
     "comb": -68.25,
     "cum": -18864.27,
     "comb_pct": -0.004,
-    "cum_pct": null,
+    "cum_pct": -9.02,
     "nav": 1637200.5
    },
    {
@@ -3284,7 +3284,7 @@
     "comb": 36.53,
     "cum": -18827.73,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.018,
     "nav": 1637237.04
    },
    {
@@ -3294,7 +3294,7 @@
     "comb": 36.53,
     "cum": -18791.2,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.016,
     "nav": 1637273.57
    },
    {
@@ -3304,7 +3304,7 @@
     "comb": 36.51,
     "cum": -18754.69,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.014,
     "nav": 1637310.08
    },
    {
@@ -3314,7 +3314,7 @@
     "comb": 36.51,
     "cum": -18718.17,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.012,
     "nav": 1637346.6
    },
    {
@@ -3324,7 +3324,7 @@
     "comb": 109.54,
     "cum": -18608.63,
     "comb_pct": 0.007,
-    "cum_pct": null,
+    "cum_pct": -9.006,
     "nav": 1637456.14
    },
    {
@@ -3334,7 +3334,7 @@
     "comb": 36.51,
     "cum": -18572.12,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.004,
     "nav": 1637492.65
    },
    {
@@ -3344,7 +3344,7 @@
     "comb": 36.51,
     "cum": -18535.61,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -9.001,
     "nav": 1637529.16
    },
    {
@@ -3354,7 +3354,7 @@
     "comb": 36.51,
     "cum": -18499.1,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -8.999,
     "nav": 1637565.67
    },
    {
@@ -3364,7 +3364,7 @@
     "comb": 36.51,
     "cum": -18462.59,
     "comb_pct": 0.002,
-    "cum_pct": null,
+    "cum_pct": -8.997,
     "nav": 1637602.18
    },
    {
@@ -3374,7 +3374,7 @@
     "comb": 98,
     "cum": -18364.59,
     "comb_pct": 0.006,
-    "cum_pct": null,
+    "cum_pct": -8.992,
     "nav": 1637700.18
    },
    {
@@ -3384,7 +3384,7 @@
     "comb": -1630.43,
     "cum": -19995.01,
     "comb_pct": -0.1,
-    "cum_pct": null,
+    "cum_pct": -9.083,
     "nav": 1636069.76
    },
    {
@@ -3394,7 +3394,7 @@
     "comb": 1924.18,
     "cum": -18070.83,
     "comb_pct": 0.118,
-    "cum_pct": null,
+    "cum_pct": -8.976,
     "nav": 1637993.94
    },
    {
@@ -3404,7 +3404,7 @@
     "comb": -234.82,
     "cum": -18305.65,
     "comb_pct": -0.014,
-    "cum_pct": null,
+    "cum_pct": -8.989,
     "nav": 1637759.12
    },
    {
@@ -3414,7 +3414,7 @@
     "comb": 5028.79,
     "cum": -13276.85,
     "comb_pct": 0.307,
-    "cum_pct": null,
+    "cum_pct": -8.709,
     "nav": 1642787.92
    },
    {
@@ -3424,7 +3424,7 @@
     "comb": -1175.99,
     "cum": -14452.84,
     "comb_pct": -0.072,
-    "cum_pct": null,
+    "cum_pct": -8.775,
     "nav": 2041611.93
    },
    {
@@ -3434,7 +3434,7 @@
     "comb": 1791.44,
     "cum": -12661.4,
     "comb_pct": 0.088,
-    "cum_pct": null,
+    "cum_pct": -8.695,
     "nav": 2043403.37
    },
    {
@@ -3444,7 +3444,7 @@
     "comb": 5990.31,
     "cum": -6671.09,
     "comb_pct": 0.293,
-    "cum_pct": null,
+    "cum_pct": -8.427,
     "nav": 2049393.68
    },
    {
@@ -3454,7 +3454,7 @@
     "comb": 13251.61,
     "cum": 6580.51,
     "comb_pct": 0.647,
-    "cum_pct": null,
+    "cum_pct": -7.835,
     "nav": 2062645.28
    },
    {
@@ -3464,7 +3464,7 @@
     "comb": 1747.49,
     "cum": 8328,
     "comb_pct": 0.085,
-    "cum_pct": null,
+    "cum_pct": -7.757,
     "nav": 2064392.77
    },
    {
@@ -3474,7 +3474,7 @@
     "comb": -10057.5,
     "cum": -1729.5,
     "comb_pct": -0.487,
-    "cum_pct": null,
+    "cum_pct": -8.206,
     "nav": 2054335.27
    },
    {
@@ -3484,7 +3484,7 @@
     "comb": -18639.58,
     "cum": -20369.07,
     "comb_pct": -0.907,
-    "cum_pct": null,
+    "cum_pct": -9.039,
     "nav": 2035695.69
    },
    {
@@ -3494,7 +3494,7 @@
     "comb": 2652.09,
     "cum": -17716.99,
     "comb_pct": 0.13,
-    "cum_pct": null,
+    "cum_pct": -8.92,
     "nav": 2038347.78
    },
    {
@@ -3504,7 +3504,7 @@
     "comb": 5970.05,
     "cum": -11746.94,
     "comb_pct": 0.293,
-    "cum_pct": null,
+    "cum_pct": -8.654,
     "nav": 2044317.83
    },
    {
@@ -3513,8 +3513,8 @@
     "xh": 42611.55,
     "comb": 8269.45,
     "cum": -3477.49,
-    "comb_pct": 0.404,
-    "cum_pct": null,
+    "comb_pct": 0.405,
+    "cum_pct": -8.284,
     "nav": 2052587.28
    },
    {
@@ -3524,7 +3524,7 @@
     "comb": -308.63,
     "cum": -3786.12,
     "comb_pct": -0.015,
-    "cum_pct": null,
+    "cum_pct": -8.298,
     "nav": 2052278.65
    },
    {
@@ -3534,7 +3534,7 @@
     "comb": 3315.92,
     "cum": -470.2,
     "comb_pct": 0.162,
-    "cum_pct": null,
+    "cum_pct": -8.15,
     "nav": 2055594.57
    },
    {
@@ -3544,7 +3544,7 @@
     "comb": 10382.37,
     "cum": 9912.17,
     "comb_pct": 0.505,
-    "cum_pct": null,
+    "cum_pct": -7.686,
     "nav": 2971973.77
    },
    {
@@ -3554,7 +3554,7 @@
     "comb": -836.88,
     "cum": 9075.29,
     "comb_pct": -0.028,
-    "cum_pct": null,
+    "cum_pct": -7.712,
     "nav": 2971136.89
    },
    {
@@ -3564,7 +3564,7 @@
     "comb": -4973.63,
     "cum": 4101.66,
     "comb_pct": -0.167,
-    "cum_pct": null,
+    "cum_pct": -7.866,
     "nav": 2966163.26
    },
    {
@@ -3574,7 +3574,7 @@
     "comb": 11339.13,
     "cum": 15440.79,
     "comb_pct": 0.382,
-    "cum_pct": null,
+    "cum_pct": -7.514,
     "nav": 2977502.39
    },
    {
@@ -3584,7 +3584,7 @@
     "comb": 12963.15,
     "cum": 28403.94,
     "comb_pct": 0.435,
-    "cum_pct": null,
+    "cum_pct": -7.112,
     "nav": 2990465.54
    },
    {
@@ -3594,7 +3594,7 @@
     "comb": 370.85,
     "cum": 28774.79,
     "comb_pct": 0.012,
-    "cum_pct": null,
+    "cum_pct": -7.1,
     "nav": 2840836.39
    },
    {
@@ -3604,7 +3604,7 @@
     "comb": -2155.23,
     "cum": 26619.56,
     "comb_pct": -0.076,
-    "cum_pct": null,
+    "cum_pct": -7.17,
     "nav": 2838681.15
    },
    {
@@ -3614,7 +3614,7 @@
     "comb": -6564.64,
     "cum": 20054.92,
     "comb_pct": -0.231,
-    "cum_pct": null,
+    "cum_pct": -7.385,
     "nav": 2832116.52
    },
    {
@@ -3624,7 +3624,7 @@
     "comb": -7002.95,
     "cum": 13051.97,
     "comb_pct": -0.247,
-    "cum_pct": null,
+    "cum_pct": -7.614,
     "nav": 2825113.57
    },
    {
@@ -3634,7 +3634,7 @@
     "comb": -5341.56,
     "cum": 7710.41,
     "comb_pct": -0.189,
-    "cum_pct": null,
+    "cum_pct": -7.789,
     "nav": 2819772.01
    }
   ],
@@ -3647,7 +3647,7 @@
    "change": -5341.56,
    "pct": -0.189,
    "cum": 7710.41,
-   "cum_pct": null
+   "cum_pct": -7.789
   },
   "xh_mv_cny": 20282600,
   "xh_date": "2026-08-18"
