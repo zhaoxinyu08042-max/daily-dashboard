@@ -153,9 +153,9 @@ function renderKpis(h) {
   const col = (n) => n>0?'pos':(n<0?'neg':'');
   el.innerHTML =
     card("合计在管净值 (AUM)", "$"+fmt0(t.nav), "81099801/02/03/05 当前净值合计", false) +
-    card("今日合计盈亏（剔除现金流）", `<span class="${col(t.today)}">${money(t.today)}</span>`, "各账户当日真实盈亏之和", false) +
+    card("今日合计盈亏（剔除现金流）", `<span class="${col(t.today)}">${money(t.today)}</span>`, "801总策略 + 802 当日真实盈亏（不含 803）", false) +
     card("801 总策略累计", `<span class="${col(sd.cum_pct)}">${pctStr(sd.cum_pct)}</span>`, `今日 ${pctStr(sd.pct)} · 自 2026-06-09 · 两腿合并`, true) +
-    card("年初至今合计盈亏", `<span class="${col(t.ytd)}">${money(t.ytd)}</span>`, "剔除出入金 · 801按801总策略口径 · 含 803 大幅回撤", false);
+    card("年初至今合计盈亏", `<span class="${col(t.ytd)}">${money(t.ytd)}</span>`, "剔除出入金 · 801总策略 + 802（不含 803）", false);
 }
 
 /* ---------- 当日净值 + 持仓敞口 合并·转置表（列：801 / 801总策略 / 802 / 803） ---------- */
