@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-19T11:05:00+08:00",
-  "run_date": "2026-08-18",
+  "updated_at": "2026-08-20T10:05:00+08:00",
+  "run_date": "2026-08-19",
   "status": "ok",
-  "message": "2026-08-18 估值报告（2026-08-19 收到）。三账户当日 Cashflow 均无 Funds transfer / Cash Collateral Delivery / Adjustments-Return，保证金余额亦无变动，净划转为 0。三账户变化率均在 ±5% 阈值内。USD/CNY=6.74687。801总策略当日 -5,342 USD（801 -4,667 + 星汇腿 -674）。",
+  "message": "2026-08-19 估值报告（2026-08-20 收到）。三账户当日 Cashflow 均无 Funds transfer / Cash Collateral Delivery / Adjustments-Return，保证金余额亦无变动，净划转为 0。⚠️ 81099801 +5.16%、81099803 -11.00% 均超 ±5% 阈值，请人工核实：801 当日大幅平仓（持仓 56→38 只，Cashflow 实现 Profit and Loss +390,877 CNY）；803 仅 5 只持仓、杠杆高，为纯浮动盈亏。USD/CNY=6.74067。801总策略当日 +24,521 USD（801 +65,299 + 星汇腿 -40,779）。",
   "accounts": [
-    {"account":"81099801","prev_date":"2026-08-17","prev_nav":1270668.06,"curr_nav":1266000.60,"net_transfer":0.0,"change_ex_transfer":-4667.46,"change_pct":-0.3673,"alert":false},
-    {"account":"81099802","prev_date":"2026-08-17","prev_nav":1171607.53,"curr_nav":1170260.30,"net_transfer":0.0,"change_ex_transfer":-1347.23,"change_pct":-0.1067,"alert":false},
-    {"account":"81099803","prev_date":"2026-08-17","prev_nav":511337.35,"curr_nav":495556.34,"net_transfer":0.0,"change_ex_transfer":-15781.01,"change_pct":-3.0862,"alert":false}
+    {"account":"81099801","prev_date":"2026-08-18","prev_nav":1266000.60,"curr_nav":1331299.96,"net_transfer":0.0,"change_ex_transfer":65299.36,"change_pct":5.1579,"alert":true},
+    {"account":"81099802","prev_date":"2026-08-18","prev_nav":1170260.30,"curr_nav":1170663.17,"net_transfer":0.0,"change_ex_transfer":402.87,"change_pct":0.0319,"alert":false},
+    {"account":"81099803","prev_date":"2026-08-18","prev_nav":495556.34,"curr_nav":441067.22,"net_transfer":0.0,"change_ex_transfer":-54489.12,"change_pct":-10.9955,"alert":true}
   ]
 }
