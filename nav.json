@@ -1,7 +1,38 @@
 {
-  "updated_at": "2026-08-21T09:45:00+08:00",
-  "run_date": "2026-08-21",
-  "status": "failed",
-  "message": "网易企业邮箱未登录（会话已过期，跳转登录页），无法获取 Daily valuation report；本地亦无当日邮件包。请登录 kkeli@neufinc.com 后重跑，或手动导出 zip。本地最新数据仍为 2026-08-19。",
-  "accounts": []
+ "updated_at": "2026-08-21T10:05:00+08:00",
+ "run_date": "2026-08-21",
+ "status": "ok",
+ "message": "2026-08-20 报告已入表。当日三账户均无资金划转。801总策略当日变化 -6,429 USD（801 -15,424 + 星汇腿 +8,995）。803 +9.16% 超阈值，建议人工核实。",
+ "accounts": [
+  {
+   "account": "81099801",
+   "prev_date": "2026-08-19",
+   "prev_nav": 1331299.96,
+   "curr_nav": 1315875.68,
+   "net_transfer": 0,
+   "change_ex_transfer": -15424.28,
+   "change_pct": -1.158587881276585,
+   "alert": false
+  },
+  {
+   "account": "81099802",
+   "prev_date": "2026-08-19",
+   "prev_nav": 1261801.67,
+   "curr_nav": 1262648.83,
+   "net_transfer": 0,
+   "change_ex_transfer": 847.16,
+   "change_pct": 0.06713891890792545,
+   "alert": false
+  },
+  {
+   "account": "81099803",
+   "prev_date": "2026-08-19",
+   "prev_nav": 441067.22,
+   "curr_nav": 481452.12,
+   "net_transfer": 0,
+   "change_ex_transfer": 40384.9,
+   "change_pct": 9.156178053766958,
+   "alert": true
+  }
+ ]
 }
