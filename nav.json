@@ -1,7 +1,11 @@
 {
-  "updated_at": "2026-08-28T09:55:00+08:00",
+  "updated_at": "2026-08-28T10:05:00+08:00",
   "run_date": "2026-08-28",
-  "status": "failed",
-  "message": "网易企业邮箱登录会话在抓取过程中失效并跳回登录页，附件未取到。收件箱已确认存在 2026-08-26、2026-08-27 三账户 Daily valuation report，本地表最新仍为 2026-08-21，待补 08-24~08-27。请重新登录后重跑。",
-  "accounts": []
+  "status": "ok",
+  "message": "补齐 2026-08-24~08-27 四个交易日；当期三账户均无资金划转。803 于 08-24(-7.69%) 与 08-27(+5.87%) 单日变动超 5%，建议人工核实。中金所多头初始合约价值本次未更新。",
+  "accounts": [
+    {"account":"81099801","prev_date":"2026-08-26","prev_nav":1400412.77,"curr_nav":1392733.10,"net_transfer":0,"change_ex_transfer":-7679.67,"change_pct":-0.548,"alert":false},
+    {"account":"81099802","prev_date":"2026-08-26","prev_nav":1263138.44,"curr_nav":1263263.86,"net_transfer":0,"change_ex_transfer":125.42,"change_pct":0.010,"alert":false},
+    {"account":"81099803","prev_date":"2026-08-26","prev_nav":392245.38,"curr_nav":415267.56,"net_transfer":0,"change_ex_transfer":23022.18,"change_pct":5.869,"alert":true}
+  ]
 }
