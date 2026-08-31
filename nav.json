@@ -1,7 +1,38 @@
 {
-  "updated_at": "2026-08-31T12:20:00+08:00",
-  "run_date": "2026-08-31",
-  "status": "failed",
-  "message": "网易企业邮箱(kkeli@neufinc.com)登录态已失效，跳转短信验证页；飞书邮箱(hecy.zhao@winpeak.tech)亦未登录。本次未获取到新的估值报告，净值与持仓未更新。请重新登录后重跑。",
-  "accounts": []
+ "updated_at": "2026-08-31T12:49:11+08:00",
+ "run_date": "2026-08-31",
+ "status": "ok",
+ "message": "报告日 2026-08-28（上一交易日 08-27）。802 当日 Cash Collateral Withdrawal −100,000 USD 已按划转剔除，保证金余额 1,022,240→922,240 校验一致。",
+ "accounts": [
+  {
+   "account": "81099801",
+   "prev_date": "2026-08-27",
+   "prev_nav": 1392733.1,
+   "curr_nav": 1398893.78,
+   "net_transfer": 0.0,
+   "change_ex_transfer": 6160.68,
+   "change_pct": 0.4423,
+   "alert": false
+  },
+  {
+   "account": "81099802",
+   "prev_date": "2026-08-27",
+   "prev_nav": 1263263.86,
+   "curr_nav": 1163078.1,
+   "net_transfer": -100000.0,
+   "change_ex_transfer": -185.76,
+   "change_pct": -0.016,
+   "alert": false
+  },
+  {
+   "account": "81099803",
+   "prev_date": "2026-08-27",
+   "prev_nav": 415267.56,
+   "curr_nav": 398917.46,
+   "net_transfer": 0.0,
+   "change_ex_transfer": -16350.1,
+   "change_pct": -3.9372,
+   "alert": false
+  }
+ ]
 }
