@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-09-01T10:36:06+08:00",
- "report_date": "2026-08-28",
+ "updated_at": "2026-09-01T14:40:15+08:00",
+ "report_date": "2026-08-31",
  "accounts": [
   "81099801",
   "81099802",
@@ -354,419 +354,419 @@
   {
    "date": "2026-06-09",
    "81099801": 154532.57,
-   "801总策略": 1642041.53,
+   "801总策略": 1642340.29,
    "81099802": 800146.6,
    "81099803": 1433332.03
   },
   {
    "date": "2026-06-10",
    "81099801": 154532.57,
-   "801总策略": 1642078.19,
+   "801总策略": 1642376.96,
    "81099802": 800934.38,
    "81099803": 1425478.75
   },
   {
    "date": "2026-06-11",
    "81099801": 154532.57,
-   "801总策略": 1642114.84,
+   "801总策略": 1642413.62,
    "81099802": 801340.93,
    "81099803": 1458468.76
   },
   {
    "date": "2026-06-12",
    "81099801": 154532.57,
-   "801总策略": 1642151.49,
+   "801总策略": 1642450.28,
    "81099802": 803356.42,
    "81099803": 1519304.71
   },
   {
    "date": "2026-06-15",
    "81099801": 154532.57,
-   "801总策略": 1642261.45,
+   "801总策略": 1642560.25,
    "81099802": 805085.34,
    "81099803": 1954587.59
   },
   {
    "date": "2026-06-16",
    "81099801": 154532.57,
-   "801总策略": 1642298.1,
+   "801总策略": 1642596.91,
    "81099802": 869177.29,
    "81099803": 1788641.85
   },
   {
    "date": "2026-06-17",
    "81099801": 154532.57,
-   "801总策略": 1642334.75,
+   "801总策略": 1642633.57,
    "81099802": 870055.27,
    "81099803": 1795917.96
   },
   {
    "date": "2026-06-18",
    "81099801": 154532.57,
-   "801总策略": 1642371.4,
+   "801总策略": 1642670.22,
    "81099802": 873420.98,
    "81099803": 1730817.42
   },
   {
    "date": "2026-06-22",
    "81099801": 154532.57,
-   "801总策略": 1642406.45,
+   "801总策略": 1642705.28,
    "81099802": 874533.04,
    "81099803": 1578853.72
   },
   {
    "date": "2026-06-23",
    "81099801": 154532.57,
-   "801总策略": 1642443.12,
+   "801总策略": 1642741.96,
    "81099802": 875038.26,
    "81099803": 1528173.19
   },
   {
    "date": "2026-06-24",
    "81099801": 154532.57,
-   "801总策略": 1642479.79,
+   "801总策略": 1642778.64,
    "81099802": 877103.13,
    "81099803": 1501664.33
   },
   {
    "date": "2026-06-25",
    "81099801": 154532.57,
-   "801总策略": 1642516.46,
+   "801总策略": 1642815.32,
    "81099802": 877293.88,
    "81099803": 1491627.72
   },
   {
    "date": "2026-06-26",
    "81099801": 154532.57,
-   "801总策略": 1642553.13,
+   "801总策略": 1642851.99,
    "81099802": 879456.6,
    "81099803": 1496725.02
   },
   {
    "date": "2026-06-29",
    "81099801": 154532.57,
-   "801总策略": 1642484.63,
+   "801总策略": 1642783.48,
    "81099802": 890342.01,
    "81099803": 1342608.6
   },
   {
    "date": "2026-06-30",
    "81099801": 154532.57,
-   "801总策略": 1642521.3,
+   "801总策略": 1642820.15,
    "81099802": 893522.48,
    "81099803": 1413536.59
   },
   {
    "date": "2026-07-01",
    "81099801": 154532.57,
-   "801总策略": 1642557.96,
+   "801总策略": 1642856.82,
    "81099802": 900895.87,
    "81099803": 1592406.65
   },
   {
    "date": "2026-07-02",
    "81099801": 154532.57,
-   "801总策略": 1642594.6,
+   "801总策略": 1642893.47,
    "81099802": 904990.76,
    "81099803": 1606113.26
   },
   {
    "date": "2026-07-03",
    "81099801": 154532.57,
-   "801总策略": 1642631.25,
+   "801总策略": 1642930.13,
    "81099802": 907545.33,
    "81099803": 1643380.85
   },
   {
    "date": "2026-07-06",
    "81099801": 154532.57,
-   "801总策略": 1642741.18,
+   "801总策略": 1643040.08,
    "81099802": 909334.26,
    "81099803": 1552652.86
   },
   {
    "date": "2026-07-07",
    "81099801": 154532.57,
-   "801总策略": 1642777.82,
+   "801总策略": 1643076.73,
    "81099802": 911155.79,
    "81099803": 1448819.6
   },
   {
    "date": "2026-07-08",
    "81099801": 154532.57,
-   "801总策略": 1642814.46,
+   "801总策略": 1643113.38,
    "81099802": 915685.13,
    "81099803": 1370473.06
   },
   {
    "date": "2026-07-09",
    "81099801": 154532.57,
-   "801总策略": 1642851.1,
+   "801总策略": 1643150.02,
    "81099802": 918117.85,
    "81099803": 1447777.57
   },
   {
    "date": "2026-07-10",
    "81099801": 154532.57,
-   "801总策略": 1642887.74,
+   "801总策略": 1643186.67,
    "81099802": 929613.67,
    "81099803": 1585042.49
   },
   {
    "date": "2026-07-13",
    "81099801": 154532.57,
-   "801总策略": 1642986.09,
+   "801总策略": 1643285.04,
    "81099802": 932090.73,
    "81099803": 1363523.7
   },
   {
    "date": "2026-07-14",
    "81099801": 153712.56,
-   "801总策略": 1641352.78,
+   "801总策略": 1641651.57,
    "81099802": 936871.77,
    "81099803": 1422855.28
   },
   {
    "date": "2026-07-15",
    "81099801": 153719.45,
-   "801总策略": 1643283.8,
+   "801总策略": 1643582.97,
    "81099802": 938199.43,
    "81099803": 1347323.86
   },
   {
    "date": "2026-07-16",
    "81099801": 153001.42,
-   "801总策略": 1643050.7,
+   "801总策略": 1643349.97,
    "81099802": 942330.36,
    "81099803": 1277962.56
   },
   {
    "date": "2026-07-17",
    "81099801": 153061.78,
-   "801总策略": 1648097.2,
+   "801总策略": 1648397.47,
    "81099802": 948208.56,
    "81099803": 1063182.42
   },
   {
    "date": "2026-07-20",
    "81099801": 550971.94,
-   "801总策略": 2046924.47,
+   "801总策略": 2047224.93,
    "81099802": 1047974.82,
    "81099803": 395744.29
   },
   {
    "date": "2026-07-21",
    "81099801": 551294.6,
-   "801总策略": 2048721.14,
+   "801总策略": 2049021.89,
    "81099802": 1053210.34,
    "81099803": 383812.46
   },
   {
    "date": "2026-07-22",
    "81099801": 555899.24,
-   "801总策略": 2054716.39,
+   "801总策略": 2055017.42,
    "81099802": 1056015.11,
    "81099803": 375918.85
   },
   {
    "date": "2026-07-23",
    "81099801": 561541.12,
-   "801总策略": 2067995.12,
+   "801总策略": 2068297.68,
    "81099802": 1055142.99,
    "81099803": 393374.92
   },
   {
    "date": "2026-07-24",
    "81099801": 571662.85,
-   "801总策略": 2069712.76,
+   "801总策略": 2070013.63,
    "81099802": 1055313.04,
    "81099803": 387463.53
   },
   {
    "date": "2026-07-27",
    "81099801": 565624.01,
-   "801总策略": 2059640.94,
+   "801总策略": 2059941.01,
    "81099802": 1057770.5,
    "81099803": 405191.51
   },
   {
    "date": "2026-07-28",
    "81099801": 556730.33,
-   "801总策略": 2040966.63,
+   "801总策略": 2041264.73,
    "81099802": 1057317.85,
    "81099803": 362261.77
   },
   {
    "date": "2026-07-29",
    "81099801": 555584.73,
-   "801总策略": 2043632.25,
+   "801总策略": 2043931.12,
    "81099802": 1057420.86,
    "81099803": 349315.97
   },
   {
    "date": "2026-07-30",
    "81099801": 554452.16,
-   "801总策略": 2049627.61,
+   "801总策略": 2049927.91,
    "81099802": 1058511.12,
    "81099803": 290972.68
   },
   {
    "date": "2026-07-31",
    "81099801": 520110.06,
-   "801总策略": 2058048.93,
+   "801总策略": 2058357.81,
    "81099802": 1059406.56,
    "81099803": 329976.9
   },
   {
    "date": "2026-08-03",
    "81099801": 521541,
-   "801总策略": 2057734.1,
+   "801总策略": 2058042.64,
    "81099802": 1059903.35,
    "81099803": 327364.59
   },
   {
    "date": "2026-08-04",
    "81099801": 511414.34,
-   "801总策略": 2061097.93,
+   "801总策略": 2061409.17,
    "81099802": 1063472.31,
    "81099803": 356114.73
   },
   {
    "date": "2026-08-05",
    "81099801": 1421581.16,
-   "801总策略": 2977499.27,
+   "801总策略": 2977811.77,
    "81099802": 1065565.72,
    "81099803": 390308.32
   },
   {
    "date": "2026-08-06",
    "81099801": 1426860.62,
-   "801总策略": 2976640.59,
+   "801总策略": 2976951.86,
    "81099802": 1067319.51,
    "81099803": 408344.89
   },
   {
    "date": "2026-08-07",
    "81099801": 1424197.51,
-   "801总策略": 2971658.72,
+   "801总策略": 2971969.52,
    "81099802": 1081711.49,
    "81099803": 461673.06
   },
   {
    "date": "2026-08-10",
    "81099801": 1429374.83,
-   "801总策略": 2983019.81,
+   "801总策略": 2983331.85,
    "81099802": 1086315.45,
    "81099803": 461134.39
   },
   {
    "date": "2026-08-11",
    "81099801": 1452293.04,
-   "801总策略": 2995947.48,
+   "801总策略": 2996257.52,
    "81099802": 1092844.89,
    "81099803": 470153.67
   },
   {
    "date": "2026-08-12",
    "81099801": 1300900.57,
-   "801总策略": 2846324.62,
+   "801总策略": 2846635.01,
    "81099802": 1248378.2,
    "81099803": 487280.91
   },
   {
    "date": "2026-08-13",
    "81099801": 1281978.36,
-   "801总策略": 2844229.14,
+   "801总策略": 2844542.91,
    "81099802": 1260259.95,
    "81099803": 473968.15
   },
   {
    "date": "2026-08-14",
    "81099801": 1273958.08,
-   "801总策略": 2837669.69,
+   "801总策略": 2837983.75,
    "81099802": 1262680.98,
    "81099803": 484164.94
   },
   {
    "date": "2026-08-17",
    "81099801": 1270668.06,
-   "801总策略": 2830653.51,
+   "801总策略": 2830966.82,
    "81099802": 1262746.03,
    "81099803": 511337.35
   },
   {
    "date": "2026-08-18",
    "81099801": 1266000.6,
-   "801总策略": 2825309.54,
+   "801总策略": 2825622.72,
    "81099802": 1261398.8,
    "81099803": 495556.34
   },
   {
    "date": "2026-08-19",
    "81099801": 1331299.96,
-   "801总策略": 2849722.4,
+   "801总策略": 2850027.37,
    "81099802": 1261801.67,
    "81099803": 441067.22
   },
   {
    "date": "2026-08-20",
    "81099801": 1315875.68,
-   "801总策略": 2843296.61,
+   "801总策略": 2843603.39,
    "81099802": 1262648.83,
    "81099803": 481452.12
   },
   {
    "date": "2026-08-21",
    "81099801": 1359148.03,
-   "801总策略": 2865068.03,
+   "801总策略": 2865370.49,
    "81099802": 1262922.53,
    "81099803": 425340.25
   },
   {
    "date": "2026-08-24",
    "81099801": 1375562.52,
-   "801总策略": 2851269.81,
+   "801总策略": 2851566.21,
    "81099802": 1263705.15,
    "81099803": 392625
   },
   {
    "date": "2026-08-25",
    "81099801": 1403888.91,
-   "801总策略": 2868088.23,
+   "801总策略": 2868382.31,
    "81099802": 1263822.66,
    "81099803": 406107.01
   },
   {
    "date": "2026-08-26",
    "81099801": 1400412.77,
-   "801总策略": 2860768.12,
+   "801总策略": 2861061.43,
    "81099802": 1263138.44,
    "81099803": 392245.38
   },
   {
    "date": "2026-08-27",
    "81099801": 1392733.1,
-   "801总策略": 2853579.02,
+   "801总策略": 2853872.43,
    "81099802": 1263263.86,
    "81099803": 415267.56
   },
   {
    "date": "2026-08-28",
    "81099801": 1398893.78,
-   "801总策略": 2877892.9,
+   "801总策略": 2878189.95,
    "81099802": 1163078.1,
    "81099803": 398917.46
+  },
+  {
+   "date": "2026-08-31",
+   "81099801": 1413694.42,
+   "801总策略": 2868232.44,
+   "81099802": 1163254.52,
+   "81099803": 385789.74
   }
  ],
  "weekly": {
   "81099801": [
-   {
-    "date": "2026-08-21",
-    "nav": 1359148.03,
-    "transfer": 0,
-    "change": 43272.35,
-    "pct": 3.29
-   },
    {
     "date": "2026-08-24",
     "nav": 1375562.52,
@@ -801,16 +801,16 @@
     "transfer": 0,
     "change": 6160.68,
     "pct": 0.44
+   },
+   {
+    "date": "2026-08-31",
+    "nav": 1413694.42,
+    "transfer": 0,
+    "change": 14800.64,
+    "pct": 1.06
    }
   ],
   "81099802": [
-   {
-    "date": "2026-08-21",
-    "nav": 1262922.53,
-    "transfer": 0,
-    "change": 273.7,
-    "pct": 0.02
-   },
    {
     "date": "2026-08-24",
     "nav": 1263705.15,
@@ -845,16 +845,16 @@
     "transfer": -100000,
     "change": -185.76,
     "pct": -0.02
+   },
+   {
+    "date": "2026-08-31",
+    "nav": 1163254.52,
+    "transfer": 0,
+    "change": 176.42,
+    "pct": 0.02
    }
   ],
   "81099803": [
-   {
-    "date": "2026-08-21",
-    "nav": 425340.25,
-    "transfer": 0,
-    "change": -56111.87,
-    "pct": -11.65
-   },
    {
     "date": "2026-08-24",
     "nav": 392625,
@@ -889,698 +889,809 @@
     "transfer": 0,
     "change": -16350.1,
     "pct": -3.94
+   },
+   {
+    "date": "2026-08-31",
+    "nav": 385789.74,
+    "transfer": 0,
+    "change": -13127.72,
+    "pct": -3.29
    }
   ],
   "801总策略": [
    {
-    "date": "2026-08-21",
-    "nav": 2865068.03,
-    "change": 21771.42,
-    "pct": 0.766
-   },
-   {
     "date": "2026-08-24",
-    "nav": 2851269.81,
-    "change": -13798.22,
+    "nav": 2851566.21,
+    "change": -13804.29,
     "pct": -0.482
    },
    {
     "date": "2026-08-25",
-    "nav": 2868088.23,
-    "change": 16818.41,
+    "nav": 2868382.31,
+    "change": 16816.1,
     "pct": 0.59
    },
    {
     "date": "2026-08-26",
-    "nav": 2860768.12,
-    "change": -7320.1,
+    "nav": 2861061.43,
+    "change": -7320.88,
     "pct": -0.255
    },
    {
     "date": "2026-08-27",
-    "nav": 2853579.02,
-    "change": -7189.1,
+    "nav": 2853872.43,
+    "change": -7189,
     "pct": -0.251
    },
    {
     "date": "2026-08-28",
-    "nav": 2877892.9,
-    "change": 24313.88,
+    "nav": 2878189.95,
+    "change": 24317.52,
     "pct": 0.852
+   },
+   {
+    "date": "2026-08-31",
+    "nav": 2868232.44,
+    "change": -9957.51,
+    "pct": -0.346
    }
   ]
  },
  "positions": {
   "81099801": [
    {
-    "name": "Hainan Haiyao Co.,Ltd.",
-    "code": "000566",
+    "name": "Shenzhen Zhenye(Group) Co., Ltd",
+    "code": "000006",
     "side": "SHORT",
-    "qty": 49800,
+    "qty": 29600,
     "prev": 0,
     "isnew": true,
-    "mv": 250992,
+    "mv": 212528,
     "ccy": "CNY",
-    "ret": -0.04,
-    "open": 5.0380894,
-    "close": 5.04
+    "ret": -0.45,
+    "open": 7.14767625,
+    "close": 7.18
    },
    {
-    "name": "Weichai Heavy Machinery Co., Ltd.",
-    "code": "000880",
+    "name": "Digital China Group Co.,Ltd.",
+    "code": "000034",
     "side": "SHORT",
-    "qty": 5400,
-    "prev": 21400,
-    "isnew": false,
-    "mv": 127656,
-    "ccy": "CNY",
-    "ret": -0.68,
-    "open": 23.653545,
-    "close": 23.64
-   },
-   {
-    "name": "Infore Environment Technology Group Co. Ltd.",
-    "code": "000967",
-    "side": "SHORT",
-    "qty": 60100,
-    "prev": 58000,
-    "isnew": false,
-    "mv": 500633,
-    "ccy": "CNY",
-    "ret": 3.48,
-    "open": 8.30169,
-    "close": 8.33
-   },
-   {
-    "name": "Jinglv Environment Science and Technology Co., Ltd.",
-    "code": "001230",
-    "side": "SHORT",
-    "qty": 22092,
-    "prev": 22120,
-    "isnew": false,
-    "mv": 498395.52,
-    "ccy": "CNY",
-    "ret": -0.8,
-    "open": 22.59196084,
-    "close": 22.56
-   },
-   {
-    "name": "Shenzhen Coship Electronics Co.,Ltd",
-    "code": "002052",
-    "side": "SHORT",
-    "qty": 55900,
+    "qty": 6000,
     "prev": 0,
     "isnew": true,
-    "mv": 496392,
+    "mv": 145200,
     "ccy": "CNY",
-    "ret": 0.05,
-    "open": 8.88486295,
-    "close": 8.88
+    "ret": -0.03,
+    "open": 24.19220025,
+    "close": 24.2
    },
    {
-    "name": "Sunyes Manufacturing(ZheJiang)Holding Co.,Ltd.",
-    "code": "002388",
+    "name": "PKU HealthCare Corp., Ltd.",
+    "code": "000788",
     "side": "SHORT",
-    "qty": 76900,
-    "prev": 74500,
-    "isnew": false,
-    "mv": 499850,
-    "ccy": "CNY",
-    "ret": 2.4,
-    "open": 6.48881029,
-    "close": 6.5
-   },
-   {
-    "name": "Suzhou Cheersson Precision Industry Group Co., Ltd.",
-    "code": "002976",
-    "side": "SHORT",
-    "qty": 18540,
+    "qty": 17000,
     "prev": 0,
     "isnew": true,
-    "mv": 453673.8,
+    "mv": 96390,
+    "ccy": "CNY",
+    "ret": -0.21,
+    "open": 5.65827724,
+    "close": 5.67
+   },
+   {
+    "name": "Zotye Automobile Co., Ltd",
+    "code": "000980",
+    "side": "SHORT",
+    "qty": 294100,
+    "prev": 0,
+    "isnew": true,
+    "mv": 497029,
+    "ccy": "CNY",
+    "ret": -0.1,
+    "open": 1.68831,
+    "close": 1.69
+   },
+   {
+    "name": "Shenzhen Dawei Innovation Technology Co., Ltd.",
+    "code": "002213",
+    "side": "SHORT",
+    "qty": 6900,
+    "prev": 0,
+    "isnew": true,
+    "mv": 210795,
+    "ccy": "CNY",
+    "ret": -0.34,
+    "open": 30.44590043,
+    "close": 30.55
+   },
+   {
+    "name": "Guangdong Chj Industry Co.,Ltd.",
+    "code": "002345",
+    "side": "SHORT",
+    "qty": 21300,
+    "prev": 0,
+    "isnew": true,
+    "mv": 207249,
+    "ccy": "CNY",
+    "ret": -0.15,
+    "open": 9.71590817,
+    "close": 9.73
+   },
+   {
+    "name": "Gcl System Integration Technology Co., Ltd.",
+    "code": "002506",
+    "side": "SHORT",
+    "qty": 33600,
+    "prev": 0,
+    "isnew": true,
+    "mv": 89040,
+    "ccy": "CNY",
+    "ret": -0.1,
+    "open": 2.64735,
+    "close": 2.65
+   },
+   {
+    "name": "Guangdong Guanghua Sci-Tech Co., Ltd.",
+    "code": "002741",
+    "side": "SHORT",
+    "qty": 6900,
+    "prev": 0,
+    "isnew": true,
+    "mv": 176433,
     "ccy": "CNY",
     "ret": -0.05,
-    "open": 24.45775078,
-    "close": 24.47
+    "open": 25.55644696,
+    "close": 25.57
+   },
+   {
+    "name": "Shenzhen Envicool Technology Co.,Ltd.",
+    "code": "002837",
+    "side": "SHORT",
+    "qty": 1600,
+    "prev": 0,
+    "isnew": true,
+    "mv": 109136,
+    "ccy": "CNY",
+    "ret": -0.33,
+    "open": 67.98319875,
+    "close": 68.21
+   },
+   {
+    "name": "Hes Technology Group Co., Ltd.",
+    "code": "002963",
+    "side": "SHORT",
+    "qty": 22400,
+    "prev": 0,
+    "isnew": true,
+    "mv": 445312,
+    "ccy": "CNY",
+    "ret": 0.67,
+    "open": 20.01344866,
+    "close": 19.88
+   },
+   {
+    "name": "Guangdong Haomei New Materials Co.,Ltd",
+    "code": "002988",
+    "side": "SHORT",
+    "qty": 17800,
+    "prev": 0,
+    "isnew": true,
+    "mv": 434854,
+    "ccy": "CNY",
+    "ret": -0.48,
+    "open": 24.31425691,
+    "close": 24.43
    },
    {
     "name": "Guangzhou Metro Design&Research Institute Co., Ltd.",
     "code": "003013",
     "side": "SHORT",
-    "qty": 33300,
-    "prev": 0,
-    "isnew": true,
-    "mv": 497502,
+    "qty": 13000,
+    "prev": 33300,
+    "isnew": false,
+    "mv": 201500,
     "ccy": "CNY",
-    "ret": -0.35,
-    "open": 14.887665,
-    "close": 14.94
+    "ret": -3.75,
+    "open": 15.49729488,
+    "close": 15.5
    },
    {
-    "name": "Suzhou Huaya Intelligence Technology Co., Ltd.",
-    "code": "003043",
+    "name": "Toread Holdings Group Co., Ltd.",
+    "code": "300005",
     "side": "SHORT",
-    "qty": 6000,
+    "qty": 44900,
     "prev": 0,
     "isnew": true,
-    "mv": 496500,
+    "mv": 498390,
     "ccy": "CNY",
-    "ret": -0.65,
-    "open": 82.211706,
-    "close": 82.75
-   },
-   {
-    "name": "Guangdong Tloong Technology Group Co.,Ltd",
-    "code": "300063",
-    "side": "SHORT",
-    "qty": 27200,
-    "prev": 0,
-    "isnew": true,
-    "mv": 238544,
-    "ccy": "CNY",
-    "ret": -0.35,
-    "open": 8.73981761,
-    "close": 8.77
+    "ret": -0.25,
+    "open": 11.07194592,
+    "close": 11.1
    },
    {
     "name": "Guangdong Create Century Intelligent Equipment Group Corporation Limited",
     "code": "300083",
+    "side": "LONG",
+    "qty": 6500,
+    "prev": 8600,
+    "isnew": false,
+    "mv": 89440,
+    "ccy": "CNY",
+    "ret": 2.92,
+    "open": 13.32034915,
+    "close": 13.76
+   },
+   {
+    "name": "Dalian Zhiyun Automation Co.,Ltd.",
+    "code": "300097",
     "side": "SHORT",
-    "qty": 8600,
+    "qty": 46300,
     "prev": 0,
     "isnew": true,
-    "mv": 114982,
+    "mv": 496799,
     "ccy": "CNY",
-    "ret": 0.5,
-    "open": 13.4374793,
-    "close": 13.37
+    "ret": -0.1,
+    "open": 10.71879531,
+    "close": 10.73
+   },
+   {
+    "name": "Boai Nky Medical Holdings Ltd",
+    "code": "300109",
+    "side": "SHORT",
+    "qty": 13400,
+    "prev": 0,
+    "isnew": true,
+    "mv": 192558,
+    "ccy": "CNY",
+    "ret": -0.1,
+    "open": 14.35510813,
+    "close": 14.37
+   },
+   {
+    "name": "Tangel Culture Co., Ltd.",
+    "code": "300148",
+    "side": "SHORT",
+    "qty": 36700,
+    "prev": 0,
+    "isnew": true,
+    "mv": 129551,
+    "ccy": "CNY",
+    "ret": -0.38,
+    "open": 3.51648,
+    "close": 3.53
    },
    {
     "name": "Ningbo Xianfeng New Material Co.,Ltd",
     "code": "300163",
     "side": "SHORT",
-    "qty": 65400,
-    "prev": 0,
-    "isnew": true,
-    "mv": 494424,
-    "ccy": "CNY",
-    "ret": -0.58,
-    "open": 7.51631408,
-    "close": 7.56
-   },
-   {
-    "name": "Business-Intelligence of Oriental Nations Corporation Ltd.",
-    "code": "300166",
-    "side": "SHORT",
-    "qty": 10500,
-    "prev": 0,
-    "isnew": true,
-    "mv": 132405,
-    "ccy": "CNY",
-    "ret": 0.33,
-    "open": 12.652335,
-    "close": 12.61
-   },
-   {
-    "name": "Xingyun Technology Co.,Ltd",
-    "code": "300209",
-    "side": "SHORT",
-    "qty": 14700,
-    "prev": 14000,
+    "qty": 7500,
+    "prev": 65400,
     "isnew": false,
-    "mv": 492891,
+    "mv": 57150,
     "ccy": "CNY",
-    "ret": 5.5,
-    "open": 33.68063939,
-    "close": 33.53
+    "ret": -0.79,
+    "open": 7.6166424,
+    "close": 7.62
    },
    {
-    "name": "TRANSPORTATION TELECOMMUNICATION & INFORMATION DEVELOPMENT INC.LTD.ZHEJIANG",
-    "code": "300469",
+    "name": "Chengdu Yunda Technology Co. Ltd.",
+    "code": "300440",
     "side": "SHORT",
-    "qty": 5200,
+    "qty": 24200,
     "prev": 0,
     "isnew": true,
-    "mv": 283140,
+    "mv": 494164,
     "ccy": "CNY",
-    "ret": 0.13,
-    "open": 54.52176981,
-    "close": 54.45
+    "ret": 0.03,
+    "open": 20.42649521,
+    "close": 20.42
    },
    {
-    "name": "Victory Giant Technology (Huizhou)Co.,Ltd.",
-    "code": "300476",
+    "name": "WUXI LEAD INTELLIGENT EQUIPMENT CO., LTD",
+    "code": "300450",
     "side": "SHORT",
-    "qty": 2000,
+    "qty": 3400,
     "prev": 0,
     "isnew": true,
-    "mv": 483200,
+    "mv": 114308,
     "ccy": "CNY",
-    "ret": 0.13,
-    "open": 241.9053525,
-    "close": 241.6
+    "ret": -0.07,
+    "open": 33.59519471,
+    "close": 33.62
+   },
+   {
+    "name": "Optics Technology Holding Co.,Ltd",
+    "code": "300489",
+    "side": "SHORT",
+    "qty": 100,
+    "prev": 0,
+    "isnew": true,
+    "mv": 23975,
+    "ccy": "CNY",
+    "ret": 0.11,
+    "open": 240.01974,
+    "close": 239.75
+   },
+   {
+    "name": "Hnac Technology Co.,Ltd",
+    "code": "300490",
+    "side": "SHORT",
+    "qty": 44900,
+    "prev": 0,
+    "isnew": true,
+    "mv": 501533,
+    "ccy": "CNY",
+    "ret": -0.06,
+    "open": 11.16321314,
+    "close": 11.17
+   },
+   {
+    "name": "Guangxi Xinxunda Technology Group Co.,Ltd.",
+    "code": "300518",
+    "side": "SHORT",
+    "qty": 19600,
+    "prev": 0,
+    "isnew": true,
+    "mv": 499800,
+    "ccy": "CNY",
+    "ret": -0.29,
+    "open": 25.42562036,
+    "close": 25.5
+   },
+   {
+    "name": "Guangdong Wanlima Industry Co.,Ltd.",
+    "code": "300591",
+    "side": "SHORT",
+    "qty": 65100,
+    "prev": 0,
+    "isnew": true,
+    "mv": 501270,
+    "ccy": "CNY",
+    "ret": -0.71,
+    "open": 7.64561862,
+    "close": 7.7
    },
    {
     "name": "Guangdong High Dream Intellectualized Machinery Co., Ltd.",
     "code": "300720",
     "side": "SHORT",
-    "qty": 6700,
-    "prev": 4300,
+    "qty": 4300,
+    "prev": 6700,
     "isnew": false,
-    "mv": 490507,
+    "mv": 308998,
     "ccy": "CNY",
-    "ret": 7.31,
-    "open": 73.8495094,
-    "close": 73.21
+    "ret": 1.84,
+    "open": 71.84529209,
+    "close": 71.86
    },
    {
-    "name": "Ginlong Technologies Co., Ltd.",
-    "code": "300763",
+    "name": "Hiecise Precision Equipment Co.,Ltd.",
+    "code": "300809",
     "side": "SHORT",
-    "qty": 1500,
+    "qty": 17700,
     "prev": 0,
     "isnew": true,
-    "mv": 93825,
+    "mv": 430287,
     "ccy": "CNY",
-    "ret": 0.26,
-    "open": 62.715222,
-    "close": 62.55
-   },
-   {
-    "name": "Zhejiang Wecome Pharmaceutical Company Limited",
-    "code": "300878",
-    "side": "SHORT",
-    "qty": 14900,
-    "prev": 0,
-    "isnew": true,
-    "mv": 476800,
-    "ccy": "CNY",
-    "ret": 0,
-    "open": 31.99904275,
-    "close": 32
+    "ret": -0.15,
+    "open": 24.27293441,
+    "close": 24.31
    },
    {
     "name": "Shenzhen Exc-Led Technology Co.Ltd",
     "code": "300889",
     "side": "SHORT",
-    "qty": 17100,
-    "prev": 0,
-    "isnew": true,
-    "mv": 369360,
-    "ccy": "CNY",
-    "ret": -1.93,
-    "open": 21.19013368,
-    "close": 21.6
-   },
-   {
-    "name": "Zhejiang Hongchang Electrical Technology Co., Ltd.",
-    "code": "301008",
-    "side": "SHORT",
-    "qty": 13100,
-    "prev": 12800,
+    "qty": 5100,
+    "prev": 17100,
     "isnew": false,
-    "mv": 496490,
+    "mv": 122757,
     "ccy": "CNY",
-    "ret": 3.29,
-    "open": 38.04199626,
-    "close": 37.9
+    "ret": -11.44,
+    "open": 24.03574412,
+    "close": 24.07
    },
    {
     "name": "Qingdao Baheal Medical INC.",
     "code": "301015",
     "side": "SHORT",
-    "qty": 19800,
-    "prev": 0,
-    "isnew": true,
-    "mv": 497970,
-    "ccy": "CNY",
-    "ret": -0.25,
-    "open": 25.08650455,
-    "close": 25.15
-   },
-   {
-    "name": "Beijing Asiacom Information Technology Co., Ltd",
-    "code": "301085",
-    "side": "SHORT",
-    "qty": 4600,
-    "prev": 0,
-    "isnew": true,
-    "mv": 278760,
-    "ccy": "CNY",
-    "ret": 0.57,
-    "open": 60.94660109,
-    "close": 60.6
-   },
-   {
-    "name": "Suzhou Xianglou New Material Co., Ltd.",
-    "code": "301160",
-    "side": "SHORT",
-    "qty": 9400,
-    "prev": 0,
-    "isnew": true,
-    "mv": 457404,
-    "ccy": "CNY",
-    "ret": -0.12,
-    "open": 48.60220021,
-    "close": 48.66
-   },
-   {
-    "name": "Chengda Pharmaceuticals Co.,Ltd.",
-    "code": "301201",
-    "side": "SHORT",
-    "qty": 2600,
-    "prev": 0,
-    "isnew": true,
-    "mv": 89934,
-    "ccy": "CNY",
-    "ret": 0.03,
-    "open": 34.59959654,
-    "close": 34.59
-   },
-   {
-    "name": "Zhejiang Whyis Technology Co.,Ltd.",
-    "code": "301218",
-    "side": "SHORT",
-    "qty": 4300,
-    "prev": 0,
-    "isnew": true,
-    "mv": 208335,
-    "ccy": "CNY",
-    "ret": 0.03,
-    "open": 48.46427791,
-    "close": 48.45
-   },
-   {
-    "name": "Shanghai Rychen Technologies Co., Ltd.",
-    "code": "301273",
-    "side": "SHORT",
-    "qty": 8000,
-    "prev": 0,
-    "isnew": true,
-    "mv": 312560,
-    "ccy": "CNY",
-    "ret": -0.75,
-    "open": 38.77824544,
-    "close": 39.07
-   },
-   {
-    "name": "Beijing Jiaman Dress Co.,Ltd",
-    "code": "301276",
-    "side": "SHORT",
-    "qty": 2800,
-    "prev": 19100,
+    "qty": 20300,
+    "prev": 19800,
     "isnew": false,
-    "mv": 51632,
+    "mv": 498568,
     "ccy": "CNY",
-    "ret": 8.08,
-    "open": 18.48685179,
-    "close": 18.44
+    "ret": 2.35,
+    "open": 24.50591291,
+    "close": 24.56
    },
    {
-    "name": "Shanghai Wisdom Information Technology Co., Ltd.",
-    "code": "301315",
+    "name": "Quzhou Xin'an Development Co.,Ltd.",
+    "code": "600208",
     "side": "SHORT",
-    "qty": 5100,
+    "qty": 168300,
     "prev": 0,
     "isnew": true,
-    "mv": 214200,
+    "mv": 491436,
     "ccy": "CNY",
-    "ret": -0.3,
-    "open": 41.87377059,
-    "close": 42
+    "ret": -0.1,
+    "open": 2.91708594,
+    "close": 2.92
+   },
+   {
+    "name": "Jiangsu Hongdou Industrial Co.,Ltd",
+    "code": "600400",
+    "side": "SHORT",
+    "qty": 170600,
+    "prev": 0,
+    "isnew": true,
+    "mv": 498152,
+    "ccy": "CNY",
+    "ret": -0.29,
+    "open": 2.91155212,
+    "close": 2.92
    },
    {
     "name": "Dawei Technology (Guangdong) Group Co., Ltd.",
     "code": "600589",
     "side": "SHORT",
-    "qty": 63100,
-    "prev": 0,
-    "isnew": true,
-    "mv": 499121,
+    "qty": 62500,
+    "prev": 63100,
+    "isnew": false,
+    "mv": 510000,
     "ccy": "CNY",
-    "ret": -0.29,
-    "open": 7.88712083,
-    "close": 7.91
+    "ret": -3.16,
+    "open": 8.0698261,
+    "close": 8.16
    },
    {
-    "name": "Dongfang Electric Corporation Limited",
-    "code": "600875",
+    "name": "Shanghai Huitong Energy Co.,Ltd.",
+    "code": "600605",
     "side": "SHORT",
-    "qty": 11700,
+    "qty": 11400,
     "prev": 0,
     "isnew": true,
-    "mv": 295425,
+    "mv": 305976,
     "ccy": "CNY",
-    "ret": 0.02,
-    "open": 25.25472,
-    "close": 25.25
+    "ret": -0.06,
+    "open": 26.82297474,
+    "close": 26.84
+   },
+   {
+    "name": "HUAAN SECURITIES CO.,LTD.",
+    "code": "600909",
+    "side": "SHORT",
+    "qty": 16900,
+    "prev": 0,
+    "isnew": true,
+    "mv": 140608,
+    "ccy": "CNY",
+    "ret": -0.04,
+    "open": 8.31700012,
+    "close": 8.32
    },
    {
     "name": "Shaanxi Construction Machinery Co.,Ltd",
     "code": "600984",
     "side": "SHORT",
-    "qty": 112350,
-    "prev": 74262,
+    "qty": 126200,
+    "prev": 112350,
     "isnew": false,
-    "mv": 442659,
+    "mv": 499752,
     "ccy": "CNY",
-    "ret": 8.58,
-    "open": 3.94288005,
-    "close": 3.94
+    "ret": -0.51,
+    "open": 3.95152392,
+    "close": 3.96
    },
    {
-    "name": "Beken Corporation",
-    "code": "603068",
+    "name": "Shanxi Huaxiang Group Co., Ltd",
+    "code": "603112",
     "side": "SHORT",
-    "qty": 13800,
+    "qty": 10400,
     "prev": 0,
     "isnew": true,
-    "mv": 493212,
+    "mv": 175968,
     "ccy": "CNY",
-    "ret": 0.33,
-    "open": 35.85845348,
-    "close": 35.74
+    "ret": -0.05,
+    "open": 16.91095673,
+    "close": 16.92
    },
    {
     "name": "Zhongzhong Science&Technology(Tianjin)Co., Ltd.",
     "code": "603135",
-    "side": "SHORT",
-    "qty": 9300,
-    "prev": 0,
-    "isnew": true,
-    "mv": 85002,
-    "ccy": "CNY",
-    "ret": 0.12,
-    "open": 9.15062516,
-    "close": 9.14
-   },
-   {
-    "name": "Huada Automotive Technology Corp.,Ltd",
-    "code": "603358",
-    "side": "SHORT",
-    "qty": 10900,
-    "prev": 0,
-    "isnew": true,
-    "mv": 492680,
-    "ccy": "CNY",
-    "ret": 0.46,
-    "open": 45.41078229,
-    "close": 45.2
-   },
-   {
-    "name": "Zhenhai Petrochemical Engineering Co., Ltd",
-    "code": "603637",
-    "side": "SHORT",
-    "qty": 31800,
-    "prev": 0,
-    "isnew": true,
-    "mv": 496080,
-    "ccy": "CNY",
-    "ret": 0.18,
-    "open": 15.62784708,
-    "close": 15.6
-   },
-   {
-    "name": "Jiangsu Nanfang Medical Co., Ltd.",
-    "code": "603880",
-    "side": "SHORT",
-    "qty": 51200,
-    "prev": 0,
-    "isnew": true,
-    "mv": 495616,
-    "ccy": "CNY",
-    "ret": 0.42,
-    "open": 9.72108949,
-    "close": 9.68
-   },
-   {
-    "name": "Shanghai Golden Bridge InfoTech Co., Ltd",
-    "code": "603918",
-    "side": "SHORT",
-    "qty": 32200,
-    "prev": 44900,
+    "side": "LONG",
+    "qty": 8300,
+    "prev": 9300,
     "isnew": false,
-    "mv": 369334,
+    "mv": 77273,
     "ccy": "CNY",
-    "ret": -2.78,
-    "open": 11.41174453,
-    "close": 11.47
+    "ret": 1.86,
+    "open": 9.274635,
+    "close": 9.31
    },
    {
-    "name": "Xiangyang Changyuandonggu Industry Co.,Ltd.",
-    "code": "603950",
+    "name": "A-Zenith Home Furnishings Co.,Ltd.",
+    "code": "603389",
     "side": "SHORT",
-    "qty": 5200,
-    "prev": 5600,
-    "isnew": false,
-    "mv": 311220,
-    "ccy": "CNY",
-    "ret": 8.11,
-    "open": 59.91416048,
-    "close": 59.85
-   },
-   {
-    "name": "Jiangyin Hengrun Heavy Industries Co.,Ltd",
-    "code": "603985",
-    "side": "SHORT",
-    "qty": 29900,
+    "qty": 11200,
     "prev": 0,
     "isnew": true,
-    "mv": 498732,
+    "mv": 494480,
     "ccy": "CNY",
-    "ret": 0.21,
-    "open": 16.71457304,
-    "close": 16.68
+    "ret": -0.25,
+    "open": 44.040915,
+    "close": 44.15
+   },
+   {
+    "name": "Sichuan Huati Lighting Technology Co.,Ltd.",
+    "code": "603679",
+    "side": "SHORT",
+    "qty": 21100,
+    "prev": 0,
+    "isnew": true,
+    "mv": 499226,
+    "ccy": "CNY",
+    "ret": -0.05,
+    "open": 23.64841322,
+    "close": 23.66
+   },
+   {
+    "name": "Shanghai Golden Union Commercial Management （Group）Co., Ltd.",
+    "code": "603682",
+    "side": "SHORT",
+    "qty": 44400,
+    "prev": 0,
+    "isnew": true,
+    "mv": 497724,
+    "ccy": "CNY",
+    "ret": 0.08,
+    "open": 11.21877,
+    "close": 11.21
+   },
+   {
+    "name": "Zhejiang Great Shengda Packaging Co.,Ltd.",
+    "code": "603687",
+    "side": "SHORT",
+    "qty": 31100,
+    "prev": 0,
+    "isnew": true,
+    "mv": 497911,
+    "ccy": "CNY",
+    "ret": -0.09,
+    "open": 15.99594945,
+    "close": 16.01
+   },
+   {
+    "name": "WPG (Shanghai) Smart Water Public Co.,Ltd",
+    "code": "603956",
+    "side": "SHORT",
+    "qty": 78100,
+    "prev": 0,
+    "isnew": true,
+    "mv": 481877,
+    "ccy": "CNY",
+    "ret": -0.08,
+    "open": 6.16536496,
+    "close": 6.17
+   },
+   {
+    "name": "Guangdong Marubi Biotechnology Co., Ltd",
+    "code": "603983",
+    "side": "SHORT",
+    "qty": 11000,
+    "prev": 0,
+    "isnew": true,
+    "mv": 314050,
+    "ccy": "CNY",
+    "ret": -0.21,
+    "open": 28.489482,
+    "close": 28.55
    },
    {
     "name": "Hunan Aihua Group Co.,Ltd.",
     "code": "603989",
-    "side": "SHORT",
+    "side": "LONG",
     "qty": 200,
-    "prev": 0,
-    "isnew": true,
-    "mv": 5720,
+    "prev": 200,
+    "isnew": false,
+    "mv": 6292,
     "ccy": "CNY",
-    "ret": -0.07,
-    "open": 28.58139,
-    "close": 28.6
+    "ret": 10.0,
+    "open": 31.47573,
+    "close": 31.46
    },
    {
-    "name": "Suzhou Medicalsystem Technology Co.,Ltd.",
-    "code": "603990",
+    "name": "Shanghai Yanpu Precision Technology (Group)Co.,Ltd.",
+    "code": "605128",
     "side": "SHORT",
-    "qty": 19300,
+    "qty": 21000,
     "prev": 0,
     "isnew": true,
-    "mv": 422863,
+    "mv": 500220,
     "ccy": "CNY",
-    "ret": 0.28,
-    "open": 21.97096041,
-    "close": 21.91
+    "ret": -0.35,
+    "open": 23.73662057,
+    "close": 23.82
    },
    {
     "name": "Transwarp Technology(Shanghai)Co.,Ltd.",
     "code": "688031",
     "side": "SHORT",
+    "qty": 3400,
+    "prev": 1400,
+    "isnew": false,
+    "mv": 380800,
+    "ccy": "CNY",
+    "ret": -11.72,
+    "open": 112.01097396,
+    "close": 112
+   },
+   {
+    "name": "Optowide Technologies Co., Ltd.",
+    "code": "688195",
+    "side": "SHORT",
     "qty": 1400,
     "prev": 0,
     "isnew": true,
-    "mv": 140350,
+    "mv": 275632,
     "ccy": "CNY",
-    "ret": -0.35,
-    "open": 99.90476666,
-    "close": 100.25
+    "ret": -0.77,
+    "open": 195.37300286,
+    "close": 196.88
+   },
+   {
+    "name": "Frontier Biotechnologies Inc.",
+    "code": "688221",
+    "side": "SHORT",
+    "qty": 27400,
+    "prev": 0,
+    "isnew": true,
+    "mv": 483336,
+    "ccy": "CNY",
+    "ret": -0.29,
+    "open": 17.58923914,
+    "close": 17.64
+   },
+   {
+    "name": "Hubei Wanrun New Energy Technology Co.,Ltd.",
+    "code": "688275",
+    "side": "SHORT",
+    "qty": 6200,
+    "prev": 0,
+    "isnew": true,
+    "mv": 490544,
+    "ccy": "CNY",
+    "ret": -0.02,
+    "open": 79.1043874,
+    "close": 79.12
    },
    {
     "name": "Xi'an Bright Laser Technologies Co.,Ltd",
     "code": "688333",
     "side": "SHORT",
     "qty": 4200,
-    "prev": 4800,
+    "prev": 4200,
     "isnew": false,
-    "mv": 431340,
+    "mv": 492534,
     "ccy": "CNY",
-    "ret": 0.96,
-    "open": 102.82897999,
-    "close": 102.7
+    "ret": -14.19,
+    "open": 116.54231959,
+    "close": 117.27
    },
    {
-    "name": "Changzhou Fusion New Material Co., Ltd.",
-    "code": "688503",
+    "name": "Hua Hong Grace Semiconductor Limited",
+    "code": "688347",
     "side": "SHORT",
-    "qty": 6400,
+    "qty": 600,
     "prev": 0,
     "isnew": true,
-    "mv": 498240,
+    "mv": 153600,
     "ccy": "CNY",
-    "ret": -0.82,
-    "open": 77.21593958,
-    "close": 77.85
+    "ret": -0.62,
+    "open": 254.42199,
+    "close": 256
    },
    {
-    "name": "Shanghai New Vision Microelectronics Co., Ltd.",
-    "code": "688593",
+    "name": "Shanghai Bright Power Semiconductor Co., Ltd.",
+    "code": "688368",
     "side": "SHORT",
-    "qty": 16400,
+    "qty": 3200,
     "prev": 0,
     "isnew": true,
-    "mv": 498560,
+    "mv": 482400,
     "ccy": "CNY",
-    "ret": -1.16,
-    "open": 30.0517913,
-    "close": 30.4
+    "ret": -0.87,
+    "open": 149.45015337,
+    "close": 150.75
+   },
+   {
+    "name": "Jilin OLED Material Tech Co.,Ltd.",
+    "code": "688378",
+    "side": "SHORT",
+    "qty": 11200,
+    "prev": 0,
+    "isnew": true,
+    "mv": 500752,
+    "ccy": "CNY",
+    "ret": -0.46,
+    "open": 44.5050834,
+    "close": 44.71
+   },
+   {
+    "name": "Union Semiconductor (Hefei) Co., Ltd.",
+    "code": "688403",
+    "side": "SHORT",
+    "qty": 17800,
+    "prev": 0,
+    "isnew": true,
+    "mv": 452298,
+    "ccy": "CNY",
+    "ret": 0.08,
+    "open": 25.42982337,
+    "close": 25.41
    },
    {
     "name": "Shanghai Gentech Co., Ltd.",
     "code": "688596",
     "side": "SHORT",
-    "qty": 7200,
-    "prev": 6800,
+    "qty": 7400,
+    "prev": 7200,
     "isnew": false,
-    "mv": 485280,
+    "mv": 498760,
     "ccy": "CNY",
-    "ret": 6.91,
-    "open": 67.35457245,
+    "ret": 0,
+    "open": 67.62720105,
     "close": 67.4
    },
    {
-    "name": "Youcare Pharmaceutical Group Co.,Ltd.",
-    "code": "688658",
+    "name": "Wuxi Etek Microelectronics Co.,Ltd.",
+    "code": "688601",
     "side": "SHORT",
-    "qty": 25400,
+    "qty": 7600,
     "prev": 0,
     "isnew": true,
-    "mv": 362458,
+    "mv": 491416,
     "ccy": "CNY",
-    "ret": 0.48,
-    "open": 14.33896086,
-    "close": 14.27
+    "ret": -0.65,
+    "open": 64.24129046,
+    "close": 64.66
    },
    {
-    "name": "Freewon China Co.,Ltd",
-    "code": "688678",
+    "name": "Opt Machine Vision Tech Co., Ltd.",
+    "code": "688686",
     "side": "SHORT",
-    "qty": 15200,
+    "qty": 3000,
     "prev": 0,
     "isnew": true,
-    "mv": 301264,
+    "mv": 450450,
     "ccy": "CNY",
-    "ret": -0.34,
-    "open": 19.75239494,
-    "close": 19.82
+    "ret": 0.07,
+    "open": 150.24956004,
+    "close": 150.15
+   },
+   {
+    "name": "Zhuhai CosMX Battery Co., Ltd.",
+    "code": "688772",
+    "side": "SHORT",
+    "qty": 14000,
+    "prev": 0,
+    "isnew": true,
+    "mv": 222180,
+    "ccy": "CNY",
+    "ret": -0.16,
+    "open": 15.84414,
+    "close": 15.87
    },
    {
     "name": "SUPCON Technology Co.,Ltd.",
     "code": "688777",
     "side": "SHORT",
-    "qty": 5400,
-    "prev": 0,
-    "isnew": true,
-    "mv": 497556,
+    "qty": 1400,
+    "prev": 5400,
+    "isnew": false,
+    "mv": 136934,
     "ccy": "CNY",
-    "ret": -0.21,
-    "open": 91.94701465,
-    "close": 92.14
+    "ret": -6.15,
+    "open": 97.68222,
+    "close": 97.81
    }
   ],
   "81099802": [
@@ -1591,11 +1702,11 @@
     "qty": 9300,
     "prev": 9300,
     "isnew": false,
-    "mv": 223944,
+    "mv": 225060,
     "ccy": "CNY",
-    "ret": 1.86,
+    "ret": 0.5,
     "open": 26.83818968,
-    "close": 24.08
+    "close": 24.2
    },
    {
     "name": "Digital China Group Co.,Ltd.",
@@ -1604,11 +1715,11 @@
     "qty": 9300,
     "prev": 9300,
     "isnew": false,
-    "mv": 223944,
+    "mv": 225060,
     "ccy": "CNY",
-    "ret": -1.86,
+    "ret": -0.5,
     "open": 26.83818968,
-    "close": 24.08
+    "close": 24.2
    },
    {
     "name": "Zte Corporation",
@@ -1617,11 +1728,11 @@
     "qty": 16900,
     "prev": 16900,
     "isnew": false,
-    "mv": 568347,
+    "mv": 577642,
     "ccy": "CNY",
-    "ret": -0.97,
+    "ret": 1.64,
     "open": 37.8535982,
-    "close": 33.63
+    "close": 34.18
    },
    {
     "name": "Zte Corporation",
@@ -1630,11 +1741,11 @@
     "qty": 16900,
     "prev": 16900,
     "isnew": false,
-    "mv": 568347,
+    "mv": 577642,
     "ccy": "CNY",
-    "ret": 0.97,
+    "ret": -1.64,
     "open": 37.8535982,
-    "close": 33.63
+    "close": 34.18
    },
    {
     "name": "China Tungsten and Hightech Materials Co.,Ltd.",
@@ -1643,11 +1754,11 @@
     "qty": 3200,
     "prev": 3200,
     "isnew": false,
-    "mv": 213632,
+    "mv": 210560,
     "ccy": "CNY",
-    "ret": -1.15,
+    "ret": -1.44,
     "open": 68.5894595,
-    "close": 66.76
+    "close": 65.8
    },
    {
     "name": "China Tungsten and Hightech Materials Co.,Ltd.",
@@ -1656,11 +1767,11 @@
     "qty": 3200,
     "prev": 3200,
     "isnew": false,
-    "mv": 213632,
+    "mv": 210560,
     "ccy": "CNY",
-    "ret": 1.15,
+    "ret": 1.44,
     "open": 68.5894595,
-    "close": 66.76
+    "close": 65.8
    },
    {
     "name": "Senton Energy Co.,Ltd.",
@@ -1669,11 +1780,11 @@
     "qty": 900,
     "prev": 900,
     "isnew": false,
-    "mv": 38934,
+    "mv": 39420,
     "ccy": "CNY",
-    "ret": -1.88,
+    "ret": 1.25,
     "open": 46.732584,
-    "close": 43.26
+    "close": 43.8
    },
    {
     "name": "Senton Energy Co.,Ltd.",
@@ -1682,11 +1793,11 @@
     "qty": 900,
     "prev": 900,
     "isnew": false,
-    "mv": 38934,
+    "mv": 39420,
     "ccy": "CNY",
-    "ret": 1.88,
+    "ret": -1.25,
     "open": 46.732584,
-    "close": 43.26
+    "close": 43.8
    },
    {
     "name": "Goldwind Science & Technology Co., Ltd.",
@@ -1695,11 +1806,11 @@
     "qty": 9800,
     "prev": 9800,
     "isnew": false,
-    "mv": 180418,
+    "mv": 179732,
     "ccy": "CNY",
-    "ret": -1.76,
+    "ret": -0.38,
     "open": 25.94657306,
-    "close": 18.41
+    "close": 18.34
    },
    {
     "name": "Goldwind Science & Technology Co., Ltd.",
@@ -1708,24 +1819,24 @@
     "qty": 9800,
     "prev": 9800,
     "isnew": false,
-    "mv": 180418,
+    "mv": 179732,
     "ccy": "CNY",
-    "ret": 1.76,
+    "ret": 0.38,
     "open": 25.94657306,
-    "close": 18.41
+    "close": 18.34
    },
    {
     "name": "Talkweb Information System Co.,Ltd.",
     "code": "002261",
     "side": "LONG",
     "qty": 16400,
-    "prev": 16400,
+    "prev": 16326,
     "isnew": false,
-    "mv": 418200,
+    "mv": 419840,
     "ccy": "CNY",
-    "ret": -0.39,
+    "ret": 0.39,
     "open": 33.08913166,
-    "close": 25.5
+    "close": 25.6
    },
    {
     "name": "Talkweb Information System Co.,Ltd.",
@@ -1734,11 +1845,11 @@
     "qty": 16326,
     "prev": 16326,
     "isnew": false,
-    "mv": 416313,
+    "mv": 417945.6,
     "ccy": "CNY",
-    "ret": 0.39,
+    "ret": -0.39,
     "open": 33.08913166,
-    "close": 25.5
+    "close": 25.6
    },
    {
     "name": "Suzhou Dongshan Precision Manufacturing Co.,Ltd",
@@ -1747,11 +1858,11 @@
     "qty": 600,
     "prev": 600,
     "isnew": false,
-    "mv": 117372,
+    "mv": 118800,
     "ccy": "CNY",
-    "ret": -2.48,
+    "ret": 1.22,
     "open": 199.820016,
-    "close": 195.62
+    "close": 198
    },
    {
     "name": "Suzhou Dongshan Precision Manufacturing Co.,Ltd",
@@ -1760,102 +1871,128 @@
     "qty": 600,
     "prev": 600,
     "isnew": false,
-    "mv": 117372,
+    "mv": 118800,
+    "ccy": "CNY",
+    "ret": -1.22,
+    "open": 199.820016,
+    "close": 198
+   },
+   {
+    "name": "Sunyes Manufacturing(ZheJiang)Holding Co.,Ltd.",
+    "code": "002388",
+    "side": "LONG",
+    "qty": 50000,
+    "prev": 50000,
+    "isnew": false,
+    "mv": 333000,
+    "ccy": "CNY",
+    "ret": 2.46,
+    "open": 5.8732976,
+    "close": 6.66
+   },
+   {
+    "name": "Sunyes Manufacturing(ZheJiang)Holding Co.,Ltd.",
+    "code": "002388",
+    "side": "SHORT",
+    "qty": 50000,
+    "prev": 50000,
+    "isnew": false,
+    "mv": 333000,
+    "ccy": "CNY",
+    "ret": -2.46,
+    "open": 5.8732976,
+    "close": 6.66
+   },
+   {
+    "name": "Yunnan Lincang Xinyuan Germanium Industry Co.,Ltd",
+    "code": "002428",
+    "side": "LONG",
+    "qty": 27000,
+    "prev": 27000,
+    "isnew": false,
+    "mv": 2718900,
+    "ccy": "CNY",
+    "ret": 1.04,
+    "open": 96.09909621,
+    "close": 100.7
+   },
+   {
+    "name": "Yunnan Lincang Xinyuan Germanium Industry Co.,Ltd",
+    "code": "002428",
+    "side": "SHORT",
+    "qty": 27000,
+    "prev": 27000,
+    "isnew": false,
+    "mv": 2718900,
+    "ccy": "CNY",
+    "ret": -1.04,
+    "open": 96.09909621,
+    "close": 100.7
+   },
+   {
+    "name": "Zhejiang Jiemei Electronic and Technology Co.,Ltd.",
+    "code": "002859",
+    "side": "LONG",
+    "qty": 1200,
+    "prev": 1200,
+    "isnew": false,
+    "mv": 81816,
+    "ccy": "CNY",
+    "ret": 4.01,
+    "open": 79.259042,
+    "close": 68.18
+   },
+   {
+    "name": "Zhejiang Jiemei Electronic and Technology Co.,Ltd.",
+    "code": "002859",
+    "side": "SHORT",
+    "qty": 1200,
+    "prev": 1200,
+    "isnew": false,
+    "mv": 81816,
+    "ccy": "CNY",
+    "ret": -4.01,
+    "open": 79.259042,
+    "close": 68.18
+   },
+   {
+    "name": "Shenzhen Infogem Technologies Co., Ltd.",
+    "code": "300085",
+    "side": "LONG",
+    "qty": 3400,
+    "prev": 0,
+    "isnew": true,
+    "mv": 109446,
+    "ccy": "CNY",
+    "ret": 0.09,
+    "open": 32.12428,
+    "close": 32.19
+   },
+   {
+    "name": "Shenzhen Infogem Technologies Co., Ltd.",
+    "code": "300085",
+    "side": "SHORT",
+    "qty": 3400,
+    "prev": 0,
+    "isnew": true,
+    "mv": 109446,
+    "ccy": "CNY",
+    "ret": -0.2,
+    "open": 32.12428,
+    "close": 32.19
+   },
+   {
+    "name": "Sf Diamond Co.,Ltd",
+    "code": "300179",
+    "side": "LONG",
+    "qty": 2700,
+    "prev": 2700,
+    "isnew": false,
+    "mv": 100386,
     "ccy": "CNY",
     "ret": 2.48,
-    "open": 199.820016,
-    "close": 195.62
-   },
-   {
-    "name": "Sunyes Manufacturing(ZheJiang)Holding Co.,Ltd.",
-    "code": "002388",
-    "side": "LONG",
-    "qty": 50000,
-    "prev": 50000,
-    "isnew": false,
-    "mv": 325000,
-    "ccy": "CNY",
-    "ret": -2.4,
-    "open": 5.8732976,
-    "close": 6.5
-   },
-   {
-    "name": "Sunyes Manufacturing(ZheJiang)Holding Co.,Ltd.",
-    "code": "002388",
-    "side": "SHORT",
-    "qty": 50000,
-    "prev": 50000,
-    "isnew": false,
-    "mv": 325000,
-    "ccy": "CNY",
-    "ret": 2.4,
-    "open": 5.8732976,
-    "close": 6.5
-   },
-   {
-    "name": "Yunnan Lincang Xinyuan Germanium Industry Co.,Ltd",
-    "code": "002428",
-    "side": "LONG",
-    "qty": 27000,
-    "prev": 27000,
-    "isnew": false,
-    "mv": 2690820,
-    "ccy": "CNY",
-    "ret": -1.68,
-    "open": 96.09909621,
-    "close": 99.66
-   },
-   {
-    "name": "Yunnan Lincang Xinyuan Germanium Industry Co.,Ltd",
-    "code": "002428",
-    "side": "SHORT",
-    "qty": 27000,
-    "prev": 27000,
-    "isnew": false,
-    "mv": 2690820,
-    "ccy": "CNY",
-    "ret": 1.68,
-    "open": 96.09909621,
-    "close": 99.66
-   },
-   {
-    "name": "Zhejiang Jiemei Electronic and Technology Co.,Ltd.",
-    "code": "002859",
-    "side": "LONG",
-    "qty": 1200,
-    "prev": 1200,
-    "isnew": false,
-    "mv": 78660,
-    "ccy": "CNY",
-    "ret": -0.95,
-    "open": 79.259042,
-    "close": 65.55
-   },
-   {
-    "name": "Zhejiang Jiemei Electronic and Technology Co.,Ltd.",
-    "code": "002859",
-    "side": "SHORT",
-    "qty": 1200,
-    "prev": 1200,
-    "isnew": false,
-    "mv": 78660,
-    "ccy": "CNY",
-    "ret": 0.95,
-    "open": 79.259042,
-    "close": 65.55
-   },
-   {
-    "name": "Sf Diamond Co.,Ltd",
-    "code": "300179",
-    "side": "LONG",
-    "qty": 2700,
-    "prev": 2700,
-    "isnew": false,
-    "mv": 97956,
-    "ccy": "CNY",
-    "ret": -3.18,
     "open": 35.76895452,
-    "close": 36.28
+    "close": 37.18
    },
    {
     "name": "Sf Diamond Co.,Ltd",
@@ -1864,37 +2001,37 @@
     "qty": 2700,
     "prev": 2700,
     "isnew": false,
-    "mv": 97956,
+    "mv": 100386,
     "ccy": "CNY",
-    "ret": 3.18,
+    "ret": -2.48,
     "open": 35.76895452,
-    "close": 36.28
+    "close": 37.18
    },
    {
     "name": "Xingyun Technology Co.,Ltd",
     "code": "300209",
     "side": "LONG",
     "qty": 111100,
-    "prev": 114100,
+    "prev": 111064,
     "isnew": false,
-    "mv": 3725183,
+    "mv": 3874057,
     "ccy": "CNY",
-    "ret": -5.5,
+    "ret": 4.0,
     "open": 37.91385788,
-    "close": 33.53
+    "close": 34.87
    },
    {
     "name": "Xingyun Technology Co.,Ltd",
     "code": "300209",
     "side": "SHORT",
     "qty": 111064,
-    "prev": 114064,
+    "prev": 111064,
     "isnew": false,
-    "mv": 3723975.92,
+    "mv": 3872801.68,
     "ccy": "CNY",
-    "ret": 5.5,
+    "ret": -4.0,
     "open": 37.91385788,
-    "close": 33.53
+    "close": 34.87
    },
    {
     "name": "Hebei Changshan Biochemical Pharmaceutical Co., Ltd.",
@@ -1903,11 +2040,11 @@
     "qty": 2800,
     "prev": 2800,
     "isnew": false,
-    "mv": 68320,
+    "mv": 66220,
     "ccy": "CNY",
-    "ret": -0.73,
+    "ret": -3.07,
     "open": 43.16686743,
-    "close": 24.4
+    "close": 23.65
    },
    {
     "name": "Hebei Changshan Biochemical Pharmaceutical Co., Ltd.",
@@ -1916,11 +2053,11 @@
     "qty": 2800,
     "prev": 2800,
     "isnew": false,
-    "mv": 68320,
+    "mv": 66220,
     "ccy": "CNY",
-    "ret": 0.73,
+    "ret": 3.07,
     "open": 43.16686743,
-    "close": 24.4
+    "close": 23.65
    },
    {
     "name": "Canmax Technologies Co., Ltd.",
@@ -1929,11 +2066,11 @@
     "qty": 8000,
     "prev": 8000,
     "isnew": false,
-    "mv": 512960,
+    "mv": 515200,
     "ccy": "CNY",
-    "ret": 1.46,
+    "ret": 0.44,
     "open": 89.9650953,
-    "close": 64.12
+    "close": 64.4
    },
    {
     "name": "Canmax Technologies Co., Ltd.",
@@ -1942,11 +2079,11 @@
     "qty": 8000,
     "prev": 8000,
     "isnew": false,
-    "mv": 512960,
+    "mv": 515200,
     "ccy": "CNY",
-    "ret": -1.46,
+    "ret": -0.44,
     "open": 89.9650953,
-    "close": 64.12
+    "close": 64.4
    },
    {
     "name": "Suzhou Tfc Optical Communication Co.,Ltd",
@@ -1955,11 +2092,11 @@
     "qty": 900,
     "prev": 900,
     "isnew": false,
-    "mv": 237222,
+    "mv": 236700,
     "ccy": "CNY",
-    "ret": -1.34,
+    "ret": -0.22,
     "open": 225.99017422,
-    "close": 263.58
+    "close": 263
    },
    {
     "name": "Suzhou Tfc Optical Communication Co.,Ltd",
@@ -1968,11 +2105,11 @@
     "qty": 900,
     "prev": 900,
     "isnew": false,
-    "mv": 237222,
+    "mv": 236700,
     "ccy": "CNY",
-    "ret": 1.34,
+    "ret": 0.22,
     "open": 225.99017422,
-    "close": 263.58
+    "close": 263
    },
    {
     "name": "Chaozhou Three-Circle (Group) Co.,Ltd.",
@@ -1981,11 +2118,11 @@
     "qty": 3200,
     "prev": 3200,
     "isnew": false,
-    "mv": 359168,
+    "mv": 368000,
     "ccy": "CNY",
-    "ret": -0.21,
+    "ret": 2.46,
     "open": 130.96795425,
-    "close": 112.24
+    "close": 115
    },
    {
     "name": "Chaozhou Three-Circle (Group) Co.,Ltd.",
@@ -1994,11 +2131,11 @@
     "qty": 3200,
     "prev": 3200,
     "isnew": false,
-    "mv": 359168,
+    "mv": 368000,
     "ccy": "CNY",
-    "ret": 0.21,
+    "ret": -2.46,
     "open": 130.96795425,
-    "close": 112.24
+    "close": 115
    },
    {
     "name": "Eoptolink Technology Inc.,Ltd.",
@@ -2007,11 +2144,11 @@
     "qty": 500,
     "prev": 500,
     "isnew": false,
-    "mv": 199500,
+    "mv": 200935,
     "ccy": "CNY",
-    "ret": -2.47,
+    "ret": 0.72,
     "open": 445.04368,
-    "close": 399
+    "close": 401.87
    },
    {
     "name": "Eoptolink Technology Inc.,Ltd.",
@@ -2020,11 +2157,11 @@
     "qty": 500,
     "prev": 500,
     "isnew": false,
-    "mv": 199500,
+    "mv": 200935,
     "ccy": "CNY",
-    "ret": 2.47,
+    "ret": -0.72,
     "open": 445.04368,
-    "close": 399
+    "close": 401.87
    },
    {
     "name": "Guangdong High Dream Intellectualized Machinery Co., Ltd.",
@@ -2033,11 +2170,11 @@
     "qty": 2000,
     "prev": 2000,
     "isnew": false,
-    "mv": 146420,
+    "mv": 143720,
     "ccy": "CNY",
-    "ret": -7.31,
+    "ret": -1.84,
     "open": 77.438,
-    "close": 73.21
+    "close": 71.86
    },
    {
     "name": "Guangdong High Dream Intellectualized Machinery Co., Ltd.",
@@ -2046,37 +2183,37 @@
     "qty": 2000,
     "prev": 2000,
     "isnew": false,
-    "mv": 146420,
+    "mv": 143720,
     "ccy": "CNY",
-    "ret": 7.31,
+    "ret": 1.84,
     "open": 77.438,
-    "close": 73.21
+    "close": 71.86
    },
    {
     "name": "Beijing Compass Technology Development Co., Ltd.",
     "code": "300803",
     "side": "LONG",
     "qty": 3400,
-    "prev": 0,
-    "isnew": true,
-    "mv": 293012,
+    "prev": 3400,
+    "isnew": false,
+    "mv": 289986,
     "ccy": "CNY",
-    "ret": -0.52,
+    "ret": -1.03,
     "open": 86.48311106,
-    "close": 86.18
+    "close": 85.29
    },
    {
     "name": "Beijing Compass Technology Development Co., Ltd.",
     "code": "300803",
     "side": "SHORT",
     "qty": 3400,
-    "prev": 0,
-    "isnew": true,
-    "mv": 293012,
+    "prev": 3400,
+    "isnew": false,
+    "mv": 289986,
     "ccy": "CNY",
-    "ret": 0.35,
+    "ret": 1.03,
     "open": 86.48311106,
-    "close": 86.18
+    "close": 85.29
    },
    {
     "name": "Essence Fastening Systems (Shanghai) Co., Ltd.",
@@ -2085,11 +2222,11 @@
     "qty": 2500,
     "prev": 2500,
     "isnew": false,
-    "mv": 171625,
+    "mv": 174250,
     "ccy": "CNY",
-    "ret": -3.5,
+    "ret": 1.53,
     "open": 89.22696128,
-    "close": 68.65
+    "close": 69.7
    },
    {
     "name": "Essence Fastening Systems (Shanghai) Co., Ltd.",
@@ -2098,24 +2235,24 @@
     "qty": 2500,
     "prev": 2500,
     "isnew": false,
-    "mv": 171625,
+    "mv": 174250,
     "ccy": "CNY",
-    "ret": 3.5,
+    "ret": -1.53,
     "open": 89.22696128,
-    "close": 68.65
+    "close": 69.7
    },
    {
     "name": "Zhejiang Hongchang Electrical Technology Co., Ltd.",
     "code": "301008",
     "side": "LONG",
     "qty": 57114,
-    "prev": 57114,
+    "prev": 57100,
     "isnew": false,
-    "mv": 2164620.6,
+    "mv": 2350241.1,
     "ccy": "CNY",
-    "ret": -3.29,
+    "ret": 8.58,
     "open": 43.78110294,
-    "close": 37.9
+    "close": 41.15
    },
    {
     "name": "Zhejiang Hongchang Electrical Technology Co., Ltd.",
@@ -2124,24 +2261,24 @@
     "qty": 57100,
     "prev": 57100,
     "isnew": false,
-    "mv": 2164090,
+    "mv": 2349665,
     "ccy": "CNY",
-    "ret": 3.29,
+    "ret": -8.58,
     "open": 43.78110294,
-    "close": 37.9
+    "close": 41.15
    },
    {
     "name": "Linktel Technologies Co.,Ltd.",
     "code": "301205",
     "side": "LONG",
     "qty": 1500,
-    "prev": 1500,
+    "prev": 1468,
     "isnew": false,
-    "mv": 481275,
+    "mv": 463395,
     "ccy": "CNY",
-    "ret": -2.63,
+    "ret": -3.72,
     "open": 294.99332593,
-    "close": 320.85
+    "close": 308.93
    },
    {
     "name": "Linktel Technologies Co.,Ltd.",
@@ -2150,11 +2287,37 @@
     "qty": 1468,
     "prev": 1468,
     "isnew": false,
-    "mv": 471007.8,
+    "mv": 453509.24,
     "ccy": "CNY",
-    "ret": 2.63,
+    "ret": 3.72,
     "open": 294.99332593,
-    "close": 320.85
+    "close": 308.93
+   },
+   {
+    "name": "Anhui Tongguan Copper Foil Group Co., Ltd.",
+    "code": "301217",
+    "side": "LONG",
+    "qty": 700,
+    "prev": 0,
+    "isnew": true,
+    "mv": 86779,
+    "ccy": "CNY",
+    "ret": 0.84,
+    "open": 122.98296343,
+    "close": 123.97
+   },
+   {
+    "name": "Anhui Tongguan Copper Foil Group Co., Ltd.",
+    "code": "301217",
+    "side": "SHORT",
+    "qty": 700,
+    "prev": 0,
+    "isnew": true,
+    "mv": 86779,
+    "ccy": "CNY",
+    "ret": -0.8,
+    "open": 122.98296343,
+    "close": 123.97
    },
    {
     "name": "Chongqing Polycomp International Corporation",
@@ -2163,11 +2326,11 @@
     "qty": 3600,
     "prev": 3600,
     "isnew": false,
-    "mv": 108720,
+    "mv": 111600,
     "ccy": "CNY",
-    "ret": -3.02,
+    "ret": 2.65,
     "open": 32.593904,
-    "close": 30.2
+    "close": 31
    },
    {
     "name": "Chongqing Polycomp International Corporation",
@@ -2176,11 +2339,11 @@
     "qty": 3600,
     "prev": 3600,
     "isnew": false,
-    "mv": 108720,
+    "mv": 111600,
     "ccy": "CNY",
-    "ret": 3.02,
+    "ret": -2.65,
     "open": 32.593904,
-    "close": 30.2
+    "close": 31
    },
    {
     "name": "Shenzhen Heungkong Holding Co.,Ltd",
@@ -2189,11 +2352,11 @@
     "qty": 8700,
     "prev": 8700,
     "isnew": false,
-    "mv": 46632,
+    "mv": 43239,
     "ccy": "CNY",
-    "ret": 10.06,
+    "ret": -7.28,
     "open": 2.627896,
-    "close": 5.36
+    "close": 4.97
    },
    {
     "name": "Shenzhen Heungkong Holding Co.,Ltd",
@@ -2202,11 +2365,11 @@
     "qty": 8700,
     "prev": 8700,
     "isnew": false,
-    "mv": 46632,
+    "mv": 43239,
     "ccy": "CNY",
-    "ret": -10.06,
+    "ret": 7.28,
     "open": 2.627896,
-    "close": 5.36
+    "close": 4.97
    },
    {
     "name": "Lotus Holdings Co.,Ltd.",
@@ -2215,11 +2378,11 @@
     "qty": 77200,
     "prev": 77200,
     "isnew": false,
-    "mv": 921768,
+    "mv": 893204,
     "ccy": "CNY",
-    "ret": 2.14,
+    "ret": -3.1,
     "open": 12.56224785,
-    "close": 11.94
+    "close": 11.57
    },
    {
     "name": "Lotus Holdings Co.,Ltd.",
@@ -2228,11 +2391,11 @@
     "qty": 77200,
     "prev": 77200,
     "isnew": false,
-    "mv": 921768,
+    "mv": 893204,
     "ccy": "CNY",
-    "ret": -2.14,
+    "ret": 3.1,
     "open": 12.56224785,
-    "close": 11.94
+    "close": 11.57
    },
    {
     "name": "Lanzhou Greatwall Electrical Co.Ltd",
@@ -2241,11 +2404,11 @@
     "qty": 2800,
     "prev": 2800,
     "isnew": false,
-    "mv": 19936,
+    "mv": 19768,
     "ccy": "CNY",
-    "ret": -0.14,
+    "ret": -0.84,
     "open": 7.91955214,
-    "close": 7.12
+    "close": 7.06
    },
    {
     "name": "Lanzhou Greatwall Electrical Co.Ltd",
@@ -2254,11 +2417,11 @@
     "qty": 2800,
     "prev": 2800,
     "isnew": false,
-    "mv": 19936,
+    "mv": 19768,
     "ccy": "CNY",
-    "ret": 0.14,
+    "ret": 0.84,
     "open": 7.91955214,
-    "close": 7.12
+    "close": 7.06
    },
    {
     "name": "Foxconn Industrial Internet Co.,Ltd.",
@@ -2267,11 +2430,11 @@
     "qty": 13200,
     "prev": 13200,
     "isnew": false,
-    "mv": 845328,
+    "mv": 855888,
     "ccy": "CNY",
-    "ret": 0.28,
+    "ret": 1.25,
     "open": 59.39770894,
-    "close": 64.04
+    "close": 64.84
    },
    {
     "name": "Foxconn Industrial Internet Co.,Ltd.",
@@ -2280,11 +2443,11 @@
     "qty": 13200,
     "prev": 13200,
     "isnew": false,
-    "mv": 845328,
+    "mv": 855888,
     "ccy": "CNY",
-    "ret": -0.28,
+    "ret": -1.25,
     "open": 59.39770894,
-    "close": 64.04
+    "close": 64.84
    },
    {
     "name": "Shida Shinghwa Advanced Material Group Co.,Ltd.",
@@ -2293,11 +2456,11 @@
     "qty": 2900,
     "prev": 2900,
     "isnew": false,
-    "mv": 184411,
+    "mv": 181975,
     "ccy": "CNY",
-    "ret": 0.94,
+    "ret": -1.32,
     "open": 81.18224359,
-    "close": 63.59
+    "close": 62.75
    },
    {
     "name": "Shida Shinghwa Advanced Material Group Co.,Ltd.",
@@ -2306,24 +2469,24 @@
     "qty": 2900,
     "prev": 2900,
     "isnew": false,
-    "mv": 184411,
+    "mv": 181975,
     "ccy": "CNY",
-    "ret": -0.94,
+    "ret": 1.32,
     "open": 81.18224359,
-    "close": 63.59
+    "close": 62.75
    },
    {
     "name": "Jiangsu Lettall Electronic Co.,Ltd.",
     "code": "603629",
     "side": "LONG",
     "qty": 500,
-    "prev": 500,
+    "prev": 540,
     "isnew": false,
-    "mv": 59975,
+    "mv": 61080,
     "ccy": "CNY",
-    "ret": -4.21,
+    "ret": 1.84,
     "open": 141.676568,
-    "close": 119.95
+    "close": 122.16
    },
    {
     "name": "Jiangsu Lettall Electronic Co.,Ltd.",
@@ -2332,11 +2495,11 @@
     "qty": 540,
     "prev": 540,
     "isnew": false,
-    "mv": 64773,
+    "mv": 65966.4,
     "ccy": "CNY",
-    "ret": 4.21,
+    "ret": -1.84,
     "open": 141.676568,
-    "close": 119.95
+    "close": 122.16
    },
    {
     "name": "Gigadevice Semiconductor Inc.",
@@ -2345,11 +2508,11 @@
     "qty": 3400,
     "prev": 3400,
     "isnew": false,
-    "mv": 1349188,
+    "mv": 1380400,
     "ccy": "CNY",
-    "ret": -3.5,
+    "ret": 2.31,
     "open": 464.48370376,
-    "close": 396.82
+    "close": 406
    },
    {
     "name": "Gigadevice Semiconductor Inc.",
@@ -2358,11 +2521,11 @@
     "qty": 3400,
     "prev": 3400,
     "isnew": false,
-    "mv": 1349188,
+    "mv": 1380400,
     "ccy": "CNY",
-    "ret": 3.5,
+    "ret": -2.31,
     "open": 464.48370376,
-    "close": 396.82
+    "close": 406
    },
    {
     "name": "Guangdong Anda Automation Solutions Co.,Ltd.",
@@ -2371,11 +2534,11 @@
     "qty": 583,
     "prev": 583,
     "isnew": false,
-    "mv": 72624.31,
+    "mv": 75743.36,
     "ccy": "CNY",
-    "ret": -1.83,
+    "ret": 4.29,
     "open": 110.721352,
-    "close": 124.57
+    "close": 129.92
    },
    {
     "name": "Guangdong Anda Automation Solutions Co.,Ltd.",
@@ -2384,11 +2547,11 @@
     "qty": 583,
     "prev": 583,
     "isnew": false,
-    "mv": 72624.31,
+    "mv": 75743.36,
     "ccy": "CNY",
-    "ret": 1.83,
+    "ret": -4.29,
     "open": 110.721352,
-    "close": 124.57
+    "close": 129.92
    },
    {
     "name": "Orbbec Inc.",
@@ -2397,11 +2560,11 @@
     "qty": 100,
     "prev": 100,
     "isnew": false,
-    "mv": 9526,
+    "mv": 10151,
     "ccy": "CNY",
-    "ret": -2.08,
+    "ret": 6.56,
     "open": 134.19256,
-    "close": 95.26
+    "close": 101.51
    },
    {
     "name": "Orbbec Inc.",
@@ -2410,11 +2573,11 @@
     "qty": 100,
     "prev": 100,
     "isnew": false,
-    "mv": 9526,
+    "mv": 10151,
     "ccy": "CNY",
-    "ret": 2.08,
+    "ret": -6.56,
     "open": 134.19256,
-    "close": 95.26
+    "close": 101.51
    },
    {
     "name": "Biwin Storage Technology Co., Ltd.",
@@ -2423,11 +2586,11 @@
     "qty": 4900,
     "prev": 4900,
     "isnew": false,
-    "mv": 1131557,
+    "mv": 1154195,
     "ccy": "CNY",
-    "ret": -3.15,
+    "ret": 2.0,
     "open": 218.96387844,
-    "close": 230.93
+    "close": 235.55
    },
    {
     "name": "Biwin Storage Technology Co., Ltd.",
@@ -2436,11 +2599,11 @@
     "qty": 4900,
     "prev": 4900,
     "isnew": false,
-    "mv": 1131557,
+    "mv": 1154195,
     "ccy": "CNY",
-    "ret": 3.15,
+    "ret": -2.0,
     "open": 218.96387844,
-    "close": 230.93
+    "close": 235.55
    },
    {
     "name": "Semiconductor Manufacturing International Corporation",
@@ -2449,11 +2612,11 @@
     "qty": 9400,
     "prev": 9400,
     "isnew": false,
-    "mv": 1183272,
+    "mv": 1209780,
     "ccy": "CNY",
-    "ret": -0.36,
+    "ret": 2.24,
     "open": 159.81854811,
-    "close": 125.88
+    "close": 128.7
    },
    {
     "name": "Semiconductor Manufacturing International Corporation",
@@ -2462,11 +2625,11 @@
     "qty": 9400,
     "prev": 9400,
     "isnew": false,
-    "mv": 1183272,
+    "mv": 1209780,
     "ccy": "CNY",
-    "ret": 0.36,
+    "ret": -2.24,
     "open": 159.81854811,
-    "close": 125.88
+    "close": 128.7
    }
   ],
   "81099803": [
@@ -2477,11 +2640,11 @@
     "qty": 2500,
     "prev": 2500,
     "isnew": false,
-    "mv": 88050,
+    "mv": 90550,
     "ccy": "CNY",
-    "ret": 0.17,
+    "ret": 2.84,
     "open": 27.463725,
-    "close": 35.22
+    "close": 36.22
    },
    {
     "name": "Zhuzhou Hongda Electronics Corp.,Ltd.",
@@ -2490,11 +2653,11 @@
     "qty": 600,
     "prev": 600,
     "isnew": false,
-    "mv": 31644,
+    "mv": 32928,
     "ccy": "CNY",
-    "ret": -4.02,
+    "ret": 4.06,
     "open": 45.66282,
-    "close": 52.74
+    "close": 54.88
    },
    {
     "name": "Shaanxi Kanghui Pharmaceutical Co., Ltd.",
@@ -2503,11 +2666,11 @@
     "qty": 39900,
     "prev": 39900,
     "isnew": false,
-    "mv": 1381737,
+    "mv": 1519791,
     "ccy": "CNY",
-    "ret": -2.26,
+    "ret": 9.99,
     "open": 33.69079,
-    "close": 34.63
+    "close": 38.09
    },
    {
     "name": "Frontier Biotechnologies Inc.",
@@ -2516,11 +2679,11 @@
     "qty": 161900,
     "prev": 161900,
     "isnew": false,
-    "mv": 3050196,
+    "mv": 2855916,
     "ccy": "CNY",
-    "ret": -3.53,
+    "ret": -6.37,
     "open": 20.25807493,
-    "close": 18.84
+    "close": 17.64
    },
    {
     "name": "Chengdu KSW Technologies Co.,Ltd.",
@@ -2529,111 +2692,111 @@
     "qty": 68924,
     "prev": 68924,
     "isnew": false,
-    "mv": 1978118.8,
+    "mv": 1945035.28,
     "ccy": "CNY",
-    "ret": 1.85,
+    "ret": -1.67,
     "open": 25.33213002,
-    "close": 28.7
+    "close": 28.22
    }
   ]
  },
  "posmeta": {
   "81099801": {
-   "curr_date": "2026-08-28",
-   "prev_date": "2026-08-27"
+   "curr_date": "2026-08-31",
+   "prev_date": "2026-08-28"
   },
   "81099802": {
-   "curr_date": "2026-08-28",
-   "prev_date": "2026-08-27"
+   "curr_date": "2026-08-31",
+   "prev_date": "2026-08-28"
   },
   "81099803": {
-   "curr_date": "2026-08-28",
-   "prev_date": "2026-08-27"
+   "curr_date": "2026-08-31",
+   "prev_date": "2026-08-28"
   }
  },
  "summary": [
   {
    "account": "81099801",
-   "range": "2026-03-31 ~ 2026-08-28",
-   "ndays": 105,
+   "range": "2026-03-31 ~ 2026-08-31",
+   "ndays": 106,
    "start_nav": 565000,
-   "cur_nav": 1398893.78,
-   "cum_ret": 230.03,
-   "cum_amt": 975029.53,
-   "ann_ret": 1078.31,
-   "vol": 276.24,
-   "mdd": -13.94,
-   "sharpe": 1.56,
-   "calmar": 77.35,
-   "cost": 423864.25
+   "cur_nav": 1413694.42,
+   "cum_ret": 6.3,
+   "cum_amt": 83833.34,
+   "ann_ret": 4.59,
+   "vol": 17.3,
+   "mdd": -14.28,
+   "sharpe": 0.35,
+   "calmar": 0.32,
+   "cost": 1329861.08
   },
   {
    "account": "801总策略",
-   "range": "2026-06-09 ~ 2026-08-28",
-   "ndays": 57,
-   "start_nav": 1642041.53,
-   "cur_nav": 2877892.9,
-   "cum_ret": 52.11,
-   "cum_amt": 985851.37,
-   "ann_ret": 473.46,
-   "vol": 93.51,
+   "range": "2026-06-09 ~ 2026-08-31",
+   "ndays": 58,
+   "start_nav": 1642340.29,
+   "cur_nav": 2868232.44,
+   "cum_ret": 2.5,
+   "cum_amt": 69895.31,
+   "ann_ret": 13.31,
+   "vol": 4.96,
    "mdd": -1.39,
-   "sharpe": 2.23,
-   "calmar": 340.89,
-   "cost": 1892041.53
+   "sharpe": 2.55,
+   "calmar": 9.59,
+   "cost": 2798337.13
   },
   {
    "account": "81099802",
-   "range": "2026-03-31 ~ 2026-08-28",
-   "ndays": 105,
+   "range": "2026-03-31 ~ 2026-08-31",
+   "ndays": 106,
    "start_nav": 565000,
-   "cur_nav": 1163078.1,
-   "cum_ret": 39.94,
-   "cum_amt": 331976.6,
-   "ann_ret": 152.42,
-   "vol": 10.31,
+   "cur_nav": 1163254.52,
+   "cum_ret": 26.13,
+   "cum_amt": 241014.52,
+   "ann_ret": 94.89,
+   "vol": 5.07,
    "mdd": -0.4,
-   "sharpe": 9.05,
-   "calmar": 384.48,
-   "cost": 831101.5
+   "sharpe": 13.21,
+   "calmar": 239.35,
+   "cost": 922240.0
   },
   {
    "account": "81099803",
-   "range": "2026-04-03 ~ 2026-08-28",
-   "ndays": 102,
+   "range": "2026-04-03 ~ 2026-08-31",
+   "ndays": 103,
    "start_nav": 300000,
-   "cur_nav": 398917.46,
-   "cum_ret": -62.07,
-   "cum_amt": -652731.23,
-   "ann_ret": -52.26,
-   "vol": 124.03,
+   "cur_nav": 385789.74,
+   "cum_ret": -63.32,
+   "cum_amt": -665858.95,
+   "ann_ret": -55.7,
+   "vol": 123.53,
    "mdd": -74.62,
-   "sharpe": 0.03,
-   "calmar": -0.7,
+   "sharpe": -0.03,
+   "calmar": -0.75,
    "cost": 1051648.69
   }
  ],
  "pnl": {
   "81099801": {
-   "week": 39745.75,
-   "month": 122786.89,
-   "ytd": 975029.53
+   "week": 14800.64,
+   "month": 137587.53,
+   "ytd": 83833.34
   },
   "81099802": {
-   "week": 155.57,
-   "month": 53671.54,
-   "ytd": 331976.6
+   "week": -25731.25,
+   "month": 27940.29,
+   "ytd": 241014.52
   },
   "81099803": {
-   "week": -26422.79,
-   "month": 68940.56,
-   "ytd": -652731.23
+   "week": -13127.72,
+   "month": 55812.84,
+   "ytd": -665858.95
   }
  },
  "totals": {
-  "nav": 2960889.34,
-  "today": 24128.12,
-  "ytd": 1317827.97,
+  "nav": 2962738.68,
+  "today": -9781.09,
+  "ytd": 310909.83,
   "scope": "801总策略 + 81099802（已剔除 81099803）"
  },
  "strategy801": {
@@ -2642,618 +2805,620 @@
    {
     "date": "2026-06-10",
     "a801": 0,
-    "xh": 36.65,
-    "comb": 36.65,
-    "cum": 36.65,
+    "xh": 36.66,
+    "comb": 36.66,
+    "cum": 36.66,
     "comb_pct": null,
     "cum_pct": 0.002,
-    "nav": 1642078.19
+    "nav": 1642376.96
    },
    {
     "date": "2026-06-11",
     "a801": 0,
-    "xh": 36.65,
-    "comb": 36.65,
-    "cum": 73.3,
+    "xh": 36.66,
+    "comb": 36.66,
+    "cum": 73.32,
     "comb_pct": 0.002,
     "cum_pct": 0.004,
-    "nav": 1642114.84
+    "nav": 1642413.62
    },
    {
     "date": "2026-06-12",
     "a801": 0,
-    "xh": 36.65,
-    "comb": 36.65,
-    "cum": 109.95,
+    "xh": 36.66,
+    "comb": 36.66,
+    "cum": 109.98,
     "comb_pct": 0.002,
     "cum_pct": 0.007,
-    "nav": 1642151.49
+    "nav": 1642450.28
    },
    {
     "date": "2026-06-15",
     "a801": 0,
-    "xh": 109.95,
-    "comb": 109.95,
-    "cum": 219.9,
+    "xh": 109.98,
+    "comb": 109.98,
+    "cum": 219.96,
     "comb_pct": 0.007,
     "cum_pct": 0.013,
-    "nav": 1642261.45
+    "nav": 1642560.25
    },
    {
     "date": "2026-06-16",
     "a801": 0,
-    "xh": 36.65,
-    "comb": 36.65,
-    "cum": 256.55,
+    "xh": 36.66,
+    "comb": 36.66,
+    "cum": 256.62,
     "comb_pct": 0.002,
     "cum_pct": 0.016,
-    "nav": 1642298.1
+    "nav": 1642596.91
    },
    {
     "date": "2026-06-17",
     "a801": 0,
-    "xh": 36.65,
-    "comb": 36.65,
-    "cum": 293.2,
+    "xh": 36.66,
+    "comb": 36.66,
+    "cum": 293.28,
     "comb_pct": 0.002,
     "cum_pct": 0.018,
-    "nav": 1642334.75
+    "nav": 1642633.57
    },
    {
     "date": "2026-06-18",
     "a801": 0,
-    "xh": 36.65,
-    "comb": 36.65,
-    "cum": 329.85,
+    "xh": 36.66,
+    "comb": 36.66,
+    "cum": 329.94,
     "comb_pct": 0.002,
     "cum_pct": 0.02,
-    "nav": 1642371.4
+    "nav": 1642670.22
    },
    {
     "date": "2026-06-22",
     "a801": 0,
-    "xh": 35.05,
-    "comb": 35.05,
-    "cum": 364.9,
+    "xh": 35.06,
+    "comb": 35.06,
+    "cum": 365,
     "comb_pct": 0.002,
     "cum_pct": 0.022,
-    "nav": 1642406.45
+    "nav": 1642705.28
    },
    {
     "date": "2026-06-23",
     "a801": 0,
-    "xh": 36.67,
-    "comb": 36.67,
-    "cum": 401.57,
+    "xh": 36.68,
+    "comb": 36.68,
+    "cum": 401.68,
     "comb_pct": 0.002,
     "cum_pct": 0.024,
-    "nav": 1642443.12
+    "nav": 1642741.96
    },
    {
     "date": "2026-06-24",
     "a801": 0,
-    "xh": 36.67,
-    "comb": 36.67,
-    "cum": 438.24,
+    "xh": 36.68,
+    "comb": 36.68,
+    "cum": 438.36,
     "comb_pct": 0.002,
     "cum_pct": 0.027,
-    "nav": 1642479.79
+    "nav": 1642778.64
    },
    {
     "date": "2026-06-25",
     "a801": 0,
-    "xh": 36.67,
-    "comb": 36.67,
-    "cum": 474.91,
+    "xh": 36.68,
+    "comb": 36.68,
+    "cum": 475.04,
     "comb_pct": 0.002,
     "cum_pct": 0.029,
-    "nav": 1642516.46
+    "nav": 1642815.32
    },
    {
     "date": "2026-06-26",
     "a801": 0,
-    "xh": 36.67,
-    "comb": 36.67,
-    "cum": 511.58,
+    "xh": 36.68,
+    "comb": 36.68,
+    "cum": 511.72,
     "comb_pct": 0.002,
     "cum_pct": 0.031,
-    "nav": 1642553.13
+    "nav": 1642851.99
    },
    {
     "date": "2026-06-29",
     "a801": 0,
-    "xh": -68.5,
-    "comb": -68.5,
-    "cum": 443.08,
+    "xh": -68.51,
+    "comb": -68.51,
+    "cum": 443.21,
     "comb_pct": -0.004,
     "cum_pct": 0.027,
-    "nav": 1642484.63
+    "nav": 1642783.48
    },
    {
     "date": "2026-06-30",
     "a801": 0,
-    "xh": 36.66,
-    "comb": 36.66,
-    "cum": 479.74,
+    "xh": 36.67,
+    "comb": 36.67,
+    "cum": 479.88,
     "comb_pct": 0.002,
     "cum_pct": 0.029,
-    "nav": 1642521.3
+    "nav": 1642820.15
    },
    {
     "date": "2026-07-01",
     "a801": 0,
-    "xh": 36.66,
-    "comb": 36.66,
-    "cum": 516.4,
+    "xh": 36.67,
+    "comb": 36.67,
+    "cum": 516.55,
     "comb_pct": 0.002,
     "cum_pct": 0.031,
-    "nav": 1642557.96
+    "nav": 1642856.82
    },
    {
     "date": "2026-07-02",
     "a801": 0,
-    "xh": 36.64,
-    "comb": 36.64,
-    "cum": 553.04,
+    "xh": 36.65,
+    "comb": 36.65,
+    "cum": 553.2,
     "comb_pct": 0.002,
     "cum_pct": 0.034,
-    "nav": 1642594.6
+    "nav": 1642893.47
    },
    {
     "date": "2026-07-03",
     "a801": 0,
-    "xh": 36.64,
-    "comb": 36.64,
-    "cum": 589.68,
+    "xh": 36.65,
+    "comb": 36.65,
+    "cum": 589.85,
     "comb_pct": 0.002,
     "cum_pct": 0.036,
-    "nav": 1642631.25
+    "nav": 1642930.13
    },
    {
     "date": "2026-07-06",
     "a801": 0,
-    "xh": 109.93,
-    "comb": 109.93,
-    "cum": 699.61,
+    "xh": 109.95,
+    "comb": 109.95,
+    "cum": 699.8,
     "comb_pct": 0.007,
     "cum_pct": 0.043,
-    "nav": 1642741.18
+    "nav": 1643040.08
    },
    {
     "date": "2026-07-07",
     "a801": 0,
-    "xh": 36.64,
-    "comb": 36.64,
-    "cum": 736.25,
+    "xh": 36.65,
+    "comb": 36.65,
+    "cum": 736.45,
     "comb_pct": 0.002,
     "cum_pct": 0.045,
-    "nav": 1642777.82
+    "nav": 1643076.73
    },
    {
     "date": "2026-07-08",
     "a801": 0,
-    "xh": 36.64,
-    "comb": 36.64,
-    "cum": 772.89,
+    "xh": 36.65,
+    "comb": 36.65,
+    "cum": 773.1,
     "comb_pct": 0.002,
     "cum_pct": 0.047,
-    "nav": 1642814.46
+    "nav": 1643113.38
    },
    {
     "date": "2026-07-09",
     "a801": 0,
-    "xh": 36.64,
-    "comb": 36.64,
-    "cum": 809.53,
+    "xh": 36.65,
+    "comb": 36.65,
+    "cum": 809.75,
     "comb_pct": 0.002,
     "cum_pct": 0.049,
-    "nav": 1642851.1
+    "nav": 1643150.02
    },
    {
     "date": "2026-07-10",
     "a801": 0,
-    "xh": 36.64,
-    "comb": 36.64,
-    "cum": 846.17,
+    "xh": 36.65,
+    "comb": 36.65,
+    "cum": 846.4,
     "comb_pct": 0.002,
     "cum_pct": 0.052,
-    "nav": 1642887.74
+    "nav": 1643186.67
    },
    {
     "date": "2026-07-13",
     "a801": 0,
-    "xh": 98.35,
-    "comb": 98.35,
-    "cum": 944.52,
+    "xh": 98.37,
+    "comb": 98.37,
+    "cum": 944.77,
     "comb_pct": 0.006,
     "cum_pct": 0.058,
-    "nav": 1642986.09
+    "nav": 1643285.04
    },
    {
     "date": "2026-07-14",
     "a801": -820.01,
-    "xh": -813.3,
-    "comb": -1633.31,
-    "cum": -688.79,
+    "xh": -813.47,
+    "comb": -1633.48,
+    "cum": -688.71,
     "comb_pct": -0.099,
     "cum_pct": -0.042,
-    "nav": 1641352.78
+    "nav": 1641651.57
    },
    {
     "date": "2026-07-15",
     "a801": 6.89,
-    "xh": 1924.13,
-    "comb": 1931.02,
-    "cum": 1242.23,
+    "xh": 1924.51,
+    "comb": 1931.4,
+    "cum": 1242.69,
     "comb_pct": 0.118,
     "cum_pct": 0.076,
-    "nav": 1643283.8
+    "nav": 1643582.97
    },
    {
     "date": "2026-07-16",
     "a801": -718.03,
-    "xh": 484.93,
-    "comb": -233.1,
-    "cum": 1009.13,
+    "xh": 485.03,
+    "comb": -233,
+    "cum": 1009.69,
     "comb_pct": -0.014,
     "cum_pct": 0.061,
-    "nav": 1643050.7
+    "nav": 1643349.97
    },
    {
     "date": "2026-07-17",
     "a801": 60.36,
-    "xh": 4986.14,
-    "comb": 5046.5,
-    "cum": 6055.63,
+    "xh": 4987.14,
+    "comb": 5047.5,
+    "cum": 6057.19,
     "comb_pct": 0.307,
     "cum_pct": 0.369,
-    "nav": 1648097.2
+    "nav": 1648397.47
    },
    {
     "date": "2026-07-20",
     "a801": -2089.84,
-    "xh": 917.11,
-    "comb": -1172.73,
-    "cum": 4882.9,
+    "xh": 917.29,
+    "comb": -1172.55,
+    "cum": 4884.64,
     "comb_pct": -0.071,
     "cum_pct": 0.239,
-    "nav": 2046924.47
+    "nav": 2047224.93
    },
    {
     "date": "2026-07-21",
     "a801": 322.66,
-    "xh": 1474.01,
-    "comb": 1796.67,
-    "cum": 6679.57,
+    "xh": 1474.31,
+    "comb": 1796.97,
+    "cum": 6681.61,
     "comb_pct": 0.088,
     "cum_pct": 0.327,
-    "nav": 2048721.14
+    "nav": 2049021.89
    },
    {
     "date": "2026-07-22",
     "a801": 4604.64,
-    "xh": 1390.61,
-    "comb": 5995.25,
-    "cum": 12674.82,
+    "xh": 1390.89,
+    "comb": 5995.53,
+    "cum": 12677.14,
     "comb_pct": 0.293,
     "cum_pct": 0.621,
-    "nav": 2054716.39
+    "nav": 2055017.42
    },
    {
     "date": "2026-07-23",
     "a801": 5641.88,
-    "xh": 7636.85,
-    "comb": 13278.73,
-    "cum": 25953.55,
+    "xh": 7638.38,
+    "comb": 13280.26,
+    "cum": 25957.4,
     "comb_pct": 0.646,
     "cum_pct": 1.271,
-    "nav": 2067995.12
+    "nav": 2068297.68
    },
    {
     "date": "2026-07-24",
     "a801": 10121.73,
-    "xh": -8404.09,
-    "comb": 1717.64,
-    "cum": 27671.19,
+    "xh": -8405.78,
+    "comb": 1715.95,
+    "cum": 27673.35,
     "comb_pct": 0.083,
     "cum_pct": 1.355,
-    "nav": 2069712.76
+    "nav": 2070013.63
    },
    {
     "date": "2026-07-27",
     "a801": -6038.84,
-    "xh": -4032.98,
-    "comb": -10071.82,
-    "cum": 17599.37,
+    "xh": -4033.79,
+    "comb": -10072.63,
+    "cum": 17600.72,
     "comb_pct": -0.487,
     "cum_pct": 0.862,
-    "nav": 2059640.94
+    "nav": 2059941.01
    },
    {
     "date": "2026-07-28",
     "a801": -8893.68,
-    "xh": -9780.63,
-    "comb": -18674.31,
-    "cum": -1074.94,
+    "xh": -9782.6,
+    "comb": -18676.28,
+    "cum": -1075.56,
     "comb_pct": -0.907,
     "cum_pct": -0.053,
-    "nav": 2040966.63
+    "nav": 2041264.73
    },
    {
     "date": "2026-07-29",
     "a801": -1145.6,
-    "xh": 3811.22,
-    "comb": 2665.62,
-    "cum": 1590.68,
+    "xh": 3811.99,
+    "comb": 2666.39,
+    "cum": 1590.83,
     "comb_pct": 0.131,
     "cum_pct": 0.078,
-    "nav": 2043632.25
+    "nav": 2043931.12
    },
    {
     "date": "2026-07-30",
     "a801": -1132.57,
-    "xh": 7127.93,
-    "comb": 5995.36,
-    "cum": 7586.04,
+    "xh": 7129.36,
+    "comb": 5996.79,
+    "cum": 7587.62,
     "comb_pct": 0.293,
-    "cum_pct": 0.371,
-    "nav": 2049627.61
+    "cum_pct": 0.372,
+    "nav": 2049927.91
    },
    {
     "date": "2026-07-31",
     "a801": -34342.1,
-    "xh": 42763.41,
-    "comb": 8421.31,
-    "cum": 16007.35,
+    "xh": 42772,
+    "comb": 8429.9,
+    "cum": 16017.52,
     "comb_pct": 0.411,
     "cum_pct": 0.784,
-    "nav": 2058048.93
+    "nav": 2058357.81
    },
    {
     "date": "2026-08-03",
     "a801": 1430.94,
-    "xh": -1745.77,
-    "comb": -314.83,
-    "cum": 15692.52,
+    "xh": -1746.12,
+    "comb": -315.18,
+    "cum": 15702.34,
     "comb_pct": -0.015,
-    "cum_pct": 0.768,
-    "nav": 2057734.1
+    "cum_pct": 0.769,
+    "nav": 2058042.64
    },
    {
     "date": "2026-08-04",
     "a801": -10126.66,
-    "xh": 13490.49,
-    "comb": 3363.83,
-    "cum": 19056.35,
-    "comb_pct": 0.163,
-    "cum_pct": 0.933,
-    "nav": 2061097.93
+    "xh": 13493.2,
+    "comb": 3366.54,
+    "cum": 19068.88,
+    "comb_pct": 0.164,
+    "cum_pct": 0.934,
+    "nav": 2061409.17
    },
    {
     "date": "2026-08-05",
-    "a801": 910166.82,
-    "xh": 6234.52,
-    "comb": 916401.34,
-    "cum": 935457.69,
-    "comb_pct": 44.462,
-    "cum_pct": 45.81,
-    "nav": 2977499.27
+    "a801": 4169.99,
+    "xh": 6235.77,
+    "comb": 10405.76,
+    "cum": 29474.64,
+    "comb_pct": 0.505,
+    "cum_pct": 1.0,
+    "nav": 2977811.77
    },
    {
     "date": "2026-08-06",
     "a801": 5279.46,
-    "xh": -6138.14,
-    "comb": -858.68,
-    "cum": 934599.01,
+    "xh": -6139.37,
+    "comb": -859.91,
+    "cum": 28614.73,
     "comb_pct": -0.029,
-    "cum_pct": 45.768,
-    "nav": 2976640.59
+    "cum_pct": 0.971,
+    "nav": 2976951.86
    },
    {
     "date": "2026-08-07",
     "a801": -2663.11,
-    "xh": -2318.76,
-    "comb": -4981.87,
-    "cum": 929617.14,
+    "xh": -2319.23,
+    "comb": -4982.34,
+    "cum": 23632.39,
     "comb_pct": -0.167,
-    "cum_pct": 45.524,
-    "nav": 2971658.72
+    "cum_pct": 0.802,
+    "nav": 2971969.52
    },
    {
     "date": "2026-08-10",
     "a801": 5177.32,
-    "xh": 6183.77,
-    "comb": 11361.09,
-    "cum": 940978.23,
+    "xh": 6185.01,
+    "comb": 11362.33,
+    "cum": 34994.72,
     "comb_pct": 0.382,
-    "cum_pct": 46.08,
-    "nav": 2983019.81
+    "cum_pct": 1.187,
+    "nav": 2983331.85
    },
    {
     "date": "2026-08-11",
     "a801": 22918.21,
-    "xh": -9990.54,
-    "comb": 12927.67,
-    "cum": 953905.9,
+    "xh": -9992.55,
+    "comb": 12925.66,
+    "cum": 47920.38,
     "comb_pct": 0.433,
-    "cum_pct": 46.713,
-    "nav": 2995947.48
+    "cum_pct": 1.625,
+    "nav": 2996257.52
    },
    {
     "date": "2026-08-12",
     "a801": -1392.47,
-    "xh": 1769.61,
-    "comb": 377.14,
-    "cum": 954283.04,
+    "xh": 1769.96,
+    "comb": 377.49,
+    "cum": 48297.87,
     "comb_pct": 0.013,
-    "cum_pct": 50.437,
-    "nav": 2846324.62
+    "cum_pct": 1.726,
+    "nav": 2846635.01
    },
    {
     "date": "2026-08-13",
     "a801": -18922.21,
-    "xh": 16826.73,
-    "comb": -2095.48,
-    "cum": 952187.56,
-    "comb_pct": -0.074,
-    "cum_pct": 50.326,
-    "nav": 2844229.14
+    "xh": 16830.11,
+    "comb": -2092.1,
+    "cum": 46205.77,
+    "comb_pct": -0.073,
+    "cum_pct": 1.651,
+    "nav": 2844542.91
    },
    {
     "date": "2026-08-14",
     "a801": -8020.28,
-    "xh": 1460.83,
-    "comb": -6559.45,
-    "cum": 945628.11,
+    "xh": 1461.12,
+    "comb": -6559.16,
+    "cum": 39646.61,
     "comb_pct": -0.231,
-    "cum_pct": 49.979,
-    "nav": 2837669.69
+    "cum_pct": 1.417,
+    "nav": 2837983.75
    },
    {
     "date": "2026-08-17",
     "a801": -3290.02,
-    "xh": -3726.16,
-    "comb": -7016.18,
-    "cum": 938611.93,
+    "xh": -3726.91,
+    "comb": -7016.93,
+    "cum": 32629.68,
     "comb_pct": -0.247,
-    "cum_pct": 49.608,
-    "nav": 2830653.51
+    "cum_pct": 1.166,
+    "nav": 2830966.82
    },
    {
     "date": "2026-08-18",
     "a801": -4667.46,
-    "xh": -676.5,
-    "comb": -5343.96,
-    "cum": 933267.97,
+    "xh": -676.64,
+    "comb": -5344.1,
+    "cum": 27285.58,
     "comb_pct": -0.189,
-    "cum_pct": 49.326,
-    "nav": 2825309.54
+    "cum_pct": 0.975,
+    "nav": 2825622.72
    },
    {
     "date": "2026-08-19",
     "a801": 65299.36,
-    "xh": -40886.51,
-    "comb": 24412.85,
-    "cum": 957680.82,
+    "xh": -40894.72,
+    "comb": 24404.64,
+    "cum": 51690.22,
     "comb_pct": 0.864,
-    "cum_pct": 50.616,
-    "nav": 2849722.4
+    "cum_pct": 1.847,
+    "nav": 2850027.37
    },
    {
     "date": "2026-08-20",
     "a801": -15424.28,
-    "xh": 8998.49,
-    "comb": -6425.79,
-    "cum": 951255.03,
+    "xh": 9000.3,
+    "comb": -6423.98,
+    "cum": 45266.24,
     "comb_pct": -0.225,
-    "cum_pct": 50.277,
-    "nav": 2843296.61
+    "cum_pct": 1.618,
+    "nav": 2843603.39
    },
    {
     "date": "2026-08-21",
     "a801": 43272.35,
-    "xh": -21500.93,
-    "comb": 21771.42,
-    "cum": 973026.45,
-    "comb_pct": 0.766,
-    "cum_pct": 51.427,
-    "nav": 2865068.03
+    "xh": -21505.24,
+    "comb": 21767.11,
+    "cum": 67033.35,
+    "comb_pct": 0.765,
+    "cum_pct": 2.395,
+    "nav": 2865370.49
    },
    {
     "date": "2026-08-24",
     "a801": 16414.49,
-    "xh": -30212.71,
-    "comb": -13798.22,
-    "cum": 959228.23,
+    "xh": -30218.78,
+    "comb": -13804.29,
+    "cum": 53229.06,
     "comb_pct": -0.482,
-    "cum_pct": 50.698,
-    "nav": 2851269.81
+    "cum_pct": 1.902,
+    "nav": 2851566.21
    },
    {
     "date": "2026-08-25",
     "a801": 28326.39,
-    "xh": -11507.98,
-    "comb": 16818.41,
-    "cum": 976046.64,
+    "xh": -11510.29,
+    "comb": 16816.1,
+    "cum": 70045.16,
     "comb_pct": 0.59,
-    "cum_pct": 51.587,
-    "nav": 2868088.23
+    "cum_pct": 2.503,
+    "nav": 2868382.31
    },
    {
     "date": "2026-08-26",
     "a801": -3476.14,
-    "xh": -3843.96,
-    "comb": -7320.1,
-    "cum": 968726.54,
+    "xh": -3844.74,
+    "comb": -7320.88,
+    "cum": 62724.28,
     "comb_pct": -0.255,
-    "cum_pct": 51.2,
-    "nav": 2860768.12
+    "cum_pct": 2.241,
+    "nav": 2861061.43
    },
    {
     "date": "2026-08-27",
     "a801": -7679.67,
-    "xh": 490.57,
-    "comb": -7189.1,
-    "cum": 961537.44,
+    "xh": 490.67,
+    "comb": -7189,
+    "cum": 55535.28,
     "comb_pct": -0.251,
-    "cum_pct": 50.82,
-    "nav": 2853579.02
+    "cum_pct": 1.985,
+    "nav": 2853872.43
    },
    {
     "date": "2026-08-28",
     "a801": 6160.68,
-    "xh": 18153.2,
-    "comb": 24313.88,
-    "cum": 985851.32,
+    "xh": 18156.84,
+    "comb": 24317.52,
+    "cum": 79852.8,
     "comb_pct": 0.852,
-    "cum_pct": 52.105,
-    "nav": 2877892.9
+    "cum_pct": 2.854,
+    "nav": 2878189.95
+   },
+   {
+    "date": "2026-08-31",
+    "a801": 14800.64,
+    "xh": -24758.15,
+    "comb": -9957.51,
+    "cum": 69895.29,
+    "comb_pct": -0.346,
+    "cum_pct": 2.498,
+    "nav": 2868232.44
    }
   ],
   "daily": {
-   "date": "2026-08-28",
-   "prev_date": "2026-08-27",
-   "prev_nav": 2853579.02,
-   "curr_nav": 2877892.9,
+   "date": "2026-08-31",
+   "prev_date": "2026-08-28",
+   "prev_nav": 2878189.95,
+   "curr_nav": 2868232.44,
    "transfer": 0,
-   "change": 24313.88,
-   "pct": 0.852,
-   "cum": 985851.32,
-   "cum_pct": 52.105
+   "change": -9957.51,
+   "pct": -0.346,
+   "cum": 69895.29,
+   "cum_pct": 2.498
   },
-  "xh_mv_cny": 19912160,
-  "xh_date": "2026-08-28"
+  "xh_mv_cny": 20026520,
+  "xh_date": "2026-08-31"
  },
  "alerts": {
-  "date": "2026-08-28",
+  "date": "2026-08-31",
   "threshold": 10000,
   "items": [
    {
+    "account": "81099801",
+    "day": 14800.64,
+    "day_pct": 1.06,
+    "gain": true,
+    "text": "81099801 本日盈亏（剔除现金流）+14,801 USD（+1.06%）。本周 +14,801、本月 +137,588、年初至今 +83,833 USD。作为『801 总策略』的海外腿，当日 +14,801 USD 的回撤基本被在岸『星汇星河一号』腿 -24,758 USD 对冲，两腿合计 -9,958 USD（-0.35%）。"
+   },
+   {
     "account": "81099803",
-    "day": -16350.1,
-    "day_pct": -3.94,
+    "day": -13127.72,
+    "day_pct": -3.29,
     "gain": false,
-    "text": "81099803 本日盈亏（剔除现金流）-16,350 USD（-3.94%）。本周 -26,423、本月 +68,941、年初至今 -652,731 USD。回撤主要来自：Frontier Biotechnologies I（-3.53%）、Shaanxi Kanghui Pharmaceut（-2.26%）、Zhuzhou Hongda Electronics（-4.02%）（按持仓收益率×市值估算，仅供参考）。"
+    "text": "81099803 本日盈亏（剔除现金流）-13,128 USD（-3.29%）。本周 -13,128、本月 +55,813、年初至今 -665,859 USD。回撤主要来自：Frontier Biotechnologies I（-6.37%）、Chengdu KSW Technologies C（-1.67%）（按持仓收益率×市值估算，仅供参考）。"
    }
   ]
  },
  "monthly": {
   "81099801": [
-   {
-    "date": "2026-07-28",
-    "nav": 556730.33,
-    "pct": -1.57
-   },
-   {
-    "date": "2026-07-29",
-    "nav": 555584.73,
-    "pct": -0.21
-   },
-   {
-    "date": "2026-07-30",
-    "nav": 554452.16,
-    "pct": -0.2
-   },
    {
     "date": "2026-07-31",
     "nav": 520110.06,
@@ -3272,7 +3437,7 @@
    {
     "date": "2026-08-05",
     "nav": 1421581.16,
-    "pct": 177.97
+    "pct": 0.29
    },
    {
     "date": "2026-08-06",
@@ -3358,150 +3523,130 @@
     "date": "2026-08-28",
     "nav": 1398893.78,
     "pct": 0.44
+   },
+   {
+    "date": "2026-08-31",
+    "nav": 1413694.42,
+    "pct": 1.06
    }
   ],
   "801总策略": [
    {
-    "date": "2026-07-28",
-    "nav": 2040966.63,
-    "pct": -0.91
-   },
-   {
-    "date": "2026-07-29",
-    "nav": 2043632.25,
-    "pct": 0.13
-   },
-   {
-    "date": "2026-07-30",
-    "nav": 2049627.61,
-    "pct": 0.29
-   },
-   {
     "date": "2026-07-31",
-    "nav": 2058048.93,
+    "nav": 2058357.81,
     "pct": 0.41
    },
    {
     "date": "2026-08-03",
-    "nav": 2057734.1,
+    "nav": 2058042.64,
     "pct": -0.02
    },
    {
     "date": "2026-08-04",
-    "nav": 2061097.93,
+    "nav": 2061409.17,
     "pct": 0.16
    },
    {
     "date": "2026-08-05",
-    "nav": 2977499.27,
-    "pct": 44.46
+    "nav": 2977811.77,
+    "pct": 0.35
    },
    {
     "date": "2026-08-06",
-    "nav": 2976640.59,
+    "nav": 2976951.86,
     "pct": -0.03
    },
    {
     "date": "2026-08-07",
-    "nav": 2971658.72,
+    "nav": 2971969.52,
     "pct": -0.17
    },
    {
     "date": "2026-08-10",
-    "nav": 2983019.81,
+    "nav": 2983331.85,
     "pct": 0.38
    },
    {
     "date": "2026-08-11",
-    "nav": 2995947.48,
+    "nav": 2996257.52,
     "pct": 0.43
    },
    {
     "date": "2026-08-12",
-    "nav": 2846324.62,
+    "nav": 2846635.01,
     "pct": 0.01
    },
    {
     "date": "2026-08-13",
-    "nav": 2844229.14,
+    "nav": 2844542.91,
     "pct": -0.07
    },
    {
     "date": "2026-08-14",
-    "nav": 2837669.69,
+    "nav": 2837983.75,
     "pct": -0.23
    },
    {
     "date": "2026-08-17",
-    "nav": 2830653.51,
+    "nav": 2830966.82,
     "pct": -0.25
    },
    {
     "date": "2026-08-18",
-    "nav": 2825309.54,
+    "nav": 2825622.72,
     "pct": -0.19
    },
    {
     "date": "2026-08-19",
-    "nav": 2849722.4,
+    "nav": 2850027.37,
     "pct": 0.86
    },
    {
     "date": "2026-08-20",
-    "nav": 2843296.61,
+    "nav": 2843603.39,
     "pct": -0.23
    },
    {
     "date": "2026-08-21",
-    "nav": 2865068.03,
+    "nav": 2865370.49,
     "pct": 0.77
    },
    {
     "date": "2026-08-24",
-    "nav": 2851269.81,
+    "nav": 2851566.21,
     "pct": -0.48
    },
    {
     "date": "2026-08-25",
-    "nav": 2868088.23,
+    "nav": 2868382.31,
     "pct": 0.59
    },
    {
     "date": "2026-08-26",
-    "nav": 2860768.12,
+    "nav": 2861061.43,
     "pct": -0.26
    },
    {
     "date": "2026-08-27",
-    "nav": 2853579.02,
+    "nav": 2853872.43,
     "pct": -0.25
    },
    {
     "date": "2026-08-28",
-    "nav": 2877892.9,
+    "nav": 2878189.95,
     "pct": 0.85
+   },
+   {
+    "date": "2026-08-31",
+    "nav": 2868232.44,
+    "pct": -0.35
    }
   ],
   "81099802": [
    {
-    "date": "2026-07-28",
-    "nav": 1057317.85,
-    "pct": -0.04
-   },
-   {
-    "date": "2026-07-29",
-    "nav": 1057420.86,
-    "pct": 0.01
-   },
-   {
-    "date": "2026-07-30",
-    "nav": 1058511.12,
-    "pct": 0.1
-   },
-   {
     "date": "2026-07-31",
     "nav": 1059406.56,
-    "pct": 3.06
+    "pct": 0.08
    },
    {
     "date": "2026-08-03",
@@ -3602,24 +3747,14 @@
     "date": "2026-08-28",
     "nav": 1163078.1,
     "pct": -0.02
+   },
+   {
+    "date": "2026-08-31",
+    "nav": 1163254.52,
+    "pct": 0.02
    }
   ],
   "81099803": [
-   {
-    "date": "2026-07-28",
-    "nav": 362261.77,
-    "pct": -10.59
-   },
-   {
-    "date": "2026-07-29",
-    "nav": 349315.97,
-    "pct": -3.57
-   },
-   {
-    "date": "2026-07-30",
-    "nav": 290972.68,
-    "pct": -16.7
-   },
    {
     "date": "2026-07-31",
     "nav": 329976.9,
@@ -3724,62 +3859,67 @@
     "date": "2026-08-28",
     "nav": 398917.46,
     "pct": -3.94
+   },
+   {
+    "date": "2026-08-31",
+    "nav": 385789.74,
+    "pct": -3.29
    }
   ]
  },
  "exposure": {
   "81099801": {
    "today": {
+    "date": "2026-08-31",
+    "cnt": 58,
+    "newcnt": 44,
+    "long": 173005,
+    "short": 19114590,
+    "total": 19287595
+   },
+   "prev": {
     "date": "2026-08-28",
     "cnt": 50,
     "newcnt": 37,
     "long": 0,
     "short": 18221669.32,
     "total": 18221669.32
-   },
-   "prev": {
-    "date": "2026-08-27",
-    "cnt": 54,
-    "newcnt": 43,
-    "long": 44142,
-    "short": 19270984.98,
-    "total": 19315126.98
    }
   },
   "81099802": {
    "today": {
+    "date": "2026-08-31",
+    "cnt": 72,
+    "newcnt": 4,
+    "long": 19881108.46,
+    "short": 19872383.28,
+    "total": 39753491.74
+   },
+   "prev": {
     "date": "2026-08-28",
     "cnt": 68,
     "newcnt": 2,
     "long": 19245525.91,
     "short": 19236432.03,
     "total": 38481957.94
-   },
-   "prev": {
-    "date": "2026-08-27",
-    "cnt": 66,
-    "newcnt": 2,
-    "long": 19522531.53,
-    "short": 19513275.99,
-    "total": 39035807.52
    }
   },
   "81099803": {
    "today": {
+    "date": "2026-08-31",
+    "cnt": 5,
+    "newcnt": 0,
+    "long": 6444220.28,
+    "short": 0,
+    "total": 6444220.28
+   },
+   "prev": {
     "date": "2026-08-28",
     "cnt": 5,
     "newcnt": 0,
     "long": 6529745.8,
     "short": 0,
     "total": 6529745.8
-   },
-   "prev": {
-    "date": "2026-08-27",
-    "cnt": 5,
-    "newcnt": 0,
-    "long": 6638712.32,
-    "short": 0,
-    "total": 6638712.32
    }
   }
  }
