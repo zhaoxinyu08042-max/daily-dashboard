@@ -1,37 +1,37 @@
 {
- "updated_at": "2026-08-31T12:49:11+08:00",
- "run_date": "2026-08-31",
+ "updated_at": "2026-09-01T10:35:00+08:00",
+ "run_date": "2026-09-01",
  "status": "ok",
- "message": "报告日 2026-08-28（上一交易日 08-27）。802 当日 Cash Collateral Withdrawal −100,000 USD 已按划转剔除，保证金余额 1,022,240→922,240 校验一致。",
+ "message": "报告日 2026-08-31。802 当日 Adjustments-Return -174,139.94 CNY(≈-25,907.67 USD)按划转口径剔除。801总策略(801+星汇星河一号)当日 -9,958 USD。",
  "accounts": [
   {
    "account": "81099801",
-   "prev_date": "2026-08-27",
-   "prev_nav": 1392733.1,
-   "curr_nav": 1398893.78,
+   "prev_date": "2026-08-28",
+   "prev_nav": 1398893.78,
+   "curr_nav": 1413694.42,
    "net_transfer": 0.0,
-   "change_ex_transfer": 6160.68,
-   "change_pct": 0.4423,
+   "change_ex_transfer": 14800.64,
+   "change_pct": 1.058024577105482,
    "alert": false
   },
   {
    "account": "81099802",
-   "prev_date": "2026-08-27",
-   "prev_nav": 1263263.86,
-   "curr_nav": 1163078.1,
-   "net_transfer": -100000.0,
-   "change_ex_transfer": -185.76,
-   "change_pct": -0.016,
+   "prev_date": "2026-08-28",
+   "prev_nav": 1163078.1,
+   "curr_nav": 1137346.85,
+   "net_transfer": -25907.67,
+   "change_ex_transfer": 176.42,
+   "change_pct": 0.01551394543384304,
    "alert": false
   },
   {
    "account": "81099803",
-   "prev_date": "2026-08-27",
-   "prev_nav": 415267.56,
-   "curr_nav": 398917.46,
+   "prev_date": "2026-08-28",
+   "prev_nav": 398917.46,
+   "curr_nav": 385789.74,
    "net_transfer": 0.0,
-   "change_ex_transfer": -16350.1,
-   "change_pct": -3.9372,
+   "change_ex_transfer": -13127.72,
+   "change_pct": -3.290836154426539,
    "alert": false
   }
  ]
