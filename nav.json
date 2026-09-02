@@ -1,38 +1,38 @@
 {
- "updated_at": "2026-09-01T11:30:00+08:00",
- "run_date": "2026-09-01",
+ "updated_at": "2026-09-02T10:05:00+08:00",
+ "run_date": "2026-09-02",
  "status": "ok",
- "message": "报告日 2026-08-31。已修正两处历史口径：①801 于 2026-08-05 的 Cash Collateral Delivery +905,996.83 USD 此前漏记为盈亏，累计收益率 182.44%→1.91%，801总策略 47.92%→2.92%；②802 四笔月末 Adjustment 双重计数已消除，47.1%→32.4%。当日三账户净值变化不受影响。",
+ "message": "2026-09-01 报告已入表；当日三账户均无资金划转；81099803 变化率 -5.63% 超阈值需人工核实。",
  "accounts": [
   {
    "account": "81099801",
-   "prev_date": "2026-08-28",
-   "prev_nav": 1398893.78,
-   "curr_nav": 1413694.42,
-   "net_transfer": 0.0,
-   "change_ex_transfer": 14800.64,
-   "change_pct": 1.058024577105482,
+   "prev_date": "2026-08-31",
+   "prev_nav": 1413694.42,
+   "curr_nav": 1407028.62,
+   "net_transfer": 0,
+   "change_ex_transfer": -6665.8,
+   "change_pct": -0.4715,
    "alert": false
   },
   {
    "account": "81099802",
-   "prev_date": "2026-08-28",
-   "prev_nav": 1163078.1,
-   "curr_nav": 1163254.52,
-   "net_transfer": 0.0,
-   "change_ex_transfer": 176.42,
-   "change_pct": 0.01516,
+   "prev_date": "2026-08-31",
+   "prev_nav": 1163254.52,
+   "curr_nav": 1163393.16,
+   "net_transfer": 0,
+   "change_ex_transfer": 138.64,
+   "change_pct": 0.0119,
    "alert": false
   },
   {
    "account": "81099803",
-   "prev_date": "2026-08-28",
-   "prev_nav": 398917.46,
-   "curr_nav": 385789.74,
-   "net_transfer": 0.0,
-   "change_ex_transfer": -13127.72,
-   "change_pct": -3.290836154426539,
-   "alert": false
+   "prev_date": "2026-08-31",
+   "prev_nav": 385789.74,
+   "curr_nav": 364073.21,
+   "net_transfer": 0,
+   "change_ex_transfer": -21716.53,
+   "change_pct": -5.6291,
+   "alert": true
   }
  ]
 }
