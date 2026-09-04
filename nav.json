@@ -1,11 +1,38 @@
 {
-  "updated_at": "2026-09-03T10:05:00+08:00",
-  "run_date": "2026-09-03",
-  "status": "ok",
-  "message": "2026-09-02 报告已入表；当日三账户均无资金划转。801总策略当日 -13,487 USD。",
-  "accounts": [
-    {"account":"81099801","prev_date":"2026-09-01","prev_nav":1407028.62,"curr_nav":1447089.27,"net_transfer":0,"change_ex_transfer":40060.65,"change_pct":2.8472,"alert":false},
-    {"account":"81099802","prev_date":"2026-09-01","prev_nav":1163393.16,"curr_nav":1163328.37,"net_transfer":0,"change_ex_transfer":-64.79,"change_pct":-0.0056,"alert":false},
-    {"account":"81099803","prev_date":"2026-09-01","prev_nav":364073.21,"curr_nav":358809.44,"net_transfer":0,"change_ex_transfer":-5263.77,"change_pct":-1.4458,"alert":false}
-  ]
+ "updated_at": "2026-09-04T10:16:54.836927+08:00",
+ "run_date": "2026-09-03",
+ "status": "ok",
+ "message": "三账户09-03净值已更新；无资金划转；801总策略(含星汇腿)已合并",
+ "accounts": [
+  {
+   "account": "81099801",
+   "prev_date": "2026-09-02",
+   "prev_nav": 1447089.27,
+   "curr_nav": 1425917.74,
+   "net_transfer": 0,
+   "change_ex_transfer": -21171.53,
+   "change_pct": -1.4630424286125776,
+   "alert": false
+  },
+  {
+   "account": "81099802",
+   "prev_date": "2026-09-02",
+   "prev_nav": 1163328.37,
+   "curr_nav": 1163675.01,
+   "net_transfer": 0,
+   "change_ex_transfer": 346.64,
+   "change_pct": 0.02979726179979007,
+   "alert": false
+  },
+  {
+   "account": "81099803",
+   "prev_date": "2026-09-02",
+   "prev_nav": 358809.44,
+   "curr_nav": 360305.6,
+   "net_transfer": 0,
+   "change_ex_transfer": 1496.16,
+   "change_pct": 0.4169789958703357,
+   "alert": false
+  }
+ ]
 }
